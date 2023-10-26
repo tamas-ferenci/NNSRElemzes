@@ -994,7 +994,8 @@ minimális mértékben:
 ``` r
 Res[, .(`Megmaradt ápolási nap [nap]` = sum(TeljesitettApolasiNapSzam),
         `Arány a teljeshez képest [%]` = round(sum(TeljesitettApolasiNapSzam)/
-                                                 sum(KhAdatok[Ev%in%c(2015, 2016)]$TeljesitettApolasiNapSzam)*
+                                                 sum(KhAdatok[Ev%in%c(2015,
+                                                                      2016)]$TeljesitettApolasiNapSzam)*
                                                  100, 1)), .(`Típus` = type)]
 ```
 
@@ -1222,7 +1223,8 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
 A $z$-score:
 
 ``` r
-ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 0.2) + facet_wrap(~SzakmaMegnev)
+ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 0.2) +
+  facet_wrap(~SzakmaMegnev)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-40-1.png)<!-- -->
@@ -1320,12 +1322,13 @@ StdSzakma <- KhAdatok[Ev%in%c(2015, 2016), .(StdMukodoAtlagAgy = mean(MukodoAtla
                       .(SzakmaMegnevFactor = factor(SzakmaMegnev))]
 StdSzakma <- StdSzakma[SzakmaMegnevFactor%in%unique(Res$SzakmaMegnevFactor)]
 
-predgrid <- merge(as.data.frame(unique(Res[, .(type, SzakmaMegnevFactor)])), as.data.frame(unique(Res[, .(type, KorhazNevFactor)])))
+predgrid <- merge(as.data.frame(unique(Res[, .(type, SzakmaMegnevFactor)])),
+                  as.data.frame(unique(Res[, .(type, KorhazNevFactor)])))
 
-predgrid <- data.table(merge(predgrid, StdSzakma[, .(SzakmaMegnevFactor,
-                                                     TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
-                                                     CMI = 1, CMIdev = 0, zCMI = 0,
-                                                     yearFactor = as.factor(2015))]))
+predgrid <- data.table(merge(predgrid,
+                             StdSzakma[, .(SzakmaMegnevFactor,
+                                           TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
+                                           CMI = 1, CMIdev = 0, zCMI = 0, yearFactor = as.factor(2015))]))
 ```
 
 Ennek használatával kényelmesen, egy lépésben elkészíthetjük a
