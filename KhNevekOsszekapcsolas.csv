@@ -1,0 +1,245 @@
+﻿hospital_code;year;hospital_name;KorhazNev;KorhazRovid
+000204;2015;Mohácsi Kórház;Mohácsi Kórház;0204
+000204;2016;Mohácsi Kórház;Mohácsi Kórház;0204
+000215;2015;KOMLÓI EGÉSZSÉGCENTRUM;Komlói Egészségcentrum;0205
+000215;2016;KOMLÓI EGÉSZSÉGCENTRUM;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;0205
+000217;2015;SZIGETVÁRI KÓRHÁZ;Szigetvári Kórház;0207
+000217;2016;SZIGETVÁRI KÓRHÁZ;Szigetvári Kórház;0207
+000242;2015;Pécsi Tudományegyetem;Pécsi Tudományegyetem;0242
+000242;2016;Pécsi Tudományegyetem;Pécsi Tudományegyetem;0242
+000301;2015;Bács-Kiskun Megyei Kórház;Bács-Kiskun Megyei Kórház, Kecskemét;0301
+000301;2016;Bács-Kiskun Megyei Kórház;Bács-Kiskun Megyei Kórház, Kecskemét;0301
+000302;2015;Bajai Szent Rókus Kórház;Bajai Szent Rókus Kórház;0302
+000302;2016;Bajai Szent Rókus Kórház;Bajai Szent Rókus Kórház;0302
+004010;2015;Békés Megyei Pándy Kálmán Kórház;Békés Megyei Pándy Kálmán Kórház, Gyula;0401
+004010;2016;Békés Megyei Pándy Kálmán Kórház;Békés Megyei Központi Kórház;0468
+006020;2015;Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely-Makó;Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely - Makó;0602
+006020;2015;"Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely-
+Makó";Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely - Makó;0602
+006020;2016;Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely-Makó;Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely - Makó;0602
+006020;2016;"Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely-
+Makó";Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely - Makó;0602
+006430;2015;SZEGEDI TUDOMÁNYEGYETEM;Szegedi Tudományegyetem Szent-Györgyi Albert Klinikai Központ;0643
+006430;2016;SZEGEDI TUDOMÁNYEGYETEM;Szegedi Tudományegyetem Szent-Györgyi Albert Klinikai Központ;0643
+008010;2015;Petz Aladár Megyei Oktató Kórház;Petz Aladár Megyei Oktató Kórház, Győr;0801
+008010;2015;Petz Aladár Megyei Oktató Kórház Soproni Erzsébet Oktató Kórház és Rehabilitációs;Petz Aladár Megyei Oktató Kórház, Győr;0801
+008010;2016;Petz Aladár Megyei Oktató Kórház;Petz Aladár Megyei Oktató Kórház, Győr;0801
+008010;2016;Petz Aladár Megyei Oktató Kórház Soproni Erzsébet Oktató Kórház és Rehabilitációs;Petz Aladár Megyei Oktató Kórház, Győr;0801
+008020;2015;Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet;Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet;0802
+008020;2015;Intézet Soproni Erzsébet Oktató Kórház és Rehabilitációs;Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet;0802
+008020;2016;Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet;Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet;0802
+008020;2016;Intézet Soproni Erzsébet Oktató Kórház és Rehabilitációs;Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet;0802
+008030;2015;Karolina Kórház-Rendelőintézet;Karolina Kórház és Rendelőintézet, Mosonmagyaróvár;0803
+008030;2016;Karolina Kórház-Rendelőintézet;Karolina Kórház és Rendelőintézet, Mosonmagyaróvár;0803
+008040;2015;Csornai Margit Kórház;Csornai Margit Kórház;0804
+008040;2015;Csornai Margit Kórház KEMENESALJAI EGYESITETT KORHÁZ;Csornai Margit Kórház;0804
+01010I;2015;Szent Imre Kórház;Szent Imre Kórház;0101
+01010I;2016;Szent Imre Kórház;Szent Imre Kórház;0101
+01060J;2015;Szent János Kórház és Észak-budai Egyesített Kórházak;Szent János Kórház és Észak-budai Egyesített Kórházak;0106
+01060J;2016;Szent János Kórház és Észak-budai Egyesített Kórházak;Szent János Kórház és Észak-budai Egyesített Kórházak;0106
+01070M;2015;SZENT MARGIT KÓRHÁZ;Szent Margit Kórház, Budapest;01E8
+01070M;2016;SZENT MARGIT KÓRHÁZ;Szent Margit Kórház, Budapest;01E8
+01090I;2015;Egyesített Szent István és Szent László Kórház-Rendelőintézet;Egyesített Szent István és Szent László Kórház-Rendelőintézet;0109
+01090I;2015;Rendelőintézet;Egyesített Szent István és Szent László Kórház-Rendelőintézet;0109
+01090I;2016;Egyesített Szent István és Szent László Kórház-Rendelőintézet;Egyesített Szent István és Szent László Kórház-Rendelőintézet;0109
+01090I;2016;Rendelőintézet;Egyesített Szent István és Szent László Kórház-Rendelőintézet;0109
+011200;2015;Bajcsy-Zsilinszky Kórház és Rendelőintézet;Bajcsy-Zsilinszky Kórház és Rendelőintézet;0112
+011200;2015;Bajcsy-Zsilinszky Kórház és Rendelőintézet Péterfy Sándor utcai Kórház-Rendelőintézet és;Bajcsy-Zsilinszky Kórház és Rendelőintézet;0112
+011200;2016;Bajcsy-Zsilinszky Kórház és Rendelőintézet;Bajcsy-Zsilinszky Kórház és Rendelőintézet;0112
+011200;2016;Bajcsy-Zsilinszky Kórház és Rendelőintézet Péterfy Sándor utcai Kórház-Rendelőintézet és;Bajcsy-Zsilinszky Kórház és Rendelőintézet;0112
+01150J;2015;Jahn Ferenc Dél-pesti Kórház és Rendelőintézet;Jahn Ferenc Dél-pesti Kórház;0115
+01150J;2016;Jahn Ferenc Dél-pesti Kórház és Rendelőintézet;Jahn Ferenc Dél-pesti Kórház;0115
+011600;2015;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;0116
+011600;2015;Baleseti Központ Péterfy Sándor utcai Kórház-Rendelőintézet és;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;0116
+011600;2015;{'Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ Vasútegészségügyi Szolgáltató Nonprofit Közhasznú Korlátolt', 'Baleseti Központ Vasútegészségügyi Szolgáltató Nonprofit Közhasznú', 'Baleseti Központ Vasútegészségügyi Szolgáltató Nonprofit'};Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;0116
+011600;2016;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;0116
+011600;2016;Baleseti Központ Péterfy Sándor utcai Kórház-Rendelőintézet és;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;0116
+011600;2016;Baleseti Központ Magyarországi Zsidó Hitközségek Szövetsége;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;0116
+01180U;2015;Uzsoki utcai Kórház;Uzsoki utcai Kórház;0118
+01180U;2015;Uzsoki utcai Kórház Nyírő Gyula Kórház-Országos Pszichiátriai és;Uzsoki utcai Kórház;0118
+01180U;2016;Uzsoki utcai Kórház;Uzsoki utcai Kórház;0118
+01180U;2016;Uzsoki utcai Kórház Nyírő Gyula Kórház-Országos Pszichiátriai és;Uzsoki utcai Kórház;0118
+01190N;2015;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;0119
+01190N;2015;Addiktológiai Intézet Nyírő Gyula Kórház-Országos Pszichiátriai és;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;0119
+01190N;2015;Addiktológiai Intézet;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;0119
+01190N;2016;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;0119
+01190N;2016;Addiktológiai Intézet Nyírő Gyula Kórház-Országos Pszichiátriai és;Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet;0119
+01210K;2015;Károlyi Sándor Kórház;Károlyi Sándor Kórház;0121
+01220H;2015;Heim Pál Gyermekkórház;Heim Pál Gyermekkórház;0122
+01220H;2016;Heim Pál Gyermekkórház;Heim Pál Gyermekkórház;0122
+012300;2015;Magyarországi Református Egyház Bethesda Gyermekkórháza;Magyarországi Református Egyház Bethesda Gyermekkórháza;0123
+012300;2016;Magyarországi Református Egyház Bethesda Gyermekkórháza;Magyarországi Református Egyház Bethesda Gyermekkórháza;0123
+01530R;2015;Országos Reumatológiai és Fizioterápiás Intézet;Országos Reumatológiai és Fizioterápiás Intézet;0153
+01540D;2015;Országos Onkológiai Intézet;Országos Onkológiai Intézet;0154
+01540D;2016;Országos Onkológiai Intézet;Országos Onkológiai Intézet;0154
+01560K;2015;Országos Korányi TBC és Pulmonológiai Intézet;Országos Korányi Tbc és Pulmonológiai Intézet;0156
+01560K;2016;Országos Korányi TBC és Pulmonológiai Intézet;Országos Korányi Tbc és Pulmonológiai Intézet;0156
+01560K;2016;Országos Korányi Pulmonológiai Intézet;Országos Korányi Tbc és Pulmonológiai Intézet;0156
+01600R;2016;Országos Orvosi Rehabilitációs Intézet;Országos Orvosi Rehabilitációs Intézet;0160
+01620K;2015;GOTTSEGEN GYÖRGY ORSZÁGOS KARDIOLÓGIAI INTÉZET;Gottsegen György Országos Kardiológiai Intézet;0162
+01620K;2016;GOTTSEGEN GYÖRGY ORSZÁGOS KARDIOLÓGIAI INTÉZET;Gottsegen György Országos Kardiológiai Intézet;0162
+01630I;2015;Országos Klinikai Idegtudományi Intézet;Országos Klinikai Idegtudományi Intézet;0163
+01630I;2016;Országos Klinikai Idegtudományi Intézet;Országos Klinikai Idegtudományi Intézet;0163
+022852;2015;Betegápoló Irgalmas Rend;Budai Irgalmasrendi Kórház;2237
+022852;2016;Betegápoló Irgalmas Rend;Betegápoló Irgalmas Rend;2237
+026751;2015;PARÁDFÜRDŐI ÁLLAMI KÓRHÁZ;;1051
+028856;2015;MÁTRAI GYÓGYINTÉZET;Mátrai Gyógyintézet;1057
+028856;2016;MÁTRAI GYÓGYINTÉZET;Mátrai Gyógyintézet;1057
+030589;2015;Kanizsai Dorottya Kórház;Kanizsai Dorottya Kórház, Nagykanizsa;2002
+030589;2016;Kanizsai Dorottya Kórház;Kanizsai Dorottya Kórház, Nagykanizsa;2002
+030594;2015;Zala Megyei Szent Rafael Kórház;Zala Megyei Kórház;2001
+030594;2015;ZALA MEGYEI KÓRHÁZ;Zala Megyei Kórház;2001
+030594;2016;Zala Megyei Szent Rafael Kórház;Zala Megyei Szent Rafael Kórház;2001
+030606;2015;Keszthelyi Kórház;Keszthelyi Kórház;2003
+030606;2015;Keszthelyi Kórház Budai Egészségközpont Korlátolt Felelősségű;Keszthelyi Kórház;2003
+030606;2016;Keszthelyi Kórház;Keszthelyi Kórház;2003
+030606;2016;Keszthelyi Kórház Budai Egészségközpont Korlátolt Felelősségű;Keszthelyi Kórház;2003
+030761;2015;Budai Egészségközpont Korlátolt Felelősségű Társaság;Budai Egészségközpont Kft.;01A3
+030761;2016;Budai Egészségközpont Korlátolt Felelősségű Társaság;Budai Egészségközpont Kft.;01A3
+032539;2016;Országos Sportegészségügyi Intézet;Országos Sportegészségügyi Intézet;0152
+040200;2015;Réthy Pál Kórház - Rendelőintézet;Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba;0402
+040200;2016;Réthy Pál Kórház - Rendelőintézet;Békés Megyei Központi Kórház;0468
+040200;2016;Békés Megyei Pándy Kálmán Kórház;Békés Megyei Központi Kórház;0468
+040300;2015;OROSHÁZI KÓRHÁZ;Orosházi Kórház;0403
+040300;2015;{'OROSHÁZI KÓRHÁZ Borsod-Abaúj-Zemplén Megyei Kórház és', 'OROSHÁZI KÓRHÁZ', 'OROSHÁZI KÓRHÁZ Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi'};Orosházi Kórház;0403
+040300;2016;OROSHÁZI KÓRHÁZ;Orosházi Kórház;0403
+040300;2016;{'OROSHÁZI KÓRHÁZ Borsod-Abaúj-Zemplén Megyei Kórház és', 'OROSHÁZI KÓRHÁZ', 'OROSHÁZI KÓRHÁZ Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi'};Orosházi Kórház;0403
+050200;2015;Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;0502
+050200;2015;{'Oktató Kórház Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi', 'Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház', 'Egyetemi Oktató Kórház Borsod-Abaúj-Zemplén Megyei Kórház és'};Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;0502
+050200;2015;{'Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház', 'Oktató Kórház', 'Egyetemi Oktató Kórház'};Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;0502
+050200;2016;Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;0502
+050200;2016;{'Oktató Kórház Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi', 'Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház', 'Egyetemi Oktató Kórház Borsod-Abaúj-Zemplén Megyei Kórház és'};Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;0502
+050200;2016;{'Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház', 'Oktató Kórház', 'Egyetemi Oktató Kórház'};Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház;0502
+050400;2015;Sátoraljaújhelyi Erzsébet Kórház;Sátoraljaújhelyi Erzsébet Kórház;0504
+050400;2016;Sátoraljaújhelyi Erzsébet Kórház;Sátoraljaújhelyi Erzsébet Kórház;0504
+050800;2015;Koch Róbert Kórház és Rendelőintézet;Koch Róbert Kórház és Rendelőintézet, Edelény;0508
+050800;2016;Koch Róbert Kórház és Rendelőintézet;Koch Róbert Kórház és Rendelőintézet, Edelény;0508
+051000;2015;Felelősségű Társaság MISKOLCI SEMMELWEIS KÓRHÁZ ÉS EGYETEMI;Kazincbarcikai Kórház Nonprofit Kft.;0510
+051000;2016;Kazincbarcikai Kórház Nonprofit Korlátolt Felelősségű Társaság;Kazincbarcikai Kórház Nonprofit Kft.;0510
+051000;2016;Felelősségű Társaság Kazincbarcikai Kórház Nonprofit Korlátolt;Kazincbarcikai Kórház Nonprofit Kft.;0510
+051000;2016;Felelősségű Társaság MISKOLCI SEMMELWEIS KÓRHÁZ ÉS EGYETEMI;Kazincbarcikai Kórház Nonprofit Kft.;0510
+055900;2015;MISKOLCI SEMMELWEIS KÓRHÁZ ÉS EGYETEMI OKTATÓKÓRHÁZ;Miskolci Semmelweis Kórház és Egyetemi Oktatókórház;0509
+055900;2015;OKTATÓKÓRHÁZ;Miskolci Semmelweis Kórház és Egyetemi Oktatókórház;0509
+055900;2016;MISKOLCI SEMMELWEIS KÓRHÁZ ÉS EGYETEMI OKTATÓKÓRHÁZ;Miskolci Semmelweis Kórház és Egyetemi Oktatókórház;0509
+055900;2016;OKTATÓKÓRHÁZ;Miskolci Semmelweis Kórház és Egyetemi Oktatókórház;0509
+056100;2015;ALMÁSI BALOGH PÁL KÓRHÁZ;Almási Balogh Pál Kórház, Ózd;0561
+056100;2016;ALMÁSI BALOGH PÁL KÓRHÁZ;Almási Balogh Pál Kórház, Ózd;0561
+060100;2015;Csongrád Megyei Dr. Bugyi István Kórház;Dr. Bugyi István Kórház, Szentes;0601
+060100;2015;Csongrád Megyei Dr. Bugyi István Kórház Fejér Megyei Szent György Egyetemi Oktató;Dr. Bugyi István Kórház, Szentes;0601
+060100;2016;Csongrád Megyei Dr. Bugyi István Kórház;Dr. Bugyi István Kórház, Szentes;0601
+070100;2015;Fejér Megyei Szent György Egyetemi Oktató Kórház;Fejér Megyei Szent György Egyetemi Oktató Kórház, Székesfehérvár;0701
+070100;2015;{'Kórház Szent Pantaleon Kórház - Rendelőintézet', 'Fejér Megyei Szent György Egyetemi Oktató Kórház', 'Fejér Megyei Szent György Egyetemi Oktató Kórház Szent Pantaleon Kórház - Rendelőintézet'};Fejér Megyei Szent György Egyetemi Oktató Kórház, Székesfehérvár;0701
+070100;2016;Fejér Megyei Szent György Egyetemi Oktató Kórház;Fejér Megyei Szent György Egyetemi Oktató Kórház, Székesfehérvár;0701
+070100;2016;{'Kórház Szent Pantaleon Kórház - Rendelőintézet', 'Fejér Megyei Szent György Egyetemi Oktató Kórház', 'Fejér Megyei Szent György Egyetemi Oktató Kórház Szent Pantaleon Kórház - Rendelőintézet'};Fejér Megyei Szent György Egyetemi Oktató Kórház, Székesfehérvár;0701
+070200;2015;Dunaújváros Szent Pantaleon Kórház - Rendelőintézet;Szent Pantaleon Kórház-Rendelőintézet Dunaújváros;0702
+070200;2015;Szent Pantaleon Kórház - Rendelőintézet Dunaújváros;Szent Pantaleon Kórház-Rendelőintézet Dunaújváros;0702
+070200;2016;Szent Pantaleon Kórház - Rendelőintézet Dunaújváros;Szent Pantaleon Kórház-Rendelőintézet Dunaújváros;0702
+070200;2016;Dunaújváros Szent Pantaleon Kórház - Rendelőintézet;Szent Pantaleon Kórház-Rendelőintézet Dunaújváros;0702
+090200;2015;Gróf Tisza István Kórház;Gróf Tisza István Kórház, Berettyóújfalu;0902
+090200;2016;Gróf Tisza István Kórház;Gróf Tisza István Kórház, Berettyóújfalu;0902
+094000;2015;Debreceni Egyetem Klinikai Központ;Debreceni Egyetem Klinikai Központ;0940
+094000;2015;{'Debreceni Egyetem Klinikai Központ Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-', 'Debreceni Egyetem Klinikai Központ', 'Debreceni Egyetem Klinikai Központ Jász-Nagykun-Szolnok Megyei Hetényi Géza'};Debreceni Egyetem Klinikai Központ;0940
+094000;2016;Debreceni Egyetem Klinikai Központ;Debreceni Egyetem Klinikai Központ;0940
+094000;2016;Debreceni Egyetem;Debreceni Egyetem Klinikai Központ;0940
+094000;2016;{'Debreceni Egyetem Jász-Nagykun-Szolnok Megyei Hetényi Géza', 'Debreceni Egyetem', 'Debreceni Egyetem Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-'};Debreceni Egyetem Klinikai Központ;0940
+100142;2015;Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;1601
+100142;2015;{'Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet', 'Rendelőintézet Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-', 'Kórház-Rendelőintézet Jász-Nagykun-Szolnok Megyei Hetényi Géza'};Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;1601
+100142;2015;{'Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet', 'Rendelőintézet', 'Kórház-Rendelőintézet'};Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;1601
+100142;2016;Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;1601
+100142;2016;{'Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet', 'Rendelőintézet Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-', 'Kórház-Rendelőintézet Jász-Nagykun-Szolnok Megyei Hetényi Géza'};Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;1601
+100142;2016;{'Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet', 'Rendelőintézet', 'Kórház-Rendelőintézet'};Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet;1601
+100738;2015;Kátai Gábor Kórház;Kátai Gábor Kórház, Karcag;1603
+100738;2016;Kátai Gábor Kórház;Kátai Gábor Kórház, Karcag;1603
+100815;2015;Szent László Kórház;Szent László Kórház, Sárvár;1803
+101010;2015;BUGÁT PÁL KÓRHÁZ;Bugát Pál Kórház, Gyöngyös;1037
+101010;2016;BUGÁT PÁL KÓRHÁZ;Bugát Pál Kórház, Gyöngyös;1037
+102238;2015;Szent Donát Várpalota Kórház Egészségügyi és Szolgáltató Kft.;Szent Donát Várpalota Kórház Egészségügyi és Szolgáltató Kft.;1904
+105195;2015;MARKHOT FERENC OKTATÓKÓRHÁZ ÉS RENDELŐINTÉZET;Markhot Ferenc Oktatókórház és Rendelőintézet, Eger;1011
+105195;2015;RENDELŐINTÉZET MARKHOT FERENC OKTATÓKÓRHÁZ ÉS;Markhot Ferenc Oktatókórház és Rendelőintézet, Eger;1011
+105195;2015;RENDELŐINTÉZET;Markhot Ferenc Oktatókórház és Rendelőintézet, Eger;1011
+105195;2016;MARKHOT FERENC OKTATÓKÓRHÁZ ÉS RENDELŐINTÉZET;Markhot Ferenc Oktatókórház és Rendelőintézet, Eger;1011
+105195;2016;RENDELŐINTÉZET MARKHOT FERENC OKTATÓKÓRHÁZ ÉS;Markhot Ferenc Oktatókórház és Rendelőintézet, Eger;1011
+105195;2016;RENDELŐINTÉZET;Markhot Ferenc Oktatókórház és Rendelőintézet, Eger;1011
+106006;2015;ALBERT SCHWEITZER KÓRHÁZ-RENDELŐINTÉZET;Albert Schweitzer Kórház-Rendelőintézet, Hatvan;1035
+106006;2016;ALBERT SCHWEITZER KÓRHÁZ-RENDELŐINTÉZET;Albert Schweitzer Kórház-Rendelőintézet, Hatvan;1035
+106778;2015;"Kastélypark Klinika Egészségügyi Szolgáltató Korlátolt Felelősségű
+Társaság";Kastélypark Klinika Egészségügyi Szolgáltató Kft., Tata;1128
+108068;2015;Magyar Honvédség Egészségügyi Központ;Magyar Honvédség Egészségügyi Központ;01A6
+108068;2016;Magyar Honvédség Egészségügyi Központ;Magyar Honvédség Egészségügyi Központ;01A6
+110100;2015;Szent Borbála Kórház;Szent Borbála Kórház, Tatabánya;1101
+110100;2016;Szent Borbála Kórház;Szent Borbála Kórház, Tatabánya;1101
+110200;2015;Vaszary Kolos Kórház;Vaszary Kolos Kórház, Esztergom;1102
+110200;2016;Vaszary Kolos Kórház;Vaszary Kolos Kórház, Esztergom;1102
+110400;2015;Selye János Kórház;Selye János Kórház, Komárom;1104
+117000;2015;DOROGI SZENT BORBÁLA SZAKKÓRHÁZ ÉS SZAKORVOSI RENDELŐ;;1132
+120100;2015;SZENT LÁZÁR MEGYEI KÓRHÁZ;Szent Lázár Megyei Kórház, Salgótarján;1201
+120100;2016;SZENT LÁZÁR MEGYEI KÓRHÁZ;Szent Lázár Megyei Kórház, Salgótarján;1201
+120200;2015;Dr.Kenessey Albert Kórház-Rendelőintézet;Dr. Kenessey Albert Kórház-Rendelőintézet, Balassagyarmat;1202
+120200;2016;Dr. Kenessey Albert Kórház-Rendelőintézet;Dr. Kenessey Albert Kórház-Rendelőintézet, Balassagyarmat;1202
+130300;2015;RENDELŐINTÉZET NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS;;1303
+130300;2015;NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS RENDELŐINTÉZET;;1303
+130300;2016;NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS RENDELŐINTÉZET;;1303
+130400;2015;Jávorszky Ödön Kórház;Jávorszky Ödön Kórház, Vác;1304
+130400;2016;Jávorszky Ödön Kórház;Jávorszky Ödön Kórház, Vác;1304
+130600;2015;Tüdőgyógyintézet Törökbálint;Tüdőgyógyintézet, Törökbálint;1306
+130600;2016;Tüdőgyógyintézet Törökbálint;Tüdőgyógyintézet, Törökbálint;1306
+130900;2015;Pest Megyei Flór Ferenc Kórház;Pest Megyei Flór Ferenc Kórház, Kistarcsa;1309
+130900;2015;Pest Megyei Flór Ferenc Kórház Gálfi Béla Gyógyító és Rehabilitációs Közhasznú;Pest Megyei Flór Ferenc Kórház, Kistarcsa;1309
+130900;2016;Pest Megyei Flór Ferenc Kórház;Pest Megyei Flór Ferenc Kórház, Kistarcsa;1309
+130900;2016;Pest Megyei Flór Ferenc Kórház Gálfi Béla Gyógyító és Rehabilitációs Közhasznú;Pest Megyei Flór Ferenc Kórház, Kistarcsa;1309
+137000;2015;Gálfi Béla Gyógyító és Rehabilitációs Közhasznú Nonprofit Korlátolt Felelősségű Társaság;Gálfi Béla Gyógyító és Rehabilitációs Közhasznú Nonprofit Kft., Pomáz;1370
+137000;2015;Felelősségű Társaság;Gálfi Béla Gyógyító és Rehabilitációs Közhasznú Nonprofit Kft., Pomáz;1370
+137000;2016;Felelősségű Társaság;Gálfi Béla Gyógyító és Rehabilitációs Közhasznú Nonprofit Kft., Pomáz;1370
+140100;2015;Somogy Megyei Kaposi Mór Oktató Kórház;Somogy Megyei Kaposi Mór Oktató Kórház;1401
+140100;2016;Somogy Megyei Kaposi Mór Oktató Kórház;Somogy Megyei Kaposi Mór Oktató Kórház;1401
+140200;2015;Siófoki Kórház-Rendelőintézet;Siófoki Kórház-Rendelőintézet;1402
+140200;2016;Siófoki Kórház-Rendelőintézet;Siófoki Kórház-Rendelőintézet;1402
+150300;2015;Felső-Szabolcsi Kórház Kisvárda;Felső-Szabolcsi Kórház, Kisvárda;1503
+150300;2016;Felső-Szabolcsi Kórház Kisvárda;Felső-Szabolcsi Kórház, Kisvárda;1503
+164482;2015;SEMMELWEIS EGYETEM;Semmelweis Egyetem;0140
+164482;2016;SEMMELWEIS EGYETEM;Semmelweis Egyetem;0140
+170100;2015;TOLNA MEGYEI BALASSA JÁNOS KÓRHÁZ;Tolna Megyei Balassa János Kórház;1701
+170100;2016;TOLNA MEGYEI BALASSA JÁNOS KÓRHÁZ;Tolna Megyei Balassa János Kórház;1701
+188100;2015;MARKUSOVSZKY  EGYETEMI OKTATÓKÓRHÁZ;Markusovszky Egyetemi Oktatókórház, Szombathely;1801
+188100;2016;MARKUSOVSZKY  EGYETEMI OKTATÓKÓRHÁZ;Markusovszky Egyetemi Oktatókórház, Szombathely;1801
+190300;2015;Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő;Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő, Pápa;1903
+190300;2015;Szakrendelő Gróf Esterházy Kórház és Rendelőintézeti;Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő, Pápa;1903
+190300;2016;Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő;Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő, Pápa;1903
+190300;2016;Szakrendelő Gróf Esterházy Kórház és Rendelőintézeti;Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő, Pápa;1903
+191100;2015;Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű;Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű;1911
+191200;2015;Magyar Imre Kórház;Magyar Imre Kórház, Ajka;1912
+191200;2016;Magyar Imre Kórház;Magyar Imre Kórház, Ajka;1912
+196800;2015;Állami Szívkórház;Állami Szívkórház, Balatonfüred;1968
+196800;2016;Állami Szívkórház;Állami Szívkórház, Balatonfüred;1968
+198100;2015;Csolnoky Ferenc Kórház;Csolnoky Ferenc Kórház, Veszprém;1901
+198100;2016;Csolnoky Ferenc Kórház;Csolnoky Ferenc Kórház, Veszprém;1901
+198400;2015;DEÁK JENŐ KÓRHÁZ;Dr. Deák Jenő Kórház, Tapolca;1954
+198400;2016;DEÁK JENŐ KÓRHÁZ;Deák Jenő Kórház, Tapolca;1954
+501177;2015;KISKUNHALASI SEMMELWEIS  KÓRHÁZ;Kiskunhalasi Semmelweis Kórház;0306
+501177;2016;KISKUNHALASI SEMMELWEIS  KÓRHÁZ;Kiskunhalasi Semmelweis Kórház;0306
+501271;2015;KENÉZY GYULA KÓRHÁZ ÉS RENDELŐINTÉZET;Kenézy Gyula Kórház és Rendelőintézet, Debrecen;0901
+501271;2016;KENÉZY GYULA KÓRHÁZ ÉS RENDELŐINTÉZET;Kenézy Gyula Kórház és Rendelőintézet, Debrecen;0901
+501274;2015;JÁSZBERÉNYI SZENT ERZSÉBET KÓRHÁZ;Jászberényi Szent Erzsébet Kórház;1608
+501274;2015;JÁSZBERÉNYI SZENT ERZSÉBET KÓRHÁZ SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK;Jászberényi Szent Erzsébet Kórház;1608
+501274;2016;JÁSZBERÉNYI SZENT ERZSÉBET KÓRHÁZ;Jászberényi Szent Erzsébet Kórház;1608
+501274;2016;JÁSZBERÉNYI SZENT ERZSÉBET KÓRHÁZ SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK;Jászberényi Szent Erzsébet Kórház;1608
+501279;2015;MEZŐTÚRI KÓRHÁZ ÉS RENDELŐINTÉZET;Mezőtúri Kórház és Rendelőintézet;1607
+501295;2015;EGYETEMI OKTATÓKÓRHÁZ SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK ÉS;Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2015;SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK ÉS EGYETEMI OKTATÓKÓRHÁZ;Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2015;"SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK ÉS
+EGYETEMI OKTATÓKÓRHÁZ";Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2015;EGYETEMI OKTATÓKÓRHÁZ;Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2016;EGYETEMI OKTATÓKÓRHÁZ SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK ÉS;Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2016;SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK ÉS EGYETEMI OKTATÓKÓRHÁZ;Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2016;"SZABOLCS-SZATMÁR-BEREG MEGYEI KÓRHÁZAK ÉS
+EGYETEMI OKTATÓKÓRHÁZ";Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501295;2016;EGYETEMI OKTATÓKÓRHÁZ;Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház;1501
+501301;2015;DOMBÓVÁRI SZENT LUKÁCS KÓRHÁZ;Dombóvári Szent Lukács Kórház;1703
+501301;2016;DOMBÓVÁRI SZENT LUKÁCS KÓRHÁZ;Dombóvári Szent Lukács Kórház;1703
+501330;2015;TOLDY FERENC KÓRHÁZ ÉS RENDELŐINTÉZET;Toldy Ferenc Kórház és Rendelőintézet, Cegléd;13B2
+501330;2016;TOLDY FERENC KÓRHÁZ ÉS RENDELŐINTÉZET;Toldy Ferenc Kórház és Rendelőintézet, Cegléd;13B2
+502046;2015;NAGYATÁDI KÓRHÁZ;Nagyatádi Kórház;1428
+502046;2016;NAGYATÁDI KÓRHÁZ;Nagyatádi Kórház;1428
+506761;2015;Békés Megyei Pándy Kálmán Kórház;Békés Megyei Pándy Kálmán Kórház, Gyula;0401
+506761;2016;BÉKÉS MEGYEI KÖZPONTI KÓRHÁZ;Békés Megyei Központi Kórház;0468
+506761;2016;Békés Megyei Pándy Kálmán Kórház;Békés Megyei Központi Kórház;0468

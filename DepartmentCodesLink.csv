@@ -1,0 +1,137 @@
+hospital_department_of_admission;SzakmaKod
+01_Krónikus_ Belgyógyászat;
+02_Krónikus_ Sebészet;
+03_Krónikus_Traumatológia;
+05_Krónikus_ Csecsemő- és gyermekgyógyászat;
+06_Krónikus_ Fül- orr- gége;
+08_Krónikus_ Bőrgyógyászat;
+09_Krónikus_ Neurológia;
+10_Krónikus_ Ortopédia;
+14_ Krónikus_Reumatológia;
+18_Krónikus_ Pszichiátria;
+19_Krónikus_ Tüdőgyógyászat;
+21_Krónikus ápolás;
+27_Krónikus_ Angiológia, phlebológia, lymphológia;
+31_Krónikus_ Gasztroenterológia;
+35_Krónikus_ Stroke;
+37_Krónikus_ Nephrológia;
+40_Krónikus_ Kardiológia;
+GER - Geriátria, időskorúak ellátása;1
+GOGYN - Nőgyógyászat;4
+GOOBS - Szülészet/ Gyermekágy;4
+ICUMED - Belgyógyászati ITO;15
+ICUMIX - Vegyes ITO, általános intenzív ellátás;15
+ICUNEO - Perinatális ITO;5
+ICUOTH - Egyéb ITO;15
+ICUPED - Gyermekgyógyászati ITO;5
+ICUSPEC - Specializált ITO;15
+ICUSUR - Sebészeti ITO;15
+Immunológia, allergológia;1
+MEDBMT - Csontvelő transzplantáció (CsVT);1
+MEDCARD - Kardiológia;40
+MEDDERM - Bőrgyógyászat;8
+MEDENDO - Endokrinológia;1
+MEDGAST - Gasztroenterológia;1
+MEDGEN - Általános belgyógyászat;1
+MEDHEMA - Hematológia;1
+MEDHEMBMT - Hematológia/ CsVT;1
+MEDHEP - Hepatológia;1
+MEDID - Infektológia;16
+MEDNEPH - Nefrológia;1
+MEDNEU - Neurológia;9
+MEDONCO - Onkológia;12
+MEDOTH - Egyéb belgyógyászati;1
+MEDPNEU - Pulmonológia;19
+MEDRHEU - Rheumatológia;14
+MEDTR - Mozgásszervi rehabilitáció;
+MIX - Ellátási típusok kombinációja;
+OTH - Egyéb nem felsorolt;
+PEDGEN - Általános gyermekgyógyászat;5
+PEDNEO - Neonatológia;5
+PSY - Pszichiátria;18
+RHB - Rehabilitáció;
+SURBURN - Égés ellátás;20
+SURCARD - Szívsebészet;2
+SURCV - Szív- és érsebészet;2
+SURENT - Fül-orr-gége;6
+SURGEN - Általános sebészet;2
+SURMAXFAC - Maxillo-faciális sebészet;2
+SURNEU - Idegsebészet;2
+SURONCO - Onkológiai sebészet;
+SUROPH - Szemészet;7
+SURORTO - Orthopédia;10
+SURORTR - Orthopédia és traumatológia;10
+SUROTH - Egyéb sebészet;2
+SURPED - Általános gyermeksebészet;5
+SURPLAS - Plasztikai és rekonstruktív sebészet;20
+SURSTODEN - Sztomatológia / Fogászat;
+SURTHO - Mellkassebészet;2
+SURTR - Traumatológia;10
+SURTRANS - Transzplantációs sebészet;2
+SURURO - Urológia;11
+SURVASC - Érsebészet;2
+Stroke;
+Sugártherápia;12
+Tartós ápolás;
+Utókezelő;
+22_Mozgászervi rehabilitáció;
+23_Ápolás;
+SURDIG - Gasztrointesztinális sebészet;2
+Belgyógyászat;1
+Fertőző betegellátás;16
+Sebészet;2
+400_Rehab_ Kardiológia;
+199_Rehab_ Tüdőgyógyászat;
+099_Rehab_ Neurológia;
+45_Addiktológia;18
+188_Rehab_ Pszichiátria;
+Gastroenterológia;1
+Nephrológia;1
+Urológia;11
+Rehabilitáció;
+12_Krónikus_ Onkológia;
+011_Rehab_ Belgyógyászat;
+04_Krónikus_Szűlészet-nőgyógyászat;
+277_Rehab_ Angiológia, phlebológia, lymphológia;
+022_Rehab_ Sebészet;
+311_Rehab_ Gasztroenterológia;
+355_Rehab_ Stroke;
+Intenzív betegellátás-ITO Központi nem oktató;15
+Pszichiátria;18
+Szülészet-nőgyógyászat;4
+Intenzív betegellátás-PIC;5
+Intenzív betegellátás-ITO Belgyógyászati;15
+Haematológia;1
+Tüdőgyógyászat;19
+Intenzív betegellátás-ITO Központi oktató;15
+Szívsebészet;2
+Kardiológia;40
+Érsebészet;2
+Onkológia, onkoradiológia;12
+Intenzív betegellátás-ITO Idegsebészeti;15
+Ideggyógyászat;9
+Bőr- és nemibeteg-gyógyászat;8
+Anyagcsere, endokrinológia és diabetológia;1
+Angiológia;1
+Intenzív betegellátás-ITO Koronária;15
+Intenzív betegellátás-ITO Szív-mellkassebészet;15
+Csecsemő és gyermekgyógyászat;5
+Transzplantációs sebészet;2
+Intenzív betegellátás-ITO Gyermek;15
+Traumatológia;10
+Reumatológia;14
+Idegsebészet;2
+Orthopédia;10
+Dialízis (Műveseállomás);1
+Sürgősségi osztály;46
+Intenzív betegellátás-ITO Sebészeti;15
+Égési és plasztikai sebészet;20
+Intenzív betegellátás-ITO Trauma;15
+Tüdő- és mellkassebészet;2
+Mátrix osztály;
+Egyéb sebészeti;2
+Csontvelőtranszplantáció;1
+Intenzív betegellátás-ITO Gyermek sebészet;15
+Alkohológia;18
+Szemészet;7
+Fül-, orr-, gégegyógyászat;6
