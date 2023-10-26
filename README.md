@@ -699,7 +699,8 @@ sum(!unique(RawData$hospital_department_of_admission)%in%DeptCodeLink$hospital_d
 Az persze lehet, hogy valaminek nincsen párja:
 
 ``` r
-data.frame(Osztaly = unique(merge(RawData, DeptCodeLink)[is.na(SzakmaKod)]$hospital_department_of_admission))
+data.frame(Osztaly = unique(merge(RawData,
+                                  DeptCodeLink)[is.na(SzakmaKod)]$hospital_department_of_admission))
 ```
 
 <div class="kable-table">
@@ -1007,7 +1008,10 @@ Res[, .(`Megmaradt ápolási nap [nap]` = sum(TeljesitettApolasiNapSzam),
 
 </div>
 
-Mentsük ki az eredményeket (CSV és RDS formátumokban is):
+Mentsük ki az eredményeket
+([CSV](https://raw.githubusercontent.com/tamas-ferenci/NNSRElemzes/main/Res.csv)
+és [RDS](https://github.com/tamas-ferenci/NNSRElemzes/raw/main/Res.rds)
+formátumokban is):
 
 ``` r
 fwrite(Res, "Res.csv", dec = ",", sep =";", bom = TRUE)
@@ -1017,7 +1021,8 @@ saveRDS(Res, "Res.rds")
 ### Az incidenciák vizualizációja
 
 Az incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti ábra
-természetesen csak illusztráció, az eredményt kimentjük PDF formátumban
+természetesen csak illusztráció, az eredményt kimentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf)
 is):
 
 ``` r
@@ -1046,7 +1051,9 @@ for(i in 1:length(p)) print(p[[i]])
 ![](README_files/figure-gfm/unnamed-chunk-25-.gif)<!-- -->
 
 Vagy vonatkoztathatunk ápolási napra is (a lenti ábra természetesen csak
-illusztráció, az eredményt kimentjük PDF formátumban is):
+illusztráció, az eredményt kimentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerDay.pdf)
+is):
 
 ``` r
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
@@ -1289,7 +1296,8 @@ kibontva](https://tamas-ferenci.github.io/FerenciTamas_SimitasSplineRegresszioAd
 is. Az eredményváltozó eloszlásaként megpróbáljuk a Poisson-t, a
 kvázi-Poisson-t és a negatív binomiálisat.
 
-Az összes megbecsült modell ábráját csak elmentjük PDF formátumban:
+Az összes megbecsült modell ábráját csak elmentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ``` r
 # p <- lapply(1:length(fits), function(i) print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ",
@@ -1315,9 +1323,9 @@ StdSzakma <- StdSzakma[SzakmaMegnevFactor%in%unique(Res$SzakmaMegnevFactor)]
 predgrid <- merge(as.data.frame(unique(Res[, .(type, SzakmaMegnevFactor)])), as.data.frame(unique(Res[, .(type, KorhazNevFactor)])))
 
 predgrid <- data.table(merge(predgrid, StdSzakma[, .(SzakmaMegnevFactor,
-                                                         TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
-                                                         CMI = 1, CMIdev = 0, zCMI = 0,
-                                                         yearFactor = as.factor(2015))]))
+                                                     TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
+                                                     CMI = 1, CMIdev = 0, zCMI = 0,
+                                                     yearFactor = as.factor(2015))]))
 ```
 
 Ennek használatával kényelmesen, egy lépésben elkészíthetjük a

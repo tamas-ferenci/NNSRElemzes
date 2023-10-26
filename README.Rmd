@@ -171,7 +171,8 @@ sum(!unique(RawData$hospital_department_of_admission)%in%DeptCodeLink$hospital_d
 Az persze lehet, hogy valaminek nincsen párja:
 
 ```{r}
-data.frame(Osztaly = unique(merge(RawData, DeptCodeLink)[is.na(SzakmaKod)]$hospital_department_of_admission))
+data.frame(Osztaly = unique(merge(RawData,
+                                  DeptCodeLink)[is.na(SzakmaKod)]$hospital_department_of_admission))
 ```
 
 Ez egy veszteség lesz, de egy tudatosan vállalt veszteség: ezek krónikus osztályok (amelyekhez nem vettünk ki NEAK-adatot), illetve nem jól beazonosítható, egyértelműen össze nem kapcsolható osztályok. (Ez a fenti lista segítségével le is ellenőrizhető.) A veszteség csakugyan nem nagy: az eredeti `r nrow(RawData)` eseményből `r nrow(merge(RawData, DeptCodeLink)[!is.na(SzakmaKod)])` esemény marad, azaz a veszteség mindössze `r nrow(RawData)-nrow(merge(RawData, DeptCodeLink)[!is.na(SzakmaKod)])` esemény (`r round((nrow(RawData)-nrow(merge(RawData, DeptCodeLink)[!is.na(SzakmaKod)]))/nrow(RawData), 1)`%). Végezzük el az egyesítést:
@@ -311,7 +312,7 @@ Res[, .(`Megmaradt ápolási nap [nap]` = sum(TeljesitettApolasiNapSzam),
                                                  100, 1)), .(`Típus` = type)]
 ```
 
-Mentsük ki az eredményeket (CSV és RDS formátumokban is):
+Mentsük ki az eredményeket ([CSV](https://raw.githubusercontent.com/tamas-ferenci/NNSRElemzes/main/Res.csv) és [RDS](https://github.com/tamas-ferenci/NNSRElemzes/raw/main/Res.rds) formátumokban is):
 
 ```{r}
 fwrite(Res, "Res.csv", dec = ",", sep =";", bom = TRUE)
@@ -320,7 +321,7 @@ saveRDS(Res, "Res.rds")
 
 ### Az incidenciák vizualizációja
 
-Az incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti ábra természetesen csak illusztráció, az eredményt kimentjük PDF formátumban is):
+Az incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti ábra természetesen csak illusztráció, az eredményt kimentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf) is):
 
 ```{r, fig.show = "animate", animation.hook = "gifski", fig.height = 12}
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
@@ -345,7 +346,7 @@ invisible(dev.off())
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-Vagy vonatkoztathatunk ápolási napra is (a lenti ábra természetesen csak illusztráció, az eredményt kimentjük PDF formátumban is):
+Vagy vonatkoztathatunk ápolási napra is (a lenti ábra természetesen csak illusztráció, az eredményt kimentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerDay.pdf) is):
 
 ```{r, fig.show = "animate", animation.hook = "gifski", fig.height = 12}
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
@@ -539,7 +540,7 @@ fits <- lapply(1:nrow(pargrid), function(i) {
 
 Amint látható, megvizsgáljuk azt a lehetőséget, ha a CMI-t egyáltalán nem használjuk fel, azt ha nyers értékként, ha eltérésként, illetve ha $z$-score-ként használjuk fel, ez utóbbi három esetet megnézzük lineárisan és [spline-nal kibontva](https://tamas-ferenci.github.io/FerenciTamas_SimitasSplineRegresszioAdditivModellek/) is. Az eredményváltozó eloszlásaként megpróbáljuk a Poisson-t, a kvázi-Poisson-t és a negatív binomiálisat.
 
-Az összes megbecsült modell ábráját csak elmentjük PDF formátumban:
+Az összes megbecsült modell ábráját csak elmentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ```{r}
 # p <- lapply(1:length(fits), function(i) print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ",
@@ -562,9 +563,9 @@ StdSzakma <- StdSzakma[SzakmaMegnevFactor%in%unique(Res$SzakmaMegnevFactor)]
 predgrid <- merge(as.data.frame(unique(Res[, .(type, SzakmaMegnevFactor)])), as.data.frame(unique(Res[, .(type, KorhazNevFactor)])))
 
 predgrid <- data.table(merge(predgrid, StdSzakma[, .(SzakmaMegnevFactor,
-                                                         TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
-                                                         CMI = 1, CMIdev = 0, zCMI = 0,
-                                                         yearFactor = as.factor(2015))]))
+                                                     TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
+                                                     CMI = 1, CMIdev = 0, zCMI = 0,
+                                                     yearFactor = as.factor(2015))]))
 ```
 
 Ennek használatával kényelmesen, egy lépésben elkészíthetjük a predikciókat:
@@ -596,7 +597,7 @@ saveRDS(ress, "StdHospRes.rds")
 
 Az érzékenységvizsgálat:
 
-```{r}
+```{r, fig.height = 10}
 ggplot(merge(ress[family!="QP"&type=="CDI"],
              ress[formula=="zCMI"&family=="NB"&type=="CDI", .(KorhazNevFactor, fitorder = fit)],
              by = "KorhazNevFactor"),
@@ -606,7 +607,7 @@ ggplot(merge(ress[family!="QP"&type=="CDI"],
 
 Az eredmény:
 
-```{r}
+```{r, fig.height = 10}
 ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"], aes(y = forcats::fct_reorder(KorhazNevFactor, fit),
                                                            x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
@@ -616,7 +617,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"], aes(y = forcats::fct_reor
 
 Az érzékenységvizsgálat:
 
-```{r}
+```{r, fig.height = 10}
 ggplot(merge(ress[family!="QP"&type=="MRK"],
              ress[formula=="zCMI"&family=="NB"&type=="MRK", .(KorhazNevFactor, fitorder = fit)],
              by = "KorhazNevFactor"),
@@ -626,7 +627,7 @@ ggplot(merge(ress[family!="QP"&type=="MRK"],
 
 Az eredmény:
 
-```{r}
+```{r, fig.height = 10}
 ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"], aes(y = forcats::fct_reorder(KorhazNevFactor, fit),
                                                            x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
@@ -636,7 +637,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"], aes(y = forcats::fct_reor
 
 Az érzékenységvizsgálat:
 
-```{r}
+```{r, fig.height = 10}
 ggplot(merge(ress[family!="QP"&type=="VAF"],
              ress[formula=="zCMI"&family=="NB"&type=="VAF", .(KorhazNevFactor, fitorder = fit)],
              by = "KorhazNevFactor"),
@@ -646,7 +647,7 @@ ggplot(merge(ress[family!="QP"&type=="VAF"],
 
 Az eredmény:
 
-```{r}
+```{r, fig.height = 10}
 ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"], aes(y = forcats::fct_reorder(KorhazNevFactor, fit),
                                                            x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
