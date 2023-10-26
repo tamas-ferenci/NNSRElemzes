@@ -2,6 +2,13 @@ A magyar kórházi fertőzések 2015-2016. évi adatainak elemzése
 ================
 Ferenci Tamás (<https://www.medstat.hu/>)
 
+- [Összefoglaló gondolatok](#összefoglaló-gondolatok)
+- [A kutatás eredményeinek
+  magyarázata](#a-kutatás-eredményeinek-magyarázata)
+- [Statisztikai és számítástechnikai
+  részletek](#statisztikai-és-számítástechnikai-részletek)
+- [Eredmények](#eredmények)
+
 ## Összefoglaló gondolatok
 
 - A bíróság döntése nyomán elérhetővé vált a kórházi fertőzésekre
@@ -640,6 +647,9 @@ egészségügy fejlesztésére, ezáltal a betegek, és általában a magyar
 lakosság életminőségének a javítására.
 
 ## Statisztikai és számítástechnikai részletek
+
+Ez a fejezet az elemzés technikai részleteit ismerteti. A
+végeredményeket a következő, Eredmények fejezet mutatja be.
 
 ### Adatok betöltése
 
@@ -1355,9 +1365,43 @@ fwrite(ress, "StdHospRes.csv", dec = ",", sep =";", bom = TRUE)
 saveRDS(ress, "StdHospRes.rds")
 ```
 
-### Eredmények
+## Eredmények
 
-#### CDI
+Minden fertőzés-típusnál elsőként az érzékenységvizsgálat eredményét
+közlöm: ezen az ábrán minden pötty egy (korrigált) gyakoriság, 100 ezer
+ápolási napra vetítve; az egyes pöttyök abban térnek el, hogy pontosan
+milyen statisztikai modellel történt a számítás. Az ábrának két szerepe
+van, az egyik, hogy bár van álláspontom arról, hogy ezen módszerek közül
+melyik a legjobb, de ha valaki ezt nem így gondolná, akkor az ábra,
+illetve a mögötte lévő adatok segítségével bármely más módszer
+eredményét is alapul veheti. A másik, talán még fontosabb, hogy ha
+ránézve az ábrára azt látjuk, hogy az értékek nagyjából hasonlóak, hogy
+a kórházak sorrendje körülbelül azonos a különböző típusú pontok
+szerint, akkor megnyugodhatunk e tekintetben, mondhatjuk ugyanis, hogy a
+végeredmény nem múlik nagyon azon, hogy pontosan milyen módszert
+választottunk. Ez megnyugtató, különösen, ha a választás a módszerek
+között nem tökéletesen egyértelmű, hiszen ez azt mondja, hogy
+szerencsére nincs is nagy jelentősége (robusztus az eredmény erre
+nézve).
+
+Az érzékenységvizsgálat után jön maga a végeredmény: ezen az egyes
+kórházak eredményei láthatóak azon módszer alapján, mely véleményem
+szerint a legjobb (hozzátéve, hogy jó esetben ennek nincs nagy
+jelentősége, lásd előbb). Ez tehát lényegében az előző ábra, de csak az
+egyik típusú pontokat megjelenítve. Egy kiegészítéssel: ezen már
+megjelenik a 95%-os konfidenciaintervallum is. Ennek az értelmezése
+[némileg
+bonyolultabb](https://tamas-ferenci.github.io/FerenciTamas_AKlinikaiGyogyszervizsgalatokAlapjai/a-v%C3%A9letlen-ingadoz%C3%A1s-k%C3%A9rd%C3%A9sk%C3%B6re.html#a-konfidenciaintervallum-fogalma),
+most annyit emelnék ki, hogy a feltüntetett értékben lévő
+bizonytalanságot mutatja meg: minél szélesebb a konfidenciaintervallum,
+annál bizonytalanabb az érték. (Mit értünk bizonytalanság alatt? A
+fertőzés gyakorisága egy arány. Nagyon-nagyon intuitív példaként
+gondoljunk arra, hogy ha 10 betegből 1 fertőződik meg, illetve ha 10
+000-ből 1000, az ugyanúgy 10%-os arány, mégis, az első esetben sokkal
+bizonytalanabbak leszünk ebben. A statisztika lehetővé teszi ezen
+„érzés” pontos megragadását.)
+
+### CDI
 
 Az érzékenységvizsgálat:
 
@@ -1381,7 +1425,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"], aes(y = forcats::fct_reor
 
 ![](README_files/figure-gfm/unnamed-chunk-49-1.png)<!-- -->
 
-#### MRK
+### MRK
 
 Az érzékenységvizsgálat:
 
@@ -1405,7 +1449,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"], aes(y = forcats::fct_reor
 
 ![](README_files/figure-gfm/unnamed-chunk-51-1.png)<!-- -->
 
-#### VÁF
+### VÁF
 
 Az érzékenységvizsgálat:
 
@@ -1429,7 +1473,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"], aes(y = forcats::fct_reor
 
 ![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
 
-#### A három típus egybevetése
+### A három típus egybevetése
 
 A végső eredmények:
 
