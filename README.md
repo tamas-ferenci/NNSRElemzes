@@ -16,7 +16,7 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   soha korábban nem látott részletezettségű, egyedi adatok vannak: a
   betegről ugyan kevés információ van (még a neme és életkora sem
   szerepel, hogy ne legyen beazonosítható), viszont a fertőzés ténye, a
-  kórház, és a kórházi osztály meg van adva, több egyéb információ
+  kórház és a kórházi osztály meg van adva, több egyéb információ
   mellett.
 - Ez lehetővé teszi az egyes kórházak összehasonlítását, ami nagyon
   fontos feladat, mind a közvélemény, mind az egészségügyi
@@ -63,24 +63,28 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   Ez pedig az, hogy bár egy adott kórház adott osztályán kezelt betegek
   orvosi súlyosságáról nincs nyilvánosan elérhető adat, de „pénzügyi
   súlyosságáról”, azaz az utánuk elszámolt költségekről van. Nem
-  feltételezhető, hogy a kétféle súlyosság pontosan ugyanaz, viszont
-  azért az sem igaz, hogy semmi kapcsolat nincs köztük: a rosszabb
-  állapotú, idősebb, esendőbb – és így kórházi fertőzésre is fogékonyabb
-  – betegeknél vélhetően a kezelés is hosszabb, költségesebb, így ez
+  feltételezhető, hogy a kétféle súlyosság pontosan ugyanaz, viszont az
+  sem igaz, hogy semmi kapcsolat nincs köztük: a rosszabb állapotú,
+  idősebb, esendőbb – és így kórházi fertőzésre is fogékonyabb –
+  betegeknél vélhetően a kezelés is hosszabb, költségesebb, így ez
   utóbbi súlyosságot felhasználhatjuk, hogy ha nem is tökéletesen, de
   valamennyire korrigáljunk, így javítva a becslést.
-- A vizsgálatra ún. regressziós modellezéssel került sor. A modellezés
-  során több döntést kell hozni, ezek némely esetben nem egyértelműek,
-  ezért fontos, hogy minden ilyen döntési helyzetben az összes szóba
-  jövő lehetőséget megvizsgáljuk. Ezt hívják érzékenységvizsgálatnak: az
-  a megnyugtató, ha a különböző modellek eredményei nagyjából
-  egybecsengenek, hiszen ilyenkor mondhatjuk, hogy a válasz nem nagyon
-  függ attól, hogy milyen modellezési stratégiát választottunk. Miután a
-  megfelelő modellt kiválasztottuk, megtehetjük, hogy a segítségével
-  minden kórházra kiszámolunk egy olyan fertőzés-gyakoriságot, ami – a
-  fentiek erejéig – *korrigálva van* a kórházak eltérő
-  betegösszetételére, ebből fakadóan jobban összehasonlíthatóvá teszi
-  egymással a különböző kórházakat.
+- A vizsgálatra ún. regressziós modellezéssel került sor, mely a
+  biostatisztika legáltalánosabban használt eszköze ilyen helyzetek
+  kezelésére. Miután a megfelelő modellt kiválasztottuk, megtehetjük,
+  hogy a segítségével minden kórházra kiszámolunk egy olyan
+  fertőzés-gyakoriságot, ami – a fenti limitációk erejéig – *korrigálva
+  van* a kórházak eltérő betegösszetételére, ebből fakadóan jobban
+  összehasonlíthatóvá teszi egymással a különböző kórházakat.
+  (Természetesen a jelentési fegyelem problémáján ez sem tud segíteni.)
+- A modellezés során több döntést kell hozni, ezek némely esetben nem
+  egyértelműek, ezért fontos, hogy minden ilyen döntési helyzetben az
+  összes szóba jövő lehetőséget megvizsgáljuk. Ezt hívják
+  érzékenységvizsgálatnak, hiszen kiderül belőle, hogy a végeredmény
+  mennyire érzékeny arra, hogy milyen modellt választunk. Szerencsés
+  esetben a különböző modellek eredményei nagyjából egybecsengenek, ami
+  megnyugtató, hiszen ilyenkor mondhatjuk, hogy a válasz nem nagyon függ
+  attól, hogy pontosan milyen modellezési stratégiát választottunk.
 - Nagyon fontos kérdés ezen adatok, vizsgálatok kapcsán a
   *transzparencia*, két okból is. Az egyik a *bizalom*: mint minden
   népegészségügyi rendszer esetében, itt is igaz, hogy a bizalom
@@ -91,17 +95,18 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   eredmények nyilvánosak, bárki számára ellenőrizhetőek. Nem igaz, hogy
   a bizalmat rombolja az, ha rosszak az eredmények (sőt, bizonyos
   értelemben ez erősíti meg a legjobban, mert azt mutatja a lakosságnak,
-  hogy még ezeket sem kell eltitkolni, lehet hinni az adatoknak), ami
-  rombolja a bizalmat, az az elhallgatás és a titkolózás, az adatok
-  híján kialakuló szájhagyományok és rémhírek, az „ehhez te úgysem
-  értesz, ne üsd bele az orrod az okos szakemberek dolgába”-szemlélet. A
-  másik szempont a *hibajavítás*: több szem többet lát, minél többen
-  tekinthetnek bele az adatgyűjtési és adatelemzési folyamatba, annál
-  valószínűbb, hogy kiderülnek a hibák, felmerülnek az esetleges jobb
-  elemzési lehetőségek.
+  hogy még ezeket sem kell eltitkolni, tehát lehet hinni az adatoknak),
+  ami rombolja a bizalmat, az az elhallgatás és a titkolózás, az –
+  adatok híján kialakuló! – szájhagyományok és rémhírek, az „ehhez te
+  úgysem értesz, ne üsd bele az orrod az okos szakemberek
+  dolgába”-szemlélet. A másik szempont a *hibajavítás*: több szem többet
+  lát, minél többen tekinthetnek bele az adatgyűjtési és adatelemzési
+  folyamatba, annál valószínűbb, hogy kiderülnek a hibák, felmerülnek az
+  esetleges jobb elemzési lehetőségek.
 - Sajnos ennek a szempontnak a jelenlegi magyar rendszer igen rosszul
   felel meg: kevés információt ad meg, azt is gyakran késve, kellő
-  magyarázat nélkül, elégtelen részletezettséggel.
+  magyarázat nélkül, elégtelen részletezettséggel, a limitációk
+  feltárása nélkül.
 - Remélhető, hogy ez a projekt ezzel szemben arra is gyakorlati, valós
   *példát ad*, hogy milyen előnyei vannak a transzparens hozzáállásnak:
   noha nagyon nehézkesen megszerzett, nehezen feldolgozható formátumú
@@ -116,7 +121,12 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   azért, hogy erősítsem a bizalmat abban, hogy a végeredményeim helyesek
   (hiszen bárki ellenőrizheti azokat, a teljes számítással együtt), és
   azért, hogy az esetleges hibák, jobb elemzési lehetőségek
-  kiderülhessenek.
+  kiderülhessenek. Ez utóbbi is nagyon fontos: egy ilyen kérdés soha nem
+  „befejezett” téma, ez egy aktív kutatási terület, nem csak, hogy nem
+  probléma, hanem kifejezett öröm számomra, ha valaki kijavítja,
+  továbbfejleszti a munkámat, és még jobb elemzést készít; ezt is
+  próbálom elősegíteni a statisztikai kódok közlésével és a hozzá fűzött
+  magyarázatokkal.
 - A transzparenciával szemben gyakran felhozott érv, hogy az emberek
   „nem értik meg” vagy „félreértik” a számokat. Ezt az érvelést ilyen
   formában nem tartom elfogadhatónak. Nem azért, mert ne lenne igaz:
@@ -154,7 +164,15 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   erős példát adnak erre: egy fontos kérdésben segítenek a
   tisztánlátásban, megmutatva, hogy megfelelő szándék esetén hogyan
   segítheti az adatokra alapozott elemzés az egészségügyi ellátórendszer
-  jobbítását.
+  jobbítását, a hibák feltárását. Itt fontos rögtön hozzátenni, hogy a
+  „hiba” szót a legáltalánosabban értelemben használom, és egyáltalán
+  nem csak olyanokra gondolok, hogy egy kórházban van valami probléma
+  mondjuk a fertőtlenítéssel: az is hiba, ha gyanúsan nagy különbségek
+  vannak a kórházak között, és ezért felmerül, hogy nem korrigáltunk jól
+  a betegösszetételre, vagy, ha itt sem találunk gondot, akkor talán a
+  jelentési fegyelem kapcsán kell vizsgálódnunk? Akárhogy is, az adatok
+  megmutatják, hogy *valamit* javítanunk kell, és, ami nem kevésbé
+  fontos, abban is adhatnak iránymutatást, hogy mit.
 - Csak zárójelben teszem hozzá, de hátsó szándékom példát mutatni a
   biostatisztikus gondolkodásmódra is (különös hangsúllyal két
   szemponton: hogy miért fontos az adatok, adatforrások limitációinak
@@ -254,23 +272,24 @@ vetített gyakoriságát százalékként:
 | **Nagy kockázatú betegek** | 10% (500/5000)   | 17% (34/200)    |
 | *Összességében*            | *6% (600/10000)* | *4% (119/3000)* |
 
-Mit látunk? Azt, hogy X kórházban *mind* a kis, *mind* a nagy kockázatú
-betegeknél ritkább a kórházi fertőzés előfordulása (2% a 3-mal szemben,
-illetve 10 a 17-tel szemben), de *összességében* mégis rosszabb a
-helyzet! Hiszen egyben tekintve a kórház egészét, X-ben 6% szenvedett el
-kórházi fertőzést, míg Y-ban csak 4! Sokan azt is mondhatnák, hogy ez
+Mit látunk? Azt, hogy X kórházban *ritkább* a kórházi fertőzés a kis
+kockázatú betegeknél (2% a 3%-kal szemben), *ritkább* a nagy kockázatú
+betegeknél (10% a 17%-kal szemben), de *összességében* mégis rosszabb a
+helyzet! (6% a 4%-kal szemben.) Sokan azt is mondhatnák, hogy ez
 lehetetlen, itt valami paradoxon, vagy matematikai hiba van („hogy
 lehet, hogy külön-külön mindkét kategóriában jobb, de összességében
 rosszabb?!”), de nem: ha valaki nem hiszi, adja össze a számokat, és
 ossza el egymással!
 
 Mi a magyarázat? A nagyon eltérő betegösszetétel! X-ben az ellátott
-beteg fele nagy kockázatú volt, míg Y-ban mutatóban volt ilyen. Hiába
-jobb X mindkét kategóriában külön-külön, az, hogy ő gyűjti a zűrösebb
+betegek fele nagy kockázatú volt, míg Y-ban mutatóban volt ilyen. Hiába
+jobb X *mindkét* kategóriában külön-külön, az, hogy ő gyűjti a zűrösebb
 eseteket, lehúzza az összesített eredményét – hiába teljesít amúgy még
 ott is jobban, mint Y, de ezek a betegek (állapotukból és nem a
-kórházból fakadóan!) rosszabb mutatókat produkálnak. Végeredményben az a
-kórház teljesít jobban, ahol gyakoribbak a kórházi fertőzések!
+kórházból fakadóan!) rosszabb mutatókat produkálnak, így ha több van
+belőlük, az nagyban rontja a teljesítményt, még akkor is, ha egyébként
+az ő körükben is jobban teljesít a kórház. Végeredményben az a kórház
+teljesít jobban, ahol gyakoribbak a kórházi fertőzések!
 
 Ez egy konkrét példa arra az általános jelenségre, amit a
 biostatisztikában – magyarul is elterjedten használt angol szóval –
@@ -284,28 +303,28 @@ bekezdésre: az a gond, hogy a nyers szám *egybeméri* a kórházra *és* a
 betegre jellemző tényezőket, mi csak a kettő összegét látjuk, miközben
 mi valójában csak az előbbire vagyunk most kíváncsiak. Ha egyszer
 kórházak vizsgálatáról beszélünk, akkor valahogy meg kellene tisztítani
-az eredményeket egy utóbbitól, hogy tényleg a kórházat jellemző
+az eredményeket egy utóbbitól, hogy tényleg a kórházat magát jellemző
 eredményt kapjuk.
 
 Mit tudunk tenni? Jelen esetben az egyetlen lehetőség, hogy utólag olyan
 statisztikai módszereket alkalmazunk, amelyekkel ezekből az – első
-ránézésre félrevezető – adatokból is kiolvasható a valós kép. (Nem kell
-hatalmas varázslásra gondolni feltétlenül: voltaképp már az előző
+ránézésre félrevezető – adatokból is kiolvasható a valós kép. Nem kell
+hatalmas varázslásra gondolni feltétlenül: voltaképp már az előbbi
 táblázat is egy példa egy ilyen korrekcióra! Hiszen azzal, hogy
 különvettük a két kategóriát, máris feltártuk, statisztikai úton, a
-valós helyzetet.) Problémát két dolog jelent: az egyik, hogy ehhez
+valós helyzetet. Problémát két dolog jelent: az egyik, hogy ehhez
 tudnunk kell, hogy mely tényezők hatnak egy beteg fertőzés iránti
 fogékonyságára, a másik, hogy erről információval kell rendelkeznünk.
 Hiszen, ha nem jut eszünkbe, hogy a cukorbetegség számít, akkor biztosan
 nem fogunk tudni korrigálni rá, de ha eszünkbe is jut, akkor is kell,
 hogy erről legyen információnk, tehát, tudjuk, hogy a betegek közül ki
 cukorbeteg és ki nem. (Visszatérve az előbbi példára: csak ez alapján
-tudjuk a fenti táblázatot is megkonstruálni.) Az NNK adatbázisában ugyan
+tudjuk a fenti táblázatot megkonstruálni.) Az NNK adatbázisában ugyan
 van információ arról, hogy a *fertőzöttek* cukorbetegek voltak-e, de
 sajnos ez rajtunk nem segít: a fenti korrekcióhoz az *összes* felvett
 betegre vonatkozóan kellene tudnunk a cukorbetegség tényét! Hiszen itt a
 betegösszetételről van szó, arról, hogy milyen kockázatú betegeket lát
-el az osztály, ehhez azt kell tudnunk, hogy az összes betegük mekkora
+el a kórház, ehhez azt kell tudnunk, hogy az összes betegük mekkora
 része cukorbeteg. Az, hogy fertőzöttek mekkora része cukorbeteg, ebben
 nem segít: lehet, hogy az összes az, de mégis kicsi a cukorbetegek
 aránya, vagy pont fordítva. (A táblázatra gondolva: nem tudjuk a perjel
@@ -315,15 +334,14 @@ százalékot sem tudunk számolni.)
 Megállapíthatjuk tehát, hogy a legjobb korrekciót nem tudjuk megtenni,
 szükséges adatok híján. Mi a második legjobb lehetőség?
 
-Az egyik ötlet, hogy ne kórház, hanem szakmacsoport (belgyógyászat,
-szemészet stb.) szintjén vizsgálódjunk! Ez ugyanis jelentősen
-homogenizálja a betegeket, sokkal hasonlóbb betegcsoportot hasonlítunk
-össze, ha nem egész kórházat hasonlítunk egész kórházzal, hanem
-belgyógyászatot belgyógyászattal, szemészetet szemészettel stb.
-Természetesen ez a módszer sem tökéletes, hiszen belgyógyászat és
-belgyógyászat között is nagy különbség lehet az ellátott betegek
-összetétele szempontjából, de mindenesetre biztosan kisebb, mint egész
-kórházak között.
+Az egyik ötlet, hogy ne kórház, hanem szakma (belgyógyászat, szemészet
+stb.) szintjén vizsgálódjunk! Ez ugyanis jelentősen homogenizálja a
+betegeket, sokkal hasonlóbb betegcsoportot hasonlítunk össze, ha nem
+egész kórházat hasonlítunk egész kórházzal, hanem belgyógyászatot
+belgyógyászattal, szemészetet szemészettel stb. Természetesen ez a
+módszer sem tökéletes, hiszen belgyógyászat és belgyógyászat között is
+nagy különbség lehet az ellátott betegek összetétele szempontjából, de
+mindenesetre biztosan kisebb, mint egész kórházak között.
 
 Szerencsénkre a dolog meg is valósítható: az NNK táblájában meg van adva
 az osztály, a NEAK tábla pedig közli a betegforgalmi adatokat szakma
@@ -341,21 +359,24 @@ valamilyen banális adminisztratív hiba, elírás állhat, ez
 kideríthetetlen, de nincs is nagy jelentősége, mert nagyon kevés esemény
 veszik el ilyenek miatt. Szintén zűrök lehetnek a kórházak
 megfeleltetésével is, előfordul például, hogy egy kórház év közben
-integrálódik egy másikba, az ilyeneket nem tudjuk felhasználni, mert a
-törtévre nem lesz betegforgalmi adatok, de ezek szintén minimális
+integrálódik egy másikba – az ilyeneket nem tudjuk felhasználni, mert a
+törtévre nem lesz betegforgalmi adatunk, de ezek szintén minimális
 veszteséget okoznak csak.)
 
-Ezek után tehát összehasonlíthatjuk az adatokat osztály-szinten is.
-Egyetlen probléma van ezzel: nem egy eredményt kapunk, hanem sokat. Nem
-lehet olyat mondani, hogy X kórház itt áll Y-hoz képest, hanem csak azt
-tudjuk mondani, hogy „itt áll belgyógyászatban, itt szemészetben, itt
-szülészetben, itt urológián, itt fül-orr-gégészetben, itt neurológián,
-itt onkológián”… nem túl kényelmes! Tudunk ezen valahogy javítani?
-Tovább feltevések nélkül nem, hiszen előfordulhat, hogy *tényleg* más a
-sorrend belgyógyászatok között, szemészetek között, szülészetek között
-stb. Ha azonban elfogadjuk azt a feltevést, hogy a kórházak sorrendje
-azonos az egyes szakmacsoportokban, akkor kaphatunk sokkal látványosabb
-eredményt is.
+Ezek után tehát összehasonlíthatjuk az adatokat osztály-szinten is,
+sokkal jobb homogenitást elérve, és csökkentve az eltérő
+betegösszetételből fakadó nehézségeket. Egyetlen probléma van ezzel: nem
+egy eredményt kapunk, hanem sokat. Nem lehet olyat mondani, hogy X
+kórház itt áll Y-hoz képest, hanem csak azt tudjuk mondani, hogy „itt
+áll belgyógyászatban, itt szemészetben, itt szülészetben, itt urológián,
+itt fül-orr-gégészetben, itt neurológián, itt onkológián”… nem túl
+kényelmes! Tudunk ezen valahogy javítani? Tovább feltevések nélkül nem,
+hiszen előfordulhat, hogy *tényleg* más a sorrend belgyógyászatok
+között, szemészetek között, szülészetek között stb. Ha azonban
+elfogadjuk azt a feltevést, hogy a kórházak sorrendje azonos az egyes
+szakmákban, tehát, hogy egy jobban teljesítő kórház *egységesen* jobban
+teljesít minden szakmában, mert ez egy kórház-szintű jellemző, akkor
+kaphatunk sokkal látványosabb eredményt is.
 
 Ezzel eljutunk a biostatisztika egyik kiemelten fontos módszeréhez, a
 [regressziós
@@ -369,92 +390,98 @@ osztályon vagyunk, az 5 pont (mert az egy fertőzésre nagyon kockázatos
 szakma, sok az invazív beavatkozás, a betegek jellemzően súlyos,
 kritikus állapotúak), az urológia 2 pont, a szemészet 1 pont és így
 tovább. A modell figyelembe veszi az ellátott betegek, vagy az ápolási
-napok számát, most csak az egyszerűség kedvéért nem szerepel ez a
+napok számát is, most csak az egyszerűség kedvéért nem szerepel ez a
 leírásban.
 
 Ami még izgalmasabb, hogy természetesen ugyanez igaz lesz a kórházra is:
 ha X kórházban vagyunk, az 3 pont, ha Y-ban, az 1, ha Z-ben az 5 és így
 tovább, és így tovább. Tehát, ha X kórházban vagyunk, akkor *önmagában*,
 pusztán abból fakadóan, hogy az adott kórházban vagyunk (bármelyik
-szakmacsoportban is!) több kórházi fertőzésünk lesz várhatóan, mint
-Y-ban. Fontos meglátni, hogy ez a modell tényleg felhasználja az előző
-bekezdés végén szereplő feltevést, hiszen épp azt mondtuk az imént, hogy
-*minden* szakmacsoportban 3-at jelent az, ha X-ben vagyunk (nem lehet,
-hogy belgyógyászatban 4-et, de szemészetben csak 2-t). Tehát a kórházak
-sorrendje, feltevésünk szerint, ugyanaz minden szakmacsoport esetében.
-Fontos ismét hangsúlyozni, hogy ez egy feltevés, nem biztos, hogy igaz,
-de ha – akárcsak közelítőleg – teljesül, akkor lényegesen kényelmesebbé
+osztályon is!) több kórházi fertőzésünk lesz várhatóan, mint Y-ban.
+Fontos meglátni, hogy ez a modell tényleg felhasználja az előző bekezdés
+végén szereplő feltevést, hiszen épp azt mondtuk az imént, hogy *minden*
+szakmában 3-at jelent az, ha X-ben vagyunk (nem lehet, hogy
+belgyógyászatban 4-et, de szemészetben csak 2-t). Tehát a kórházak
+sorrendje, feltevésünk szerint, ugyanaz minden szakma esetében. Fontos
+ismét hangsúlyozni, hogy ez egy feltevés, ami nem biztos, hogy igaz, de
+ha – akárcsak közelítőleg – teljesül, akkor lényegesen kényelmesebbé
 teszi a munkát.
 
 Ez a modell megvalósítja a fenti célunkat: ha kiolvassuk a kórházakhoz
 írt pontokat, akkor az épp a sorrendjüket fogja jelenteni! X-nél jobb az
-Y, de rosszabb a Z stb. De ezt a kijelentés – és most jön a lényeg! –
+Y, de rosszabb a Z stb. De ez a kijelentés – és most jön a lényeg! –
 immár úgy értendő, hogy az eltérő osztály-összetétel hatását *kiszűrve*,
 hiszen ezek a számok magukra a kórházakra jellemző értékek,
 függetlenítve attól, hogy adott kórházban van-e intenzív, van-e
-szemészet stb. Márpedig pont ez volt a célunk, hogy kiszűrjük az eltérő
-osztály-összetétel hatását, tehát, hogy adott kórházban milyen osztály
-van vagy nincs. (Igazából ugye az volt a célunk, hogy kiszűrjük az
-eltérő betegösszetétel hatását, de mostani közelítésünkben ezt az
+szemészet, kis forgalmú intenzív van, vagy nagy forgalmú stb. Márpedig
+pont ez volt a célunk, hogy kiszűrjük az eltérő osztály-összetétel
+hatását, tehát, hogy adott kórházban milyen osztály van vagy nincs.
+(Igazából ugye az volt a célunk, hogy kiszűrjük az eltérő
+betegösszetétel hatását, de mostani közelítésünkben ezt az
 osztály-összetétellel ragadjuk meg.) Ezzel a módszerrel most már nem
 kerülnek hátrányosabb helyzetbe azok a kórházak például ahol van
 intenzív, hiszen ez az érték csak a kórház hatása, az osztályok hatását
 leválasztottuk.
 
 Egyetlen kérdés van még nyitva: hogyan kapjuk meg a pontokat? Honnan
-tudjuk, hogy az intenzív 5 pont (nem 4 vagy 6), hogy X kórház 3 pont…? A
-válasz az, hogy felhasználjuk a tényadatokat! Hiszen ne feledjük, mi
-*tudjuk*, hogy a valóságban adott kórház adott osztályán hány fertőzés
-fordult elő. Egyfelől tehát megvannak ezek a számok, másfelől minden
-pontszám-kiosztásra megvan az, hogy a modell mit *becsülne* a kérdéses
-osztályra az adott pontozás mellett. (Összeadjuk a kórház pontszámát és
-az osztály pontszámát.) Egyszerűen megkeressük azt a pontozást, ami
-mellett a modell szerint becsült fertőzés-számok a legközelebb vannak a
-ténylegesekhez! Az a nagyon szép, és ez a regressziószámítás egyik
-központi eredménye, hogy megtalálható az a pontszám-kiosztás, amely
-mellett a modellünk *matematikailag garantáltan* a lehető legközelebb
-van a táblában szereplő tényadatokhoz. Ezt fogjuk elfogadni legjobb
+tudjuk, hogy az intenzív 5 pont (nem 4 vagy 6), hogy X kórház 3 pont
+(nem 2 vagy 4)…? A válasz az, hogy felhasználjuk a tényadatokat! Hiszen
+ne feledjük, mi *tudjuk*, hogy a valóságban adott kórház adott osztályán
+hány fertőzés fordult elő. Egyfelől tehát megvannak ezek a számok,
+másfelől minden pontszám-kiosztásra megvan az, hogy a modell mit
+*becsülne* a kérdéses kórház kérdéses osztályára az adott pontozás
+mellett. (Összeadjuk a kórház pontszámát és az osztály pontszámát.)
+Egyszerűen megkeressük azt a pontozást, ami mellett a modell szerint
+becsült fertőzés-számok a legközelebb vannak a ténylegesekhez! Az a
+nagyon szép, és ez a regressziószámítás egyik központi eredménye, hogy
+mindig megtalálható, és egyébként nem is túl bonyolultan az a
+pontszám-kiosztás, amely mellett a modell által becsült fertőzés-számok
+*matematikailag garantáltan* a lehető legközelebb vannak a táblában
+szereplő, tehát tényleges számokhoz. Ezt fogjuk elfogadni legjobb
 becslésnek a pontszámokra vonatkozóan! És ebből már kiolvashatjuk az
 előző bekezdés megállapításait.
 
-Ezzel tulajdonképpen végeztünk is, hiszen megvan a kórházakra vonatkozó
-sorrend. Érdemes azonban egy második lépést is tenni, nem azért, mert
-tartalmilag változtat, hanem mert jobban értelmező, közérthetőbb,
-látványosabb eredményt szolgáltat. Ha ugyanis megvan ez a modellünk,
-akkor megkérhetjük arra is, hogy becsülje meg, hogy mi *várható*, egy
-adott kórház, adott osztályán hány eset lesz. Csak fogni kell a
-pontokat, és összeadni. És ez miért lesz nekünk jó? Azért, mert
-megtehetjük ilyen módon a modellel, hogy megbecsültetjük, hogy ha minden
-kórházban pontosan ugyanazok az osztályok *lennének*, és mindegyikben
-pontosan ugyanannyi *lenne* a betegforgalom, akkor mennyi *lenne* a
-kórházi fertőzések száma. Ennek eredményeként egy konkrét, előfordulási
-gyakoriságként mért, tehát könnyen értelmezhető számot kapunk –
-ugyanolyan gyakoriság lesz, mint a naiv számítás eredménye, csak épp
-ebből már ki lesz szűrve a fenti torzítás. Hiszen mi volt a probléma?
-Az, hogy az egyes kórházakban más az osztályok szerinti összetétel.
-Viszont a fenti módon kapott fertőzés-előfordulás egy olyan *virtuális*
-helyzetre vonatkozik, hogy akkor mi *lenne*, ha ebben nem *lenne*
-különbség, tehát ezt a számot már nem rontja el ez a probléma!
-Lényegében az történt, hogy első fázisban kiszedtük az információkat a
-tényadatokból, majd második fázisban ezen információk alapján
-gyártottunk egy olyan számot, ami már jól összehasonlítható – a
-valóságban ezt nem látjuk, de a modellünk meg tudja nekünk, matematikai
-módszerekkel, mondani!
+Ezzel tulajdonképpen végeztünk is, legalábbis ha megelégszünk az
+osztály-szintre leásó korrekcióval. A modell eredményeként megvan a
+kórházakra vonatkozó sorrend, hiszen ez maga a pontszám-kiosztás lesz.
+Érdemes azonban egy második lépést is tenni, nem azért, mert tartalmilag
+változtat, hanem mert jobban értelmező, közérthetőbb, látványosabb
+eredményt szolgáltat – a pontszámok közlése ugyanis nem feltétlenül
+ilyen. Ha azonban megvan ez a modellünk, akkor megkérhetjük arra is,
+hogy becsülje meg, hogy mi *várható*, egy adott kórház, adott osztályán
+hány eset lesz. Csak fogni kell a pontokat, és összeadni. És ez miért
+lesz nekünk jó? Azért, mert megtehetjük ilyen módon a modellel, hogy
+megbecsültetjük, hogy ha minden kórházban pontosan ugyanazok az
+osztályok *lennének*, és mindegyikben pontosan ugyanannyi *lenne* a
+betegforgalom, akkor mennyi *lenne* a kórházi fertőzések száma. Ennek
+eredményeként egy konkrét, előfordulási gyakoriságként mért, tehát
+könnyen értelmezhető számot kapunk – ugyanolyan gyakoriság lesz, mint a
+naiv számítás eredménye, csak épp ebben már szűrve lesz a fenti
+torzítás. Hiszen mi volt a probléma? Az, hogy az egyes kórházakban más
+az osztályok szerinti összetétel. Viszont a fenti módon kapott
+fertőzés-előfordulás egy olyan *virtuális* helyzetre vonatkozik, hogy
+akkor mi *lenne*, ha ebben nem *lenne* különbség, tehát ezt a számot már
+nem rontja el ez a probléma! Lényegében az történt, hogy első fázisban
+kiszedtük az információkat a tényadatokból, majd második fázisban ezen
+információk alapján gyártottunk egy olyan számot, ami már jól
+összehasonlítható – a valóságban ezt nem látjuk, de a modellünk meg
+tudja nekünk, matematikai módszerekkel, mondani!
 
 Kiegészítésként érdemes megjegyezni, hogy valójában két évnyi adatunk
 van, de az év hatása ugyanígy kezelhető ebben a modellben: az is kap
 valamilyen pontszámot, hogy melyik évben vagyunk – itt is a tényadatok
-alapján. A modell feltevése itt is ugyanaz: ez nem függ sem a kórháztól,
-sem az osztálytól. (Tehát például a kórházak sorrendje időben is
-állandó! Két évnél ez még nem tűnik drámai megszorításnak, ha hosszú
-adatsor lenne, akkor valószínűleg érdemes lenne feloldani ezt a
+alapján. A modell feltevése erre vonatkozóan is ugyanaz: ez nem függ sem
+a kórháztól, sem az osztálytól. (Tehát például a kórházak sorrendje
+időben is állandó! Két évnél ez még nem tűnik drámai megszorításnak, ha
+hosszú adatsor lenne, akkor valószínűleg érdemes lenne feloldani ezt a
 feltevést a modellben; szerencsére ez is gond nélkül megtehető a
 regressziós modellezési keretben.)
 
-Végezetül egyetlen utolsó lépést tehetünk még, hogy javítsunk a helyzet.
+Végezetül egyetlen utolsó lépést tehetünk még, hogy javítsuk a helyzet.
 Mert mi a még mindig fennálló fő probléma? Hogy az osztályok sem
-tökéletesen homogének, intenzív és intenzív között is lehet különbség.
-Itt jön kapóra egy ötlet, amit bevethetünk.
+tökéletesen homogének, intenzív és intenzív vagy épp szemészet és
+szemészet között is lehet különbség. Itt jön kapóra egy ötlet, amit
+bevethetünk.
 
 Ennek megértéséhez egy nagyon rövid – és még annál is jobban
 leegyszerűsített – kitérőt tennünk kell a magyar fekvőbeteg-szakellátás
@@ -466,52 +493,56 @@ láttak el. Természetesen az összes létező betegség összes létező
 súlyosságának összes létező ellátása kezelhetetlenül sok lenne, így ezek
 átfogóbb kategóriákba, úgynevezett homogén betegségcsoportokba (röviden
 HBCs) vannak sorolva; ebből mindössze szűk 800 van. Például az egyik
-ilyen HBCs a „Szövődményes gyomor-bél fekély”; jogszabályban pontosan
+ilyen HBCs a „szövődményes gyomor-bél fekély”; jogszabályban pontosan
 meg van adva, hogy ez milyen diagnózissal felvett betegekre számolható
-el (például „Gyomorfekély heveny átfúródással” meg még vagy tucatnyi
-hasonló diagnózis). A HBCs-ket úgy alakították ki, hogy orvosilag és
-gazdaságilag is homogének legyenek, tehát az egy HBCs-be tartozó betegek
-orvosilag is hasonlóak, és nagyjából ugyanolyan költségességű az
-ellátásuk. Itt jön be ugyanis a finanszírozás: minden ilyen HBCs-hez
-tartozik egy úgynevezett súlyszám, ami az ellátás költségességét írja
-le, az előbbi példában ez 0,96. A konkrét számértéknek semmi
-jelentősége, ez egy relatív mutató: ha valaminek az értéke 4, akkor az
-kétszer költségesebb, mint aminek 2. A legnagyobb súlyszámú HBCs
-jelenleg a 999 gramm születési tömeg alatti újszülött ellátása (32,4), a
-legalacsonyabb a I-es kategóriába sorolt kissebészeti beavatkozás
-(0,03). Ezek a súlyszámok úgy képződnek, hogy összeszedik, hogy egy
-ilyen csoportba tartozó „átlagos” beteg ellátása milyen költségekkel
-jár: mennyit kell gyógyszerre költeni, röntgenre, altatásra, mennyire
-veszi igénybe a sterilizáló, a varrodát, mennyi a ápolók bére és így
-tovább. (Például a szövődményes gyomor-bél fekély nem tartalmaz CT-t
-vagy MRI-t, de kétszer annyi gyógyszerköltséget tartalmaz, mint a nem
-szövődményes változata.) Igen, ez az „átlagos” beteg, de a homogenitás
-pont azt jelenti, hogy ebben elvileg kicsi a szórás. Ezek alapján minden
-kórház valamennyi súlyszámot összegyűjt, ha összeadja az összes általa
-ellátott beteg súlyszámait. Az utolsó lépés: meghirdetik, hogy egy
-súlyszám hány forintot ér, így a kettőt összeszorozva megkapja a
-finanszírozásának ezen komponensét! Természetesen, ahogy volt róla szó,
-ez a leírás milliónyi, gyakorlatban fontos finomságot nem érint, de a mi
-mostani céljainkra elég ennyit tudni.
+el (például „gyomorfekély heveny átfúródással” meg még vagy tucatnyi
+hasonló diagnózis – ezek vannak egy csoportba összevonva). A HBCs-ket
+úgy alakították ki, hogy orvosilag és gazdaságilag is homogének
+legyenek, tehát az egy HBCs-be tartozó betegek orvosilag is hasonlóak,
+és nagyjából ugyanolyan költségességű az ellátásuk. Itt jön be ugyanis a
+finanszírozás: minden ilyen HBCs-hez tartozik egy úgynevezett súlyszám,
+ami az ellátás költségességét írja le, az előbbi példában ez 0,96. A
+konkrét számértéknek semmi jelentősége, ez egy relatív mutató: ha
+valaminek az értéke 4, akkor az kétszer költségesebb, mint aminek 2. A
+legnagyobb súlyszámú HBCs jelenleg a 999 gramm születési tömeg alatti
+újszülött ellátása (32,4), a legalacsonyabb a I-es kategóriába sorolt
+kissebészeti beavatkozás (0,03). Ezek a súlyszámok úgy képződnek, hogy
+összeszedik, hogy egy ilyen csoportba tartozó „átlagos” beteg ellátása
+milyen költségekkel jár: mennyit kell gyógyszerre költeni, röntgenre,
+altatásra, mennyire veszi igénybe a sterilizálót, a varrodát, mennyi a
+ápolók bére és így tovább, és így tovább. (Például a szövődményes
+gyomor-bél fekély nem tartalmaz CT-t vagy MRI-t, de kétszer annyi
+gyógyszerköltséget tartalmaz, mint a nem szövődményes változata.) Igen,
+ez az „átlagos” beteg, de a homogenitás pont azt jelenti, hogy ebben
+elvileg kicsi a szórás. Ezek alapján minden kórház valamennyi súlyszámot
+összegyűjt, ha összeadja az összes általa ellátott beteg súlyszámait. Az
+utolsó lépés: meghirdetik, hogy egy súlyszám hány forintot ér, így a
+kettőt összeszorozva megkapja a finanszírozásának ezen komponensét.
+Természetesen, ahogy volt róla szó, ez a leírás milliónyi, gyakorlatban
+fontos finomságot nem érint, de a mi mostani céljainkra elég ennyit
+tudni.
 
 Na de mi köze ennek az egésznek a kórházi fertőzések vizsgálatához? Az,
 hogy a NEAK évente közli minden kórház minden osztályára vonatkozóan,
 hogy mennyi volt az ott ellátott betegek átlagos súlyszáma. Ezt case-mix
-index-nek hívják (röviden: CMI). Látható tehát, hogy ez lényegében a
-betegek „financiális súlyosságát” jelzi: minél nagyobb a CMI, átlagosan
-annál nagyobb súlyszámú, tehát költségigényesebb ellátásai voltak az
-adott osztálynak. És itt jön az ötlet: mi volna, ha ezt megfeleltetnék a
+index-nek hívják (röviden: CMI), ami ezt az értéket az országos átlaghoz
+viszonyítva adja meg. Látható tehát, hogy ez lényegében a betegek
+„financiális súlyosságát” jelzi: minél nagyobb a CMI, átlagosan annál
+nagyobb súlyszámú, tehát költségigényesebb ellátásai voltak az adott
+osztálynak. És itt jön az ötlet: mi volna, ha ezt megfeleltetnék a
 „medikális súlyosságnak”? Igen, a kettő természetesen nem ugyanaz, de
-azért vélhetően van együttmozgás köztük. Ha pedig azt a feltevést is
-hozzátesszük, hogy az orvosi súlyosság együttmozog a kórházi
-fertőzésekre való fogékonysággal (amire szintén igaz, hogy ha nem is
-tökéletes, de van kapcsolat), akkor egy újabb nagy lépést tettünk:
-tudjuk jellemezni *ugyanazon* osztályok eltérő betegösszetételeit is a
-különböző kórházak között! Egyszerűen vesszük a CMI-t, és ezzel írjuk le
-az osztály betegösszetételét.
+azért vélhetően van együttmozgás köztük. Bár ez utóbbit kellene
+használnunk, de arról nincs adat, viszont az előbbiről van. Ha pedig azt
+a feltevést is hozzátesszük, hogy az orvosi súlyosság együttmozog a
+kórházi fertőzésekre való fogékonysággal (amire szintén igaz, hogy ha
+nem is tökéletes az együttjárás, de van kapcsolat), akkor egy újabb nagy
+lépést tettünk: tudjuk jellemezni *ugyanazon* osztályok eltérő
+betegösszetételeit is a különböző kórházak között! Egyszerűen vesszük a
+CMI-t, és ezzel írjuk le az osztály betegösszetételét. Ha nem is
+tökéletes a dolog, de mindenesetre javítunk a helyzeten.
 
-Természetesen a CMI eloszlása elég jellegzetes szakmacsoportok között,
-az intenzíveknek nagyobb mint a szemészeteknek. *De* – nagyon fontos –
+Természetesen a CMI eloszlása elég jellegzetes szakmák között, az
+intenzíveknek nagyobb mint a szemészeteknek. *De* – nagyon fontos –
 nekünk *nem* ez számít, hiszen ezzel eddig is el tudtunk számolni, mivel
 leástuk osztályszintre, hanem az, hogy intenzív, szemészet stb.
 szakmákon *belül* is van szóródás – amivel eddig nem tudtunk mit
@@ -520,35 +551,39 @@ felhasználása, ezzel remélhetőleg még jobban közelítve az elemzést a
 valósághoz.
 
 Egyetlen megjegyzés a legvégére. Valójában a fenti modellek
-megalkotásakor van mozgástér. Felhasználjuk-e egyáltalán a CMI-t? Ha
-igen, hogyan, a konkrét számértékét, vagy az eltérést az adott
-szakmacsoport átlagától? Feltételezzük, hogy a CMI hatása lineáris
-(eggyel nagyobb CMI mindig ugyanúgy hat a fertőzési kockázatra), vagy
-elképzelhető, hogy bonyolultabb az összefüggés alakja? Pontosan milyen
-statisztikai modellt használjuk, Poisson-t vagy negatív binomálisat
-(bármit is jelentsenek ezek a szavak)…? Igen, lehet véleményezni, hogy
-ebből mi a legjobb (ezek az eredményekre kerülnek közlésre), de ha a
-legapróbb bizonytalanság is van ezekben a választásokban, akkor fontos
-lehet még egy dolog: az érzékenységvizsgálat. Ennek lényege, hogy a
-számításokat egyszerűen az összes lehetséges módon és kombinációban
-elvégezzük; a jelen esetben ez 21 modellt jelentett. Hogy ez miért
-fontos? Két okból. Az egyik, hogy ha bárki vitatná, hogy melyik a 21-ből
-a legjobb, és mást választana, akkor megteheti, hogy egyszerűen kinézi
-az ahhoz tartozó eredményeket. Az elemzést végző ugyan választ, hogy
-szerinte mi a legjobb, de közli az összes többi lehetőséget is, így nem
-érheti szó a ház elejét, hogy valamit el akarna titkolni. A másik
-szempont, hogy ha a különböző elemzési módszerekkel kapott eredmények
-nagyjából hasonlóak, akkor az megnyugtató, hiszen azt mondja, hogy az
-eredmény nem múlik nagyban azon, hogy melyik eszközt használja az
-elemző. Úgy is szokták mondani: az eredmény robusztus a használt
-módszertanra nézve. Igen, van döntés arról, hogy melyik a legjobb
-eszköz, de azért nyugodtabban alszik az ember, ha tudja, hogy nagyon
-nagyban nem változna a sorrend akkor, ha más eszközt választott volna.
+megalkotásakor van mozgástér. Hogyan építsük be a modellbe a CMI-t, a
+konkrét számértékét használjuk, vagy az eltérést az adott szakma
+átlagától? Feltételezzük, hogy a CMI hatása lineáris (eggyel nagyobb CMI
+mindig ugyanúgy hat a fertőzési kockázatra), vagy elképzelhető, hogy
+bonyolultabb az összefüggés alakja? Pontosan milyen statisztikai modellt
+használjuk, Poisson-t vagy negatív binomálisat (bármit is jelentsenek
+ezek a szavak)…? Igen, lehet véleményezni, hogy ebből mi a legjobb
+(nekem van is véleményem, és ezeket fogom közölni végeredményként), de
+ha a legapróbb bizonytalanság is van ezekben a választásokban, akkor
+fontos lehet még egy dolog: az *érzékenységvizsgálat*. Ennek lényege,
+hogy a számításokat az összes lehetséges módon és kombinációban
+elvégezzük, aminek lehet értelme; jelen esetben ez 21 modellt jelentett.
+Hogy ez miért fontos? Két okból. Az egyik, hogy ha bárki nem értene
+egyet velem abban, hogy melyik a legjobb, akkor megteheti, hogy kinézi a
+szerinte legjobbhoz tartozó eredményeket, függetlenül attól, hogy én mit
+gondolok. Ez ráadásul bizalmi okokból is fontos: így nem érheti szó a
+ház elejét, hogy valamit el akarnék titkolni. A másik szempont, hogy az
+érzékenységvizsgálatból kiderül, hogy az eredményekben mekkora szóródás
+van a használt módszertantól függően (mennyire érzékeny az eredmény a
+módszertanra – innen az elnevezés), ha pedig ráadásul van akkor
+szerencsénk, hogy ez kicsi, tehát a különböző elemzési módszerekkel
+kapott eredmények nagyjából hasonlóak, akkor az megnyugtató, hiszen azt
+mondja, hogy az eredmény nem múlik nagyban azon, hogy pontosan melyik
+eszközt használja az elemző. Úgy is szokták mondani: az eredmény
+robusztus a használt módszertanra nézve. Igen, van döntés arról, hogy
+melyik a legjobb eszköz, de azért nyugodtabban alszik az ember, ha
+tudja, hogy nagyon nagyban nem változna a sorrend akkor sem, ha más
+eszközt választott volna.
 
 ### A jelentési fegyelem problémája
 
 A másik problémakörről sokkal-sokkal kevesebbet lehet írni, de ez nem
-jelenti azt, hogy ne lenne fontos.
+jelenti azt, hogy ne lenne fontos, ellenkezőleg.
 
 Ez a kérdés a jelentési fegyelem problémája: a gond az, hogy az NNK
 táblájában valójában persze nem a *megtörtént* fertőzések szerepelnek,
@@ -564,29 +599,29 @@ jellemzője ennek a kérdésnek: hogy semmiféle számszerű információ nem
 érhető el róla, még csak áttételesen sem, így – az előző problémakörrel
 szemben – semmiféle utólagos, statisztikai korrekció nem lehetséges. Az
 egyetlen amit meg tudunk tenni, de ez viszont nagyon fontos, hogy
-rögzítsük: minden közölt eredményt ennek fényében kell értelmezni, mert
+rögzítjük: minden közölt eredményt ennek fényében kell értelmezni, mert
 ez minden eredményben megjelenik.
 
 A dolog azért is kritikus, és ezt nem lehet elégszer hangsúlyozni, mert
 ez nem csak valamiféle „véletlen eltéréseket” okozhat az eredményben,
-hanem rossz esetben egy perverz helyzetet is létrehozhat: hogy az a
-kórház tűnik fel rossz fényben, akinek valójában az a „hibája”, hogy
-odafigyel a fertőzésekre és lelkiismeretesen jelenti őket, míg az fog
-remek eredményeket produkálóként megjelenni, aki valójában trehány, vagy
-rosszabb esetben lelkiismeretlen. Nem szabad, hogy egy ilyen rangsor
-pont ez utóbbi viselkedést jutalmazza meg, és az előbbit büntesse; ezért
-is fontos arra törekedni, hogy a jelentési fegyelem minél jobb legyen az
-országban, és ha nem is tökéletes, ne legyenek benne szisztematikus
-eltérések.
+hanem rossz esetben egy egészen perverz helyzetet is létrehozhat: hogy
+az a kórház tűnik fel rossz fényben, aminek valójában az a „hibája”,
+hogy odafigyel a fertőzésekre és lelkiismeretesen jelenti őket, míg az
+fog remek eredményeket produkálóként megjelenni, aki valójában trehány,
+vagy rosszabb esetben lelkiismeretlen. Nem szabad, hogy egy ilyen
+rangsor pont ez utóbbi viselkedést jutalmazza meg, és az előbbit
+büntesse; ezért is nagyon fontos arra törekedni, hogy a jelentési
+fegyelem minél jobb legyen az országban, és ha nem is tökéletes, ne
+legyenek benne szisztematikus eltérések.
 
 (Természetesen ha a hatóság álláspontja az, hogy az adatgyűjtés remek az
-országban, akkor erre nem hivatkozhat – de a tudományos kutatóként
-mindig gondolni kell arra, hogy tényleg tökéletes-e helyzet.)
+országban, akkor erre nem hivatkozhat – de tudományos kutatóként mindig
+gondolni kell arra, hogy tényleg tökéletes-e helyzet.)
 
 ### Záró gondolatok
 
-Összességében remélhető, hogy az elkészült elemzés két, fontos dologra
-is példát mutat, sőt, jó esetben akár megtermékenyítőleg is hathat a
+Összességében remélem, hogy az elkészült elemzés két, fontos dologra is
+példát mutat, sőt, jó esetben akár megtermékenyítőleg is hathat a
 jövőben.
 
 Az egyik a *transzparencia* szerepe. Többféle okot is fel szoktak hozni,
@@ -600,45 +635,87 @@ a jelen projekt:
   „több szem többet lát” mondat: nem arról van szó, hogy a hivatalos
   szervek szükségképp rossz vagy korlátozott elemzést készítenek, de
   egyszerűen a több elemző nagyobb lehetőség a jobb elemzési módszerek
-  megtalálására. (Ez a hivatalos szerveknek is segítség!)
-- A második szempont a minőségbiztosítás. Ez igaz az elemzésre magára is
-  – mert abban is transzparensnek kell lenni, az elemzést végző program
+  megtalálására. (Ez a hivatalos szerveknek is segítség!) Ahogy korábban
+  is mondtam, ez a szempont erre az elemzésre magára is igaz: nem hogy
+  nem baj, hanem kimondottan örülök, ha valaki jobb, célszerűbb módszert
+  javasol a probléma vizsgálatára az én elemzésem végiggondolása
+  alapján!
+- A második szempont a minőségbiztosítás. Ez igaz az elemzésre is – mert
+  abban is transzparensnek kell lenni, az elemzést végző program
   közzététele segíti, hogy kiderüljenek a benne elkövetett esetleges
-  hibák. Én magam is teljes egészében, bárki számára elérhetően közölni
-  fogom az elemzéshez használt kódomat ebben az írásban. De igaz ez a
-  végeredmény közzétételére is: a kórházak közti rangsor közzététele
-  segíti a hibák feltárását, a javítási lehetőségek kihasználását
-  azáltal, hogy objektív információt szolgáltat; ezen felül az
-  eredmények közlése és visszacsatolása motivál is a jobb
-  teljesítményre. Fontos hangsúlyozni, hogy az ilyen típusú
-  vizsgálatoknak nem az „ujjal mutogatás” és az egyéni felelősök
-  megkeresése a célja, sokkal inkább a rendszerszintű optimalizáció.
-  Abban van igazság, hogy az ilyen rangsorok bajt is okozhatnak, ha a
-  közvélemény nem helyesen értelmezné a számokat, de erre nem az a
-  válasz, hogy akkor nem készítünk ilyet, hanem az, hogy *jól* készítünk
-  ilyet, például megfelelő magyarázatokkal ellátott, kontextusba
-  helyezett, megfelelően korrigált (lásd például a fentieket!)
-  eredményeket közlünk. Ha rövid távon jobbnak is tűnik az információk
-  visszatartása, hosszú távon csak a lakosságot bevonó, partnerként
-  kezelő, nyílt és őszinte kommunikáció vezet sikerre.
+  hibák. (Ez is igaz jelen elemzésre is: én magam is teljes egészében,
+  bárki számára elérhetően közölni fogom az elemzéshez használt kódomat
+  ebben az írásban.) De igaz ez a végeredmény közzétételére is: a
+  kórházak közti rangsor közzététele segíti a hibák feltárását, a
+  javítási lehetőségek kihasználását azáltal, hogy objektív információt
+  szolgáltat; ezen felül az eredmények közlése és visszacsatolása
+  motivál is a jobb teljesítményre. Abban van igazság, hogy az ilyen
+  rangsorok bajt is okozhatnak, ha a közvélemény nem helyesen értelmezné
+  a számokat, de erre nem az a válasz, hogy akkor nem készítünk ilyet,
+  hanem az, hogy *jól* készítünk ilyet, például megfelelő
+  magyarázatokkal ellátott, kontextusba helyezett, megfelelően korrigált
+  (lásd például a fentieket!) eredményeket közlünk. Ha rövid távon
+  jobbnak is tűnik az információk visszatartása, meggyőződésem, hogy
+  hosszú távon csak a lakosságot bevonó, partnerként kezelő, nyílt és
+  őszinte kommunikáció vezet sikerre a népegészségügyben.
 - És itt érünk el a harmadik ponthoz: a transzparencia a talán
-  legerősebb eszközünk a bizalom megteremtéséhez és fenntartásához. Nem
-  igaz, hogy a bizalmat rombolja az, ha rosszak az eredmények (sőt,
-  bizonyos értelemben ez erősíti meg a legjobban, mert azt mutatja a
-  lakosságnak, hogy még ezeket sem kell eltitkolni, lehet hinni az
-  adatoknak), ami rombolja a bizalmat, az az elhallgatás és a
-  titkolózás, az adatok híján kialakuló szájhagyományok és rémhírek, az
-  „ehhez te úgysem értesz, ne üsd bele az orrod az okos szakemberek
-  dolgába”-szemlélet.
+  legerősebb eszközünk a bizalom megteremtéséhez és fenntartásához a
+  népegészségügyben. Nem igaz, hogy a bizalmat rombolja az, ha rosszak
+  az eredmények (sőt, bizonyos értelemben ez erősíti meg a legjobban,
+  mert azt mutatja a lakosságnak, hogy még ezeket sem kell eltitkolni,
+  tehát lehet hinni az adatoknak), ami rombolja a bizalmat, az az
+  elhallgatás és a titkolózás, az – adatok híján kialakuló! –
+  szájhagyományok és rémhírek, az „ehhez te úgysem értesz, ne üsd bele
+  az orrod az okos szakemberek dolgába”-szemlélet.
 
 A másik szempont: az *adatokra alapozott elemzés*. Ez a vizsgálat példa
 arra is, hogy melyik az az irány, ami általában is nagy potenciált rejt
-a magyar egészségügy számára: igyekezni kell a helyzetértékeléseket,
-elemzéseket minél inkább a „megérzések” és „benyomások” talajáról
-áthelyezni adatokkal alátámasztható, tényeken alapuló megállapításokra.
+véleményem szerint: igyekezni kell a helyzetértékeléseket, elemzéseket
+minél inkább a „megérzések” és „benyomások” talajáról áthelyezni
+adatokkal alátámasztható, tényeken alapuló, objektív megállapításokra.
 (Ez maguknak a kórházaknak is ugyanúgy fontos, hiszen e nélkül ők sem
 tudhatják, hogy milyen jól dolgoznak, hol lehetne javítani, hogyan
-viszonyulnak a többi kórházhoz.)
+viszonyulnak a többi kórházhoz!) Az ilyen típusú, adatokon alapuló
+elemzések nagyon jól segítik a hibák feltárását is. Itt fontos rögtön
+hozzátenni, hogy a „hiba” szót a legáltalánosabban értelemben használom,
+és egyáltalán nem csak olyanokra gondolok, hogy egy kórházban van valami
+probléma mondjuk a fertőtlenítéssel: az is hiba, ha gyanúsan nagy
+különbségek vannak a kórházak között, és ezért felmerül, hogy nem
+korrigáltunk jól a betegösszetételre, vagy, ha itt sem találunk gondot,
+akkor talán a jelentési fegyelem kapcsán kell vizsgálódnunk? Akárhogy
+is, az adatok megmutatják, hogy *valamit* javítanunk kell, és, ami nem
+kevésbé fontos, abban is adhatnak iránymutatást, hogy mit.
+
+Fontos e ponton közbeszúrni, hogy az egész kérdéskör véleményem szerint
+elsősorban nem az „ujjal mutogatásról”, a személyi felelősök kereséséről
+kell, hogy szóljon, nem arról, hogy „te elrontottad, mert nem mostál
+kezet, pedig kellett volna!”. Még ha igaz is, ez a megközelítés sokszor
+pont a lényeget téveszti szem elől: biztos, hogy a hibák *csak és
+kizárólag* ilyen *egyéni szinten* értelmezhetőek és értelmezendőek? Hogy
+ennek feltárásával a végére jártunk a problémának? Nem lehet, hogy a
+hibázás egész véletlenül összefüggésben van azzal, hogy hány beteg jut
+egy ápolóra az adott kórházban vagy osztályon? (Vagy akár az egész
+egészségügyi ellátórendszerben.) Hogy milyen az adott osztály biztonsági
+kultúrája, az infekciókontroll protokollok betartásának és
+betartatásának mértéke, mit látnak az egészségügyi dolgozók a régebb óta
+ott dolgozó munkatársaiktól, a feletteseiktől, mibe szocializálódtak
+bele, rendelkezésre áll-e kellő mennyiségű és minőségű fertőtlenítőszer
+és védőeszköz? Népszerű szóval élve: a *rendszerszintű* kérdések. Bár
+természetesen van szerepünk, de a hibák általában nem kizárólag az
+emberi hanyagság, tudatlanság, figyelmetlenség kontextusában
+értelmezhetőek: van egy környezet, mely lehet táptalaja is annak, hogy
+ilyen hibák megtörténjenek, de csökkentheti is ezek valószínűségét.
+Ennek a megértése kritikusan fontos ahhoz, hogy a kórházi rangsorok
+mögött meghúzódó okokat jobban lássuk és láttassuk, mert csak ez
+vezethet el minket ahhoz, hogy a helyzeten javíthassunk és megtaláljuk
+ehhez a legjobb megoldásokat. Az egyéni felelősségrevonás is lehet
+elkerülhetetlen, de önmagában ettől érdemi, tartós, önfenntartó javulás
+nem várható egy egészségügyi rendszerben. Akkor van lehetőségünk a
+beavatkozási lehetőségek jó megfogalmazására, ha a rendszer egészének is
+megértjük a viselkedését, azonosítjuk a hibákat megelőző és azokat
+elősegítő pontjait, mert így tudjuk a leghatékonyabban javítani a
+rendszer teljesítményét, ezzel szolgálva a betegek és az egész magyar
+lakosság érdekeit.
 
 E kettő, tehát egyfelől a transzparencia, másfelől az elemzések,
 döntések adatokra alapozásának az összekapcsolódása egy olyan pont,
@@ -649,13 +726,17 @@ lakosság életminőségének a javítására.
 ## Statisztikai és számítástechnikai részletek
 
 Ez a fejezet az elemzés technikai részleteit ismerteti. A
-végeredményeket a következő, Eredmények fejezet mutatja be.
+végeredményeket a következő,
+[Eredmények](https://github.com/tamas-ferenci/NNSRElemzes#eredm%C3%A9nyek)
+fejezet mutatja be.
 
 ### Adatok betöltése
 
 Az elemzéseket az [R statisztikai
 környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shelf_id=2)
-alatt végeztem. Elsőként betöltjük a szükséges csomagokat:
+alatt végeztem.
+
+Elsőként betöltjük a szükséges csomagokat:
 
 ``` r
 library(data.table)
@@ -1305,18 +1386,21 @@ nem használjuk fel, azt ha nyers értékként, ha eltérésként, illetve ha
 $z$-score-ként használjuk fel, ez utóbbi három esetet megnézzük
 lineárisan és [spline-nal
 kibontva](https://tamas-ferenci.github.io/FerenciTamas_SimitasSplineRegresszioAdditivModellek/)
-is. Az eredményváltozó eloszlásaként megpróbáljuk a Poisson-t, a
-kvázi-Poisson-t és a negatív binomiálisat.
+is. (Természetesen a CMI teljes kihagyása jó eséllyel torzítást okoz,
+illetve növel, így ez csak a teljesség kedvéért szerepel, vagy, ha
+valaki nem fogadná el azt, hogy a CMI bármennyire is mérőszáma lehet a
+kórházi fertőzésekre fogékonyabb betegösszetételnek.) Az eredményváltozó
+eloszlásaként megpróbáljuk a Poisson-t, a kvázi-Poisson-t és a negatív
+binomiálisat.
 
 Az összes megbecsült modell ábráját csak elmentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ``` r
-# p <- lapply(1:length(fits), function(i) print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ",
-#                                                                                pargrid$families[i]))))
 cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(p))
-  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i])))
+for(i in 1:length(fits))
+  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
+                                         pargrid$formulas[i])))
 invisible(dev.off())
 ```
 
