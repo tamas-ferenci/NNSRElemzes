@@ -13,7 +13,6 @@ lang: hu
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.width = 12, dpi = 300)
-set.seed(1)
 ```
 
 ## Összefoglaló gondolatok
@@ -133,11 +132,17 @@ Ez a fejezet az elemzés technikai részleteit ismerteti. A végeredményeket a 
 
 Az elemzéseket az [R statisztikai környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shelf_id=2) alatt végeztem.
 
-Elsőként betöltjük a szükséges csomagokat, használni fogjuk a `data.table`-t (`r packageVersion("data.table")` verzió) és a `ggplot2`-t (`r packageVersion("ggplot2")` verzió) :
+Elsőként betöltjük a szükséges csomagokat; használni fogjuk többek között a `data.table`-t (`r packageVersion("data.table")` verzió) és a `ggplot2`-t (`r packageVersion("ggplot2")` verzió) :
 
 ```{r}
 library(data.table)
 library(ggplot2)
+```
+
+Beállítjuk a `seed` értékét, hogy az elemzés teljesen reprodukálható legyen (egyes ábrák jitter-eltek lesznek, ezért fog ez számítani):
+
+```{r}
+set.seed(1)
 ```
 
 Ezután betöltjük a nyers adatokat is, ügyelve az egységes formázásra:

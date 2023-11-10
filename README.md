@@ -736,12 +736,20 @@ Az elemzéseket az [R statisztikai
 környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shelf_id=2)
 alatt végeztem.
 
-Elsőként betöltjük a szükséges csomagokat, használni fogjuk a
-`data.table`-t (1.14.8 verzió) és a `ggplot2`-t (3.4.4 verzió) :
+Elsőként betöltjük a szükséges csomagokat; használni fogjuk többek
+között a `data.table`-t (1.14.8 verzió) és a `ggplot2`-t (3.4.4 verzió)
+:
 
 ``` r
 library(data.table)
 library(ggplot2)
+```
+
+Beállítjuk a `seed` értékét, hogy az elemzés teljesen reprodukálható
+legyen (egyes ábrák jitter-eltek lesznek, ezért fog ez számítani):
+
+``` r
+set.seed(1)
 ```
 
 Ezután betöltjük a nyers adatokat is, ügyelve az egységes formázásra:
@@ -1141,7 +1149,7 @@ invisible(dev.off())
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-25-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-26-.gif)<!-- -->
 
 Vagy vonatkoztathatunk ápolási napra is (a lenti ábra természetesen csak
 illusztráció, az eredményt kimentjük [PDF
@@ -1169,7 +1177,7 @@ invisible(dev.off())
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-26-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-27-.gif)<!-- -->
 
 Megvizsgálhatjuk úgy is ezeket az adatokat, hogy nem ábrázoljuk külön az
 egyes szakmákat, csak az eloszlásra vagyunk kíváncsiak.
@@ -1183,7 +1191,7 @@ p <- ggplot(Res, aes(x = IncPerPatient, y = SzakmaMegnev, color = factor(year), 
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
 
 Mindez logaritmikus skálán, feltüntetve a mediánt is:
 
@@ -1191,7 +1199,7 @@ Mindez logaritmikus skálán, feltüntetve a mediánt is:
 p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-29-1.png)<!-- -->
 
 Ápolási napra vetítve:
 
@@ -1202,7 +1210,7 @@ p <- ggplot(Res, aes(x = IncPerDay, y = SzakmaMegnev, color = factor(year), grou
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-29-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-30-1.png)<!-- -->
 
 Mindez logaritmikus skálán, feltüntetve a mediánt is:
 
@@ -1210,7 +1218,7 @@ Mindez logaritmikus skálán, feltüntetve a mediánt is:
 p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-30-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-31-1.png)<!-- -->
 
 Ezek jelentik lényegében a legteljesebben rétegzett adatokat (még az
 évet is külön vettük); mondhatjuk, hogy később majd ezeket kell
@@ -1282,7 +1290,7 @@ p <- ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMI)) + geom_jitter(widt
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-36-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
 
 Logaritmikus skálán:
 
@@ -1290,7 +1298,7 @@ Logaritmikus skálán:
 p + scale_y_log10() + annotation_logticks(sides = "l")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
 
 Érdemes megnézni a különféleképp számolt CMI-k eloszlását is. Sima
 eltérés:
@@ -1300,7 +1308,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
   facet_wrap(~SzakmaMegnev)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->
 
 Ezt érdemes úgy is megnézni, hogy a függőleges tengely skálázásánál
 megengedjük, hogy ne egységes legyen:
@@ -1310,7 +1318,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
   facet_wrap(~SzakmaMegnev, scales = "free")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-40-1.png)<!-- -->
 
 A $z$-score:
 
@@ -1319,7 +1327,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 
   facet_wrap(~SzakmaMegnev)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-40-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-41-1.png)<!-- -->
 
 ### Modellezés
 
@@ -1498,7 +1506,7 @@ ggplot(merge(ress[family!="QP"&type=="CDI"],
   geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-48-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-49-1.png)<!-- -->
 
 Az eredmény:
 
@@ -1508,7 +1516,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"], aes(y = forcats::fct_reor
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-49-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-50-1.png)<!-- -->
 
 ### MRK
 
@@ -1522,7 +1530,7 @@ ggplot(merge(ress[family!="QP"&type=="MRK"],
   geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-50-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-51-1.png)<!-- -->
 
 Az eredmény:
 
@@ -1532,7 +1540,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"], aes(y = forcats::fct_reor
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-51-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-52-1.png)<!-- -->
 
 ### VÁF
 
@@ -1546,7 +1554,7 @@ ggplot(merge(ress[family!="QP"&type=="VAF"],
   geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-52-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
 
 Az eredmény:
 
@@ -1556,7 +1564,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"], aes(y = forcats::fct_reor
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-54-1.png)<!-- -->
 
 ### A három típus egybevetése
 
@@ -1679,4 +1687,4 @@ p <- GGally::ggpairs(dcast(ress[formula=="zCMI"&family=="NB"],
 gpairs_lower(p)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-55-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-56-1.png)<!-- -->
