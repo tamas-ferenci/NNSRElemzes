@@ -21,7 +21,7 @@ Ferenci Tamás (<https://www.medstat.hu/>)
 - Ez lehetővé teszi az egyes kórházak összehasonlítását, ami nagyon
   fontos feladat, mind a közvélemény, mind az egészségügyi
   ellátórendszer és annak irányításáért felelős szervek számára –
-  azonban óvatosnak kell lenni.
+  azonban *óvatosnak kell lenni*.
 - Az egyik probléma, hogy nem biztos, hogy a jelentési fegyelem
   ugyanolyan minden kórházban: lehet, hogy ahol több kórházi ellátással
   összefüggő fertőzés fordult elő, ott nem baj van, hanem ellenkezőleg,
@@ -736,14 +736,15 @@ Az elemzéseket az [R statisztikai
 környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shelf_id=2)
 alatt végeztem.
 
-Elsőként betöltjük a szükséges csomagokat:
+Elsőként betöltjük a szükséges csomagokat, használni fogjuk a
+`data.table`-t (1.14.8 verzió) és a `ggplot2`-t (3.4.4 verzió) :
 
 ``` r
 library(data.table)
 library(ggplot2)
 ```
 
-Majd betöltjük a nyers adatokat is, ügyelve az egységes formázásra:
+Ezután betöltjük a nyers adatokat is, ügyelve az egységes formázásra:
 
 ``` r
 RawData <- rbind(

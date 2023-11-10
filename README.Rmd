@@ -13,12 +13,13 @@ lang: hu
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.width = 12, dpi = 300)
+set.seed(1)
 ```
 
 ## Összefoglaló gondolatok
 
 - A bíróság döntése nyomán elérhetővé vált a kórházi fertőzésekre vonatkozó magyar adatgyűjtés 2015 és 2016. évi adatbázisa, melyben soha korábban nem látott részletezettségű, egyedi adatok vannak: a betegről ugyan kevés információ van (még a neme és életkora sem szerepel, hogy ne legyen beazonosítható), viszont a fertőzés ténye, a kórház és a kórházi osztály meg van adva, több egyéb információ mellett.
-- Ez lehetővé teszi az egyes kórházak összehasonlítását, ami nagyon fontos feladat, mind a közvélemény, mind az egészségügyi ellátórendszer és annak irányításáért felelős szervek számára -- azonban óvatosnak kell lenni.
+- Ez lehetővé teszi az egyes kórházak összehasonlítását, ami nagyon fontos feladat, mind a közvélemény, mind az egészségügyi ellátórendszer és annak irányításáért felelős szervek számára -- azonban _óvatosnak kell lenni_.
 - Az egyik probléma, hogy nem biztos, hogy a jelentési fegyelem ugyanolyan minden kórházban: lehet, hogy ahol több kórházi ellátással összefüggő fertőzés fordult elő, ott nem baj van, hanem ellenkezőleg, több ilyen irányú vizsgálatot végeznek és lelkiismeretesebben jelentik a feltárt eseteket. Ez jelen esetben különösen kritikus problémakör, nehogy a rangsor épp ezeket a kórházakat büntesse, előnytelen színben tüntetve fel őket. Sajnos azonban -- információ híján -- erre korrigálni nem lehet (egyedül annyi mondható, hogy a hivatalos szervek nem hivatkozhatnak erre, hiszen az ő közleményeikben soha fel nem merült, hogy a magyar jelentési rendszer működésében bármiféle tökéletlenség lenne).
 - A másik probléma, hogy az egyes kórházak eltérnek az általuk ellátott betegek összetételében is (állapot súlyossága, társbetegségek, nem, életkor stb.), így egyáltalán nem biztos, hogy ahol több a fertőzés, ott valami baj van -- az is lehet, hogy ott egyszerűen rosszabb állapotú, és így kórházi fertőzésre is hajlamosabb betegeket látnak el. Bár paradoxnak hangzik, de akár még az is előfordulhat, hogy ott jobb a helyzet, ahol több fertőzés fordul elő, ha a betegösszetétel annyival előnytelenebb.
 - Ez utóbbi probléma esetében azonban, ha nem is tökéletes megoldásra, de korrekcióra van lehetőség; jelen elemzés ezt a kérdést fogja körbejárni. A vizsgálat alapvetően két ötletre épít. Az egyik, hogy nem kórház-szintű fertőzés gyakoriságot használ, hanem osztály szintjén számolja az előfordulást. Ez azért fontos, mert az egyes szakmák érzékenysége a kórházi fertőzésre nagyon eltér: egy intenzív ellátás sokkal nagyobb kockázatot hordoz ilyen szempontból, mint mondjuk egy szemészet (a végzett beavatkozások és a betegek állapota miatt is). Ez automatikusan előnytelenebb helyzetbe hozza azokat a kórházakat, ahol van intenzív ellátás, vagy ahol nagyobb intenzív osztály van. Ha tehát nem kórházat hasonlítunk kórházzal, hanem osztály szinten dolgozunk, az jóval homogénebb összehasonlítás lesz. Azonban még intenzív osztály és intenzív osztály (vagy épp szemészet és szemészet) között is nagy különbség lehet, úgyhogy fontos lenne még pontosabban korrigálni a betegösszetételre. Erre sajnos direkt lehetőség nincsen -- az adatbázisban még életkor és nem sincs, társbetegségek ugyan vannak, de a korrekcióhoz ismerni kellene a fertőzést el nem szenvedett kórházi betegek hasonló adatait is, ami viszont nem áll rendelkezésre -- de egy indirekt lehetőség felvethető. Ez pedig az, hogy bár egy adott kórház adott osztályán kezelt betegek orvosi súlyosságáról nincs nyilvánosan elérhető adat, de "pénzügyi súlyosságáról", azaz az utánuk elszámolt költségekről van. Nem feltételezhető, hogy a kétféle súlyosság pontosan ugyanaz, viszont az sem igaz, hogy semmi kapcsolat nincs köztük: a rosszabb állapotú, idősebb, esendőbb -- és így kórházi fertőzésre is fogékonyabb -- betegeknél vélhetően a kezelés is hosszabb, költségesebb, így ez utóbbi súlyosságot felhasználhatjuk, hogy ha nem is tökéletesen, de valamennyire korrigáljunk, így javítva a becslést.
@@ -132,14 +133,14 @@ Ez a fejezet az elemzés technikai részleteit ismerteti. A végeredményeket a 
 
 Az elemzéseket az [R statisztikai környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shelf_id=2) alatt végeztem.
 
-Elsőként betöltjük a szükséges csomagokat:
+Elsőként betöltjük a szükséges csomagokat, használni fogjuk a `data.table`-t (`r packageVersion("data.table")` verzió) és a `ggplot2`-t (`r packageVersion("ggplot2")` verzió) :
 
 ```{r}
 library(data.table)
 library(ggplot2)
 ```
 
-Majd betöltjük a nyers adatokat is, ügyelve az egységes formázásra:
+Ezután betöltjük a nyers adatokat is, ügyelve az egységes formázásra:
 
 ```{r}
 RawData <- rbind(
