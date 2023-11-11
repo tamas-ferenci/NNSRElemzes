@@ -343,12 +343,12 @@ jelentést vesszük alapul, akkor a következő dolgokat említeném meg
 - Elfogadva azt, hogy az adatok kórház szempontjából aggregáltak, ezen
   belül impresszív részletezettségűek (a 2022-es jelentésnek csak a
   kötelező modulról szóló része több mint 60 oldal hosszú), számos
-  fontos, releváns, jól prezentált elemzéssel, melyek kitűnően
-  használhatóak szakmabeliek számára. Sok oldalról megvilágítják az
-  adatokat, informatív, mély lebontásokkal.
+  fontos, jól prezentált elemzéssel, releváns táblázatokkal,
+  grafikonokkal, melyek kitűnően használhatóak szakmabeliek számára. Sok
+  oldalról megvilágítják az adatokat, informatív, mély lebontásokkal.
 - Mindezek közvélemény számára történő érthetősége viszont enyhén szólva
-  kérdéses; minden további magyarázat helyett, kíváncsi volnék, hogy a
-  következő mondatot hányan értik az átlagos újságolvasó állampolgárok
+  is kérdéses; minden további magyarázat helyett, kíváncsi volnék, hogy
+  a következő mondatot hányan értik az átlagos újságolvasó állampolgárok
   közül: „A kórházankénti incidencia percentilisek az alábbi értékek
   között helyezkedtek el: P25 = 6,7; P50 = 14,4; P75 = 30,8. A
   kórházankénti incidencia-sűrűség percentilisek az alábbi értékek
@@ -380,7 +380,7 @@ a számok félrevezetőek a betegösszetételre való korrekció nélkül,
 valójában a jelentés is közöl, ha nem is kórházra, de régióra lebontott
 adatokat, amelyek pontosak ugyanúgy félrevezetőek korrekció nélkül
 (hiszen a betegösszetétel ugyanúgy eltérhet régiónként is) – mégis, a
-jelentés minden korrekció nélkül közli ezeket.
+jelentés mindennemű korrekció nélkül közli ezeket.
 
 ## A kutatás eredményeinek magyarázata
 
