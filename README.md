@@ -238,15 +238,17 @@ meg](https://njt.hu/jogszabaly/2009-20-20-0B) a mai napig hatályos,
 úttörő jellegű rendelet, mely a területet alapvetően szabályozza.
 
 A következő nagy frissítésre 2014-ben került sor: ekkor jelent meg az
-[új változata](http://www.oek.hu/oekfile.pl?fid=5873) az alkalmazott
-definícióknak, mely leváltotta (és kibővítette) a korábbi verziót;
-ugyanebben az évben [jelent meg](https://njt.hu/jogszabaly/2014-1-20-5H)
-az a rendelet is, ami a korábbi rendeletet kiegészítve szabályozta a
-jelentési rendet. Ekkor már a korábban felsoroltakon kívül a Clostridium
-difficile (mai nevén: Clostridiodies difficile, CDI) okozta fertőzéseket
-is kötelezően jelenteni kellett az előbbieken felül. Szintén kötelezővé
-vált az alkoholos kézfertőtlenítőszer-felhasználásra vonatkozó jelentés.
-(A kötelező jelentéseket több választható modul is kiegészíti.)
+[új
+változata](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/334-2014?download=2346:ml-hai-def-2014-honlap)
+az alkalmazott definícióknak, mely leváltotta (és kibővítette) a korábbi
+verziót; ugyanebben az évben [jelent
+meg](https://njt.hu/jogszabaly/2014-1-20-5H) az a rendelet is, ami a
+korábbi rendeletet kiegészítve szabályozta a jelentési rendet. Ekkor már
+a korábban felsoroltakon kívül a Clostridium difficile (mai nevén:
+Clostridiodies difficile, CDI) okozta fertőzéseket is kötelezően
+jelenteni kellett az előbbieken felül. Szintén kötelezővé vált az
+alkoholos kézfertőtlenítőszer-felhasználásra vonatkozó jelentés. (A
+kötelező jelentéseket több választható modul is kiegészíti.)
 
 A mostani szempontunkból különösen fontos aspektus az adatok közlése.
 Eleinte ez meglehetősen egységes rendben zajlott. A 2005-ös eredmények
