@@ -223,16 +223,17 @@ rövidítéssel healthcare-associated infection, HAI, általánosan használt
 leszűkítéssel „kórházi fertőzések”, orvosi szóval nosocomiális
 fertőzések) nyomonkövetése és átfogó, standardizált elemzése bő 20 éves
 múltra tekint vissza Magyarországon. 2002-ben, amerikai minta alapján
-[született meg](http://www.oek.hu/oekfile.pl?fid=826) az első
-teljeskörű, precíz definíciója az ilyen fertőzéseknek, majd 2004.
-november 1-én [indult el](http://www.oek.hu/oekfile.pl?fid=1071) a
+[született
+meg](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/322-2002?download=2271:honlapnosocomialis-2002)
+az első teljeskörű, precíz definíciója az ilyen fertőzéseknek, majd
+2004. november 1-én [indult el](http://www.oek.hu/oekfile.pl?fid=1071) a
 szisztematikus adatgyűjtés az ún. Nemzeti Nosocomialis Surveillance
 Rendszer (NNSR) keretében. 2006-ban vált teljessé az induló éra
 eljárásrendje a standardizált módszerek teljeskörű leírásának
-[megjelenésével](http://www.oek.hu/oekfile.pl?fid=1119). Ebben az
-időszakban kötelezően jelentendő volt minden multirezisztens kórokozó
-(MRK) okozta kórházi fertőzés és minden kórházi véráramfertőzés (VÁF),
-valamint minden kórházi járvány. 2009-ben [született
+[megjelenésével](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/326-2006?download=2286:honlapsurveillance-2006-4).
+Ebben az időszakban kötelezően jelentendő volt minden multirezisztens
+kórokozó (MRK) okozta kórházi fertőzés és minden kórházi véráramfertőzés
+(VÁF), valamint minden kórházi járvány. 2009-ben [született
 meg](https://njt.hu/jogszabaly/2009-20-20-0B) a mai napig hatályos,
 úttörő jellegű rendelet, mely a területet alapvetően szabályozza.
 
@@ -249,18 +250,22 @@ vált az alkoholos kézfertőtlenítőszer-felhasználásra vonatkozó jelentés
 
 A mostani szempontunkból különösen fontos aspektus az adatok közlése.
 Eleinte ez meglehetősen egységes rendben zajlott. A 2005-ös eredmények
-[2006 februárban](http://www.oek.hu/oekfile.pl?fid=4200) (MRK), illetve
-[áprilisban](http://www.oek.hu/oekfile.pl?fid=4202) (VÁF) jelentek meg,
-a 2006-os eredmények [2007
-júniusban](http://www.oek.hu/oekfile.pl?fid=4205) (MRK), illetve szintén
-[júniusban](http://www.oek.hu/oekfile.pl?fid=4207) (VÁF), a 2007-es
-eredmények [2008-ban](http://www.oek.hu/oekfile.pl?fid=4208), majd pedig
-az említett 2009-es rendelet immár hivatalosan is szabályozta, hogy az
+[2006
+februárban](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/307-2006?download=1761:honlapheti-2006-7)
+(MRK), illetve
+[áprilisban](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/307-2006?download=1726:honlapheti-2006-13)
+(VÁF) jelentek meg, a 2006-os eredmények [2007
+júniusban](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/309-2007?download=1787:honlapheti-2007-24)
+(MRK), illetve szintén
+[júniusban](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/309-2007?download=1786:honlapheti-2007-23-2)
+(VÁF), a 2007-es eredmények
+[2008-ban](http://www.oek.hu/oekfile.pl?fid=4208), majd pedig az
+említett 2009-es rendelet immár hivatalosan is szabályozta, hogy az
 adott évi jelentést mindig a következő év június 1-ig kell közzétenni
 (14. § (2) bekezdés). Ez megtörtént
-[2009-ben](http://www.oek.hu/oekfile.pl?fid=4209)
+[2009-ben](http://www.oek.hu/oekfile.pl?fid=4209),
 [2010-ben](http://www.oek.hu/oekfile.pl?fid=4214),
-[2011-ben](http://www.oek.hu/oekfile.pl?fid=4214) és
+[2011-ben](http://www.oek.hu/oekfile.pl?fid=4215) és
 [2012-ben](http://www.oek.hu/oekfile.pl?fid=4501). Ekkor azonban jött a
 csavar: a 2012-es adatokat nem adták ki 2013. június 1-ig. Erre
 semmiféle jogi lehetőség nem volt: egész egyszerűen elszabotálták a
@@ -287,10 +292,7 @@ A 2016-ot követő évekről jó összefoglalót ad a [hivatalos
 honlap](https://www.antsz.hu/felso_menu/temaink/jarvany/korhazifert)
 aktuális kinézete:
 
-<figure>
-<img src="NNSR-kozzetetel.PNG" alt="NNSR jelentések közzétele" />
-<figcaption aria-hidden="true">NNSR jelentések közzétele</figcaption>
-</figure>
+![](NNSR-kozzetetel.PNG)
 
 Az ábrán nem látszik (mert a honlapra még most sem tették ki a linket…),
 de a 2022-ről szóló jelentés [határidőre
