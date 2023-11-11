@@ -312,15 +312,21 @@ jogszabályi kötelezettség ellenére sem). 2021 novemberében, amikor már
 nem hogy a 2019-es, de már a 2020-as is meg kellett volna hogy jelenjen,
 és mindig nem tették közzé egyiket sem, egy szervezet adatigénylést
 nyújtott be ezekre vonatkozóan. Jellemző adalék a hivatalos szervek
-rosszhiszeműségére, hogy az erre adandó válasz határidejét előbb 30
-nappal meghosszabbították, aztán 45 nappal meghosszabbították (mindkét
-esetben a rendelkezésre álló határidő legutolsó napján, délután 4 óra
-körül értesítve a szervezetet a hosszabbításról – az ilyen beidőzítésnek
-valószínűleg nagyobb volt a munkaigénye, mint az egy darab fájl
-csatolásának és elküldésének lett volna…), majd miután a második
-határidő is lejárt, nemes egyszerűséggel többet nem válaszoltak nekik.
-Ezen a ponton a szervezet beperelte az NNK-t – és ezután került fel a
-két dokumentum, ezért szinte egyszerre.
+rosszhiszeműségére, hogy az erre adandó válasz 15 napos határidejét
+előbb 30 nappal meghosszabbították a leterheltségükre hivatkozással (egy
+darab PDF fájl elküldéséről beszélünk, ehhez volt szükségük *még* 30
+napra, most arról nem beszélve, hogy pont ugyanannyi idő alatt lehetett
+volna elküldni a fájlt, mint amennyi idő alatt megírták, hogy
+hosszabbításra van szükségük az elküldéshez), aztán ennek lejárta után
+*megint* meghosszabbították ugyanerre hivatkozva, ezúttal 45 nappal,
+mindkét esetben a rendelkezésre álló határidő legutolsó napján, délután
+4 óra körül értesítve a szervezetet a hosszabbításról (az ilyen
+beidőzítésnek valószínűleg önmagában nagyobb volt a munkaigénye, mint az
+egy darab fájl csatolásának és elküldésének lett volna), majd miután a
+második határidő is lejárt, és több határidő-kitolási lehetőségük nem
+volt, nemes egyszerűséggel többet nem válaszoltak nekik. Ezen a ponton a
+szervezet beperelte az NNK-t – és ezután került fel a két dokumentum,
+ezért szinte egyszerre.
 
 Összefoglalva megállapítható, hogy 2004 és 2013 között rendben, és a
 jogszabályoknak megfelelően zajlott a jelentések közzététele, 2013 után
