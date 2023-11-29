@@ -251,8 +251,12 @@ alkoholos kézfertőtlenítőszer-felhasználásra vonatkozó jelentés. (A
 kötelező jelentéseket több választható modul is kiegészíti.)
 
 A mostani szempontunkból különösen fontos aspektus az adatok közlése.
-Eleinte ez meglehetősen egységes rendben zajlott. A 2005-ös eredmények
-[2006
+Hogy a helyzetet érzékeljük, egyelőre ne is beszéljünk a kórház-szintű
+adatokról, és maradjunk az aggregált adatok közlésének a kérdésénél,
+hiszen ez – elvileg – semmilyen kérdést vagy problémát nem vet fel, még
+az állami szervek szerint sem, így rutinszerűen kell közölniük azokat.
+Ezen adatok közlése eleinte valóban meglehetősen egységes rendben
+zajlott. A 2005-ös eredmények [2006
 februárban](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/307-2006?download=1761:honlapheti-2006-7)
 (MRK), illetve
 [áprilisban](https://www.nnk.gov.hu/index.php/jarvanyugyi-es-infekciokontroll-foosztaly/epinfo-kiadvany/category/307-2006?download=1726:honlapheti-2006-13)
@@ -281,7 +285,7 @@ adattartalma is megérne egy külön misét: ha semmi mást nem nézünk, a
 (!) oldal, de a 2013-as még ezt is alul tudta múlni a maga 13 oldalával…
 Ekkor úgy döntött az egészségügyi irányítás, hogy legalizálja az általa
 teremtett jogszabály-ellenes magatartást, és egy [2015-ös
-rendelettel](https://njt.hu/jogszabaly/2015-54-20-5H.0#CI) egyszerűen
+rendelettel](https://njt.hu/jogszabaly/2015-54-20-5H.0) egyszerűen
 lecserélte a határidőt június 1-ről szeptember 1-re. Azonban ez sem
 segített: a 2015-ről szóló jelentés *megint* nem jelent meg nem csak
 június 1-re, de szeptember 1-re sem. Indoklás ismét nem volt, végül
