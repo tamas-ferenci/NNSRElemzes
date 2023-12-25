@@ -256,6 +256,12 @@ KorhazNevek <- KorhazNevek[!duplicated(KorhazRovid)]
 
 ### Incidencia-számolás és adattisztítás
 
+Az adatbázisunkban összesen `r nrow(RawData)` eset van tehát, az alábbi megoszlásban:
+
+```{r}
+dcast(year ~ type, data = RawData[, .N, .(year, type)], value.var = "N")
+```
+
 Első lépésben számoljuk ki a jelentett fertőzéses esetek számát év, kórház és osztály (mindhárom fertőzés-típusra), majd ezt a táblát egyesítsük mind a betegforgalmi, mind az elnevezési táblákkal:
 
 ```{r}
@@ -265,8 +271,10 @@ Res <- merge(merge(setkey(RawData, KorhazRovid, SzakmaKod, year, type)[
            .(year = Ev, KorhazRovid, SzakmaKod, SzakmaMegnev,
              MukodoAtlagAgy, TeljesitettApolasiNapSzam, ElbocsatottBetegSzam)],
   by = c("year", "KorhazRovid", "SzakmaKod"), all.x = TRUE),
-  KorhazNevek, by = "KorhazRovid")
+  KorhazNevek, by = "KorhazRovid", all.x = TRUE)
 ```
+
+Az itt szereplő esetek száma természetesen ugyanúgy `r sum(Res$N)`.
 
 Lesz néhány sor veszteség azért, mert a kórházban valójában csak krónikus ellátás van, de ez az osztály-névből nem derült ki:
 
@@ -274,25 +282,39 @@ Lesz néhány sor veszteség azért, mert a kórházban valójában csak krónik
 RawData[is.na(KorhazNev)]
 ```
 
+Ezek száma és megoszlása:
+
+```{r}
+Veszt1 <- Res[is.na(KorhazNev)&N>0, .(N1 = sum(N)), .(year, type)]
+dcast(year ~ type, data = Veszt1, value.var = "N1")
+```
+
+Ez összesen tehát `r sum(Veszt1$N1)` eset; ezeket hagyjuk el:
+
+```{r}
+Res <- Res[!is.na(KorhazNev)]
+```
+
 Lesznek jelentett fertőzéses esetek olyan osztályokról, amikkel elvileg az adott intézmény adott évben nem is rendelkezett:
 
 ```{r}
-Res[is.na(SzakmaMegnev)&N>0]
+Res[is.na(SzakmaMegnev)&N>0, .(KorhazNev, KorhazRovid, year, SzakmaKod, type, N)]
 ```
 
-Ezek száma:
+Ezek száma és megoszlása:
 
 ```{r}
-Res[is.na(SzakmaMegnev), .(`Esetszám` = sum(N)), .(`Típus` = type)]
+Veszt2 <- Res[is.na(SzakmaMegnev), .(N2 = sum(N)), .(year, type)]
+dcast(year ~ type, data = Veszt2, value.var = "N2")
 ```
 
-Ezeket szintén hagyjuk most el (láthatóan minimális veszteség):
+Ez `r sum(Veszt2$N2)` eset; ezeket szintén hagyjuk most el (láthatóan ismét minimális veszteség):
 
 ```{r}
 Res <- Res[!is.na(SzakmaMegnev)]
 ```
 
-Van pár eset, ahol olyan osztály jelentett fertőzést, ami létezik ugyan, de elvileg nem volt betegforgalma:
+Végezetül van pár eset, ahol olyan osztály jelentett fertőzést, ami létezik ugyan, de elvileg nem volt betegforgalma:
 
 ```{r}
 Res[TeljesitettApolasiNapSzam==0&N>0]
@@ -301,18 +323,48 @@ Res[TeljesitettApolasiNapSzam==0&N>0]
 Ezek szintén nem jelentenek nagy veszteséget:
 
 ```{r}
-Res[TeljesitettApolasiNapSzam==0, .(`Esetszám` = sum(N)), .(`Típus` = type)]
+Veszt3 <- Res[TeljesitettApolasiNapSzam==0, .(N3 = sum(N)), .(year, type)]
+dcast(year ~ type, data = Veszt3, value.var = "N3")
 ```
 
-Hagyjuk el ezeket is:
+Ez tehát `r sum(Veszt3$N)` eset; hagyjuk el ezeket is:
 
 ```{r}
 Res <- Res[TeljesitettApolasiNapSzam!=0]
 ```
 
-Ezzel előállítottunk egy tisztított, további feldolgozásra alkalmas adatbázist.
+Ezzel előállítottunk egy tisztított, további feldolgozásra alkalmas adatbázist. Ellenőrizzük, hogy jól dolgoztunk-e ennek során! Bár az adatbázisban már csak `r sum(Res$N)` esetünk van, de a három lépés során összesen `r sum(Veszt1$N1) + sum(Veszt2$N2) + sum(Veszt3$N3)` esetet hagytunk el, így szerencsére megkapjuk a teljes számot, ami `r nrow(RawData)`, ahogy azt már láttuk is. Ellenőrizzük le, hogy a részletesebb lebontások is stimmelnek:
 
-Az incidencia-számításhoz definiáljuk egy segédfüggvényt, ami a konfidenciaintervallumokat számolja gyorsan:
+```{r}
+merge(merge(merge(merge(Res[, .(N = sum(N)), .(year, type)], Veszt1, by = c("year", "type"), all.x = TRUE),
+      Veszt2, all.x = TRUE), Veszt3, all.x = TRUE)[
+        , .(year, type, MegmaradtN = N, Veszteseg1 = ifelse(is.na(N1), 0, N1),
+            Veszteseg2 = ifelse(is.na(N2), 0, N2), Veszteseg3 = ifelse(is.na(N3), 0, N3))],
+      RawData[, .N, .(year, type)], by = c("year", "type"))[
+        , .(year, type, MegmaradtN, Veszteseg1, Veszteseg2, Veszteseg3,
+            TeljesN = MegmaradtN + Veszteseg1 + Veszteseg2 + Veszteseg3, N)]
+```
+
+Láthatjuk tehát, hogy minden stimmel.
+
+Lesznek kórházak és szakmák, melyeknél -- adott fertőzés-típus esetén -- egyetlen eset sem fordul elő. Ezeket hagyjuk ki az adatbázisból, hiszen úgysem tudjuk őket semmilyen módon modellezni:
+
+```{r}
+Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, KorhazRovid)], by = c("type", "KorhazRovid"))[V1!=0][,-"V1"]
+Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, SzakmaKod)], by = c("type", "SzakmaKod"))[V1!=0][,-"V1"]
+```
+
+Ezzel fertőzéses esetet egyáltalán nem veszítünk, ápolási napot ugyan igen, de még így is megőriztük az ápolási napok nagyon nagy hányadát:
+
+```{r}
+merge(Res[, .(sum(TeljesitettApolasiNapSzam)), .(year, type)],
+      KhAdatok[, .(sum(TeljesitettApolasiNapSzam)), .(year = Ev)], by = "year")[
+        , .(year, type, `Megmaradt ápolási nap [100 ezer nap]` = round(V1.x/1e5, 2),
+            `Teljes ápolási nap [100 ezer nap]` = round(V1.y/1e5, 2),
+            `Arány a teljeshez képest [%]` = round(V1.x/V1.y*100, 1))]
+```
+
+Ezen javítások és visszaellenőrzések után jöhet a következő lépés, az incidencia számolása. Ehhez elsőként definiáljuk egy segédfüggvényt, ami a konfidenciaintervallumokat számolja gyorsan:
 
 ```{r}
 binomCI <- function(x, n, conf.level = 0.95) {
@@ -334,23 +386,6 @@ Res <- cbind(Res, rbindlist(lapply(1:nrow(Res), function(i)
   binomCI(Res$N[i], Res$ElbocsatottBetegSzam[i])))*1e4)
 names(Res)[names(Res)=="lci"] <- "IncPerPatientLCI"
 names(Res)[names(Res)=="uci"] <- "IncPerPatientUCI"
-```
-
-Lesznek kórházak és szakmák, melyeknél -- adott fertőzés-típus esetén -- egyetlen eset sem fordul elő. Ezeket hagyjuk ki az adatbázisból, hiszen úgysem tudjuk őket semmilyen módon modellezni:
-
-```{r}
-Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, KorhazRovid)], by = c("type", "KorhazRovid"))[V1!=0][,-"V1"]
-Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, SzakmaKod)], by = c("type", "SzakmaKod"))[V1!=0][,-"V1"]
-```
-
-Ezzel fertőzéses esetet egyáltalán nem veszítünk, ápolási napot igen, de minimális mértékben:
-
-```{r}
-Res[, .(`Megmaradt ápolási nap [nap]` = sum(TeljesitettApolasiNapSzam),
-        `Arány a teljeshez képest [%]` = round(sum(TeljesitettApolasiNapSzam)/
-                                                 sum(KhAdatok[Ev%in%c(2015,
-                                                                      2016)]$TeljesitettApolasiNapSzam)*
-                                                 100, 1)), .(`Típus` = type)]
 ```
 
 Mentsük ki az eredményeket ([CSV](https://raw.githubusercontent.com/tamas-ferenci/NNSRElemzes/main/Res.csv) és [RDS](https://github.com/tamas-ferenci/NNSRElemzes/raw/main/Res.rds) formátumokban is):
@@ -417,7 +452,7 @@ Betegszámra vetítve:
 ```{r, fig.height = 10}
 p <- ggplot(Res, aes(x = IncPerPatient, y = SzakmaMegnev, color = factor(year), group = factor(year))) +
   geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/10 ezer beteg]", color = "Év") +
-  theme(legend.position = "bottom", legend.title = element_blank())
+  theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type)
 p
 ```
 
@@ -432,7 +467,7 @@ p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = medi
 ```{r, fig.height = 10}
 p <- ggplot(Res, aes(x = IncPerDay, y = SzakmaMegnev, color = factor(year), group = factor(year))) +
   geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/100 ezer ápolási nap]", color = "Év") +
-  theme(legend.position = "bottom", legend.title = element_blank())
+  theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type)
 p
 ```
 

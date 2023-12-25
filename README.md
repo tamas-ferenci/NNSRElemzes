@@ -913,7 +913,7 @@ környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shel
 alatt végeztem.
 
 Elsőként betöltjük a szükséges csomagokat; használni fogjuk többek
-között a `data.table`-t (1.14.8 verzió) és a `ggplot2`-t (3.4.4 verzió)
+között a `data.table`-t (1.14.10 verzió) és a `ggplot2`-t (3.4.4 verzió)
 :
 
 ``` r
@@ -1079,6 +1079,22 @@ KorhazNevek <- KorhazNevek[!duplicated(KorhazRovid)]
 
 ### Incidencia-számolás és adattisztítás
 
+Az adatbázisunkban összesen 24070 eset van tehát, az alábbi
+megoszlásban:
+
+``` r
+dcast(year ~ type, data = RawData[, .N, .(year, type)], value.var = "N")
+```
+
+<div class="kable-table">
+
+| year |  CDI |  MRK |  VAF |
+|-----:|-----:|-----:|-----:|
+| 2015 | 5387 | 3539 | 3318 |
+| 2016 | 4457 | 4123 | 3246 |
+
+</div>
+
 Első lépésben számoljuk ki a jelentett fertőzéses esetek számát év,
 kórház és osztály (mindhárom fertőzés-típusra), majd ezt a táblát
 egyesítsük mind a betegforgalmi, mind az elnevezési táblákkal:
@@ -1090,8 +1106,10 @@ Res <- merge(merge(setkey(RawData, KorhazRovid, SzakmaKod, year, type)[
            .(year = Ev, KorhazRovid, SzakmaKod, SzakmaMegnev,
              MukodoAtlagAgy, TeljesitettApolasiNapSzam, ElbocsatottBetegSzam)],
   by = c("year", "KorhazRovid", "SzakmaKod"), all.x = TRUE),
-  KorhazNevek, by = "KorhazRovid")
+  KorhazNevek, by = "KorhazRovid", all.x = TRUE)
 ```
+
+Az itt szereplő esetek száma természetesen ugyanúgy 24070.
 
 Lesz néhány sor veszteség azért, mert a kórházban valójában csak
 krónikus ellátás van, de ez az osztály-névből nem derült ki:
@@ -1114,79 +1132,102 @@ RawData[is.na(KorhazNev)]
 
 </div>
 
+Ezek száma és megoszlása:
+
+``` r
+Veszt1 <- Res[is.na(KorhazNev)&N>0, .(N1 = sum(N)), .(year, type)]
+dcast(year ~ type, data = Veszt1, value.var = "N1")
+```
+
+<div class="kable-table">
+
+| year | CDI |
+|-----:|----:|
+| 2015 |   6 |
+| 2016 |   1 |
+
+</div>
+
+Ez összesen tehát 7 eset; ezeket hagyjuk el:
+
+``` r
+Res <- Res[!is.na(KorhazNev)]
+```
+
 Lesznek jelentett fertőzéses esetek olyan osztályokról, amikkel elvileg
 az adott intézmény adott évben nem is rendelkezett:
 
 ``` r
-Res[is.na(SzakmaMegnev)&N>0]
+Res[is.na(SzakmaMegnev)&N>0, .(KorhazNev, KorhazRovid, year, SzakmaKod, type, N)]
 ```
 
 <div class="kable-table">
 
-| KorhazRovid | year | SzakmaKod | type |   N | SzakmaMegnev | MukodoAtlagAgy | TeljesitettApolasiNapSzam | ElbocsatottBetegSzam | KorhazNev                                                      |
-|:------------|-----:|----------:|:-----|----:|:-------------|---------------:|--------------------------:|---------------------:|:---------------------------------------------------------------|
-| 0116        | 2016 |        40 | CDI  |   5 | NA           |             NA |                        NA |                   NA | Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ |
-| 0122        | 2015 |        12 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Heim Pál Gyermekkórház                                         |
-| 0123        | 2015 |        15 | MRK  |   2 | NA           |             NA |                        NA |                   NA | Magyarországi Református Egyház Bethesda Gyermekkórháza        |
-| 0123        | 2015 |        15 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Magyarországi Református Egyház Bethesda Gyermekkórháza        |
-| 0123        | 2016 |        15 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Magyarországi Református Egyház Bethesda Gyermekkórháza        |
-| 0123        | 2016 |        15 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Magyarországi Református Egyház Bethesda Gyermekkórháza        |
-| 0140        | 2015 |        46 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Semmelweis Egyetem                                             |
-| 0154        | 2015 |         6 | MRK  |  26 | NA           |             NA |                        NA |                   NA | Országos Onkológiai Intézet                                    |
-| 0154        | 2015 |         6 | VAF  |   2 | NA           |             NA |                        NA |                   NA | Országos Onkológiai Intézet                                    |
-| 0156        | 2015 |        16 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Országos Korányi Tbc és Pulmonológiai Intézet                  |
-| 0163        | 2016 |         1 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Országos Klinikai Idegtudományi Intézet                        |
-| 01A3        | 2015 |         2 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Budai Egészségközpont Kft.                                     |
-| 01A3        | 2015 |         2 | VAF  |   5 | NA           |             NA |                        NA |                   NA | Budai Egészségközpont Kft.                                     |
-| 01A3        | 2015 |         9 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Budai Egészségközpont Kft.                                     |
-| 0204        | 2016 |        40 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Mohácsi Kórház                                                 |
-| 0306        | 2015 |        40 | CDI  |   3 | NA           |             NA |                        NA |                   NA | Kiskunhalasi Semmelweis Kórház                                 |
-| 0306        | 2015 |        40 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Kiskunhalasi Semmelweis Kórház                                 |
-| 0402        | 2015 |        40 | CDI  |   2 | NA           |             NA |                        NA |                   NA | Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                |
-| 0402        | 2015 |        40 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                |
-| 0702        | 2015 |        40 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              |
-| 0702        | 2015 |        40 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              |
-| 0702        | 2016 |        40 | CDI  |   2 | NA           |             NA |                        NA |                   NA | Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              |
-| 0803        | 2015 |        40 | CDI  |   2 | NA           |             NA |                        NA |                   NA | Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             |
-| 0803        | 2015 |        40 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             |
-| 0803        | 2016 |        40 | VAF  |   1 | NA           |             NA |                        NA |                   NA | Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             |
-| 0804        | 2015 |         1 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Csornai Margit Kórház                                          |
-| 0804        | 2015 |         1 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Csornai Margit Kórház                                          |
-| 1104        | 2015 |         1 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Selye János Kórház, Komárom                                    |
-| 1104        | 2015 |         1 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Selye János Kórház, Komárom                                    |
-| 1803        | 2015 |         1 | CDI  |   2 | NA           |             NA |                        NA |                   NA | Szent László Kórház, Sárvár                                    |
-| 1904        | 2015 |        18 | MRK  |   1 | NA           |             NA |                        NA |                   NA | Szent Donát Várpalota Kórház Egészségügyi és Szolgáltató Kft.  |
-| 1954        | 2015 |         1 | CDI  |   3 | NA           |             NA |                        NA |                   NA | Deák Jenő Kórház, Tapolca                                      |
-| 1954        | 2016 |         1 | CDI  |   1 | NA           |             NA |                        NA |                   NA | Deák Jenő Kórház, Tapolca                                      |
-| 1968        | 2015 |        15 | VAF  |   2 | NA           |             NA |                        NA |                   NA | Állami Szívkórház, Balatonfüred                                |
-| 1968        | 2016 |        15 | VAF  |   2 | NA           |             NA |                        NA |                   NA | Állami Szívkórház, Balatonfüred                                |
+| KorhazNev                                                      | KorhazRovid | year | SzakmaKod | type |   N |
+|:---------------------------------------------------------------|:------------|-----:|----------:|:-----|----:|
+| Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ | 0116        | 2016 |        40 | CDI  |   5 |
+| Heim Pál Gyermekkórház                                         | 0122        | 2015 |        12 | CDI  |   1 |
+| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2015 |        15 | MRK  |   2 |
+| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2015 |        15 | VAF  |   1 |
+| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2016 |        15 | MRK  |   1 |
+| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2016 |        15 | VAF  |   1 |
+| Semmelweis Egyetem                                             | 0140        | 2015 |        46 | VAF  |   1 |
+| Országos Onkológiai Intézet                                    | 0154        | 2015 |         6 | MRK  |  26 |
+| Országos Onkológiai Intézet                                    | 0154        | 2015 |         6 | VAF  |   2 |
+| Országos Korányi Tbc és Pulmonológiai Intézet                  | 0156        | 2015 |        16 | CDI  |   1 |
+| Országos Klinikai Idegtudományi Intézet                        | 0163        | 2016 |         1 | CDI  |   1 |
+| Budai Egészségközpont Kft.                                     | 01A3        | 2015 |         2 | MRK  |   1 |
+| Budai Egészségközpont Kft.                                     | 01A3        | 2015 |         2 | VAF  |   5 |
+| Budai Egészségközpont Kft.                                     | 01A3        | 2015 |         9 | VAF  |   1 |
+| Mohácsi Kórház                                                 | 0204        | 2016 |        40 | MRK  |   1 |
+| Kiskunhalasi Semmelweis Kórház                                 | 0306        | 2015 |        40 | CDI  |   3 |
+| Kiskunhalasi Semmelweis Kórház                                 | 0306        | 2015 |        40 | VAF  |   1 |
+| Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                | 0402        | 2015 |        40 | CDI  |   2 |
+| Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                | 0402        | 2015 |        40 | MRK  |   1 |
+| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              | 0702        | 2015 |        40 | CDI  |   1 |
+| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              | 0702        | 2015 |        40 | VAF  |   1 |
+| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              | 0702        | 2016 |        40 | CDI  |   2 |
+| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             | 0803        | 2015 |        40 | CDI  |   2 |
+| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             | 0803        | 2015 |        40 | MRK  |   1 |
+| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             | 0803        | 2016 |        40 | VAF  |   1 |
+| Csornai Margit Kórház                                          | 0804        | 2015 |         1 | CDI  |   1 |
+| Csornai Margit Kórház                                          | 0804        | 2015 |         1 | MRK  |   1 |
+| Selye János Kórház, Komárom                                    | 1104        | 2015 |         1 | CDI  |   1 |
+| Selye János Kórház, Komárom                                    | 1104        | 2015 |         1 | MRK  |   1 |
+| Szent László Kórház, Sárvár                                    | 1803        | 2015 |         1 | CDI  |   2 |
+| Szent Donát Várpalota Kórház Egészségügyi és Szolgáltató Kft.  | 1904        | 2015 |        18 | MRK  |   1 |
+| Deák Jenő Kórház, Tapolca                                      | 1954        | 2015 |         1 | CDI  |   3 |
+| Deák Jenő Kórház, Tapolca                                      | 1954        | 2016 |         1 | CDI  |   1 |
+| Állami Szívkórház, Balatonfüred                                | 1968        | 2015 |        15 | VAF  |   2 |
+| Állami Szívkórház, Balatonfüred                                | 1968        | 2016 |        15 | VAF  |   2 |
 
 </div>
 
-Ezek száma:
+Ezek száma és megoszlása:
 
 ``` r
-Res[is.na(SzakmaMegnev), .(`Esetszám` = sum(N)), .(`Típus` = type)]
+Veszt2 <- Res[is.na(SzakmaMegnev), .(N2 = sum(N)), .(year, type)]
+dcast(year ~ type, data = Veszt2, value.var = "N2")
 ```
 
 <div class="kable-table">
 
-| Típus | Esetszám |
-|:------|---------:|
-| CDI   |       26 |
-| MRK   |       36 |
-| VAF   |       18 |
+| year | CDI | MRK | VAF |
+|-----:|----:|----:|----:|
+| 2015 |  17 |  34 |  14 |
+| 2016 |   9 |   2 |   4 |
 
 </div>
 
-Ezeket szintén hagyjuk most el (láthatóan minimális veszteség):
+Ez 80 eset; ezeket szintén hagyjuk most el (láthatóan ismét minimális
+veszteség):
 
 ``` r
 Res <- Res[!is.na(SzakmaMegnev)]
 ```
 
-Van pár eset, ahol olyan osztály jelentett fertőzést, ami létezik ugyan,
-de elvileg nem volt betegforgalma:
+Végezetül van pár eset, ahol olyan osztály jelentett fertőzést, ami
+létezik ugyan, de elvileg nem volt betegforgalma:
 
 ``` r
 Res[TeljesitettApolasiNapSzam==0&N>0]
@@ -1207,30 +1248,93 @@ Res[TeljesitettApolasiNapSzam==0&N>0]
 Ezek szintén nem jelentenek nagy veszteséget:
 
 ``` r
-Res[TeljesitettApolasiNapSzam==0, .(`Esetszám` = sum(N)), .(`Típus` = type)]
+Veszt3 <- Res[TeljesitettApolasiNapSzam==0, .(N3 = sum(N)), .(year, type)]
+dcast(year ~ type, data = Veszt3, value.var = "N3")
 ```
 
 <div class="kable-table">
 
-| Típus | Esetszám |
-|:------|---------:|
-| CDI   |        1 |
-| MRK   |       32 |
-| VAF   |        8 |
+| year | CDI | MRK | VAF |
+|-----:|----:|----:|----:|
+| 2015 |   0 |   0 |   0 |
+| 2016 |   1 |  32 |   8 |
 
 </div>
 
-Hagyjuk el ezeket is:
+Ez tehát 41 eset; hagyjuk el ezeket is:
 
 ``` r
 Res <- Res[TeljesitettApolasiNapSzam!=0]
 ```
 
 Ezzel előállítottunk egy tisztított, további feldolgozásra alkalmas
-adatbázist.
+adatbázist. Ellenőrizzük, hogy jól dolgoztunk-e ennek során! Bár az
+adatbázisban már csak 23942 esetünk van, de a három lépés során összesen
+128 esetet hagytunk el, így szerencsére megkapjuk a teljes számot, ami
+24070, ahogy azt már láttuk is. Ellenőrizzük le, hogy a részletesebb
+lebontások is stimmelnek:
 
-Az incidencia-számításhoz definiáljuk egy segédfüggvényt, ami a
-konfidenciaintervallumokat számolja gyorsan:
+``` r
+merge(merge(merge(merge(Res[, .(N = sum(N)), .(year, type)], Veszt1, by = c("year", "type"), all.x = TRUE),
+      Veszt2, all.x = TRUE), Veszt3, all.x = TRUE)[
+        , .(year, type, MegmaradtN = N, Veszteseg1 = ifelse(is.na(N1), 0, N1),
+            Veszteseg2 = ifelse(is.na(N2), 0, N2), Veszteseg3 = ifelse(is.na(N3), 0, N3))],
+      RawData[, .N, .(year, type)], by = c("year", "type"))[
+        , .(year, type, MegmaradtN, Veszteseg1, Veszteseg2, Veszteseg3,
+            TeljesN = MegmaradtN + Veszteseg1 + Veszteseg2 + Veszteseg3, N)]
+```
+
+<div class="kable-table">
+
+| year | type | MegmaradtN | Veszteseg1 | Veszteseg2 | Veszteseg3 | TeljesN |    N |
+|-----:|:-----|-----------:|-----------:|-----------:|-----------:|--------:|-----:|
+| 2015 | CDI  |       5364 |          6 |         17 |          0 |    5387 | 5387 |
+| 2015 | MRK  |       3505 |          0 |         34 |          0 |    3539 | 3539 |
+| 2015 | VAF  |       3304 |          0 |         14 |          0 |    3318 | 3318 |
+| 2016 | CDI  |       4446 |          1 |          9 |          1 |    4457 | 4457 |
+| 2016 | MRK  |       4089 |          0 |          2 |         32 |    4123 | 4123 |
+| 2016 | VAF  |       3234 |          0 |          4 |          8 |    3246 | 3246 |
+
+</div>
+
+Láthatjuk tehát, hogy minden stimmel.
+
+Lesznek kórházak és szakmák, melyeknél – adott fertőzés-típus esetén –
+egyetlen eset sem fordul elő. Ezeket hagyjuk ki az adatbázisból, hiszen
+úgysem tudjuk őket semmilyen módon modellezni:
+
+``` r
+Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, KorhazRovid)], by = c("type", "KorhazRovid"))[V1!=0][,-"V1"]
+Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, SzakmaKod)], by = c("type", "SzakmaKod"))[V1!=0][,-"V1"]
+```
+
+Ezzel fertőzéses esetet egyáltalán nem veszítünk, ápolási napot ugyan
+igen, de még így is megőriztük az ápolási napok nagyon nagy hányadát:
+
+``` r
+merge(Res[, .(sum(TeljesitettApolasiNapSzam)), .(year, type)],
+      KhAdatok[, .(sum(TeljesitettApolasiNapSzam)), .(year = Ev)], by = "year")[
+        , .(year, type, `Megmaradt ápolási nap [100 ezer nap]` = round(V1.x/1e5, 2),
+            `Teljes ápolási nap [100 ezer nap]` = round(V1.y/1e5, 2),
+            `Arány a teljeshez képest [%]` = round(V1.x/V1.y*100, 1))]
+```
+
+<div class="kable-table">
+
+| year | type | Megmaradt ápolási nap \[100 ezer nap\] | Teljes ápolási nap \[100 ezer nap\] | Arány a teljeshez képest \[%\] |
+|-----:|:-----|---------------------------------------:|------------------------------------:|-------------------------------:|
+| 2015 | CDI  |                                  98.89 |                              105.25 |                           94.0 |
+| 2015 | MRK  |                                 100.06 |                              105.25 |                           95.1 |
+| 2015 | VAF  |                                  96.72 |                              105.25 |                           91.9 |
+| 2016 | CDI  |                                  97.73 |                              104.16 |                           93.8 |
+| 2016 | MRK  |                                 101.04 |                              104.16 |                           97.0 |
+| 2016 | VAF  |                                  97.72 |                              104.16 |                           93.8 |
+
+</div>
+
+Ezen javítások és visszaellenőrzések után jöhet a következő lépés, az
+incidencia számolása. Ehhez elsőként definiáljuk egy segédfüggvényt, ami
+a konfidenciaintervallumokat számolja gyorsan:
 
 ``` r
 binomCI <- function(x, n, conf.level = 0.95) {
@@ -1254,36 +1358,6 @@ Res <- cbind(Res, rbindlist(lapply(1:nrow(Res), function(i)
 names(Res)[names(Res)=="lci"] <- "IncPerPatientLCI"
 names(Res)[names(Res)=="uci"] <- "IncPerPatientUCI"
 ```
-
-Lesznek kórházak és szakmák, melyeknél – adott fertőzés-típus esetén –
-egyetlen eset sem fordul elő. Ezeket hagyjuk ki az adatbázisból, hiszen
-úgysem tudjuk őket semmilyen módon modellezni:
-
-``` r
-Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, KorhazRovid)], by = c("type", "KorhazRovid"))[V1!=0][,-"V1"]
-Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, SzakmaKod)], by = c("type", "SzakmaKod"))[V1!=0][,-"V1"]
-```
-
-Ezzel fertőzéses esetet egyáltalán nem veszítünk, ápolási napot igen, de
-minimális mértékben:
-
-``` r
-Res[, .(`Megmaradt ápolási nap [nap]` = sum(TeljesitettApolasiNapSzam),
-        `Arány a teljeshez képest [%]` = round(sum(TeljesitettApolasiNapSzam)/
-                                                 sum(KhAdatok[Ev%in%c(2015,
-                                                                      2016)]$TeljesitettApolasiNapSzam)*
-                                                 100, 1)), .(`Típus` = type)]
-```
-
-<div class="kable-table">
-
-| Típus | Megmaradt ápolási nap \[nap\] | Arány a teljeshez képest \[%\] |
-|:------|------------------------------:|-------------------------------:|
-| CDI   |                      19661670 |                           93.9 |
-| MRK   |                      20110280 |                           96.0 |
-| VAF   |                      19444472 |                           92.9 |
-
-</div>
 
 Mentsük ki az eredményeket
 ([CSV](https://raw.githubusercontent.com/tamas-ferenci/NNSRElemzes/main/Res.csv)
@@ -1325,7 +1399,7 @@ invisible(dev.off())
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-26-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-30-.gif)<!-- -->
 
 Vagy vonatkoztathatunk ápolási napra is (a lenti ábra természetesen csak
 illusztráció, az eredményt kimentjük [PDF
@@ -1353,7 +1427,7 @@ invisible(dev.off())
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-27-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-31-.gif)<!-- -->
 
 Megvizsgálhatjuk úgy is ezeket az adatokat, hogy nem ábrázoljuk külön az
 egyes szakmákat, csak az eloszlásra vagyunk kíváncsiak.
@@ -1363,11 +1437,11 @@ Betegszámra vetítve:
 ``` r
 p <- ggplot(Res, aes(x = IncPerPatient, y = SzakmaMegnev, color = factor(year), group = factor(year))) +
   geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/10 ezer beteg]", color = "Év") +
-  theme(legend.position = "bottom", legend.title = element_blank())
+  theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type)
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-28-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
 
 Mindez logaritmikus skálán, feltüntetve a mediánt is:
 
@@ -1375,18 +1449,18 @@ Mindez logaritmikus skálán, feltüntetve a mediánt is:
 p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-29-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
 
 Ápolási napra vetítve:
 
 ``` r
 p <- ggplot(Res, aes(x = IncPerDay, y = SzakmaMegnev, color = factor(year), group = factor(year))) +
   geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/100 ezer ápolási nap]", color = "Év") +
-  theme(legend.position = "bottom", legend.title = element_blank())
+  theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type)
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-30-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-34-1.png)<!-- -->
 
 Mindez logaritmikus skálán, feltüntetve a mediánt is:
 
@@ -1394,7 +1468,7 @@ Mindez logaritmikus skálán, feltüntetve a mediánt is:
 p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-31-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
 
 Ezek jelentik lényegében a legteljesebben rétegzett adatokat (még az
 évet is külön vettük); mondhatjuk, hogy később majd ezeket kell
@@ -1466,7 +1540,7 @@ p <- ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMI)) + geom_jitter(widt
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-41-1.png)<!-- -->
 
 Logaritmikus skálán:
 
@@ -1474,7 +1548,7 @@ Logaritmikus skálán:
 p + scale_y_log10() + annotation_logticks(sides = "l")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-42-1.png)<!-- -->
 
 Érdemes megnézni a különféleképp számolt CMI-k eloszlását is. Sima
 eltérés:
@@ -1484,7 +1558,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
   facet_wrap(~SzakmaMegnev)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-43-1.png)<!-- -->
 
 Ezt érdemes úgy is megnézni, hogy a függőleges tengely skálázásánál
 megengedjük, hogy ne egységes legyen:
@@ -1494,7 +1568,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
   facet_wrap(~SzakmaMegnev, scales = "free")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-40-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-44-1.png)<!-- -->
 
 A $z$-score:
 
@@ -1503,7 +1577,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 
   facet_wrap(~SzakmaMegnev)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-41-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-45-1.png)<!-- -->
 
 ### Modellezés
 
@@ -1682,7 +1756,7 @@ ggplot(merge(ress[family!="QP"&type=="CDI"],
   geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-49-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
 
 Az eredmény:
 
@@ -1692,7 +1766,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"], aes(y = forcats::fct_reor
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-50-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-54-1.png)<!-- -->
 
 ### MRK
 
@@ -1706,7 +1780,7 @@ ggplot(merge(ress[family!="QP"&type=="MRK"],
   geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-51-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-55-1.png)<!-- -->
 
 Az eredmény:
 
@@ -1716,7 +1790,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"], aes(y = forcats::fct_reor
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-52-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-56-1.png)<!-- -->
 
 ### VÁF
 
@@ -1730,7 +1804,7 @@ ggplot(merge(ress[family!="QP"&type=="VAF"],
   geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-57-1.png)<!-- -->
 
 Az eredmény:
 
@@ -1740,7 +1814,7 @@ ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"], aes(y = forcats::fct_reor
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-54-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-58-1.png)<!-- -->
 
 ### A három típus egybevetése
 
@@ -1863,4 +1937,4 @@ p <- GGally::ggpairs(dcast(ress[formula=="zCMI"&family=="NB"],
 gpairs_lower(p)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-56-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-60-1.png)<!-- -->
