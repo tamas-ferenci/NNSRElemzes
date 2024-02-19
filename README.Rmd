@@ -407,7 +407,7 @@ Hogy benyomást szerezzünk az adatokról, nézzünk rá a nyers incidenciákra!
 
 A nyers incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti gyorsan futó ábra természetesen csak illusztráció, az eredményt kimentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf) is, hogy tanulmányozható legyen):
 
-```{r, fig.show = "animate", animation.hook = "gifski", fig.width = 16, fig.height = 9}
+```{r, fig.show = "animate", animation.hook = "ffmpeg", fig.width = 16, fig.height = 9}
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
 
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
@@ -541,7 +541,8 @@ Res$zCMI <- (Res$CMI - Res$CMI_avg)/Res$CMI_SD
 
 ```{r, fig.height = 10}
 p <- ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMI)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev) + geom_point(aes(y = CMI_avg), color = "red") + labs(x = "Év")
+  facet_wrap(~SzakmaMegnev) + geom_point(aes(y = CMI_avg), color = "red") + labs(x = "Év") +
+  scale_x_discrete(guide = guide_axis(angle = 45))
 p
 ```
 
@@ -643,13 +644,13 @@ Amint látható, megvizsgáljuk azt a lehetőséget, ha a CMI-t egyáltalán nem
 Az összes megbecsült modell ábráját csak elmentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ```{r}
-# if(!file.exists("Modellek.pdf")) {
-cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(fits))
-  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
-                                         pargrid$formulas[i], " - ", pargrid$year[i])))
-invisible(dev.off())
-# }
+if(!file.exists("Modellek.pdf")) {
+  cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
+  for(i in 1:length(fits))
+    print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
+                                           pargrid$formulas[i], " - ", pargrid$year[i])))
+  invisible(dev.off())
+}
 ```
 
 A jól értelmezhető eredményekhez (fertőzés-gyakoriság ugyanazon, standardizált betegpopulációnál) elsőként határozzuk meg ezt a betegpopulációt mint a vizsgált időszakban a szakmánkénti átlagos betegforgalom, átlagos CMI mellett:

@@ -1521,7 +1521,9 @@ p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-28-.gif)<!-- -->
+<video controls loop>
+<source src="README_files/figure-gfm/unnamed-chunk-28.webm" />
+</video>
 
 Vagy vonatkoztathatunk ápolási napra is (a lenti gyorsan futó ábra
 természetesen csak illusztráció, az eredményt kimentjük [PDF
@@ -1787,13 +1789,13 @@ Az összes megbecsült modell ábráját csak elmentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ``` r
-# if(!file.exists("Modellek.pdf")) {
-cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(fits))
-  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
-                                         pargrid$formulas[i], " - ", pargrid$year[i])))
-invisible(dev.off())
-# }
+if(!file.exists("Modellek.pdf")) {
+  cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
+  for(i in 1:length(fits))
+    print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
+                                           pargrid$formulas[i], " - ", pargrid$year[i])))
+  invisible(dev.off())
+}
 ```
 
 A jól értelmezhető eredményekhez (fertőzés-gyakoriság ugyanazon,
