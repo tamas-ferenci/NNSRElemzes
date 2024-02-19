@@ -1522,7 +1522,7 @@ for(i in 1:length(p)) print(p[[i]])
 ```
 
 <video controls loop>
-<source src="README_files/figure-gfm/unnamed-chunk-28.webm" />
+<source src="README_files/figure-gfm/unnamed-chunk-28.mp4" />
 </video>
 
 Vagy vonatkoztathatunk ápolási napra is (a lenti gyorsan futó ábra
@@ -1653,7 +1653,8 @@ rászűrjünk valamelyikre, hogy ne legyen háromszorozódva minden pont):
 
 ``` r
 p <- ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMI)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev) + geom_point(aes(y = CMI_avg), color = "red") + labs(x = "Év")
+  facet_wrap(~SzakmaMegnev) + geom_point(aes(y = CMI_avg), color = "red") + labs(x = "Év") +
+  scale_x_discrete(guide = guide_axis(angle = 45))
 p
 ```
 
@@ -1672,7 +1673,7 @@ eltérés:
 
 ``` r
 ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev)
+  facet_wrap(~SzakmaMegnev) + labs(x = "Év") + scale_x_discrete(guide = guide_axis(angle = 45))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
@@ -1682,7 +1683,8 @@ megengedjük, hogy ne egységes legyen:
 
 ``` r
 ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev, scales = "free")
+  facet_wrap(~SzakmaMegnev, scales = "free") + labs(x = "Év") +
+  scale_x_discrete(guide = guide_axis(angle = 45))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
@@ -1691,7 +1693,8 @@ A $z$-score:
 
 ``` r
 ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev)
+  facet_wrap(~SzakmaMegnev) + labs(x = "Év") +
+  scale_x_discrete(guide = guide_axis(angle = 45))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->

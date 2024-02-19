@@ -407,7 +407,7 @@ Hogy benyomást szerezzünk az adatokról, nézzünk rá a nyers incidenciákra!
 
 A nyers incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti gyorsan futó ábra természetesen csak illusztráció, az eredményt kimentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf) is, hogy tanulmányozható legyen):
 
-```{r, fig.show = "animate", animation.hook = "ffmpeg", fig.width = 16, fig.height = 9}
+```{r, fig.show = "animate", animation.hook = "ffmpeg", ffmpeg.format = "mp4", fig.width = 16, fig.height = 9}
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
 
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
@@ -556,21 +556,23 @@ p + scale_y_log10() + annotation_logticks(sides = "l")
 
 ```{r, fig.height = 10}
 ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev)
+  facet_wrap(~SzakmaMegnev) + labs(x = "Év") + scale_x_discrete(guide = guide_axis(angle = 45))
 ```
 
 Ezt érdemes úgy is megnézni, hogy a függőleges tengely skálázásánál megengedjük, hogy ne egységes legyen:
 
 ```{r, fig.height = 10}
 ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev, scales = "free")
+  facet_wrap(~SzakmaMegnev, scales = "free") + labs(x = "Év") +
+  scale_x_discrete(guide = guide_axis(angle = 45))
 ```
 
 A $z$-score:
 
 ```{r, fig.height = 10}
 ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 0.2) +
-  facet_wrap(~SzakmaMegnev)
+  facet_wrap(~SzakmaMegnev) + labs(x = "Év") +
+  scale_x_discrete(guide = guide_axis(angle = 45))
 ```
 
 ### Modellezés
