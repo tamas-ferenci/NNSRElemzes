@@ -966,7 +966,8 @@ lakosság életminőségének a javítására.
 Ez a fejezet az elemzés technikai részleteit ismerteti, a
 végeredményeket a következő,
 [Eredmények](https://github.com/tamas-ferenci/NNSRElemzes#eredm%C3%A9nyek)
-fejezet mutatja be.
+fejezet mutatja be; akit a módszertani részletek nem érdekelnek, erre a
+linkre kattintva egyből odaugorhat.
 
 A lenti kódok a számítás teljes reprodukcióját lehetővé teszik, egyetlen
 kivétellel: a legelső lépés, a nyers adatok betöltése nem
@@ -1483,6 +1484,11 @@ saveRDS(Res, "Res.rds")
 
 ### A nyers incidenciák vizualizációja
 
+Hogy benyomást szerezzünk az adatokról, nézzünk rá a nyers
+incidenciákra! Egyetlen megjegyzés az ábrákhoz: néhány esetben a
+konfidenciaintervallumok nagyon szélesek; hogy ezek ne nyomják teljesen
+össze a függőleges skálát, az ilyenek tetejei kifutnak az ábrákról.
+
 A nyers incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti
 gyorsan futó ábra természetesen csak illusztráció, az eredményt
 kimentjük [PDF
@@ -1492,22 +1498,25 @@ is, hogy tanulmányozható legyen):
 ``` r
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
 
-p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
-  ggplot(Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]],
-         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI,
-             group = 1)) + facet_wrap(~KorhazNevEgyseges,
-                                      labeller = label_wrap_gen(width = 45)) +
-    geom_point() + geom_line() + geom_errorbar(linewidth = 0.3) +
+p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
+  plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
+  plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
+                   by = "KorhazNevEgyseges")
+  ggplot(plotdat,
+         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI)) +
+    facet_wrap(~KorhazNevEgyseges, labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line(data = plotdat[obs>1]) + geom_errorbar(linewidth = 0.3) +
     labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
          y = "Nyers incidencia [/10 ezer beteg]", x = "Év") +
     coord_cartesian(
       ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
                             SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerPatient))) +
-    theme(legend.position = "bottom", legend.title = element_blank()))
+    theme(legend.position = "bottom", legend.title = element_blank())
+})
 
-# cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
-# for(i in 1:length(p)) print(p[[i]])
-# invisible(dev.off())
+cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
@@ -1520,22 +1529,25 @@ formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKu
 is, hogy tanulmányozható legyen):
 
 ``` r
-p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
-  ggplot(Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]],
-         aes(x = year, y = IncPerDay, ymin = IncPerDayLCI, ymax = IncPerDayUCI,
-             group = 1)) + facet_wrap(~KorhazNevEgyseges,
-                                      labeller = label_wrap_gen(width = 45)) +
-    geom_point() + geom_line() + geom_errorbar(linewidth = 0.3) +
+p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
+  plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
+  plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
+                   by = "KorhazNevEgyseges")
+  ggplot(plotdat,
+         aes(x = year, y = IncPerDay, ymin = IncPerDayLCI, ymax = IncPerDayUCI)) +
+    facet_wrap(~KorhazNevEgyseges, labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line(data = plotdat[obs>1]) + geom_errorbar(linewidth = 0.3) +
     labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
          y = "Nyers incidencia [/100 ezer ápolási nap]", x = "Év") +
     coord_cartesian(
       ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
                             SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerDay))) +
-    theme(legend.position = "bottom", legend.title = element_blank()))
+    theme(legend.position = "bottom", legend.title = element_blank())
+})
 
-# cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
-# for(i in 1:length(p)) print(p[[i]])
-# invisible(dev.off())
+cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```

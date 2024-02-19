@@ -158,7 +158,7 @@ E kettő, tehát egyfelől a transzparencia, másfelől az elemzések, döntése
 
 ## Statisztikai és számítástechnikai részletek
 
-Ez a fejezet az elemzés technikai részleteit ismerteti, a végeredményeket a következő, [Eredmények](https://github.com/tamas-ferenci/NNSRElemzes#eredm%C3%A9nyek) fejezet mutatja be.
+Ez a fejezet az elemzés technikai részleteit ismerteti, a végeredményeket a következő, [Eredmények](https://github.com/tamas-ferenci/NNSRElemzes#eredm%C3%A9nyek) fejezet mutatja be; akit a módszertani részletek nem érdekelnek, erre a linkre kattintva egyből odaugorhat.
 
 A lenti kódok a számítás teljes reprodukcióját lehetővé teszik, egyetlen kivétellel: a legelső lépés, a nyers adatok betöltése nem reprodukálható, ugyanis a nyers adatokat tartalmazó táblákat -- szándékosan -- nem teszem elérhetővé. Ezek fellelhetőek az interneten (valójában tehát ez a lépés is reprodukálható, csak nem innen), mivel a bírósági ítélet rendelkezett a nyilvánosságra hozatalukról. Ilyen értelemben tehát jogilag aggálytalanul közzétehetném én is, elvi okokból nem teszem meg: e táblák tételes adatokat tartalmaznak, amelyek nyilvánosságra hozatala még szerintem is -- noha a transzparencia elkötelezett híve vagyok -- számos kérdést vet fel, így mutatni akarom, hogy lehetnek ilyen jellegű, adatvédelmi limitációk még a legtranszparensebb rendszerben is. Természetesen fontos, hogy megfelelő garanciák mellett a kutatók a tételes adatokhoz is hozzáférhessenek, de ez a döntésem jelen esetben érdemi limitációt nem jelent, ugyanis az aggregált adatokat elemi szinten is nyilvánosságra hozom (valamennyi kórház valamennyi osztályán megadom például a fertőzések számát, minden egyes évre), amiből minden kérdés megválaszolható -- de mégis, aggregált, és nem tételes adatról van szó.
 
@@ -404,50 +404,58 @@ saveRDS(Res, "Res.rds")
 
 ### A nyers incidenciák vizualizációja
 
+Hogy benyomást szerezzünk az adatokról, nézzünk rá a nyers incidenciákra! Egyetlen megjegyzés az ábrákhoz: néhány esetben a konfidenciaintervallumok nagyon szélesek; hogy ezek ne nyomják teljesen össze a függőleges skálát, az ilyenek tetejei kifutnak az ábrákról.
+
 A nyers incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti gyorsan futó ábra természetesen csak illusztráció, az eredményt kimentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf) is, hogy tanulmányozható legyen):
 
-```{r, fig.show = "animate", animation.hook = "gifski", fig.height = 12, message = FALSE}
+```{r, fig.show = "animate", animation.hook = "gifski", fig.width = 16, fig.height = 9}
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
 
-p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
-  ggplot(Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]],
-         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI,
-             group = 1)) + facet_wrap(~KorhazNevEgyseges,
-                                      labeller = label_wrap_gen(width = 45)) +
-    geom_point() + geom_line() + geom_errorbar(linewidth = 0.3) +
+p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
+  plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
+  plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
+                   by = "KorhazNevEgyseges")
+  ggplot(plotdat,
+         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI)) +
+    facet_wrap(~KorhazNevEgyseges, labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line(data = plotdat[obs>1]) + geom_errorbar(linewidth = 0.3) +
     labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
          y = "Nyers incidencia [/10 ezer beteg]", x = "Év") +
     coord_cartesian(
       ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
                             SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerPatient))) +
-    theme(legend.position = "bottom", legend.title = element_blank()))
+    theme(legend.position = "bottom", legend.title = element_blank())
+})
 
-# cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
-# for(i in 1:length(p)) print(p[[i]])
-# invisible(dev.off())
+cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
 
 Vagy vonatkoztathatunk ápolási napra is (a lenti gyorsan futó ábra természetesen csak illusztráció, az eredményt kimentjük [PDF formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerDay.pdf) is, hogy tanulmányozható legyen):
 
-```{r, fig.show = "animate", animation.hook = "gifski", fig.height = 12, message = FALSE}
-p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
-  ggplot(Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]],
-         aes(x = year, y = IncPerDay, ymin = IncPerDayLCI, ymax = IncPerDayUCI,
-             group = 1)) + facet_wrap(~KorhazNevEgyseges,
-                                      labeller = label_wrap_gen(width = 45)) +
-    geom_point() + geom_line() + geom_errorbar(linewidth = 0.3) +
+```{r, fig.show = "animate", animation.hook = "gifski", fig.width = 16, fig.height = 9}
+p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
+  plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
+  plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
+                   by = "KorhazNevEgyseges")
+  ggplot(plotdat,
+         aes(x = year, y = IncPerDay, ymin = IncPerDayLCI, ymax = IncPerDayUCI)) +
+    facet_wrap(~KorhazNevEgyseges, labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line(data = plotdat[obs>1]) + geom_errorbar(linewidth = 0.3) +
     labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
          y = "Nyers incidencia [/100 ezer ápolási nap]", x = "Év") +
     coord_cartesian(
       ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
                             SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerDay))) +
-    theme(legend.position = "bottom", legend.title = element_blank()))
+    theme(legend.position = "bottom", legend.title = element_blank())
+})
 
-# cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
-# for(i in 1:length(p)) print(p[[i]])
-# invisible(dev.off())
+cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
