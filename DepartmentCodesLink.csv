@@ -16,77 +16,77 @@ hospital_department_of_admission;SzakmaKod
 35_Krónikus_ Stroke;
 37_Krónikus_ Nephrológia;
 40_Krónikus_ Kardiológia;
-GER - Geriátria, időskorúak ellátása;1
-GOGYN - Nőgyógyászat;4
-GOOBS - Szülészet/ Gyermekágy;4
+GER - Geriátria, időskorúak ellátása;01
+GOGYN - Nőgyógyászat;04
+GOOBS - Szülészet/ Gyermekágy;04
 ICUMED - Belgyógyászati ITO;15
 ICUMIX - Vegyes ITO, általános intenzív ellátás;15
-ICUNEO - Perinatális ITO;5
+ICUNEO - Perinatális ITO;05
 ICUOTH - Egyéb ITO;15
-ICUPED - Gyermekgyógyászati ITO;5
+ICUPED - Gyermekgyógyászati ITO;05
 ICUSPEC - Specializált ITO;15
 ICUSUR - Sebészeti ITO;15
-Immunológia, allergológia;1
-MEDBMT - Csontvelő transzplantáció (CsVT);1
+Immunológia, allergológia;01
+MEDBMT - Csontvelő transzplantáció (CsVT);01
 MEDCARD - Kardiológia;40
-MEDDERM - Bőrgyógyászat;8
-MEDENDO - Endokrinológia;1
-MEDGAST - Gasztroenterológia;1
-MEDGEN - Általános belgyógyászat;1
-MEDHEMA - Hematológia;1
-MEDHEMBMT - Hematológia/ CsVT;1
-MEDHEP - Hepatológia;1
+MEDDERM - Bőrgyógyászat;08
+MEDENDO - Endokrinológia;01
+MEDGAST - Gasztroenterológia;01
+MEDGEN - Általános belgyógyászat;01
+MEDHEMA - Hematológia;01
+MEDHEMBMT - Hematológia/ CsVT;01
+MEDHEP - Hepatológia;01
 MEDID - Infektológia;16
-MEDNEPH - Nefrológia;1
-MEDNEU - Neurológia;9
+MEDNEPH - Nefrológia;01
+MEDNEU - Neurológia;09
 MEDONCO - Onkológia;12
-MEDOTH - Egyéb belgyógyászati;1
+MEDOTH - Egyéb belgyógyászati;01
 MEDPNEU - Pulmonológia;19
 MEDRHEU - Rheumatológia;14
 MEDTR - Mozgásszervi rehabilitáció;
 MIX - Ellátási típusok kombinációja;
 OTH - Egyéb nem felsorolt;
-PEDGEN - Általános gyermekgyógyászat;5
-PEDNEO - Neonatológia;5
+PEDGEN - Általános gyermekgyógyászat;05
+PEDNEO - Neonatológia;05
 PSY - Pszichiátria;18
 RHB - Rehabilitáció;
 SURBURN - Égés ellátás;20
-SURCARD - Szívsebészet;2
-SURCV - Szív- és érsebészet;2
-SURENT - Fül-orr-gége;6
-SURGEN - Általános sebészet;2
-SURMAXFAC - Maxillo-faciális sebészet;2
-SURNEU - Idegsebészet;2
+SURCARD - Szívsebészet;02
+SURCV - Szív- és érsebészet;02
+SURENT - Fül-orr-gége;06
+SURGEN - Általános sebészet;02
+SURMAXFAC - Maxillo-faciális sebészet;02
+SURNEU - Idegsebészet;02
 SURONCO - Onkológiai sebészet;
-SUROPH - Szemészet;7
-SURORTO - Orthopédia;10
-SURORTR - Orthopédia és traumatológia;10
-SUROTH - Egyéb sebészet;2
-SURPED - Általános gyermeksebészet;5
+SUROPH - Szemészet;07
+SURORTO - Orthopédia;10OT
+SURORTR - Orthopédia és traumatológia;10OT
+SUROTH - Egyéb sebészet;02
+SURPED - Általános gyermeksebészet;05
 SURPLAS - Plasztikai és rekonstruktív sebészet;20
 SURSTODEN - Sztomatológia / Fogászat;
-SURTHO - Mellkassebészet;2
-SURTR - Traumatológia;10
-SURTRANS - Transzplantációs sebészet;2
+SURTHO - Mellkassebészet;02
+SURTR - Traumatológia;10OT
+SURTRANS - Transzplantációs sebészet;02
 SURURO - Urológia;11
-SURVASC - Érsebészet;2
+SURVASC - Érsebészet;02
 Stroke;
 Sugártherápia;12
 Tartós ápolás;
 Utókezelő;
 22_Mozgászervi rehabilitáció;
 23_Ápolás;
-SURDIG - Gasztrointesztinális sebészet;2
-Belgyógyászat;1
+SURDIG - Gasztrointesztinális sebészet;02
+Belgyógyászat;01
 Fertőző betegellátás;16
-Sebészet;2
+Sebészet;02
 400_Rehab_ Kardiológia;
 199_Rehab_ Tüdőgyógyászat;
 099_Rehab_ Neurológia;
 45_Addiktológia;18
 188_Rehab_ Pszichiátria;
-Gastroenterológia;1
-Nephrológia;1
+Gastroenterológia;01
+Nephrológia;01
 Urológia;11
 Rehabilitáció;
 12_Krónikus_ Onkológia;
@@ -98,40 +98,71 @@ Rehabilitáció;
 355_Rehab_ Stroke;
 Intenzív betegellátás-ITO Központi nem oktató;15
 Pszichiátria;18
-Szülészet-nőgyógyászat;4
-Intenzív betegellátás-PIC;5
+Szülészet-nőgyógyászat;04
+Intenzív betegellátás-PIC;05
 Intenzív betegellátás-ITO Belgyógyászati;15
-Haematológia;1
+Haematológia;01
 Tüdőgyógyászat;19
 Intenzív betegellátás-ITO Központi oktató;15
-Szívsebészet;2
+Szívsebészet;02
 Kardiológia;40
-Érsebészet;2
+Érsebészet;02
 Onkológia, onkoradiológia;12
 Intenzív betegellátás-ITO Idegsebészeti;15
-Ideggyógyászat;9
-Bőr- és nemibeteg-gyógyászat;8
-Anyagcsere, endokrinológia és diabetológia;1
-Angiológia;1
+Ideggyógyászat;09
+Bőr- és nemibeteg-gyógyászat;08
+Anyagcsere, endokrinológia és diabetológia;01
+Angiológia;01
 Intenzív betegellátás-ITO Koronária;15
 Intenzív betegellátás-ITO Szív-mellkassebészet;15
-Csecsemő és gyermekgyógyászat;5
-Transzplantációs sebészet;2
+Csecsemő és gyermekgyógyászat;05
+Transzplantációs sebészet;02
 Intenzív betegellátás-ITO Gyermek;15
-Traumatológia;10
+Traumatológia;10OT
 Reumatológia;14
-Idegsebészet;2
-Orthopédia;10
-Dialízis (Műveseállomás);1
+Idegsebészet;02
+Orthopédia;10OT
+Dialízis (Műveseállomás);01
 Sürgősségi osztály;46
 Intenzív betegellátás-ITO Sebészeti;15
 Égési és plasztikai sebészet;20
 Intenzív betegellátás-ITO Trauma;15
-Tüdő- és mellkassebészet;2
+Tüdő- és mellkassebészet;02
 Mátrix osztály;
-Egyéb sebészeti;2
-Csontvelőtranszplantáció;1
+Egyéb sebészeti;02
+Csontvelőtranszplantáció;01
 Intenzív betegellátás-ITO Gyermek sebészet;15
 Alkohológia;18
-Szemészet;7
-Fül-, orr-, gégegyógyászat;6
+Szemészet;07
+Fül-, orr-, gégegyógyászat;06
+LTC - Hosszú ápolás, krónikus ápolás;
+055_Rehab_ Csecsemő- és gyermekgyógyászat;
+MEDDERM - Borgyógyászat;08
+19_Krónikus_ Tüdogyógyászat;
+GER - Geriátria, idoskorúak ellátása;01
+MEDBMT - Csontvelo transzplantáció (CsVT);01
+GOGYN - Nogyógyászat;04
+08_Krónikus_ Borgyógyászat;
+144_Rehab_ Reumatológia;
+Sportorvoslás;26
+033_Rehab_Traumatológia;
+100_Rehab_ Ortopédia;
+ICUMIX - Vegyes ITO/általános intenzív ellátás;15
+ICUCOV - Felnőtt COVID-19 ITO;15
+LTC - Hosszú ápolás/krónikus ellátás;
+MEDCOV - Belgyógyászati jellegű COVID-19 ellátás;01
+SBO - Sürgősségi betegellátó osztály;46
+RHB - Rehabilitáció (beleértve a mozgásszervit);
+GER - Geriátria/időskorúak ellátása;01
+GOOBS - Szülészet/Gyermekágy;04
+Krónikus ellátás - Belgyógyászati jellegű;
+G19_Krónikus_ Gyemek-tüdőgyógyászat;
+Felvételi osztály;
+SBOCOV - Sürgősségi COVID betegellátó osztály;46
+Rehabilitációs ellátás - Egyéb jellegű;
+SURCOV - Sebészeti jellegű COVID-19 ellátás;02
+Rehabilitációs ellátás - Belgyógyászati jellegű;
+Rehabilitációs ellátás - Sebészeti jellegű;
+Krónikus ellátás - Sebészeti jellegű;
+Krónikus ellátás - Egyéb jellegű;
+PEDGENCOV - Gyermekgyógyászati COVID-19 ellátás;05

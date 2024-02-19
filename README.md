@@ -1,4 +1,4 @@
-A magyar kórházi fertőzések 2015-2016. évi adatainak elemzése
+A magyar kórházi fertőzések 2015-2022. évi adatainak elemzése
 ================
 Ferenci Tamás (<https://www.medstat.hu/>)
 
@@ -14,12 +14,12 @@ Ferenci Tamás (<https://www.medstat.hu/>)
 ## Összefoglaló gondolatok
 
 - A bíróság döntése nyomán elérhetővé vált a kórházi fertőzésekre
-  vonatkozó magyar adatgyűjtés 2015 és 2016. évi adatbázisa, melyben
-  soha korábban nem látott részletezettségű, egyedi adatok vannak: a
-  betegről ugyan kevés információ van (még a neme és életkora sem
-  szerepel, hogy ne legyen beazonosítható), viszont a fertőzés ténye, a
-  kórház és a kórházi osztály meg van adva, több egyéb információ
-  mellett.
+  vonatkozó magyar adatgyűjtés 2015 és 2016, majd pedig 2017 és 2022
+  közötti adatbázisa, melyben soha korábban nem látott részletezettségű,
+  egyedi adatok vannak a kórházi fertőzéses esetekről: a betegről ugyan
+  kevés információ van (még a neme és életkora sem szerepel, hogy ne
+  legyen beazonosítható), viszont a fertőzés ténye, a kórház és a
+  kórházi osztály meg van adva, több egyéb információ mellett.
 - Ez lehetővé teszi az egyes kórházak összehasonlítását, ami nagyon
   fontos feladat, mind a közvélemény, mind az egészségügyi
   ellátórendszer és annak irányításáért felelős szervek számára –
@@ -41,29 +41,30 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   ott valami baj van – az is lehet, hogy ott egyszerűen rosszabb
   állapotú, és így kórházi fertőzésre is hajlamosabb betegeket látnak
   el. Bár paradoxnak hangzik, de akár még az is előfordulhat, hogy ott
-  jobb a helyzet, ahol több fertőzés fordul elő, ha a betegösszetétel
+  jobb a helyzet, ahol több fertőzés fordul elő – ha a betegösszetétel
   annyival előnytelenebb.
 - Ez utóbbi probléma esetében azonban, ha nem is tökéletes megoldásra,
   de korrekcióra van lehetőség; jelen elemzés ezt a kérdést fogja
   körbejárni. A vizsgálat alapvetően két ötletre épít. Az egyik, hogy
-  nem kórház-szintű fertőzés gyakoriságot használ, hanem osztály
+  nem kórház-szintű fertőzés-gyakoriságot használ, hanem osztály
   szintjén számolja az előfordulást. Ez azért fontos, mert az egyes
   szakmák érzékenysége a kórházi fertőzésre nagyon eltér: egy intenzív
   ellátás sokkal nagyobb kockázatot hordoz ilyen szempontból, mint
-  mondjuk egy szemészet (a végzett beavatkozások és a betegek állapota
-  miatt is). Ez automatikusan előnytelenebb helyzetbe hozza azokat a
-  kórházakat, ahol van intenzív ellátás, vagy ahol nagyobb intenzív
-  osztály van. Ha tehát nem kórházat hasonlítunk kórházzal, hanem
-  osztály szinten dolgozunk, az jóval homogénebb összehasonlítás lesz.
-  Azonban még intenzív osztály és intenzív osztály (vagy épp szemészet
-  és szemészet) között is nagy különbség lehet, úgyhogy fontos lenne még
-  pontosabban korrigálni a betegösszetételre. Erre sajnos direkt
-  lehetőség nincsen – az adatbázisban még életkor és nem sincs,
-  társbetegségek ugyan vannak, de a korrekcióhoz ismerni kellene a
-  fertőzést el nem szenvedett kórházi betegek hasonló adatait is, ami
-  viszont nem áll rendelkezésre – de egy indirekt lehetőség felvethető.
-  Ez pedig az, hogy bár egy adott kórház adott osztályán kezelt betegek
-  orvosi súlyosságáról nincs nyilvánosan elérhető adat, de „pénzügyi
+  mondjuk egy szemészet (a végzett beavatkozások miatt is és a betegek
+  állapota miatt is). Ez automatikusan előnytelenebb helyzetbe hozza
+  azokat a kórházakat, ahol van intenzív ellátás, vagy ahol nagyobb
+  intenzív osztály van. Ha azonban nem kórházat hasonlítunk kórházzal,
+  hanem osztály szinten dolgozunk, az jóval homogénebb összehasonlítás
+  lesz. Azonban még intenzív osztály és intenzív osztály (vagy épp
+  szemészet és szemészet) között is nagy különbség lehet, úgyhogy fontos
+  lenne még pontosabban korrigálni a betegösszetételre. Erre sajnos
+  direkt lehetőség, legalábbis a nyilvánosan elérhető adatokból, nincsen
+  – az adatbázisban még életkor és nem sincs, társbetegségek ugyan
+  vannak, de a korrekcióhoz ismerni kellene a fertőzést el *nem*
+  szenvedett kórházi betegek hasonló adatait is, ami viszont nem áll
+  rendelkezésre – de egy indirekt lehetőség felvethető. Ez pedig az,
+  hogy bár egy adott kórház adott osztályán kezelt betegek orvosi
+  súlyosságáról nincs nyilvánosan elérhető adat, de „pénzügyi
   súlyosságáról”, azaz az utánuk elszámolt költségekről van. Nem
   feltételezhető, hogy a kétféle súlyosság pontosan ugyanaz, viszont az
   sem igaz, hogy semmi kapcsolat nincs köztük: a rosszabb állapotú,
@@ -138,26 +139,31 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   Igen, teljesen egyetértek, „pontos tájékoztatás” és „megfelelő tudás”
   nélkül félrevezetőek lehetnek az adatok, de erre nem az a megoldás,
   hogy akkor nem mondunk semmit, hanem az, ha pontos tájékoztatást
-  adunk, megfelelő tudással! Értelmezést adunk az adatokhoz, közérthető
+  adunk, megfelelő tudással. Értelmezést adunk az adatokhoz, közérthető
   magyarázatot nyújtunk, statisztikai korrekciókkal védekezünk a
   torzítások ellen (ahogy jelen elemzésben is történt). Ebben is
   igyekszik példát mutatni ez a vizsgálat: a lenti írás kísérletet tesz
   – az elemzésen túl – arra is, hogy az előbbieknek megfelelően egy
   közérthető magyarázatot adjon az adatok és az eredmények
   értelmezéséhez.
-- Az viszont legitim kérdés, hogy helyes-e a kórházak nevének közlése. A
-  probléma az, hogy ez rossz esetben olyan viselkedést is kiválthat, ami
-  károkat okoz (például nyilván nem engedhető meg, hogy a betegek
-  elkezdjenek tömegesen egyik kórházból a másik áramlani, összeomlasztva
-  az ellátórendszert). A személyes véleményem, hogy a minőségbiztosítást
-  az szolgálja jobban, ha a kórháznevek is nyilvánosak, így a fenti
-  probléma valójában inkább a hosszú és rövid távú szempontok ütközésére
-  példa. Valóban elképzelhető, hogy a transzparens modellre való
-  átállásban lesz egy átmeneti, turbulens, fáradságos időszak, ám ennek
-  révén juthatunk el egy olyan állapotba, mely – a fent vázolt okokból –
-  sokkal jobban szolgálja mind a betegek, mind az orvosok és ápolók
-  érdekeit. Éppen ezért véleményem szerint a megoldás nem az, hogy erre
-  a nehezebb időszakra tekintettel elhalogatjuk az áttérést (nyilván a
+- Az viszont legitim kérdés, hogy helyes-e a kórházak nevének közlése.
+  Ezzel kapcsolatban két ellenérv vethető fel. Az egyik, hogy nem
+  engedhető meg, hogy egy adatközlés olyan viselkedés-módosulást váltson
+  ki, ami egészségügyi károkat okoz (magyarán: hogy a betegek
+  elkezdjenek tömegesen egyik kórházból a másikba áramlani,
+  összeomlasztva az ellátórendszert). A másik, hogy az adatközlés nehogy
+  paradox ösztönzőként viselkedjen, tehát, hogy a lista élére került
+  kórházak azzal reagáljanak, hogy akkor inkább innentől nem jelentenek
+  rendesen, nehogy megint egy ilyen kimutatás élén landoljanak. A
+  személyes véleményem, hogy a minőségbiztosítást az szolgálja jobban,
+  ha a kórháznevek is nyilvánosak, így a fenti probléma valójában inkább
+  a hosszú és rövid távú szempontok ütközésére példa. Valóban
+  elképzelhető, hogy a transzparens modellre való átállásban lesz egy
+  átmeneti, turbulens, fáradságos időszak, ám ennek révén juthatunk el
+  egy olyan állapotba, mely – a fent vázolt okokból – sokkal jobban
+  szolgálja mind a betegek, mind az orvosok és ápolók érdekeit. Éppen
+  ezért véleményem szerint a megoldás nem az, hogy erre a nehezebb
+  időszakra tekintettel elhalogatjuk az áttérést (nyilván a
   végtelenségig), hanem az, ha ezekre a problémákra tudatosan készülünk,
   például épp a felvilágosítással, amire próbál ez az írás is példát
   adni.
@@ -172,13 +178,18 @@ Ferenci Tamás (<https://www.medstat.hu/>)
   segítheti az adatokra alapozott elemzés az egészségügyi ellátórendszer
   jobbítását, a hibák feltárását. Itt fontos rögtön hozzátenni, hogy a
   „hiba” szót a legáltalánosabban értelemben használom, és egyáltalán
-  nem csak olyanokra gondolok, hogy egy kórházban van valami probléma
-  mondjuk a fertőtlenítéssel: az is hiba, ha gyanúsan nagy különbségek
-  vannak a kórházak között, és ezért felmerül, hogy nem korrigáltunk jól
-  a betegösszetételre, vagy, ha itt sem találunk gondot, akkor talán a
+  nem csak olyanokra gondolok, hogy egy kórházban probléma van mondjuk a
+  fertőtlenítéssel: az is hiba, ha gyanúsan nagy különbségek vannak a
+  kórházak között, és ezért felmerül, hogy nem korrigáltunk jól a
+  betegösszetételre, vagy, ha itt sem találunk gondot, akkor talán a
   jelentési fegyelem kapcsán kell vizsgálódnunk? Akárhogy is, az adatok
   megmutatják, hogy *valamit* javítanunk kell, és, ami nem kevésbé
   fontos, abban is adhatnak iránymutatást, hogy mit.
+- Természetesen figyelembe kell venni a *preventálhatóság* kérdését: nem
+  szabad azt a látszatot kelteni, hogy tökéletes elemzéssel meg lehetne
+  szüntetni a kórházi fertőzéseket, de az is biztos, hogy lehet velük
+  javítani; e javítások határának feltárása szintén izgalmas kérdés
+  önmagában is.
 - Csak zárójelben teszem hozzá, de hátsó szándékom példát mutatni a
   biostatisztikus gondolkodásmódra is (különös hangsúllyal két
   szemponton: hogy miért fontos az adatok, adatforrások limitációinak
@@ -371,7 +382,8 @@ jelentést vesszük alapul, akkor a következő dolgokat említeném meg
   feltétlenül könnyű). Ha csak az egyik legkézenfekvőbb kérdést veszem,
   hogy „hányan haltak meg 2022-ben Magyarországon kórházi fertőzésben?”,
   arra is csak úgy lehet válaszolni, ha négy különböző helyet talál meg
-  az ember, és veszi ki onnan az adatokat, majd kézzel összeadja.
+  az ember (amikhez semmilyen mutató nincsen), és veszi ki onnan az
+  adatokat, majd kézzel összeadja.
 - Az írás még csak érintőlegesen sem foglalkozik a limitációkkal.
   Egyetlen szó nincs a jelentési fegyelemről, egy hangot nem mond a
   tesztelési aktivitás kérdéseiről.
@@ -383,7 +395,7 @@ egyik legtipikusabb – és teljesen jogos – ellenérv e témában, hogy ezek
 a számok félrevezetőek a betegösszetételre való korrekció nélkül,
 valójában a jelentés is közöl, ha nem is kórházra, de régióra lebontott
 adatokat, amelyek pontosak ugyanúgy félrevezetőek korrekció nélkül
-(hiszen a betegösszetétel ugyanúgy eltérhet régiónként is) – mégis, a
+(hiszen a betegösszetétel ugyanúgy eltérhet régiónként is!) – mégis, a
 jelentés mindennemű korrekció nélkül közzéteszi ezeket.
 
 ## A kutatás eredményeinek magyarázata
@@ -429,8 +441,10 @@ kórházi fertőzések gyakorisága ugyanis első közelítésben tényezők ké
 csoportjától függ: kórházra jellemző tényezőktől (egy ápolóra jutó
 betegek száma, korszerű infekciókontroll rendszerek alkalmazása, a
 fertőtlenítési protokollok betartása stb.) és a betegre jellemző
-tényezőktől (életkor, társbetegségek, invazív beavatkozás igény, a beteg
-mentális állapota stb.).
+tényezőktől (életkor, társbetegségek, mentális állapot stb.), ideértve
+azt is, hogy egyáltalán mit kell a beteggel csinálni, hiszen vannak
+inherensen nagyobb és kisebb kockázatú beavatkozások (az invazív
+beavatkozások például jellemzően nagyobb kockázatúak).
 
 Ez eddig valószínűleg nem egy meglepő állítás, de arra talán kevesen
 gondolnának, hogy a dolognak milyen drámai hatása is lehet. Tekintsünk
@@ -438,9 +452,9 @@ egy illusztratív példát. Két kórházat nézünk ugyanabban az évben; az
 egyszerűség kedvéért mondjuk, hogy a betegek kockázatossága csak két
 kategória egyikébe – kis és nagy – tartozhat (noha a valóságban ez
 nyilván folytonos). Az alábbi táblázat mutatja, hogy hány beteget láttak
-az egyes kórházakban a két kategóriából, közülük hány kapott kórházi
-fertőzést, és ez alapján megadja a kórházi fertőzések betegszámra
-vetített gyakoriságát százalékként:
+az egyes kórházakban a két kategóriából adott, állandó idő alatt,
+közülük hány kapott kórházi fertőzést, és ez alapján megadja a kórházi
+fertőzések betegszámra vetített gyakoriságát százalékként:
 
 |                            | **X kórház**     | **Y kórház**    |
 |----------------------------|------------------|-----------------|
@@ -464,8 +478,8 @@ eseteket, lehúzza az összesített eredményét – hiába teljesít amúgy mé
 ott is jobban, mint Y, de ezek a betegek (állapotukból és nem a
 kórházból fakadóan!) rosszabb mutatókat produkálnak, így ha több van
 belőlük, az nagyban rontja a teljesítményt, még akkor is, ha egyébként
-az ő körükben is jobban teljesít a kórház. Végeredményben az a kórház
-teljesít jobban, ahol gyakoribbak a kórházi fertőzések!
+az ő körükben is jobban teljesít a kórház. *Végeredményben az a kórház
+teljesít jobban, ahol gyakoribbak a kórházi fertőzések!*
 
 Ez egy konkrét példa arra az általános jelenségre, amit a
 biostatisztikában – magyarul is elterjedten használt angol szóval –
@@ -507,12 +521,27 @@ aránya, vagy pont fordítva. (A táblázatra gondolva: nem tudjuk a perjel
 mögötti értékeket a kis és nagy kockázatú sorokban – és így persze
 százalékot sem tudunk számolni.)
 
-Megállapíthatjuk tehát, hogy a legjobb korrekciót nem tudjuk megtenni,
-szükséges adatok híján. Mi a második legjobb lehetőség?
+Ezek az adatok a hivatalos szervek számára elérhetőek lehetnek, de
+sajnos nyilvános adatforrás nincsen rájuk, így mi most nem tudunk ilyen
+módon közelíteni a problémához. Zárójeles megjegyzés: elképzelhető, hogy
+az állami szervek is azt mondják, hogy ezt ők sem tudják, hiszen ilyen
+információt nem kell rutinszerűen jelenteni a kórházaknak (és aránytalan
+nehézséget jelentene a begyűjtése). Ez igaz, de van egy potenciális
+megoldás: az adminisztratív/finanszírozási adatok használata. Ilyeneket
+ugyanis minden kórház jelenleg is jelent; igen, az tény, hogy nem
+tartalmaz olyan fontos információkat, mint kapásból a társbetegségek, de
+vannak sikeres példák, mint a
+[HUNVASCDATA](https://hunvascdata.hu/)-projekt, az ilyenek kikódolására
+és felhasználására. Azok számára, akik hozzáférnek ezen adatokhoz, ez
+szerintem egy megfontolandó lehetőség.
+
+Azt mindenesetre megállapíthatjuk, hogy *mi* nem tudjuk a legjobb
+korrekciót megtenni, szükséges – nyilvánosan elérhető – adatok híján. Mi
+a második legjobb lehetőség?
 
 Az egyik ötlet, hogy ne kórház, hanem szakma (belgyógyászat, szemészet
 stb.) szintjén vizsgálódjunk! Ez ugyanis jelentősen homogenizálja a
-betegeket, sokkal hasonlóbb betegcsoportot hasonlítunk össze, ha nem
+betegeket: sokkal hasonlóbb betegcsoportot hasonlítunk össze, ha nem
 egész kórházat hasonlítunk egész kórházzal, hanem belgyógyászatot
 belgyógyászattal, szemészetet szemészettel stb. Természetesen ez a
 módszer sem tökéletes, hiszen belgyógyászat és belgyógyászat között is
@@ -631,33 +660,24 @@ megbecsültetjük, hogy ha minden kórházban pontosan ugyanazok az
 osztályok *lennének*, és mindegyikben pontosan ugyanannyi *lenne* a
 betegforgalom, akkor mennyi *lenne* a kórházi fertőzések száma. Ennek
 eredményeként egy konkrét, előfordulási gyakoriságként mért, tehát
-könnyen értelmezhető számot kapunk – ugyanolyan gyakoriság lesz, mint a
-naiv számítás eredménye, csak épp ebben már szűrve lesz a fenti
-torzítás. Hiszen mi volt a probléma? Az, hogy az egyes kórházakban más
+könnyen értelmezhető számot kapunk, ami ugyanolyan gyakoriság lesz, mint
+a naiv számítás eredménye – csak épp ebben már szűrve lesz a fenti
+torzítás! Hiszen mi volt a probléma? Az, hogy az egyes kórházakban más
 az osztályok szerinti összetétel. Viszont a fenti módon kapott
 fertőzés-előfordulás egy olyan *virtuális* helyzetre vonatkozik, hogy
 akkor mi *lenne*, ha ebben nem *lenne* különbség, tehát ezt a számot már
 nem rontja el ez a probléma! Lényegében az történt, hogy első fázisban
 kiszedtük az információkat a tényadatokból, majd második fázisban ezen
-információk alapján gyártottunk egy olyan számot, ami már jól
-összehasonlítható – a valóságban ezt nem látjuk, de a modellünk meg
-tudja nekünk, matematikai módszerekkel, mondani!
-
-Kiegészítésként érdemes megjegyezni, hogy valójában két évnyi adatunk
-van, de az év hatása ugyanígy kezelhető ebben a modellben: az is kap
-valamilyen pontszámot, hogy melyik évben vagyunk – itt is a tényadatok
-alapján. A modell feltevése erre vonatkozóan is ugyanaz: ez nem függ sem
-a kórháztól, sem az osztálytól. (Tehát például a kórházak sorrendje
-időben is állandó! Két évnél ez még nem tűnik drámai megszorításnak, ha
-hosszú adatsor lenne, akkor valószínűleg érdemes lenne feloldani ezt a
-feltevést a modellben; szerencsére ez is gond nélkül megtehető a
-regressziós modellezési keretben.)
+információk alapján gyártottunk egy olyan számot, ami kényelmesen
+értelmezhető, de immár jól össze is hasonlítható – a valóságban ezt nem
+látjuk, de a modellünk meg tudja nekünk, matematikai módszerekkel,
+mondani!
 
 Végezetül egyetlen utolsó lépést tehetünk még, hogy javítsuk a helyzet.
 Mert mi a még mindig fennálló fő probléma? Hogy az osztályok sem
 tökéletesen homogének, intenzív és intenzív vagy épp szemészet és
-szemészet között is lehet különbség. Itt jön kapóra egy ötlet, amit
-bevethetünk.
+szemészet között is lehet különbség az ország egyes kórházai között. Itt
+jön kapóra egy ötlet, amit bevethetünk.
 
 Ennek megértéséhez egy nagyon rövid – és még annál is jobban
 leegyszerűsített – kitérőt tennünk kell a magyar fekvőbeteg-szakellátás
@@ -690,13 +710,14 @@ altatásra, mennyire veszi igénybe a sterilizálót, a varrodát, mennyi a
 gyomor-bél fekély nem tartalmaz CT-t vagy MRI-t, de kétszer annyi
 gyógyszerköltséget tartalmaz, mint a nem szövődményes változata.) Igen,
 ez az „átlagos” beteg, de a homogenitás pont azt jelenti, hogy ebben
-elvileg kicsi a szórás. Ezek alapján minden kórház valamennyi súlyszámot
-összegyűjt, ha összeadja az összes általa ellátott beteg súlyszámait. Az
-utolsó lépés: meghirdetik, hogy egy súlyszám hány forintot ér, így a
-kettőt összeszorozva megkapja a finanszírozásának ezen komponensét.
-Természetesen, ahogy volt róla szó, ez a leírás milliónyi, gyakorlatban
-fontos finomságot nem érint, de a mi mostani céljainkra elég ennyit
-tudni.
+elvileg kicsi a szórás, ezért nem okozunk nagy bajt, ha az átlagot
+használjuk. Ezek alapján minden kórház összegyűjt valamennyi súlyszámot
+az év során, ha összeadja az összes általa ellátott beteg súlyszámait.
+Az utolsó lépés pedig, hogy meghirdetik, hogy egy súlyszám hány forintot
+ér, így a kettőt összeszorozva megkapja a finanszírozásának ezen
+komponensét. Természetesen, ahogy volt róla szó, ez a leírás milliónyi,
+gyakorlatban fontos finomságot nem érint, de a mi mostani céljainkra
+elég ennyit tudni.
 
 Na de mi köze ennek az egésznek a kórházi fertőzések vizsgálatához? Az,
 hogy a NEAK évente közli minden kórház minden osztályára vonatkozóan,
@@ -712,19 +733,50 @@ használnunk, de arról nincs adat, viszont az előbbiről van. Ha pedig azt
 a feltevést is hozzátesszük, hogy az orvosi súlyosság együttmozog a
 kórházi fertőzésekre való fogékonysággal (amire szintén igaz, hogy ha
 nem is tökéletes az együttjárás, de van kapcsolat), akkor egy újabb nagy
-lépést tettünk: tudjuk jellemezni *ugyanazon* osztályok eltérő
+épést tettünk: tudjuk jellemezni *ugyanazon* osztályok eltérő
 betegösszetételeit is a különböző kórházak között! Egyszerűen vesszük a
-CMI-t, és ezzel írjuk le az osztály betegösszetételét. Ha nem is
-tökéletes a dolog, de mindenesetre javítunk a helyzeten.
+CMI-t, és ezzel írjuk le az osztály betegösszetételét. Tökéletes ez a
+megoldás? Egész biztosan nem. Két áttételezési lépés is megjelenik (a
+finanszírozás összefügg az orvosi súlyossággal, az orvosi súlyosság
+összefügg a fertőzésre való fogékonysággal); konkrét példaként
+gondoljunk arra, hogy egy egyébként teljesen egészséges 30 éves
+vakbél-műtétje pontosan ugyanabba a finanszírozási kategóriába fog esni,
+mint egy cukorbeteg, rákos 80 éves vakbél-műtétje, miközben a fertőzési
+kockázatuk nagyon eltér. Azt azonban nem is állítom, hogy a dolog
+tökéletes – azt viszont igen, hogy a semminél bizonyosan több, így ha
+nem is oldjuk meg teljeskörűen a problémát, de mindenesetre javítunk a
+helyzeten.
 
 Természetesen a CMI eloszlása elég jellegzetes szakmák között, az
 intenzíveknek nagyobb mint a szemészeteknek. *De* – nagyon fontos –
-nekünk *nem* ez számít, hiszen ezzel eddig is el tudtunk számolni, mivel
-leástuk osztályszintre, hanem az, hogy intenzív, szemészet stb.
+nekünk *nem* ez számít, hiszen ezzel *eddig is* el tudtunk számolni,
+mivel leástuk osztályszintre, hanem az, hogy intenzív, szemészet stb.
 szakmákon *belül* is van szóródás – amivel eddig nem tudtunk mit
 kezdeni, de most már meg tudjuk ragadni! Ezt teszi lehetővé a CMI
 felhasználása, ezzel remélhetőleg még jobban közelítve az elemzést a
 valósághoz.
+
+Nyitva maradt még az év kérdése. Első ránézésre úgy tűnhet, hogy ez is
+egyszerűen belehelyezhető a modellbe ugyanúgy, mint kórház és osztály –
+minden év kap egy pontszámot, és akkor az év hatását, magyarul a hosszú
+távú trendet is le tudtuk mérni, ami ráadásul önmagában is érdekes! A
+dolog *majdnem* működik, egy apró bökkenő van: a súlyszámok nem
+állandóak. Ezt a NEAK időről-időre újrakalibrálja (ennek lehet oka, hogy
+a költségviszonyok megváltoznak, de sejtésem szerint inkább arról van
+szó, hogy a magától vélhetően felfelé kúszó CMI-t próbálják
+visszaráncigálni). A probléma magja ugyanis, hogy az országos átlagnak
+1,000-nak kell lennie, innentől kezdve viszont – sajnos – elvileg
+lehetetlen, hogy ki tudja fejezni a hosszabb távú trendeket: hiába
+végeznek – példának okáért – egyre bonyolultabb beavatkozásokat, ha
+közben a súlyszám lefelé módosítása pont ez eltünteti. Ezzel a
+jelenséggel sajnos nem tudunk mit kezdeni (az egyetlen megoldási
+lehetőség az lenne, ha állandó súlyokkal számolnánk újra a kórházak
+adatait, viszont ehhez ismernünk kellene az egyes HBCs-kben jelentett
+esetszámokat külön-külön is). Ezért, jobb híján, a számításokat minden
+évre külön-külön, egymástól függetlenül futtattam le. Ennek azonban van
+egy nagyon fontos következménye: az éven *belüli* eredmények
+összehasonlíthatóak (a fenti limitációk erejéig), de a *különböző* évek
+számai nem lesznek egymással összevethetőek!
 
 Egyetlen megjegyzés a legvégére. Valójában a fenti modellek
 megalkotásakor van mozgástér. Hogyan építsük be a modellbe a CMI-t, a
@@ -743,18 +795,22 @@ Hogy ez miért fontos? Két okból. Az egyik, hogy ha bárki nem értene
 egyet velem abban, hogy melyik a legjobb, akkor megteheti, hogy kinézi a
 szerinte legjobbhoz tartozó eredményeket, függetlenül attól, hogy én mit
 gondolok. Ez ráadásul bizalmi okokból is fontos: így nem érheti szó a
-ház elejét, hogy valamit el akarnék titkolni. A másik szempont, hogy az
-érzékenységvizsgálatból kiderül, hogy az eredményekben mekkora szóródás
-van a használt módszertantól függően (mennyire érzékeny az eredmény a
-módszertanra – innen az elnevezés), ha pedig ráadásul van akkor
-szerencsénk, hogy ez kicsi, tehát a különböző elemzési módszerekkel
-kapott eredmények nagyjából hasonlóak, akkor az megnyugtató, hiszen azt
-mondja, hogy az eredmény nem múlik nagyban azon, hogy pontosan melyik
-eszközt használja az elemző. Úgy is szokták mondani: az eredmény
-robusztus a használt módszertanra nézve. Igen, van döntés arról, hogy
-melyik a legjobb eszköz, de azért nyugodtabban alszik az ember, ha
-tudja, hogy nagyon nagyban nem változna a sorrend akkor sem, ha más
-eszközt választott volna.
+ház elejét, hogy valamit el akarnék titkolni, és valami sötét hátsó
+szándékból választottam azt a modellt legjobbnak, amit. A másik
+szempont, hogy az érzékenységvizsgálatból kiderül, hogy az eredményekben
+mekkora szóródás van a használt módszertantól függően (mennyire érzékeny
+az eredmény a módszertanra – innen az elnevezés), ha pedig ráadásul van
+akkora szerencsénk, hogy ez kicsi, tehát a különböző elemzési
+módszerekkel kapott eredmények nagyjából hasonlóak, akkor az
+megnyugtató, hiszen azt mondja, hogy az eredmény nem múlik nagyban azon,
+hogy pontosan melyik eszközt használja az elemző. Úgy is szokták
+mondani: az eredmény robusztus a használt módszertanra nézve. Igen, van
+döntés arról, hogy melyik a legjobb eszköz, de azért nyugodtabban alszik
+az ember, ha tudja, hogy nagyon nagyban nem változna a sorrend akkor
+sem, ha más eszközt választott volna. De ha nagyobb szóródás van, akkor
+is hasznos az érzékenységvizsgálat, mert mutatja az eredmények
+tartományát (magyarán, hogy *mennyire* múlik az eredmény a használt
+elemzési módszeren).
 
 ### A jelentési fegyelem problémája
 
@@ -862,6 +918,12 @@ akkor talán a jelentési fegyelem kapcsán kell vizsgálódnunk? Akárhogy
 is, az adatok megmutatják, hogy *valamit* javítanunk kell, és, ami nem
 kevésbé fontos, abban is adhatnak iránymutatást, hogy mit.
 
+Természetesen figyelembe kell venni a *preventálhatóság* kérdését: nem
+szabad azt a látszatot kelteni, hogy tökéletes elemzéssel meg lehetne
+szüntetni a kórházi fertőzéseket, de az is biztos, hogy lehet velük
+javítani; e javítások határának feltárása szintén izgalmas kérdés
+önmagában is.
+
 Fontos e ponton közbeszúrni, hogy az egész kérdéskör véleményem szerint
 elsősorban nem az „ujjal mutogatásról”, a személyi felelősök kereséséről
 kell, hogy szóljon, nem arról, hogy „te elrontottad, mert nem mostál
@@ -901,10 +963,32 @@ lakosság életminőségének a javítására.
 
 ## Statisztikai és számítástechnikai részletek
 
-Ez a fejezet az elemzés technikai részleteit ismerteti. A
+Ez a fejezet az elemzés technikai részleteit ismerteti, a
 végeredményeket a következő,
 [Eredmények](https://github.com/tamas-ferenci/NNSRElemzes#eredm%C3%A9nyek)
 fejezet mutatja be.
+
+A lenti kódok a számítás teljes reprodukcióját lehetővé teszik, egyetlen
+kivétellel: a legelső lépés, a nyers adatok betöltése nem
+reprodukálható, ugyanis a nyers adatokat tartalmazó táblákat –
+szándékosan – nem teszem elérhetővé. Ezek fellelhetőek az interneten
+(valójában tehát ez a lépés is reprodukálható, csak nem innen), mivel a
+bírósági ítélet rendelkezett a nyilvánosságra hozatalukról. Ilyen
+értelemben tehát jogilag aggálytalanul közzétehetném én is, elvi okokból
+nem teszem meg: e táblák tételes adatokat tartalmaznak, amelyek
+nyilvánosságra hozatala még szerintem is – noha a transzparencia
+elkötelezett híve vagyok – számos kérdést vet fel, így mutatni akarom,
+hogy lehetnek ilyen jellegű, adatvédelmi limitációk még a
+legtranszparensebb rendszerben is. Természetesen fontos, hogy megfelelő
+garanciák mellett a kutatók a tételes adatokhoz is hozzáférhessenek, de
+ez a döntésem jelen esetben érdemi limitációt nem jelent, ugyanis az
+aggregált adatokat elemi szinten is nyilvánosságra hozom (valamennyi
+kórház valamennyi osztályán megadom például a fertőzések számát, minden
+egyes évre), amiből minden kérdés megválaszolható – de mégis, aggregált,
+és nem tételes adatról van szó.
+
+A számítási eredményeket azonban teljeskörűen hozzáférhetővé teszem,
+hiszen ezek már kizárólag csak aggregált adatokat mutatnak.
 
 ### Adatok betöltése
 
@@ -913,7 +997,7 @@ környezet](https://www.youtube.com/@FerenciTamas/playlists?view=50&sort=dd&shel
 alatt végeztem.
 
 Elsőként betöltjük a szükséges csomagokat; használni fogjuk többek
-között a `data.table`-t (1.14.10 verzió) és a `ggplot2`-t (3.4.4 verzió)
+között a `data.table`-t (1.15.0 verzió) és a `ggplot2`-t (3.4.4 verzió)
 :
 
 ``` r
@@ -931,14 +1015,11 @@ set.seed(1)
 Ezután betöltjük a nyers adatokat is, ügyelve az egységes formázásra:
 
 ``` r
-RawData <- rbind(
-  as.data.table(readxl::read_excel("MRK_combined_2.xlsx", sheet = 1, guess_max = 10000))[
-    , .(hospital_department_of_admission, hospital_code, hospital_name, type = "MRK", year)],
-  as.data.table(readxl::read_excel("CDI_combined_2.xlsx", sheet = 1, guess_max = 10000))[
-    , .(hospital_department_of_admission, hospital_code, hospital_name, type = "CDI", year)],
-  as.data.table(readxl::read_excel("VAF_2.xlsx", sheet = 2, guess_max = 10000))[
-    , .(hospital_department_of_admission, hospital_code, hospital_name, type = "VAF",
-        year = as.numeric(year))])
+RawData <- rbindlist(lapply(list.files("./RawData/", full.names = TRUE), function(f)
+  data.table(readxl::read_excel(f, sheet = 1, guess_max = 100000), check.names = TRUE)[
+    , .(hospital_department_of_admission = Felvételes.osztály, hospital_code = Kórházkód,
+        hospital_name = Kórház.neve, type = substring(f, 16, 18),
+        year = if(exists("Év")) as.numeric(Év) else as.numeric(substring(f, 20, 23)))]))
 RawData$hospital_code <- stringr::str_pad(RawData$hospital_code, 6, "left", "0")
 ```
 
@@ -949,10 +1030,10 @@ említett](https://github.com/tamas-ferenci/GondolatokAMagyarKorhaziAdatokElemze
 projekt alapján):
 
 ``` r
-KhAdatok <- readRDS(url(paste0("https://raw.githubusercontent.com/tamas-ferenci/GondolatokAMagyarKorhazi",
-                               "AdatokElemzeserolEsNehanyEgeszsegpolitikaiMegjegyzes/main/KorhaziAgyszamEs",
+KhAdatok <- readRDS(url(paste0("https://raw.githubusercontent.com/tamas-ferenci/",
+                               "GondolatokAMagyarKorhaziAdatokElemzeserolEsNehany",
+                               "EgeszsegpolitikaiMegjegyzes/main/KorhaziAgyszamEs",
                                "Betegforgalom.rds")))
-KhAdatok$SzakmaKod <- as.numeric(KhAdatok$SzakmaKod)
 KhAdatok$KorhazNev <- trimws(KhAdatok$KorhazNev)
 ```
 
@@ -961,13 +1042,15 @@ az NNK-nál szereplő osztály-megnevezéseket a NEAK tábla szakmáival:
 
 ``` r
 DeptCodeLink <- fread("DepartmentCodesLink.csv", dec = ",")
+DeptCodeLink[SzakmaKod==""]$SzakmaKod <- NA
 ```
 
 Ellenőrizzük le, hogy nincs olyan osztályunk, ami ne szerepelne a
 táblában:
 
 ``` r
-sum(!unique(RawData$hospital_department_of_admission)%in%DeptCodeLink$hospital_department_of_admission)
+sum(!unique(RawData$hospital_department_of_admission)%in%
+      DeptCodeLink$hospital_department_of_admission)
 ```
 
     ## [1] 0
@@ -975,8 +1058,8 @@ sum(!unique(RawData$hospital_department_of_admission)%in%DeptCodeLink$hospital_d
 Az persze lehet, hogy valaminek nincsen párja:
 
 ``` r
-data.frame(Osztaly = unique(merge(RawData,
-                                  DeptCodeLink)[is.na(SzakmaKod)]$hospital_department_of_admission))
+data.frame(Osztaly = unique(merge(
+  RawData, DeptCodeLink)[is.na(SzakmaKod)]$hospital_department_of_admission))
 ```
 
 <div class="kable-table">
@@ -987,19 +1070,25 @@ data.frame(Osztaly = unique(merge(RawData,
 | 01_Krónikus\_ Belgyógyászat                        |
 | 022_Rehab\_ Sebészet                               |
 | 02_Krónikus\_ Sebészet                             |
+| 033_Rehab_Traumatológia                            |
 | 03_Krónikus_Traumatológia                          |
 | 04_Krónikus_Szűlészet-nőgyógyászat                 |
+| 055_Rehab\_ Csecsemő- és gyermekgyógyászat         |
 | 05_Krónikus\_ Csecsemő- és gyermekgyógyászat       |
 | 06_Krónikus\_ Fül- orr- gége                       |
+| 08_Krónikus\_ Borgyógyászat                        |
 | 08_Krónikus\_ Bőrgyógyászat                        |
 | 099_Rehab\_ Neurológia                             |
 | 09_Krónikus\_ Neurológia                           |
+| 100_Rehab\_ Ortopédia                              |
 | 10_Krónikus\_ Ortopédia                            |
 | 12_Krónikus\_ Onkológia                            |
+| 144_Rehab\_ Reumatológia                           |
 | 14\_ Krónikus_Reumatológia                         |
 | 188_Rehab\_ Pszichiátria                           |
 | 18_Krónikus\_ Pszichiátria                         |
 | 199_Rehab\_ Tüdőgyógyászat                         |
+| 19_Krónikus\_ Tüdogyógyászat                       |
 | 19_Krónikus\_ Tüdőgyógyászat                       |
 | 21_Krónikus ápolás                                 |
 | 22_Mozgászervi rehabilitáció                       |
@@ -1013,12 +1102,23 @@ data.frame(Osztaly = unique(merge(RawData,
 | 37_Krónikus\_ Nephrológia                          |
 | 400_Rehab\_ Kardiológia                            |
 | 40_Krónikus\_ Kardiológia                          |
+| Felvételi osztály                                  |
+| G19_Krónikus\_ Gyemek-tüdőgyógyászat               |
+| Krónikus ellátás - Belgyógyászati jellegű          |
+| Krónikus ellátás - Egyéb jellegű                   |
+| Krónikus ellátás - Sebészeti jellegű               |
+| LTC - Hosszú ápolás, krónikus ápolás               |
+| LTC - Hosszú ápolás/krónikus ellátás               |
 | MEDTR - Mozgásszervi rehabilitáció                 |
 | MIX - Ellátási típusok kombinációja                |
 | Mátrix osztály                                     |
 | OTH - Egyéb nem felsorolt                          |
 | RHB - Rehabilitáció                                |
+| RHB - Rehabilitáció (beleértve a mozgásszervit)    |
 | Rehabilitáció                                      |
+| Rehabilitációs ellátás - Belgyógyászati jellegű    |
+| Rehabilitációs ellátás - Egyéb jellegű             |
+| Rehabilitációs ellátás - Sebészeti jellegű         |
 | SURONCO - Onkológiai sebészet                      |
 | SURSTODEN - Sztomatológia / Fogászat               |
 | Stroke                                             |
@@ -1031,8 +1131,8 @@ Ez egy veszteség lesz, de egy tudatosan vállalt veszteség: ezek krónikus
 osztályok (amelyekhez nem vettünk ki NEAK-adatot), illetve nem jól
 beazonosítható, egyértelműen össze nem kapcsolható osztályok. (Ez a
 fenti lista segítségével le is ellenőrizhető.) A veszteség csakugyan nem
-nagy: az eredeti 25980 eseményből 24070 esemény marad, azaz a veszteség
-mindössze 1910 esemény (0.1%). Végezzük el az egyesítést:
+nagy: az eredeti 124448 eseményből 113903 esemény marad, azaz a
+veszteség mindössze 10545 esemény (0.1%). Végezzük el az egyesítést:
 
 ``` r
 RawData <- merge(RawData, DeptCodeLink)[!is.na(SzakmaKod)]
@@ -1045,7 +1145,7 @@ kódokkal, így ezt kézzel kell megoldanunk:
 
 ``` r
 HospCodeLink <- fread("HospitalCodesLink.csv", dec = ",")
-HospCodeLink <- melt(HospCodeLink[, .(hospital_code, NEAK2015, NEAK2016)], id.vars = "hospital_code")[
+HospCodeLink <- melt(HospCodeLink, id.vars = "hospital_code")[
   , .(hospital_code, year = as.numeric(substring(variable, 5)), KorhazRovid = value)]
 HospCodeLink$KorhazRovid <- stringr::str_pad(HospCodeLink$KorhazRovid, 4, "left", "0")
 HospCodeLink$hospital_code <- stringr::str_pad(HospCodeLink$hospital_code, 6, "left", "0")
@@ -1063,168 +1163,132 @@ RawData <- merge(RawData, HospCodeLink, by = c("hospital_code", "year"))
 tudjuk, hogy jól sikerült-e az összekapcsolás:
 
 ``` r
-fwrite(unique(RawData[, .(hospital_code, year, hospital_name, KorhazNev, KorhazRovid)]),
-       "KhNevekOsszekapcsolas.csv", dec = ",", sep =";", bom = TRUE)
+fwrite(unique(RawData[, .(hospital_code, year, hospital_name, KorhazNev, KorhazRovid)])[
+  tolower(hospital_name)!=tolower(KorhazNev)], "KhNevekOsszekapcsolas.csv", dec = ",",
+  sep =";", bom = TRUE)
 ```
 
 Végezetül készítsünk egy táblát a kórházak későbbiekben használt
-elnevezéseiről (erre azért van szükség, mert lehet, hogy megváltozott a
-két év között, most használjuk a 2016-os nevet):
+elnevezéseiről; erre azért van szükség, mert lehet, hogy a név
+megváltozott az évek során – most használjuk az időben első nevet, ami
+az adott NEAK kódhoz tartozik. A kórházak névváltozása nagyon elterjedt,
+és pont ezért jó a NEAK kód, mert az ilyen esetekben is állandó marad.
+Sajnos azonban ez sem igaz kivétel nélkül mindig, néha a kód is
+megváltozik (pl. a SOTE 2022 előtt „Semmelweis Egyetem” volt 0140
+kóddal, de 2022-ben már „Semmelweis Egyetem Klinikai Központ”, 01H7
+kóddal). Ezeket az eseteket kézzel javítjuk (itt is a kronologikusan
+első nevet használva):
 
 ``` r
-KorhazNevek <- rbind(unique(KhAdatok[Ev==2016, .(KorhazRovid, KorhazNev)]),
-                     unique(KhAdatok[Ev==2015, .(KorhazRovid, KorhazNev)]))
-KorhazNevek <- KorhazNevek[!duplicated(KorhazRovid)]
+KorhazNevek <- KhAdatok[Ev>=2015, .(KorhazRovid, KorhazNevEgyseges = KorhazNev)][
+  !duplicated(KorhazRovid)]
+KorhazNevek[KorhazNevEgyseges=="Semmelweis Egyetem Klinikai Központ"]$KorhazNevEgyseges <-
+  "Semmelweis Egyetem"
+KorhazNevek[KorhazNevEgyseges=="Pécsi Tudományegyetem Klinikai Központ"]$KorhazNevEgyseges <-
+  "Pécsi Tudományegyetem"
+KorhazNevek[KorhazNevEgyseges=="Budai Egészségközpont Kft."]$KorhazNevEgyseges <-
+  "Budai Egészségközpont Zrt."
+KorhazNevek[KorhazNevEgyseges=="Szent Damján Görögkatolikus Kórház"]$KorhazNevEgyseges <-
+  "Felső-Szabolcsi Kórház, Kisvárda"
 ```
 
 ### Incidencia-számolás és adattisztítás
 
-Az adatbázisunkban összesen 24070 eset van tehát, az alábbi
+Az adatbázisunkban összesen 113891 eset van tehát, az alábbi
 megoszlásban:
 
 ``` r
-dcast(year ~ type, data = RawData[, .N, .(year, type)], value.var = "N")
+dcast(`Év` ~ type, data = RawData[, .N, .(`Év` = year, type)], value.var = "N")
 ```
 
 <div class="kable-table">
 
-| year |  CDI |  MRK |  VAF |
+|   Év |  CDI |  MRK |  VAF |
 |-----:|-----:|-----:|-----:|
 | 2015 | 5387 | 3539 | 3318 |
 | 2016 | 4457 | 4123 | 3246 |
+| 2017 | 4805 | 4187 | 3354 |
+| 2018 | 5093 | 4677 | 3904 |
+| 2019 | 5150 | 5002 | 4406 |
+| 2020 | 5087 | 4332 | 4231 |
+| 2021 | 7294 | 5559 | 5640 |
+| 2022 | 7123 | 5364 | 4613 |
 
 </div>
 
 Első lépésben számoljuk ki a jelentett fertőzéses esetek számát év,
-kórház és osztály (mindhárom fertőzés-típusra), majd ezt a táblát
-egyesítsük mind a betegforgalmi, mind az elnevezési táblákkal:
+kórház és osztály szinten (mindhárom fertőzés-típusra), majd ezt a
+táblát egyesítsük mind a betegforgalmi, mind az elnevezési táblákkal:
 
 ``` r
 Res <- merge(merge(setkey(RawData, KorhazRovid, SzakmaKod, year, type)[
   CJ(unique(KorhazRovid), unique(SzakmaKod), unique(year), unique(type)), .N, by = .EACHI],
-  KhAdatok[Ev%in%c(2015, 2016),
-           .(year = Ev, KorhazRovid, SzakmaKod, SzakmaMegnev,
-             MukodoAtlagAgy, TeljesitettApolasiNapSzam, ElbocsatottBetegSzam)],
+  KhAdatok[, .(year = Ev, KorhazRovid, KorhazNev, SzakmaKod, SzakmaMegnev,
+               MukodoAtlagAgy, TeljesitettApolasiNapSzam, ElbocsatottBetegSzam)],
   by = c("year", "KorhazRovid", "SzakmaKod"), all.x = TRUE),
   KorhazNevek, by = "KorhazRovid", all.x = TRUE)
 ```
 
-Az itt szereplő esetek száma természetesen ugyanúgy 24070.
+Az itt szereplő esetek száma természetesen ugyanúgy 113891.
 
-Lesz néhány sor veszteség azért, mert a kórházban valójában csak
-krónikus ellátás van, de ez az osztály-névből nem derült ki:
+Lesz veszteség azért, mert a kórházban valójában csak krónikus ellátás
+van, de ez az osztály-névből ez nem derült ki, illetve, mert az adott
+kórház az adott évben nem is létezett (ez kicsit extrémnek hangzik, de
+ilyen is előfordul). Példaként az első néhány ilyen:
 
 ``` r
-RawData[is.na(KorhazNev)]
+head(RawData[is.na(KorhazNev)])
 ```
 
 <div class="kable-table">
 
-| hospital_code | year | hospital_department_of_admission | hospital_name                                          | type | SzakmaKod | KorhazRovid | KorhazNev |
-|:--------------|-----:|:---------------------------------|:-------------------------------------------------------|:-----|----------:|:------------|:----------|
-| 026751        | 2015 | MEDOTH - Egyéb belgyógyászati    | PARÁDFÜRDŐI ÁLLAMI KÓRHÁZ                              | CDI  |         1 | 1051        | NA        |
-| 026751        | 2015 | MEDOTH - Egyéb belgyógyászati    | PARÁDFÜRDŐI ÁLLAMI KÓRHÁZ                              | CDI  |         1 | 1051        | NA        |
-| 117000        | 2015 | MEDGEN - Általános belgyógyászat | DOROGI SZENT BORBÁLA SZAKKÓRHÁZ ÉS SZAKORVOSI RENDELŐ  | CDI  |         1 | 1132        | NA        |
-| 130300        | 2015 | MEDOTH - Egyéb belgyógyászati    | RENDELŐINTÉZET NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS | CDI  |         1 | 1303        | NA        |
-| 130300        | 2015 | MEDOTH - Egyéb belgyógyászati    | RENDELŐINTÉZET NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS | CDI  |         1 | 1303        | NA        |
-| 130300        | 2015 | MEDOTH - Egyéb belgyógyászati    | NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS RENDELŐINTÉZET | CDI  |         1 | 1303        | NA        |
-| 130300        | 2016 | MEDOTH - Egyéb belgyógyászati    | NAGYKŐRÖS REHABILITÁCIÓS SZAKKÓRHÁZA ÉS RENDELŐINTÉZET | CDI  |         1 | 1303        | NA        |
+| hospital_code | year | hospital_department_of_admission | hospital_name                                                  | type | SzakmaKod | KorhazRovid | KorhazNev |
+|:--------------|-----:|:---------------------------------|:---------------------------------------------------------------|:-----|:----------|:------------|:----------|
+| 029453        | 2019 | MEDRHEU - Rheumatológia          | Szent Kozma és Damján Rehabilitációs Szakkórház                | MRK  | 14        | 0108        | NA        |
+| 01210K        | 2019 | MEDOTH - Egyéb belgyógyászati    | Károlyi Sándor Kórház                                          | MRK  | 01        | 0121        | NA        |
+| 01210K        | 2019 | MEDOTH - Egyéb belgyógyászati    | Károlyi Sándor Kórház                                          | MRK  | 01        | 0121        | NA        |
+| 01210K        | 2019 | MEDOTH - Egyéb belgyógyászati    | Károlyi Sándor Kórház                                          | MRK  | 01        | 0121        | NA        |
+| 01210K        | 2021 | MEDOTH - Egyéb belgyógyászati    | Károlyi Sándor Kórház                                          | MRK  | 01        | 0121        | NA        |
+| 051000        | 2020 | MEDGEN - Általános belgyógyászat | Kazincbarcikai Kórház Nonprofit Korlátolt Felelősségű Társaság | CDI  | 01        | 0564        | NA        |
 
 </div>
 
 Ezek száma és megoszlása:
 
 ``` r
-Veszt1 <- Res[is.na(KorhazNev)&N>0, .(N1 = sum(N)), .(year, type)]
-dcast(year ~ type, data = Veszt1, value.var = "N1")
+Veszt1 <- Res[is.na(KorhazNev)&N>0, .(N1 = sum(N)), .(`Év` = year, type)]
+dcast(`Év` ~ type, data = Veszt1, value.var = "N1")
 ```
 
 <div class="kable-table">
 
-| year | CDI |
-|-----:|----:|
-| 2015 |   6 |
-| 2016 |   1 |
+|   Év | CDI | MRK | VAF |
+|-----:|----:|----:|----:|
+| 2015 |  23 |  34 |  14 |
+| 2016 |  10 |   2 |   4 |
+| 2017 |  15 |   5 |   7 |
+| 2018 |  12 |  13 |  13 |
+| 2019 |  18 |  25 |   6 |
+| 2020 |  49 |  34 |  26 |
+| 2021 | 176 | 166 |  69 |
+| 2022 | 106 |  96 |  46 |
 
 </div>
 
-Ez összesen tehát 7 eset; ezeket hagyjuk el:
+Ez összesen tehát 969 eset; ezeket hagyjuk el:
 
 ``` r
 Res <- Res[!is.na(KorhazNev)]
 ```
 
-Lesznek jelentett fertőzéses esetek olyan osztályokról, amikkel elvileg
-az adott intézmény adott évben nem is rendelkezett:
+Ellenőrizzük le, hogy van-e olyan eset, amit olyan osztályról
+jelentettek, amivel a kórház elvileg nem is rendelkezik:
 
 ``` r
-Res[is.na(SzakmaMegnev)&N>0, .(KorhazNev, KorhazRovid, year, SzakmaKod, type, N)]
+nrow(Res[is.na(SzakmaMegnev)&N>0])
 ```
 
-<div class="kable-table">
-
-| KorhazNev                                                      | KorhazRovid | year | SzakmaKod | type |   N |
-|:---------------------------------------------------------------|:------------|-----:|----------:|:-----|----:|
-| Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ | 0116        | 2016 |        40 | CDI  |   5 |
-| Heim Pál Gyermekkórház                                         | 0122        | 2015 |        12 | CDI  |   1 |
-| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2015 |        15 | MRK  |   2 |
-| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2015 |        15 | VAF  |   1 |
-| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2016 |        15 | MRK  |   1 |
-| Magyarországi Református Egyház Bethesda Gyermekkórháza        | 0123        | 2016 |        15 | VAF  |   1 |
-| Semmelweis Egyetem                                             | 0140        | 2015 |        46 | VAF  |   1 |
-| Országos Onkológiai Intézet                                    | 0154        | 2015 |         6 | MRK  |  26 |
-| Országos Onkológiai Intézet                                    | 0154        | 2015 |         6 | VAF  |   2 |
-| Országos Korányi Tbc és Pulmonológiai Intézet                  | 0156        | 2015 |        16 | CDI  |   1 |
-| Országos Klinikai Idegtudományi Intézet                        | 0163        | 2016 |         1 | CDI  |   1 |
-| Budai Egészségközpont Kft.                                     | 01A3        | 2015 |         2 | MRK  |   1 |
-| Budai Egészségközpont Kft.                                     | 01A3        | 2015 |         2 | VAF  |   5 |
-| Budai Egészségközpont Kft.                                     | 01A3        | 2015 |         9 | VAF  |   1 |
-| Mohácsi Kórház                                                 | 0204        | 2016 |        40 | MRK  |   1 |
-| Kiskunhalasi Semmelweis Kórház                                 | 0306        | 2015 |        40 | CDI  |   3 |
-| Kiskunhalasi Semmelweis Kórház                                 | 0306        | 2015 |        40 | VAF  |   1 |
-| Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                | 0402        | 2015 |        40 | CDI  |   2 |
-| Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                | 0402        | 2015 |        40 | MRK  |   1 |
-| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              | 0702        | 2015 |        40 | CDI  |   1 |
-| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              | 0702        | 2015 |        40 | VAF  |   1 |
-| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros              | 0702        | 2016 |        40 | CDI  |   2 |
-| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             | 0803        | 2015 |        40 | CDI  |   2 |
-| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             | 0803        | 2015 |        40 | MRK  |   1 |
-| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár             | 0803        | 2016 |        40 | VAF  |   1 |
-| Csornai Margit Kórház                                          | 0804        | 2015 |         1 | CDI  |   1 |
-| Csornai Margit Kórház                                          | 0804        | 2015 |         1 | MRK  |   1 |
-| Selye János Kórház, Komárom                                    | 1104        | 2015 |         1 | CDI  |   1 |
-| Selye János Kórház, Komárom                                    | 1104        | 2015 |         1 | MRK  |   1 |
-| Szent László Kórház, Sárvár                                    | 1803        | 2015 |         1 | CDI  |   2 |
-| Szent Donát Várpalota Kórház Egészségügyi és Szolgáltató Kft.  | 1904        | 2015 |        18 | MRK  |   1 |
-| Deák Jenő Kórház, Tapolca                                      | 1954        | 2015 |         1 | CDI  |   3 |
-| Deák Jenő Kórház, Tapolca                                      | 1954        | 2016 |         1 | CDI  |   1 |
-| Állami Szívkórház, Balatonfüred                                | 1968        | 2015 |        15 | VAF  |   2 |
-| Állami Szívkórház, Balatonfüred                                | 1968        | 2016 |        15 | VAF  |   2 |
-
-</div>
-
-Ezek száma és megoszlása:
-
-``` r
-Veszt2 <- Res[is.na(SzakmaMegnev), .(N2 = sum(N)), .(year, type)]
-dcast(year ~ type, data = Veszt2, value.var = "N2")
-```
-
-<div class="kable-table">
-
-| year | CDI | MRK | VAF |
-|-----:|----:|----:|----:|
-| 2015 |  17 |  34 |  14 |
-| 2016 |   9 |   2 |   4 |
-
-</div>
-
-Ez 80 eset; ezeket szintén hagyjuk most el (láthatóan ismét minimális
-veszteség):
-
-``` r
-Res <- Res[!is.na(SzakmaMegnev)]
-```
+    ## [1] 0
 
 Végezetül van pár eset, ahol olyan osztály jelentett fertőzést, ami
 létezik ugyan, de elvileg nem volt betegforgalma:
@@ -1235,33 +1299,43 @@ Res[TeljesitettApolasiNapSzam==0&N>0]
 
 <div class="kable-table">
 
-| KorhazRovid | year | SzakmaKod | type |   N | SzakmaMegnev           | MukodoAtlagAgy | TeljesitettApolasiNapSzam | ElbocsatottBetegSzam | KorhazNev                                       |
-|:------------|-----:|----------:|:-----|----:|:-----------------------|---------------:|--------------------------:|---------------------:|:------------------------------------------------|
-| 0154        | 2016 |         6 | CDI  |   1 | Fül-orr-gégegyógyászat |            3.4 |                         0 |                    0 | Országos Onkológiai Intézet                     |
-| 0154        | 2016 |         6 | MRK  |  31 | Fül-orr-gégegyógyászat |            3.4 |                         0 |                    0 | Országos Onkológiai Intézet                     |
-| 0154        | 2016 |         6 | VAF  |   7 | Fül-orr-gégegyógyászat |            3.4 |                         0 |                    0 | Országos Onkológiai Intézet                     |
-| 0901        | 2016 |        19 | VAF  |   1 | Tüdőgyógyászat         |            0.0 |                         0 |                    0 | Kenézy Gyula Kórház és Rendelőintézet, Debrecen |
-| 0940        | 2016 |        18 | MRK  |   1 | Pszichiátria           |            0.0 |                         0 |                    0 | Debreceni Egyetem Klinikai Központ              |
+| KorhazRovid | year | SzakmaKod | type |   N | KorhazNev                                       | SzakmaMegnev           | MukodoAtlagAgy | TeljesitettApolasiNapSzam | ElbocsatottBetegSzam | KorhazNevEgyseges                               |
+|:------------|-----:|:----------|:-----|----:|:------------------------------------------------|:-----------------------|---------------:|--------------------------:|---------------------:|:------------------------------------------------|
+| 0154        | 2016 | 06        | CDI  |   1 | Országos Onkológiai Intézet                     | Fül-orr-gégegyógyászat |            3.4 |                         0 |                    0 | Országos Onkológiai Intézet                     |
+| 0154        | 2016 | 06        | MRK  |  31 | Országos Onkológiai Intézet                     | Fül-orr-gégegyógyászat |            3.4 |                         0 |                    0 | Országos Onkológiai Intézet                     |
+| 0154        | 2016 | 06        | VAF  |   7 | Országos Onkológiai Intézet                     | Fül-orr-gégegyógyászat |            3.4 |                         0 |                    0 | Országos Onkológiai Intézet                     |
+| 0901        | 2016 | 19        | VAF  |   1 | Kenézy Gyula Kórház és Rendelőintézet, Debrecen | Tüdőgyógyászat         |            0.0 |                         0 |                    0 | Kenézy Gyula Kórház és Rendelőintézet, Debrecen |
+| 0940        | 2016 | 18        | MRK  |   1 | Debreceni Egyetem Klinikai Központ              | Pszichiátria           |            0.0 |                         0 |                    0 | Debreceni Egyetem Klinikai Központ              |
+| 0940        | 2019 | 18        | CDI  |   2 | Debreceni Egyetem Klinikai Központ              | Pszichiátria           |            0.0 |                         0 |                    0 | Debreceni Egyetem Klinikai Központ              |
+| 0940        | 2020 | 18        | CDI  |   2 | Debreceni Egyetem Klinikai Központ              | Pszichiátria           |            0.0 |                         0 |                    0 | Debreceni Egyetem Klinikai Központ              |
+| 0940        | 2020 | 18        | MRK  |   6 | Debreceni Egyetem Klinikai Központ              | Pszichiátria           |            0.0 |                         0 |                    0 | Debreceni Egyetem Klinikai Központ              |
+| 0940        | 2020 | 18        | VAF  |   2 | Debreceni Egyetem Klinikai Központ              | Pszichiátria           |            0.0 |                         0 |                    0 | Debreceni Egyetem Klinikai Központ              |
 
 </div>
 
 Ezek szintén nem jelentenek nagy veszteséget:
 
 ``` r
-Veszt3 <- Res[TeljesitettApolasiNapSzam==0, .(N3 = sum(N)), .(year, type)]
-dcast(year ~ type, data = Veszt3, value.var = "N3")
+Veszt3 <- Res[TeljesitettApolasiNapSzam==0, .(N3 = sum(N)), .(`Év` = year, type)]
+dcast(`Év` ~ type, data = Veszt3, value.var = "N3")
 ```
 
 <div class="kable-table">
 
-| year | CDI | MRK | VAF |
+|   Év | CDI | MRK | VAF |
 |-----:|----:|----:|----:|
 | 2015 |   0 |   0 |   0 |
 | 2016 |   1 |  32 |   8 |
+| 2017 |   0 |   0 |   0 |
+| 2018 |   0 |   0 |   0 |
+| 2019 |   2 |   0 |   0 |
+| 2020 |   2 |   6 |   2 |
+| 2021 |   0 |   0 |   0 |
+| 2022 |   0 |   0 |   0 |
 
 </div>
 
-Ez tehát 41 eset; hagyjuk el ezeket is:
+Ez tehát 53 eset; hagyjuk el ezeket is:
 
 ``` r
 Res <- Res[TeljesitettApolasiNapSzam!=0]
@@ -1269,46 +1343,66 @@ Res <- Res[TeljesitettApolasiNapSzam!=0]
 
 Ezzel előállítottunk egy tisztított, további feldolgozásra alkalmas
 adatbázist. Ellenőrizzük, hogy jól dolgoztunk-e ennek során! Bár az
-adatbázisban már csak 23942 esetünk van, de a három lépés során összesen
-128 esetet hagytunk el, így szerencsére megkapjuk a teljes számot, ami
-24070, ahogy azt már láttuk is. Ellenőrizzük le, hogy a részletesebb
+adatbázisban már csak 112869 esetünk van, de a két lépés során összesen
+1022 esetet hagytunk el, így szerencsére megkapjuk a teljes számot, ami
+113891, ahogy azt már láttuk is. Ellenőrizzük le, hogy a részletesebb
 lebontások is stimmelnek:
 
 ``` r
-merge(merge(merge(merge(Res[, .(N = sum(N)), .(year, type)], Veszt1, by = c("year", "type"), all.x = TRUE),
-      Veszt2, all.x = TRUE), Veszt3, all.x = TRUE)[
-        , .(year, type, MegmaradtN = N, Veszteseg1 = ifelse(is.na(N1), 0, N1),
-            Veszteseg2 = ifelse(is.na(N2), 0, N2), Veszteseg3 = ifelse(is.na(N3), 0, N3))],
-      RawData[, .N, .(year, type)], by = c("year", "type"))[
-        , .(year, type, MegmaradtN, Veszteseg1, Veszteseg2, Veszteseg3,
-            TeljesN = MegmaradtN + Veszteseg1 + Veszteseg2 + Veszteseg3, N)]
+merge(merge(merge(Res[, .(N = sum(N)), .(`Év` = year, type)], Veszt1, by = c("Év", "type"),
+                  all.x = TRUE),
+            Veszt3,  by = c("Év", "type"), all.x = TRUE)[
+              , .(`Év`, type, MegmaradtN = N, Veszteseg1 = ifelse(is.na(N1), 0, N1),
+                  Veszteseg3 = ifelse(is.na(N3), 0, N3))],
+      RawData[, .N, .(`Év` = year, type)], by = c("Év", "type"))[
+        , .(`Év`, type, MegmaradtN, Veszteseg1, Veszteseg3,
+            TeljesN = MegmaradtN + Veszteseg1 + Veszteseg3, N,
+            Differencia = N-(MegmaradtN + Veszteseg1 + Veszteseg3))]
 ```
 
 <div class="kable-table">
 
-| year | type | MegmaradtN | Veszteseg1 | Veszteseg2 | Veszteseg3 | TeljesN |    N |
-|-----:|:-----|-----------:|-----------:|-----------:|-----------:|--------:|-----:|
-| 2015 | CDI  |       5364 |          6 |         17 |          0 |    5387 | 5387 |
-| 2015 | MRK  |       3505 |          0 |         34 |          0 |    3539 | 3539 |
-| 2015 | VAF  |       3304 |          0 |         14 |          0 |    3318 | 3318 |
-| 2016 | CDI  |       4446 |          1 |          9 |          1 |    4457 | 4457 |
-| 2016 | MRK  |       4089 |          0 |          2 |         32 |    4123 | 4123 |
-| 2016 | VAF  |       3234 |          0 |          4 |          8 |    3246 | 3246 |
+|   Év | type | MegmaradtN | Veszteseg1 | Veszteseg3 | TeljesN |    N | Differencia |
+|-----:|:-----|-----------:|-----------:|-----------:|--------:|-----:|------------:|
+| 2015 | CDI  |       5364 |         23 |          0 |    5387 | 5387 |           0 |
+| 2015 | MRK  |       3505 |         34 |          0 |    3539 | 3539 |           0 |
+| 2015 | VAF  |       3304 |         14 |          0 |    3318 | 3318 |           0 |
+| 2016 | CDI  |       4446 |         10 |          1 |    4457 | 4457 |           0 |
+| 2016 | MRK  |       4089 |          2 |         32 |    4123 | 4123 |           0 |
+| 2016 | VAF  |       3234 |          4 |          8 |    3246 | 3246 |           0 |
+| 2017 | CDI  |       4790 |         15 |          0 |    4805 | 4805 |           0 |
+| 2017 | MRK  |       4182 |          5 |          0 |    4187 | 4187 |           0 |
+| 2017 | VAF  |       3347 |          7 |          0 |    3354 | 3354 |           0 |
+| 2018 | CDI  |       5081 |         12 |          0 |    5093 | 5093 |           0 |
+| 2018 | MRK  |       4664 |         13 |          0 |    4677 | 4677 |           0 |
+| 2018 | VAF  |       3891 |         13 |          0 |    3904 | 3904 |           0 |
+| 2019 | CDI  |       5130 |         18 |          2 |    5150 | 5150 |           0 |
+| 2019 | MRK  |       4977 |         25 |          0 |    5002 | 5002 |           0 |
+| 2019 | VAF  |       4400 |          6 |          0 |    4406 | 4406 |           0 |
+| 2020 | CDI  |       5036 |         49 |          2 |    5087 | 5087 |           0 |
+| 2020 | MRK  |       4292 |         34 |          6 |    4332 | 4332 |           0 |
+| 2020 | VAF  |       4203 |         26 |          2 |    4231 | 4231 |           0 |
+| 2021 | CDI  |       7118 |        176 |          0 |    7294 | 7294 |           0 |
+| 2021 | MRK  |       5393 |        166 |          0 |    5559 | 5559 |           0 |
+| 2021 | VAF  |       5571 |         69 |          0 |    5640 | 5640 |           0 |
+| 2022 | CDI  |       7017 |        106 |          0 |    7123 | 7123 |           0 |
+| 2022 | MRK  |       5268 |         96 |          0 |    5364 | 5364 |           0 |
+| 2022 | VAF  |       4567 |         46 |          0 |    4613 | 4613 |           0 |
 
 </div>
 
-Láthatjuk tehát, hogy minden stimmel.
+Láthatjuk tehát, hogy minden stimmel!
 
-Lesznek kórházak és szakmák, melyeknél – adott fertőzés-típus esetén –
-egyetlen eset sem fordul elő. Ezeket hagyjuk ki az adatbázisból, hiszen
-úgysem tudjuk őket semmilyen módon modellezni:
+Lesznek kórházak és szakmák, melyeknél – adott fertőzés-típus és adott
+év esetén – egyetlen eset sem fordul elő. Ezeket hagyjuk ki az
+adatbázisból, hiszen most úgysem tudjuk őket semmilyen módon modellezni:
 
 ``` r
-Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, KorhazRovid)], by = c("type", "KorhazRovid"))[V1!=0][,-"V1"]
-Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, SzakmaKod)], by = c("type", "SzakmaKod"))[V1!=0][,-"V1"]
+Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, KorhazRovid, year)], by = c("type", "KorhazRovid", "year"))[V1!=0][,-"V1"]
+Res <- merge(Res, Res[, .(V1 = sum(N)), .(type, SzakmaKod, year)], by = c("type", "SzakmaKod", "year"))[V1!=0][,-"V1"]
 ```
 
-Ezzel fertőzéses esetet egyáltalán nem veszítünk, ápolási napot ugyan
+Ezzel fertőzéses esetet természetesen nem veszítünk, ápolási napot ugyan
 igen, de még így is megőriztük az ápolási napok nagyon nagy hányadát:
 
 ``` r
@@ -1323,12 +1417,30 @@ merge(Res[, .(sum(TeljesitettApolasiNapSzam)), .(year, type)],
 
 | year | type | Megmaradt ápolási nap \[100 ezer nap\] | Teljes ápolási nap \[100 ezer nap\] | Arány a teljeshez képest \[%\] |
 |-----:|:-----|---------------------------------------:|------------------------------------:|-------------------------------:|
-| 2015 | CDI  |                                  98.89 |                              105.25 |                           94.0 |
-| 2015 | MRK  |                                 100.06 |                              105.25 |                           95.1 |
-| 2015 | VAF  |                                  96.72 |                              105.25 |                           91.9 |
-| 2016 | CDI  |                                  97.73 |                              104.16 |                           93.8 |
-| 2016 | MRK  |                                 101.04 |                              104.16 |                           97.0 |
-| 2016 | VAF  |                                  97.72 |                              104.16 |                           93.8 |
+| 2015 | CDI  |                                  96.87 |                              105.25 |                           92.0 |
+| 2015 | MRK  |                                  99.72 |                              105.25 |                           94.7 |
+| 2015 | VAF  |                                  88.54 |                              105.25 |                           84.1 |
+| 2016 | CDI  |                                  96.72 |                              104.16 |                           92.9 |
+| 2016 | MRK  |                                  97.80 |                              104.16 |                           93.9 |
+| 2016 | VAF  |                                  97.27 |                              104.16 |                           93.4 |
+| 2017 | CDI  |                                  92.39 |                               99.63 |                           92.7 |
+| 2017 | MRK  |                                  94.48 |                               99.63 |                           94.8 |
+| 2017 | VAF  |                                  92.70 |                               99.63 |                           93.0 |
+| 2018 | CDI  |                                  92.23 |                               98.22 |                           93.9 |
+| 2018 | MRK  |                                  91.17 |                               98.22 |                           92.8 |
+| 2018 | VAF  |                                  91.59 |                               98.22 |                           93.2 |
+| 2019 | CDI  |                                  89.91 |                               96.07 |                           93.6 |
+| 2019 | MRK  |                                  91.30 |                               96.07 |                           95.0 |
+| 2019 | VAF  |                                  88.20 |                               96.07 |                           91.8 |
+| 2020 | CDI  |                                  72.59 |                               77.93 |                           93.1 |
+| 2020 | MRK  |                                  71.27 |                               77.93 |                           91.4 |
+| 2020 | VAF  |                                  69.89 |                               77.93 |                           89.7 |
+| 2021 | CDI  |                                  73.30 |                               77.50 |                           94.6 |
+| 2021 | MRK  |                                  73.51 |                               77.50 |                           94.9 |
+| 2021 | VAF  |                                  71.87 |                               77.50 |                           92.7 |
+| 2022 | CDI  |                                  75.98 |                               79.12 |                           96.0 |
+| 2022 | MRK  |                                  74.35 |                               79.12 |                           94.0 |
+| 2022 | VAF  |                                  73.62 |                               79.12 |                           93.1 |
 
 </div>
 
@@ -1369,106 +1481,105 @@ fwrite(Res, "Res.csv", dec = ",", sep =";", bom = TRUE)
 saveRDS(Res, "Res.rds")
 ```
 
-### Az incidenciák vizualizációja
+### A nyers incidenciák vizualizációja
 
-Az incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti ábra
-természetesen csak illusztráció, az eredményt kimentjük [PDF
+A nyers incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti
+gyorsan futó ábra természetesen csak illusztráció, az eredményt
+kimentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf)
-is):
+is, hogy tanulmányozható legyen):
 
 ``` r
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
 
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
   ggplot(Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]],
-         aes(x = IncPerPatient, xmin = IncPerPatientLCI, xmax = IncPerPatientUCI,
-             y = forcats::fct_reorder(KorhazNev, IncPerPatient),
-             color = factor(year), group = factor(year))) +
-    geom_point(position = ggstance::position_dodgev(height = 1)) +
-    geom_errorbarh(linewidth = 0.3, position = ggstance::position_dodgev(height = 1)) +
+         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI,
+             group = 1)) + facet_wrap(~KorhazNevEgyseges,
+                                      labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line() + geom_errorbar(linewidth = 0.3) +
     labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
-         x = "Incidencia [/10 ezer beteg]", y = "", color = "Év") +
-    coord_cartesian(xlim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
-                                          SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerPatient))) +
+         y = "Nyers incidencia [/10 ezer beteg]", x = "Év") +
+    coord_cartesian(
+      ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
+                            SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerPatient))) +
     theme(legend.position = "bottom", legend.title = element_blank()))
 
-cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(p)) print(p[[i]])
-invisible(dev.off())
+# cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
+# for(i in 1:length(p)) print(p[[i]])
+# invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-30-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-28-.gif)<!-- -->
 
-Vagy vonatkoztathatunk ápolási napra is (a lenti ábra természetesen csak
-illusztráció, az eredményt kimentjük [PDF
+Vagy vonatkoztathatunk ápolási napra is (a lenti gyorsan futó ábra
+természetesen csak illusztráció, az eredményt kimentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerDay.pdf)
-is):
+is, hogy tanulmányozható legyen):
 
 ``` r
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i)
   ggplot(Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]],
-         aes(x = IncPerDay, xmin = IncPerDayLCI, xmax = IncPerDayUCI,
-             y = forcats::fct_reorder(KorhazNev, IncPerDay),
-             color = factor(year), group = factor(year))) +
-    geom_point(position = ggstance::position_dodgev(height = 1)) +
-    geom_errorbarh(linewidth = 0.3, position = ggstance::position_dodgev(height = 1)) +
+         aes(x = year, y = IncPerDay, ymin = IncPerDayLCI, ymax = IncPerDayUCI,
+             group = 1)) + facet_wrap(~KorhazNevEgyseges,
+                                      labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line() + geom_errorbar(linewidth = 0.3) +
     labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
-         x = "Incidencia [/100 ezer ápolási nap]", y = "", color = "Év") +
-    coord_cartesian(xlim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
-                                          SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerDay))) +
+         y = "Nyers incidencia [/100 ezer ápolási nap]", x = "Év") +
+    coord_cartesian(
+      ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
+                            SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerDay))) +
     theme(legend.position = "bottom", legend.title = element_blank()))
 
-cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(p)) print(p[[i]])
-invisible(dev.off())
+# cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
+# for(i in 1:length(p)) print(p[[i]])
+# invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-31-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-29-.gif)<!-- -->
 
-Megvizsgálhatjuk úgy is ezeket az adatokat, hogy nem ábrázoljuk külön az
-egyes szakmákat, csak az eloszlásra vagyunk kíváncsiak.
+*Vigyázat*, a fenti ábrák két szempontból is félrevezetőek lehetnek!
+Egyrészt sugallhatják azt, hogy egymáshoz hasonlítsuk a kórházakat –
+miközben a betegösszetétel eltérhet közöttük, ahogy azt hosszasan meg is
+beszéltük. De ha jobban meggondoljuk, van még egy gond: nem csak a
+különböző kórházak ugyanazon évi adatai nem hasonlíthatóak feltétlenül
+egymáshoz, hanem ugyanazon kórház különböző évi adatai sem! Hiszen akár
+időben is változhat a betegösszetétel vagy az elvégzett beavatkozások
+jellege, még ugyanazon kórház ugyanazon osztályára is; bár ez minden
+bizonnyal kisebb súlyú probléma, mint az előbbi. Ezért nagyon fontos a
+„nyers” felirat az ábrán; pont ezeket az aspektusokat igyekszünk majd
+korrigálni a későbbiekben. (Valójában egy harmadik probléma is van,
+szintén volt róla szó, a jelentési fegyelem, ez is eltérhet kórházak
+között, de ez is változhat időben még ugyanazon kórházra is; sajnos
+ennek korrekciójára nincsen semmilyen eszközünk.)
 
-Betegszámra vetítve:
-
-``` r
-p <- ggplot(Res, aes(x = IncPerPatient, y = SzakmaMegnev, color = factor(year), group = factor(year))) +
-  geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/10 ezer beteg]", color = "Év") +
-  theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type)
-p
-```
-
-![](README_files/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
-
-Mindez logaritmikus skálán, feltüntetve a mediánt is:
-
-``` r
-p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-33-1.png)<!-- -->
-
-Ápolási napra vetítve:
-
-``` r
-p <- ggplot(Res, aes(x = IncPerDay, y = SzakmaMegnev, color = factor(year), group = factor(year))) +
-  geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/100 ezer ápolási nap]", color = "Év") +
-  theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type)
-p
-```
-
-![](README_files/figure-gfm/unnamed-chunk-34-1.png)<!-- -->
-
-Mindez logaritmikus skálán, feltüntetve a mediánt is:
-
-``` r
-p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
+<!-- Megvizsgálhatjuk úgy is ezeket az adatokat, hogy nem ábrázoljuk külön az egyes szakmákat, csak az eloszlásra vagyunk kíváncsiak. -->
+<!-- Betegszámra vetítve: -->
+<!-- ```{r, fig.height = 10} -->
+<!-- p <- ggplot(Res, aes(x = IncPerPatient, y = SzakmaMegnev, color = factor(year), group = factor(year))) + -->
+<!--   geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/10 ezer beteg]", color = "Év") + -->
+<!--   theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type) -->
+<!-- p -->
+<!-- ``` -->
+<!-- Mindez logaritmikus skálán, feltüntetve a mediánt is: -->
+<!-- ```{r, fig.height = 10, warning = FALSE} -->
+<!-- p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar") -->
+<!-- ``` -->
+<!-- Ápolási napra vetítve: -->
+<!-- ```{r, fig.height = 10} -->
+<!-- p <- ggplot(Res, aes(x = IncPerDay, y = SzakmaMegnev, color = factor(year), group = factor(year))) + -->
+<!--   geom_jitter(height = 0.1) + labs(y = "", x = "Incidencia [/100 ezer ápolási nap]", color = "Év") + -->
+<!--   theme(legend.position = "bottom", legend.title = element_blank()) + facet_wrap(~type) -->
+<!-- p -->
+<!-- ``` -->
+<!-- Mindez logaritmikus skálán, feltüntetve a mediánt is: -->
+<!-- ```{r, fig.height = 10, warning = FALSE} -->
+<!-- p + scale_x_log10() + annotation_logticks(sides = "b") + stat_summary(fun = median, geom = "crossbar") -->
+<!-- ``` -->
 
 Ezek jelentik lényegében a legteljesebben rétegzett adatokat (még az
 évet is külön vettük); mondhatjuk, hogy később majd ezeket kell
@@ -1485,33 +1596,24 @@ CMIData <- readRDS("KorhaziTeljesitmeny.rds")
 CMIData <- CMIData[, .(SulyszamOsszesen = sum(SulyszamOsszesen), TeljesEset = sum(TeljesEset)),
                    .(Ev, KorhazRovid, SzakmaKod)]
 CMIData$CMI <- CMIData$SulyszamOsszesen/CMIData$TeljesEset
-CMIData$SzakmaKod <- as.numeric(CMIData$SzakmaKod)
 ```
 
 Ellenőrizzük le, hogy minden szükséges adat megvan:
 
 ``` r
-unique(merge(Res, CMIData[, .(year = Ev, KorhazRovid, SzakmaKod, CMI)],
-             by = c("year", "KorhazRovid", "SzakmaKod"), all = TRUE)[
-               is.na(CMI), .(year, KorhazNev, KorhazRovid)])
+nrow(merge(Res, CMIData[, .(year = Ev, KorhazRovid, SzakmaKod, CMI)],
+           by = c("year", "KorhazRovid", "SzakmaKod"), all = TRUE)[is.na(CMI)])
 ```
 
-<div class="kable-table">
-
-| year | KorhazNev | KorhazRovid |
-|-----:|:----------|:------------|
-
-</div>
+    ## [1] 0
 
 Állítsuk elő a későbbiekhez szükséges átlag-adatokat (évente és
 szakmánként) is:
 
 ``` r
-CMIAvgData <- CMIData[, .(Ev, KorhazRovid, SzakmaKod, SulyszamOsszesen, TeljesEset,
-                          CMI = SulyszamOsszesen/TeljesEset)][TeljesEset!=0][
-                            , .(CMI_avg = Hmisc::wtd.mean(CMI, TeljesEset),
-                                CMI_SD = sqrt(Hmisc::wtd.var(CMI, TeljesEset))), .(Ev, SzakmaKod)]
-CMIAvgData$SzakmaKod <- as.numeric(CMIAvgData$SzakmaKod)
+CMIAvgData <- CMIData[, .(Ev, KorhazRovid, SzakmaKod, SulyszamOsszesen, TeljesEset, CMI)][
+  TeljesEset!=0][, .(CMI_avg = Hmisc::wtd.mean(CMI, TeljesEset),
+                     CMI_SD = sqrt(Hmisc::wtd.var(CMI, TeljesEset))), .(Ev, SzakmaKod)]
 ```
 
 Egyesítsük a nagy táblánkkal:
@@ -1519,7 +1621,8 @@ Egyesítsük a nagy táblánkkal:
 ``` r
 Res <- merge(Res, CMIData[, .(year = Ev, KorhazRovid, SzakmaKod, CMI)],
              by = c("year", "KorhazRovid", "SzakmaKod"))
-Res <- merge(Res, CMIAvgData[, .(year = Ev, SzakmaKod, CMI_avg, CMI_SD)], by = c("year", "SzakmaKod"))
+Res <- merge(Res, CMIAvgData[, .(year = Ev, SzakmaKod, CMI_avg, CMI_SD)],
+             by = c("year", "SzakmaKod"))
 ```
 
 Majd számoljuk ki az eltérés értékeket, a sima eltérést és a $z$-score-t
@@ -1540,7 +1643,7 @@ p <- ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMI)) + geom_jitter(widt
 p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-41-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
 
 Logaritmikus skálán:
 
@@ -1548,7 +1651,7 @@ Logaritmikus skálán:
 p + scale_y_log10() + annotation_logticks(sides = "l")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-42-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-36-1.png)<!-- -->
 
 Érdemes megnézni a különféleképp számolt CMI-k eloszlását is. Sima
 eltérés:
@@ -1558,7 +1661,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
   facet_wrap(~SzakmaMegnev)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-43-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-37-1.png)<!-- -->
 
 Ezt érdemes úgy is megnézni, hogy a függőleges tengely skálázásánál
 megengedjük, hogy ne egységes legyen:
@@ -1568,7 +1671,7 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = CMIdev)) + geom_jitter(width 
   facet_wrap(~SzakmaMegnev, scales = "free")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-44-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-38-1.png)<!-- -->
 
 A $z$-score:
 
@@ -1577,14 +1680,14 @@ ggplot(Res[type=="MRK"], aes(x = factor(year), y = zCMI)) + geom_jitter(width = 
   facet_wrap(~SzakmaMegnev)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-45-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-39-1.png)<!-- -->
 
 ### Modellezés
 
 Elsőként alakítsuk faktorrá a kategoriális változókat:
 
 ``` r
-Res$KorhazNevFactor <- factor(Res$KorhazNev)
+Res$KorhazNevFactor <- factor(Res$KorhazNevEgyseges)
 Res$SzakmaMegnevFactor <- factor(Res$SzakmaMegnev)
 Res$yearFactor <- factor(Res$year)
 ```
@@ -1594,25 +1697,26 @@ Definiáljunk egy segédfüggvényt az ábrázoláshoz:
 ``` r
 plotter <- function(fit, title = NULL) {
   temp <- gratia::parametric_effects(fit)
-  temp <- rbind(temp[temp$term=="KorhazNevFactor",][order(temp[temp$term=="KorhazNevFactor",]$partial),],
-                temp[temp$term!="KorhazNevFactor",])
+  temp <- rbind(temp[temp$term=="KorhazNevFactor",][
+    order(temp[temp$term=="KorhazNevFactor",]$partial),], temp[temp$term!="KorhazNevFactor",])
   temp$level <- factor(temp$level, as.character(levels(temp$level))[temp$level])
   khindex <- which(sort(unique(temp$term))=="KorhazNevFactor")
   szakmaindex <- which(sort(unique(temp$term))=="SzakmaMegnevFactor")
   evindex <- which(sort(unique(temp$term))=="yearFactor")
   p1 <- gratia::draw(temp, fun = exp)
   p1[[khindex]] <- p1[[khindex]] + coord_flip() + labs(x = "", y = "IRR", title = "Kórház")
-  p1[[szakmaindex]] <- p1[[szakmaindex]] + coord_flip() + labs(x = "", y = "IRR", title = "Szakma")
-  p1[[evindex]] <- p1[[evindex]] + coord_flip() + labs(x = "", y = "IRR", title = "Év")
+  p1[[szakmaindex]] <- p1[[szakmaindex]] + coord_flip() + labs(x = "", y = "IRR",
+                                                               title = "Szakma")
+  # p1[[evindex]] <- p1[[evindex]] + coord_flip() + labs(x = "", y = "IRR", title = "Év")
   if(any(grepl("CMI", gratia::parametric_terms(fit)))|any(grepl("CMI", gratia::smooths(fit)))) {
     p2 <- if(length(gratia::smooths(fit))>0)
       gratia::draw(fit, fun = exp) + labs(title = "CMI - spline", y = "IRR") else
         p1[[grep("CMI", sort(unique(temp$term)))]] + labs(title = "CMI - lineáris", y = "IRR")
-    res <- patchwork::wrap_plots(p1[[khindex]], p1[[szakmaindex]], p1[[evindex]], p2, design = c("AA
+    res <- patchwork::wrap_plots(p1[[khindex]], p1[[szakmaindex]], p2, design = c("AA
                                                                 BB
-                                                                CD"), heights = c(0.5, 0.3, 0.2))
-  } else res <- patchwork::wrap_plots(p1[[khindex]], p1[[szakmaindex]], p1[[evindex]], ncol = 1,
-                                      heights = c(0.5, 0.3, 0.2))
+                                                                CC"), heights = c(0.5, 0.3, 0.2))
+  } else res <- patchwork::wrap_plots(p1[[khindex]], p1[[szakmaindex]], ncol = 1, #p1[[evindex]], ncol = 1,
+                                      heights = c(0.5, 0.5)) #0.3, 0.2))
   if(!is.null(title)) res <- res + patchwork::plot_annotation(title = title)
   res
 }
@@ -1621,27 +1725,42 @@ plotter <- function(fit, title = NULL) {
 Ezután elvégezhetjük a modellek becslését! Minden esetben
 [általánosított lineáris
 modellt](https://www.youtube.com/playlist?list=PLqdN24UCw5hkC6NKsbWXSC_9YR3bH9Daw)
-használunk, év, kórház és szakma magyarázó változókkal, interakció
-nélkül. Hogy ápolási időre vetítsünk, azt offszetként adjuk meg. A három
-kórházi fertőzés-típust teljesen külön kezeljük.
+használunk, kórház és szakma magyarázó változókkal, interakció nélkül.
+Amint volt róla szó, a CMI-s korrekciót nem tudjuk a különböző évekre
+összevethető módon megtenni, így a modellt évenként külön-külön
+futtatjuk. Végezetül pedig, hogy ápolási időre vetítsünk, azt
+offszetként adjuk meg. A három kórházi fertőzés-típust teljesen külön
+kezeljük.
 
-A legelegánsabb az, ha az összes modellt egy lépésben becsültetjük meg:
+A legelegánsabb az, ha az összes modellt egy lépésben becsültetjük meg.
+A rengeteg lehetőség miatt érdemes a számítást több processzormagra
+párhuzamosítani (ez szerencsére könnyen megtehető, hiszen az egyes
+paraméter-kombinációk futtatásai egymástól teljesen függetlenek):
 
 ``` r
-pargrid <- CJ(type = unique(Res$type),
+pargrid <- CJ(type = unique(Res$type), year = unique(Res$year),
               formulas = c("", "CMI", "CMIdev", "zCMI", "s(CMI)", "s(CMIdev)", "s(zCMI)"),
               families = c("P", "QP", "NB"))
 
-fits <- lapply(1:nrow(pargrid), function(i) {
-  mgcv::gam(as.formula(paste0("N ~ KorhazNevFactor + SzakmaMegnevFactor + yearFactor + ",
+cl <- parallel::makeCluster(parallel::detectCores()-1)
+parallel::clusterExport(cl, c("Res", "pargrid"), envir = environment())
+
+fits <- parallel::parLapply(cl, 1:nrow(pargrid), function(i) {
+  mgcv::gam(as.formula(paste0("N ~ KorhazNevFactor + SzakmaMegnevFactor + ",
                               pargrid$formulas[i], "+ offset(log(TeljesitettApolasiNapSzam))")),
-            data = Res[type==pargrid$type[i]],
-            family = switch(pargrid$families[i], "P" = poisson(), "QP" = quasipoisson(), "NB" = mgcv::nb()))
+            data = Res[Res$type==pargrid$type[i]&Res$year==pargrid$year[i],],
+            family = switch(pargrid$families[i], "P" = poisson(), "QP" = quasipoisson(),
+                            "NB" = mgcv::nb()))
 })
+
+parallel::stopCluster(cl)
+
+# saveRDS(fits, "fits.rds")
+# fits <- readRDS("fits.rds")
 ```
 
 Amint látható, megvizsgáljuk azt a lehetőséget, ha a CMI-t egyáltalán
-nem használjuk fel, azt ha nyers értékként, ha eltérésként, illetve ha
+nem használjuk fel, azt, ha nyers értékként, ha eltérésként, illetve ha
 $z$-score-ként használjuk fel, ez utóbbi három esetet megnézzük
 lineárisan és [spline-nal
 kibontva](https://tamas-ferenci.github.io/FerenciTamas_SimitasSplineRegresszioAdditivModellek/)
@@ -1656,32 +1775,38 @@ Az összes megbecsült modell ábráját csak elmentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ``` r
-cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(fits))
-  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
-                                         pargrid$formulas[i])))
-invisible(dev.off())
+if(!file.exists("Modellek.pdf")) {
+  cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
+  for(i in 1:length(fits))
+    print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
+                                           pargrid$formulas[i], " - ", pargrid$year[i])))
+  invisible(dev.off())
+}
 ```
 
 A jól értelmezhető eredményekhez (fertőzés-gyakoriság ugyanazon,
 standardizált betegpopulációnál) elsőként határozzuk meg ezt a
-betegpopulációt mint átlagos betegforgalom, 2015 év, és átlagos CMI
-lerögzítésével kapott populáció:
+betegpopulációt mint a vizsgált időszakban a szakmánkénti átlagos
+betegforgalom, átlagos CMI mellett:
 
 ``` r
-StdSzakma <- KhAdatok[Ev%in%c(2015, 2016), .(StdMukodoAtlagAgy = mean(MukodoAtlagAgy),
-                                             StdTeljesitettApolasiNapSzam = mean(TeljesitettApolasiNapSzam),
-                                             StdElbocsatottBetegSzam = mean(ElbocsatottBetegSzam)),
+StdSzakma <- KhAdatok[Ev%in%unique(Res$year), .(StdMukodoAtlagAgy = mean(MukodoAtlagAgy),
+                                                StdTeljesitettApolasiNapSzam =
+                                                  mean(TeljesitettApolasiNapSzam),
+                                                StdElbocsatottBetegSzam =
+                                                  mean(ElbocsatottBetegSzam)),
                       .(SzakmaMegnevFactor = factor(SzakmaMegnev))]
-StdSzakma <- StdSzakma[SzakmaMegnevFactor%in%unique(Res$SzakmaMegnevFactor)]
 
-predgrid <- merge(as.data.frame(unique(Res[, .(type, SzakmaMegnevFactor)])),
-                  as.data.frame(unique(Res[, .(type, KorhazNevFactor)])))
+predgrid <- merge(as.data.frame(unique(Res[, .(type, year, SzakmaMegnevFactor)])),
+                  as.data.frame(unique(Res[, .(type, year, KorhazNevFactor)])),
+                  by = c("type", "year"))
 
 predgrid <- data.table(merge(predgrid,
                              StdSzakma[, .(SzakmaMegnevFactor,
-                                           TeljesitettApolasiNapSzam = StdTeljesitettApolasiNapSzam,
-                                           CMI = 1, CMIdev = 0, zCMI = 0, yearFactor = as.factor(2015))]))
+                                           TeljesitettApolasiNapSzam =
+                                             StdTeljesitettApolasiNapSzam,
+                                           CMI = 1, CMIdev = 0, zCMI = 0)],
+                             by = "SzakmaMegnevFactor"))
 ```
 
 Ennek használatával kényelmesen, egy lépésben elkészíthetjük a
@@ -1689,15 +1814,16 @@ predikciókat:
 
 ``` r
 ress <- rbindlist(lapply(1:length(fits), function(i)
-  data.table(predgrid[type==pargrid$type[i]],
-             with(predict(fits[[i]], predgrid[type==pargrid$type[i]], type = "link", se.fit = TRUE),
+  data.table(predgrid[type==pargrid$type[i]&year==pargrid$year[i]],
+             with(predict(fits[[i]], predgrid[type==pargrid$type[i]&year==pargrid$year[i]],
+                          type = "link", se.fit = TRUE),
                   data.frame(lci = exp(fit - qnorm(0.975)*se.fit),
                              fit = exp(fit), uci = exp(fit + qnorm(0.975)*se.fit))))[
                                , .(lci = sum(lci)/sum(TeljesitettApolasiNapSzam)*1e5,
                                    fit = sum(fit)/sum(TeljesitettApolasiNapSzam)*1e5,
                                    uci = sum(uci)/sum(TeljesitettApolasiNapSzam)*1e5,
-                                   type = pargrid$type[i], formula = pargrid$formulas[i],
-                                   family = pargrid$families[i]),
+                                   type = pargrid$type[i], year = pargrid$year[i],
+                                   formula = pargrid$formulas[i], family = pargrid$families[i]),
                                .(KorhazNevFactor)]))
 ```
 
@@ -1744,177 +1870,147 @@ gondoljunk arra, hogy ha 10 betegből 1 fertőződik meg, illetve ha 10
 bizonytalanabbak leszünk ebben. A statisztika lehetővé teszi ezen
 „érzés” pontos megragadását.)
 
-### CDI
-
-Az érzékenységvizsgálat:
+Egyetlen megjegyzés az eredmények prezentálásához. Előfordulhatnak
+esetek, ahol egy kórház adatai extrém bizonytalanok lesznek, mert nagyon
+kis számokból kell becsülni (kis kórházak, kevés beteggel, kevés
+fertőzéssel). Ez „statisztikai értelemben” nem jelent problémát: ettől
+még minden rendben le fog futni, korrekt eredményt ad, sőt, a
+konfidenciaintervallum pont hogy ki fogja ez fejezni, azáltal, hogy
+nagyon széles lesz. A probléma nem ez, hanem az, hogy az ilyen
+eredményeknek nincs sok értelmük – a széles konfidenciaintervallum
+magyarra lefordítva azt jelenti, hogy „nem igazán tudjuk hol van az
+érték”. Az ilyen eredményeket a fent kimentett táblázat tartalmazza, de
+az ábrákról érdemes lesz lehagyni őket (nem csak azért, mert nem
+hordoznak információt, de gyakran az ábrát magát is elrontanák, mert a
+széles konfidenciaintervallumok nagyon széles tartományú tengelyeket
+tennének szükségessé, amin meg az összes többi kórház nem fog jól
+látszani). Én most – némileg érzésre – azt mondtam, hogy az a túlságosan
+bizonytalannak minősített, és ezért az ábrán nem közölt az az eredmény,
+ahol az abszolút bizonytalanság (tehát a konfidenciaintervallum alsó és
+felső szélének a különbsége) nagyobb mint 500, *vagy* ahol az abszolút
+bizonytalanság nagyobb mint 100 úgy, hogy a relatív bizonytalanság (az
+abszolút bizonytalanság osztva a legjobb becsléssel) nagyobb mint 5.
+Jelöljük meg ezeket az eseteket:
 
 ``` r
-ggplot(merge(ress[family!="QP"&type=="CDI"],
-             ress[formula=="zCMI"&family=="NB"&type=="CDI", .(KorhazNevFactor, fitorder = fit)],
-             by = "KorhazNevFactor"),
-       aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder), x = fit, color = formula, shape = family)) +
-  geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
+ress$suppressed <- ((ress$uci - ress$lci) > 500) |
+  (((ress$uci - ress$lci) > 100) & ((ress$uci - ress$lci)/ress$fit > 5))
+```
+
+### CDI
+
+Az érzékenységvizsgálat (a lenti gyorsan futó ábra természetesen csak
+illusztráció, az eredményt kimentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/ErzekenysegCDI.pdf)
+is, hogy tanulmányozható legyen):
+
+``` r
+p <- lapply(unique(ress$year), function(y)
+  ggplot(merge(ress[family!="QP"&type=="CDI"&year==y&!suppressed],
+               ress[formula=="zCMI"&family=="NB"&type=="CDI"&year==y&!suppressed,
+                    .(KorhazNevFactor, fitorder = fit)], by = "KorhazNevFactor"),
+         aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder), x = fit,
+             color = formula, shape = family)) +
+    geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "", title = y))
+
+cairo_pdf("ErzekenysegCDI.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
+
+for(i in 1:length(p)) print(p[[i]])
+```
+
+![](README_files/figure-gfm/unnamed-chunk-48-.gif)<!-- -->
+
+Az eredmény:
+
+``` r
+ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"&!suppressed],
+       aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
+  geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
+  facet_wrap(~year)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-49-1.png)<!-- -->
+
+### MRK
+
+Az érzékenységvizsgálat (a lenti gyorsan futó ábra természetesen csak
+illusztráció, az eredményt kimentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/ErzekenysegMRK.pdf)
+is, hogy tanulmányozható legyen):
+
+``` r
+p <- lapply(unique(ress$year), function(y)
+  ggplot(merge(ress[family!="QP"&type=="MRK"&year==y&!suppressed],
+               ress[formula=="zCMI"&family=="NB"&type=="MRK"&year==y&!suppressed,
+                    .(KorhazNevFactor, fitorder = fit)], by = "KorhazNevFactor"),
+         aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder), x = fit,
+             color = formula, shape = family)) +
+    geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "", title = y))
+
+cairo_pdf("ErzekenysegMRK.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
+
+for(i in 1:length(p)) print(p[[i]])
+```
+
+![](README_files/figure-gfm/unnamed-chunk-50-.gif)<!-- -->
+
+Az eredmény:
+
+``` r
+ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"&!suppressed],
+       aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
+  geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
+  facet_wrap(~year)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-51-1.png)<!-- -->
+
+### VÁF
+
+Az érzékenységvizsgálat (a lenti gyorsan futó ábra természetesen csak
+illusztráció, az eredményt kimentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/ErzekenysegVAF.pdf)
+is, hogy tanulmányozható legyen):
+
+``` r
+p <- lapply(unique(ress$year), function(y)
+  ggplot(merge(ress[family!="QP"&type=="VAF"&year==y&!suppressed],
+               ress[formula=="zCMI"&family=="NB"&type=="VAF"&year==y&!suppressed,
+                    .(KorhazNevFactor, fitorder = fit)], by = "KorhazNevFactor"),
+         aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder), x = fit,
+             color = formula, shape = family)) +
+    geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "", title = y))
+
+cairo_pdf("ErzekenysegVAF.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
+
+for(i in 1:length(p)) print(p[[i]])
+```
+
+![](README_files/figure-gfm/unnamed-chunk-52-.gif)<!-- -->
+
+Az eredmény:
+
+``` r
+ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"&!suppressed],
+       aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
+  geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
+  facet_wrap(~year)
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
 
-Az eredmény:
-
-``` r
-ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"], aes(y = forcats::fct_reorder(KorhazNevFactor, fit),
-                                                           x = fit, xmin = lci, xmax = uci)) +
-  geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-54-1.png)<!-- -->
-
-### MRK
-
-Az érzékenységvizsgálat:
-
-``` r
-ggplot(merge(ress[family!="QP"&type=="MRK"],
-             ress[formula=="zCMI"&family=="NB"&type=="MRK", .(KorhazNevFactor, fitorder = fit)],
-             by = "KorhazNevFactor"),
-       aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder), x = fit, color = formula, shape = family)) +
-  geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-55-1.png)<!-- -->
-
-Az eredmény:
-
-``` r
-ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"], aes(y = forcats::fct_reorder(KorhazNevFactor, fit),
-                                                           x = fit, xmin = lci, xmax = uci)) +
-  geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-56-1.png)<!-- -->
-
-### VÁF
-
-Az érzékenységvizsgálat:
-
-``` r
-ggplot(merge(ress[family!="QP"&type=="VAF"],
-             ress[formula=="zCMI"&family=="NB"&type=="VAF", .(KorhazNevFactor, fitorder = fit)],
-             by = "KorhazNevFactor"),
-       aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder), x = fit, color = formula, shape = family)) +
-  geom_point() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-57-1.png)<!-- -->
-
-Az eredmény:
-
-``` r
-ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"], aes(y = forcats::fct_reorder(KorhazNevFactor, fit),
-                                                           x = fit, xmin = lci, xmax = uci)) +
-  geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "")
-```
-
-![](README_files/figure-gfm/unnamed-chunk-58-1.png)<!-- -->
-
 ### A három típus egybevetése
 
-A végső eredmények:
-
-``` r
-dcast(ress[formula=="zCMI"&family=="NB"], KorhazNevFactor ~ type, value.var = "fit")
-```
-
-<div class="kable-table">
-
-| KorhazNevFactor                                                                         |        CDI |       MRK |        VAF |
-|:----------------------------------------------------------------------------------------|-----------:|----------:|-----------:|
-| Albert Schweitzer Kórház-Rendelőintézet, Hatvan                                         |  61.151376 | 34.316985 |  6.3396159 |
-| Állami Szívkórház, Balatonfüred                                                         |         NA | 12.489595 | 10.2543675 |
-| Almási Balogh Pál Kórház, Ózd                                                           |   8.291950 | 16.463150 | 30.2904307 |
-| Bács-Kiskun Megyei Kórház, Kecskemét                                                    |  62.726025 | 25.207799 | 24.4544044 |
-| Bajai Szent Rókus Kórház                                                                |   8.100207 |  6.988560 |  7.9113058 |
-| Bajcsy-Zsilinszky Kórház és Rendelőintézet                                              | 112.483665 | 51.417861 | 26.5390318 |
-| Békés Megyei Központi Kórház                                                            |  26.139897 | 32.804685 |  7.6472788 |
-| Békés Megyei Pándy Kálmán Kórház, Gyula                                                 |  10.656871 |        NA |         NA |
-| Betegápoló Irgalmas Rend                                                                |  69.940459 | 45.924956 | 42.7757624 |
-| Borsod-Abaúj-Zemplén Megyei Kórház és Egyetemi Oktató Kórház                            |  27.345671 | 17.496278 | 10.4583947 |
-| Budai Egészségközpont Kft.                                                              |  12.762189 | 13.626600 | 45.3595641 |
-| Bugát Pál Kórház, Gyöngyös                                                              |  41.433385 | 16.854389 | 20.7436436 |
-| Csolnoky Ferenc Kórház, Veszprém                                                        |  35.663661 | 29.134395 | 36.5483367 |
-| Csongrád Megyei Egészségügyi Ellátó Központ Hódmezővásárhely - Makó                     |  65.051027 | 42.053113 | 31.4087869 |
-| Debreceni Egyetem Klinikai Központ                                                      |  49.620820 | 51.291560 | 56.4953857 |
-| Dombóvári Szent Lukács Kórház                                                           |  26.471796 | 11.477874 | 37.8300871 |
-| Dr. Bugyi István Kórház, Szentes                                                        |  62.877771 | 32.857887 | 15.3128393 |
-| Dr. Kenessey Albert Kórház-Rendelőintézet, Balassagyarmat                               |  29.183542 | 15.349032 |         NA |
-| Dr. Réthy Pál Kórház-Rendelőintézet, Békéscsaba                                         |  39.952243 | 34.817968 |  8.2613177 |
-| Egyesített Szent István és Szent László Kórház-Rendelőintézet                           | 102.151584 | 29.728342 | 61.2589785 |
-| Fejér Megyei Szent György Egyetemi Oktató Kórház, Székesfehérvár                        |  88.243861 | 31.575263 | 18.8585087 |
-| Felső-Szabolcsi Kórház, Kisvárda                                                        |  22.918301 | 23.752268 | 10.4497428 |
-| Gálfi Béla Gyógyító és Rehabilitációs Közhasznú Nonprofit Kft., Pomáz                   |  50.725649 | 17.461824 |         NA |
-| Gottsegen György Országos Kardiológiai Intézet                                          |  86.866173 | 16.592050 | 44.2699377 |
-| Gróf Esterházy Kórház és Rendelőintézeti Szakrendelő, Pápa                              |  26.571016 | 59.032843 | 38.4939828 |
-| Gróf Tisza István Kórház, Berettyóújfalu                                                |  15.517894 | 17.997481 |  0.5905734 |
-| Heim Pál Gyermekkórház                                                                  |         NA | 11.510931 |         NA |
-| Jahn Ferenc Dél-pesti Kórház                                                            | 203.010180 | 56.598020 | 35.4705094 |
-| Jász-Nagykun-Szolnok Megyei Hetényi Géza Kórház-Rendelőintézet                          |   9.033220 |  1.929652 | 10.1547421 |
-| Jászberényi Szent Erzsébet Kórház                                                       |   8.505743 | 15.506552 | 22.5007168 |
-| Jávorszky Ödön Kórház, Vác                                                              |  82.744928 | 28.353174 | 27.2997043 |
-| Kanizsai Dorottya Kórház, Nagykanizsa                                                   |         NA | 13.635541 |  7.4294708 |
-| Karolina Kórház és Rendelőintézet, Mosonmagyaróvár                                      |  13.185011 | 40.782185 | 12.2975626 |
-| Károlyi Sándor Kórház                                                                   | 167.149702 | 64.531588 | 53.6705164 |
-| Kastélypark Klinika Egészségügyi Szolgáltató Kft., Tata                                 |         NA | 13.171451 |         NA |
-| Kátai Gábor Kórház, Karcag                                                              |   6.293839 |  6.041129 |  1.9612065 |
-| Kazincbarcikai Kórház Nonprofit Kft.                                                    |   6.132156 |  3.024427 |  2.7526110 |
-| Kenézy Gyula Kórház és Rendelőintézet, Debrecen                                         |  48.888435 | 18.937119 | 24.4289158 |
-| Keszthelyi Kórház                                                                       |  11.239441 | 12.417784 | 11.0957148 |
-| Kiskunhalasi Semmelweis Kórház                                                          |  32.852590 | 16.892240 |  3.3317811 |
-| Koch Róbert Kórház és Rendelőintézet, Edelény                                           |   3.310284 |  1.402240 |         NA |
-| Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ |  23.081125 |  7.667784 |  6.1671178 |
-| Magyar Honvédség Egészségügyi Központ                                                   | 129.137279 | 28.328693 | 52.8949810 |
-| Magyar Imre Kórház, Ajka                                                                |  36.822661 |  6.770521 |  6.2730049 |
-| Magyarországi Református Egyház Bethesda Gyermekkórháza                                 |         NA | 26.389985 |  9.0904234 |
-| Markhot Ferenc Oktatókórház és Rendelőintézet, Eger                                     |  66.231235 | 66.254319 | 32.6564326 |
-| Markusovszky Egyetemi Oktatókórház, Szombathely                                         |  21.202728 | 13.540604 | 10.6656167 |
-| Mátrai Gyógyintézet                                                                     |  23.095578 |  6.431623 |  3.3422726 |
-| Mezőtúri Kórház és Rendelőintézet                                                       |         NA |  3.559880 |         NA |
-| Miskolci Semmelweis Kórház és Egyetemi Oktatókórház                                     |  58.173025 |  6.230699 |  7.3845857 |
-| Mohácsi Kórház                                                                          |   6.391531 |  6.271955 |  4.8928031 |
-| Nagyatádi Kórház                                                                        |   3.102543 |  8.243341 | 16.4830266 |
-| Nyírő Gyula Kórház-Országos Pszichiátriai és Addiktológiai Intézet                      |  83.083145 | 12.156634 |  3.1435625 |
-| Orosházi Kórház                                                                         |  34.544154 | 16.230708 |  6.7362350 |
-| Országos Klinikai Idegtudományi Intézet                                                 |  23.741710 | 18.994740 |  8.0175280 |
-| Országos Korányi Tbc és Pulmonológiai Intézet                                           |  63.878090 | 15.418143 | 21.2317926 |
-| Országos Onkológiai Intézet                                                             |  72.666086 | 31.318113 | 23.6306801 |
-| Országos Orvosi Rehabilitációs Intézet                                                  |   9.348843 |  2.216876 |         NA |
-| Országos Reumatológiai és Fizioterápiás Intézet                                         |         NA |  2.438956 |         NA |
-| Országos Sportegészségügyi Intézet                                                      |         NA |  9.322294 |         NA |
-| Pécsi Tudományegyetem                                                                   |  86.891907 | 35.237414 | 51.6176952 |
-| Pest Megyei Flór Ferenc Kórház, Kistarcsa                                               |  77.894142 | 13.506393 | 12.1688611 |
-| Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ                          |  62.019037 | 26.824581 |  6.7236971 |
-| Petz Aladár Megyei Oktató Kórház, Győr                                                  |  57.176712 | 34.223013 | 47.9443861 |
-| Sátoraljaújhelyi Erzsébet Kórház                                                        |   3.385780 | 24.731949 | 16.3400314 |
-| Semmelweis Egyetem                                                                      |  64.918345 | 19.261255 | 38.3933679 |
-| Siófoki Kórház-Rendelőintézet                                                           |  17.415164 | 19.827349 | 20.9635292 |
-| Somogy Megyei Kaposi Mór Oktató Kórház                                                  |  73.189543 | 14.584624 | 26.1356914 |
-| Soproni Erzsébet Oktató Kórház és Rehabilitációs Intézet                                |  22.996891 | 25.926469 | 11.6434971 |
-| Szabolcs-Szatmár-Bereg Megyei Kórházak és Egyetemi Oktatókórház                         |  67.398869 | 49.991731 | 15.2756040 |
-| Szegedi Tudományegyetem Szent-Györgyi Albert Klinikai Központ                           | 117.514656 | 40.145889 | 31.0999526 |
-| Szent Borbála Kórház, Tatabánya                                                         |  51.357455 |  8.701758 | 27.0777236 |
-| Szent Imre Kórház                                                                       | 105.134183 | 36.563074 | 23.8857103 |
-| Szent János Kórház és Észak-budai Egyesített Kórházak                                   | 156.360347 | 40.950423 | 56.2063851 |
-| Szent Lázár Megyei Kórház, Salgótarján                                                  |  35.172514 | 18.992084 |         NA |
-| Szent Margit Kórház, Budapest                                                           |  57.433880 | 51.206524 | 23.0312630 |
-| Szent Pantaleon Kórház-Rendelőintézet Dunaújváros                                       |  65.771277 | 36.152501 |  3.2705162 |
-| Szigetvári Kórház                                                                       |  57.296223 | 13.434325 | 13.2496539 |
-| Toldy Ferenc Kórház és Rendelőintézet, Cegléd                                           | 106.111406 | 69.419298 | 32.4170439 |
-| Tolna Megyei Balassa János Kórház                                                       |  43.975880 | 28.859427 | 15.1719520 |
-| Tüdőgyógyintézet, Törökbálint                                                           |   2.801777 | 43.810217 |  4.3061801 |
-| Uzsoki utcai Kórház                                                                     | 104.889233 | 30.032626 |  1.9873241 |
-| Vaszary Kolos Kórház, Esztergom                                                         |  54.662338 | 20.970104 |  4.5108941 |
-| Veszprém Megyei Tüdőgyógyintézet, Farkasgyepű                                           |         NA |  2.753103 |         NA |
-| Zala Megyei Szent Rafael Kórház                                                         |  26.830325 | 42.744954 | 42.9137812 |
-
-</div>
+<!-- Nézzük meg a végleges eredményeket szám, fertőzéstípusonként. (Természetesen ismét fontos hangsúlyozni, hogy ) -->
+<!-- ```{r} -->
+<!-- dcast(ress[formula=="zCMI"&family=="NB"], KorhazNevFactor ~ type, value.var = "fit") -->
+<!-- ``` -->
 
 Mindezek alapján össze is vethetjük az egyes kórházak eredményeit a
 három fertőzéstípusnál:
@@ -1932,9 +2028,16 @@ gpairs_lower <- function(g){
   g
 }
 
-p <- GGally::ggpairs(dcast(ress[formula=="zCMI"&family=="NB"],
-                           KorhazNevFactor ~ type, value.var = "fit")[,-1], diag = "blank")
-gpairs_lower(p)
+pairsdat <- dcast(ress[formula=="zCMI"&family=="NB"], KorhazNevFactor + year ~ type,
+                  value.var = "fit")
+
+p <- GGally::ggpairs(pairsdat[, -(1:2)], mapping = aes(color = factor(pairsdat$year)),
+                     diag = "blank")
+p
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-60-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-54-1.png)<!-- -->
+
+``` r
+# gpairs_lower(p)
+```
