@@ -1489,48 +1489,15 @@ incidenciákra! Egyetlen megjegyzés az ábrákhoz: néhány esetben a
 konfidenciaintervallumok nagyon szélesek; hogy ezek ne nyomják teljesen
 össze a függőleges skálát, az ilyenek tetejei kifutnak az ábrákról.
 
-A nyers incidenciákat ábrázolhatjuk betegszámra vonatkoztatva (a lenti
-gyorsan futó ábra természetesen csak illusztráció, az eredményt
-kimentjük [PDF
-formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf)
-is, hogy tanulmányozható legyen):
+A nyers incidenciákat ábrázolhatjuk ápolási napra vonatkoztatva (a lenti
+gyorsan futó ábra természetesen csak illusztráció, ami az első 5 ábrát
+mutatja a több tucatból; a teljes eredményt kimentjük [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerDay.pdf),
+hogy tanulmányozható legyen):
 
 ``` r
 SzakmaTipusCombs <- unique(Res[, .(type, SzakmaMegnev)])[order(type, SzakmaMegnev)]
 
-p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
-  plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
-  plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
-                   by = "KorhazNevEgyseges")
-  ggplot(plotdat,
-         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI)) +
-    facet_wrap(~KorhazNevEgyseges, labeller = label_wrap_gen(width = 45)) +
-    geom_point() + geom_line(data = plotdat[obs>1]) + geom_errorbar(linewidth = 0.3) +
-    labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
-         y = "Nyers incidencia [/10 ezer beteg]", x = "Év") +
-    coord_cartesian(
-      ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
-                            SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerPatient))) +
-    theme(legend.position = "bottom", legend.title = element_blank())
-})
-
-# cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
-# for(i in 1:length(p)) print(p[[i]])
-# invisible(dev.off())
-
-for(i in 1:length(p)) print(p[[i]])
-```
-
-<video controls loop>
-<source src="README_files/figure-gfm/unnamed-chunk-28.mp4" />
-</video>
-
-Vagy vonatkoztathatunk ápolási napra is (a lenti gyorsan futó ábra
-természetesen csak illusztráció, az eredményt kimentjük [PDF
-formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerDay.pdf)
-is, hogy tanulmányozható legyen):
-
-``` r
 p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
   plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
   plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
@@ -1547,14 +1514,41 @@ p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
     theme(legend.position = "bottom", legend.title = element_blank())
 })
 
-# cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
-# for(i in 1:length(p)) print(p[[i]])
-# invisible(dev.off())
-
+cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
 for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
+
+for(i in 1:5) print(p[[i]])
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-29-.gif)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-28-.gif)<!-- -->
+
+Vagy vonatkoztathatunk betegszámra is (ez talán kevésbé szerencsés
+megoldás, ahogy volt is róla korábban szó, de [PDF
+formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/OsztalyokKulonPerPatient.pdf)
+elérhetőek ezek az eredmények is):
+
+``` r
+p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
+  plotdat <- Res[type==SzakmaTipusCombs$type[i]&SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]
+  plotdat <- merge(plotdat, plotdat[, .(obs = .N), .(KorhazNevEgyseges)],
+                   by = "KorhazNevEgyseges")
+  ggplot(plotdat,
+         aes(x = year, y = IncPerPatient, ymin = IncPerPatientLCI, ymax = IncPerPatientUCI)) +
+    facet_wrap(~KorhazNevEgyseges, labeller = label_wrap_gen(width = 45)) +
+    geom_point() + geom_line(data = plotdat[obs>1]) + geom_errorbar(linewidth = 0.3) +
+    labs(title = paste(SzakmaTipusCombs$SzakmaMegnev[i], " - ", SzakmaTipusCombs$type[i]),
+         y = "Nyers incidencia [/10 ezer beteg]", x = "Év") +
+    coord_cartesian(
+      ylim = c(0, max(Res[type==SzakmaTipusCombs$type[i]&
+                            SzakmaMegnev==SzakmaTipusCombs$SzakmaMegnev[i]]$IncPerPatient))) +
+    theme(legend.position = "bottom", legend.title = element_blank())
+})
+
+cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(p)) print(p[[i]])
+invisible(dev.off())
+```
 
 *Vigyázat*, a fenti ábrák két szempontból is félrevezetőek lehetnek!
 Egyrészt sugallhatják azt, hogy egymáshoz hasonlítsuk a kórházakat –
@@ -1945,7 +1939,9 @@ Az eredmény:
 ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"&!suppressed],
        aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
-  facet_wrap(~year)
+  facet_wrap(~year, scales = "free_x") +
+  scale_x_continuous(limits = c(0, ceiling(max(ress[formula=="zCMI"&family=="NB"&type=="CDI"&
+                                                      !suppressed]$uci))))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-49-1.png)<!-- -->
@@ -1981,7 +1977,9 @@ Az eredmény:
 ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"&!suppressed],
        aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
-  facet_wrap(~year)
+  facet_wrap(~year, scales = "free_x") +
+  scale_x_continuous(limits = c(0, ceiling(max(ress[formula=="zCMI"&family=="NB"&type=="MRK"&
+                                                      !suppressed]$uci))))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-51-1.png)<!-- -->
@@ -2017,7 +2015,9 @@ Az eredmény:
 ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"&!suppressed],
        aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
-  facet_wrap(~year)
+  facet_wrap(~year, scales = "free_x") +
+  scale_x_continuous(limits = c(0, ceiling(max(ress[formula=="zCMI"&family=="NB"&type=="VAF"&
+                                                      !suppressed]$uci))))
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-53-1.png)<!-- -->
