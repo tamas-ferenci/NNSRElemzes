@@ -1187,8 +1187,8 @@ KorhazNevek[KorhazNevEgyseges=="Semmelweis Egyetem Klinikai Központ"]$KorhazNev
   "Semmelweis Egyetem"
 KorhazNevek[KorhazNevEgyseges=="Pécsi Tudományegyetem Klinikai Központ"]$KorhazNevEgyseges <-
   "Pécsi Tudományegyetem"
-KorhazNevek[KorhazNevEgyseges=="Budai Egészségközpont Kft."]$KorhazNevEgyseges <-
-  "Budai Egészségközpont Zrt."
+KorhazNevek[KorhazNevEgyseges=="Budai Egészségközpont Zrt."]$KorhazNevEgyseges <-
+  "Budai Egészségközpont Kft."
 KorhazNevek[KorhazNevEgyseges=="Szent Damján Görögkatolikus Kórház"]$KorhazNevEgyseges <-
   "Felső-Szabolcsi Kórház, Kisvárda"
 ```
@@ -1514,9 +1514,9 @@ p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
     theme(legend.position = "bottom", legend.title = element_blank())
 })
 
-cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(p)) print(p[[i]])
-invisible(dev.off())
+# cairo_pdf("OsztalyokKulonPerPatient.pdf", onefile = TRUE, width = 16, height = 9)
+# for(i in 1:length(p)) print(p[[i]])
+# invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
@@ -1545,9 +1545,9 @@ p <- lapply(1:nrow(SzakmaTipusCombs), function(i) {
     theme(legend.position = "bottom", legend.title = element_blank())
 })
 
-cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
-for(i in 1:length(p)) print(p[[i]])
-invisible(dev.off())
+# cairo_pdf("OsztalyokKulonPerDay.pdf", onefile = TRUE, width = 16, height = 9)
+# for(i in 1:length(p)) print(p[[i]])
+# invisible(dev.off())
 
 for(i in 1:length(p)) print(p[[i]])
 ```
@@ -1787,13 +1787,13 @@ Az összes megbecsült modell ábráját csak elmentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ``` r
-if(!file.exists("Modellek.pdf")) {
-  cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
-  for(i in 1:length(fits))
-    print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
-                                           pargrid$formulas[i], " - ", pargrid$year[i])))
-  invisible(dev.off())
-}
+# if(!file.exists("Modellek.pdf")) {
+cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(fits))
+  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
+                                         pargrid$formulas[i], " - ", pargrid$year[i])))
+invisible(dev.off())
+# }
 ```
 
 A jól értelmezhető eredményekhez (fertőzés-gyakoriság ugyanazon,

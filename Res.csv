@@ -3078,7 +3078,7 @@ CDI;10OT;2015;0109;10;Egyesített Szent István és Szent László Kórház-Rend
 CDI;10OT;2015;0116;23;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;Ortopédia-traumatológia;281;62175;13606;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;36,9923602734218;23,4513826244558;55,5015650084723;16,9043069234161;10,7188042705801;25,3540292060507
 CDI;10OT;2015;0118;11;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;20621;5409;Uzsoki utcai Kórház;53,3436787740653;26,6318841152066;95,4264838288498;20,3364762432982;10,1561303065742;36,3583724005605
 CDI;10OT;2015;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;25343;3591;Semmelweis Egyetem;0;0;14,5547527678614;0;0;10,2672943172787
-CDI;10OT;2015;01A3;3;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;25193;5348;Budai Egészségközpont Zrt.;11,9080697019013;2,45579758086773;34,7964498150141;5,6095736724009;1,1569783823079;16,384717421772
+CDI;10OT;2015;01A3;3;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;25193;5348;Budai Egészségközpont Kft.;11,9080697019013;2,45579758086773;34,7964498150141;5,6095736724009;1,1569783823079;16,384717421772
 CDI;10OT;2015;01A6;10;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;41637;5229;Magyar Honvédség Egészségügyi Központ;24,0171001753248;11,5177146403046;44,1638521630959;19,1241155096577;9,17444664156518;35,1417154824202
 CDI;10OT;2015;0204;2;Mohácsi Kórház;Ortopédia-traumatológia;15;3410;790;Mohácsi Kórház;58,6510263929619;7,10370078737468;211,705427381502;25,3164556962025;3,06741205001057;91,1498323251236
 CDI;10OT;2015;0205;0;Komlói Egészségcentrum;Ortopédia-traumatológia;0;312;312;Komlói Egészségcentrum;0;0;1175,37106527443;0;0;117,537106527443
@@ -3132,7 +3132,7 @@ CDI;10OT;2016;0116;19;Péterfy Sándor utcai Kórház-Rendelőintézet és Bales
 CDI;10OT;2016;0118;20;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19336;5596;Uzsoki utcai Kórház;103,434009102193;63,1912666640548;159,700458108649;35,7398141529664;21,8440563636413;55,1435342050598
 CDI;10OT;2016;0140;4;Semmelweis Egyetem;Ortopédia-traumatológia;88;22648;3381;Semmelweis Egyetem;17,6616036736136;4,81239551682343;45,2144891545152;11,8308192842354;3,22441109073004;30,2636456958942
 CDI;10OT;2016;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;5025;724;Országos Orvosi Rehabilitációs Intézet;0;0;73,3835974584149;0;0;50,8217917243287
-CDI;10OT;2016;01A3;1;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27142;5816;Budai Egészségközpont Zrt.;3,68432687348022;0,0932790368292107;20,5260267692242;1,71939477303989;0,0435312119644199;9,57609026871131
+CDI;10OT;2016;01A3;1;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27142;5816;Budai Egészségközpont Kft.;3,68432687348022;0,0932790368292107;20,5260267692242;1,71939477303989;0,0435312119644199;9,57609026871131
 CDI;10OT;2016;01A6;3;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;40907;5294;Magyar Honvédség Egészségügyi Központ;7,33370816730633;1,51241246904842;21,4306966089;5,66679259539101;1,16878136419399;16,551754213056
 CDI;10OT;2016;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;361;361;Komlói Egészségcentrum;0;0;1016,64711237291;0;0;101,664711237291
 CDI;10OT;2016;0207;0;Szigetvári Kórház;Ortopédia-traumatológia;15;2573;435;Szigetvári Kórház;0;0;143,266084963767;0;0;84,4432732903666
@@ -3184,7 +3184,7 @@ CDI;10OT;2017;0116;26;Péterfy Kórház-Rendelőintézet Országos Traumatológi
 CDI;10OT;2017;0118;20;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19478;5601;Uzsoki utcai Kórház;102,679946606428;62,7305046089144;158,5365232018;35,7079093019104;21,8245443911036;55,094355610351
 CDI;10OT;2017;0140;1;Semmelweis Egyetem;Ortopédia-traumatológia;88;23395;3773;Semmelweis Egyetem;4,27441761060056;0,108218825753239;23,8132038506604;2,65041081367612;0,067102366922748;14,7582005225108
 CDI;10OT;2017;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;4946;715;Országos Orvosi Rehabilitációs Intézet;0;0;74,555280145025;0;0;51,4598577903134
-CDI;10OT;2017;01A3;3;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;26086;6191;Budai Egészségközpont Zrt.;11,5004216821283;2,37172622814664;33,6053973467562;4,84574382167663;0,99942037628213;14,1547250689857
+CDI;10OT;2017;01A3;3;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;26086;6191;Budai Egészségközpont Kft.;11,5004216821283;2,37172622814664;33,6053973467562;4,84574382167663;0,99942037628213;14,1547250689857
 CDI;10OT;2017;01A6;16;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;39868;6160;Magyar Honvédség Egészségügyi Központ;40,1324370422394;22,9408399136999;65,1644037241546;25,974025974026;14,8534623101692;42,1460096874385
 CDI;10OT;2017;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2320;735;Mohácsi Kórház;0;0;158,87708127324;0;0;50,0631005854907
 CDI;10OT;2017;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;298;298;Komlói Egészségcentrum;0;0;1230,24880590161;0;0;123,024880590161
@@ -3239,7 +3239,7 @@ CDI;10OT;2018;0116;20;Péterfy Kórház-Rendelőintézet Országos Traumatológi
 CDI;10OT;2018;0118;13;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19845;6123;Uzsoki utcai Kórház;65,5076845553036;34,8845468968087;111,994084066809;21,2314225053079;11,3095299745442;36,2790135062969
 CDI;10OT;2018;0140;3;Semmelweis Egyetem;Ortopédia-traumatológia;88;23709;3906;Semmelweis Egyetem;12,6534227508541;2,6095159908476;36,974173503341;7,68049155145929;1,58418215812778;22,4290902313285
 CDI;10OT;2018;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;4266;679;Országos Orvosi Rehabilitációs Intézet;0;0;86,4342474626553;0;0;54,1808112137207
-CDI;10OT;2018;01A3;2;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27609;6222;Budai Egészségközpont Zrt.;7,24401463290956;0,877295818821747;26,1653957233634;3,21440051430408;0,389302523064428;11,6066457341245
+CDI;10OT;2018;01A3;2;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27609;6222;Budai Egészségközpont Kft.;7,24401463290956;0,877295818821747;26,1653957233634;3,21440051430408;0,389302523064428;11,6066457341245
 CDI;10OT;2018;01A6;20;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;37881;6091;Magyar Honvédség Egészségügyi Központ;52,7969166600671;32,2526164261634;81,5288365036319;32,835330815958;20,0678552847568;50,6661710041362
 CDI;10OT;2018;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2289;700;Mohácsi Kórház;0;0;161,027025336334;0;0;52,5596660848649
 CDI;10OT;2018;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;260;260;Komlói Egészségcentrum;0;0;1408,78225802522;0;0;140,878225802522
@@ -3295,7 +3295,7 @@ CDI;10OT;2019;0116;11;Péterfy Kórház-Rendelőintézet és Manninger Jenő Ors
 CDI;10OT;2019;0118;7;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;20707;6592;Uzsoki utcai Kórház;33,8049934804655;13,5924062746615;69,6387235246037;10,618932038835;4,2703934771325;21,8667420957137
 CDI;10OT;2019;0140;3;Semmelweis Egyetem;Ortopédia-traumatológia;88;23851;3795;Semmelweis Egyetem;12,578088969016;2,59397945142832;36,754069614568;7,90513833992095;1,63052635742183;23,0846204310509
 CDI;10OT;2019;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;3979;650;Országos Orvosi Rehabilitációs Intézet;0;0;92,6657458204082;0;0;56,5912563860845
-CDI;10OT;2019;01A3;3;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27108;6144;Budai Egészségközpont Zrt.;11,0668437361664;2,28230738625827;32,3385734356527;4,8828125;1,00706654156392;14,2629542063939
+CDI;10OT;2019;01A3;3;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27108;6144;Budai Egészségközpont Kft.;11,0668437361664;2,28230738625827;32,3385734356527;4,8828125;1,00706654156392;14,2629542063939
 CDI;10OT;2019;01A6;19;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;38640;5585;Magyar Honvédség Egészségügyi Központ;49,1718426501035;29,6071751790579;76,7773201683889;34,0196956132498;20,4941247508842;53,0752086513264
 CDI;10OT;2019;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2539;688;Mohácsi Kórház;0;0;145,183181937849;0;0;53,4739490226522
 CDI;10OT;2019;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;339;339;Komlói Egészségcentrum;0;0;1082,26593174154;0;0;108,226593174154
@@ -3351,7 +3351,7 @@ CDI;10OT;2020;0116;14;Péterfy Kórház-Rendelőintézet és Manninger Jenő Ors
 CDI;10OT;2020;0118;15;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;16460;4963;Uzsoki utcai Kórház;91,1300121506683;51,0134626105696;150,260624172585;30,2236550473504;16,9255128653444;49,8004039642256
 CDI;10OT;2020;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;81,3;13030;2431;Semmelweis Egyetem;0;0;28,306656410305;0;0;15,1628221129884
 CDI;10OT;2020;0160;1;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;7146;667;Országos Orvosi Rehabilitációs Intézet;13,9938427092079;0,354292795055677;77,9437656340201;14,9925037481259;0,379570127242433;83,2471772136068
-CDI;10OT;2020;01A3;2;Budai Egészségközpont Kft.;Ortopédia-traumatológia;96,8;18104;3846;Budai Egészségközpont Zrt.;11,0472823685373;1,33790514748522;39,90082437994;5,20020800832033;0,629831369461465;18,7721842454869
+CDI;10OT;2020;01A3;2;Budai Egészségközpont Kft.;Ortopédia-traumatológia;96,8;18104;3846;Budai Egészségközpont Kft.;11,0472823685373;1,33790514748522;39,90082437994;5,20020800832033;0,629831369461465;18,7721842454869
 CDI;10OT;2020;01A6;18;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;27484;4248;Magyar Honvédség Egészségügyi Központ;65,4926502692476;38,8195676842038;103,486948995081;42,3728813559322;25,1316015900321;66,8850547070222
 CDI;10OT;2020;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2354;550;Mohácsi Kórház;0;0;156,584137628072;0;0;66,846114706997
 CDI;10OT;2020;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;227;227;Komlói Egészségcentrum;0;0;1611,92421133921;0;0;161,192421133921
@@ -3406,7 +3406,7 @@ CDI;10OT;2021;0109;11;Dél-pesti Centrumkórház - Országos Hematológiai és I
 CDI;10OT;2021;0116;27;Péterfy Kórház-Rendelőintézet és Manninger Jenő Országos Traumatológiai Intézet;Ortopédia-traumatológia;251;37503;9519;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;71,9942404607631;47,4498506519182;104,730684634863;28,3643239836117;18,7003343039828;41,2419687178811
 CDI;10OT;2021;0118;6;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;11710;3396;Uzsoki utcai Kórház;51,2382578992314;18,8057846342015;111,490502552246;17,6678445229682;6,48646063850697;38,4155012672862
 CDI;10OT;2021;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;78;11739;1909;Semmelweis Egyetem;0;0;31,4192002347046;0;0;19,3049639764796
-CDI;10OT;2021;01A3;11;Budai Egészségközpont Kft.;Ortopédia-traumatológia;128,6;13267;2565;Budai Egészségközpont Zrt.;82,9124896359388;41,3966516214004;148,304806196846;42,8849902534113;21,4268806335019;76,603247995265
+CDI;10OT;2021;01A3;11;Budai Egészségközpont Kft.;Ortopédia-traumatológia;128,6;13267;2565;Budai Egészségközpont Kft.;82,9124896359388;41,3966516214004;148,304806196846;42,8849902534113;21,4268806335019;76,603247995265
 CDI;10OT;2021;01A6;21;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;26379;3665;Magyar Honvédség Egészségügyi Központ;79,6087797111339;49,2856303420826;121,664870361094;57,2987721691678;35,5027907244092;87,4545706249785
 CDI;10OT;2021;0204;1;Mohácsi Kórház;Ortopédia-traumatológia;15;2813;523;Mohácsi Kórház;35,5492356914326;0,900024672977595;197,906790812297;19,1204588910134;0,484076389898497;106,067932848762
 CDI;10OT;2021;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;144;144;Komlói Egészségcentrum;0;0;2529,18814875166;0;0;252,918814875166
@@ -3458,7 +3458,7 @@ CDI;10OT;2022;0118;8;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;16302;48
 CDI;10OT;2022;01A6;25;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;32092;5311;Magyar Honvédség Egészségügyi Központ;77,9010345257385;50,4195871434695;114,975963201309;47,0721144793824;30,4850597477815;69,4098178541247
 CDI;10OT;2022;01H7;9;Semmelweis Egyetem Klinikai Központ;Ortopédia-traumatológia;81;16862;2878;Semmelweis Egyetem;53,3744514292492;24,4090098716134;101,29704536307;31,2717164697707;14,3090827299068;59,2800959053727
 CDI;10OT;2022;01H8;5;Dr. Manninger Jenő Baleseti Központ;Ortopédia-traumatológia;251;35630;9109;Dr. Manninger Jenő Baleseti Központ;14,0331181588549;4,55666723651711;32,7455521181875;5,48907673729279;1,78252082548976;12,8049858776135
-CDI;10OT;2022;01H9;3;Budai Egészségközpont Zrt.;Ortopédia-traumatológia;131;14475;3623;Budai Egészségközpont Zrt.;20,7253886010363;4,27427733906895;60,5563153693314;8,28043058239028;1,70794949338488;24,1796781719399
+CDI;10OT;2022;01H9;3;Budai Egészségközpont Zrt.;Ortopédia-traumatológia;131;14475;3623;Budai Egészségközpont Kft.;20,7253886010363;4,27427733906895;60,5563153693314;8,28043058239028;1,70794949338488;24,1796781719399
 CDI;10OT;2022;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2346;585;Mohácsi Kórház;0;0;157,117679188452;0;0;62,8593715728323
 CDI;10OT;2022;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;355;355;Komlói Egészségcentrum;0;0;1033,74076276429;0;0;103,374076276429
 CDI;10OT;2022;0207;1;Szigetvári Kórház;Ortopédia-traumatológia;15;3248;528;Szigetvári Kórház;30,7881773399015;0,779486124069016;171,420069482891;18,9393939393939;0,479492443078766;105,0678473767
@@ -4304,7 +4304,7 @@ CDI;15;2015;0154;2;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 CDI;15;2015;0156;5;Országos Korányi Tbc és Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4993;985;Országos Korányi Tbc és Pulmonológiai Intézet;100,140196274785;32,5229904916627;233,537793953198;50,761421319797;16,5020204892221;118,059689523948
 CDI;15;2015;0162;7;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4508;1953;Gottsegen György Országos Kardiológiai Intézet;155,27950310559;62,4524864586502;319,671779257397;35,84229390681;14,4222312471148;73,708550534547
 CDI;15;2015;0163;1;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;24,7;5772;1179;Országos Klinikai Idegtudományi Intézet;17,3250173250173;0,438630499972894;96,4905997070582;8,48176420695505;0,214737371919759;47,1658455946215
-CDI;15;2015;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1892;1022;Budai Egészségközpont Zrt.;0;0;194,782539119225;0;0;36,0296477982284
+CDI;15;2015;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1892;1022;Budai Egészségközpont Kft.;0;0;194,782539119225;0;0;36,0296477982284
 CDI;15;2015;01A6;17;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;28,5;7478;1752;Magyar Honvédség Egészségügyi Központ;227,333511634127;132,484180473175;363,734264967794;97,0319634703196;56,6234110753138;154,904357963912
 CDI;15;2015;01E8;2;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1249;230;Szent Margit Kórház, Budapest;160,128102481986;19,3981423086573;577,229196519827;86,9565217391305;10,5482410845158;310,569271769154
 CDI;15;2015;0204;0;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1307;227;Mohácsi Kórház;0;0;281,842279862475;0;0;161,192421133921
@@ -4373,7 +4373,7 @@ CDI;15;2016;0154;1;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 CDI;15;2016;0156;6;Országos Korányi Tbc és Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4717;1013;Országos Korányi Tbc és Pulmonológiai Intézet;127,199491202035;46,6938239268918;276,652611019397;59,2300098716683;21,7664635335517;128,470026353612
 CDI;15;2016;0162;7;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4457;1899;Gottsegen György Országos Kardiológiai Intézet;157,056315907561;63,1673655554416;323,326632116725;36,8615060558189;14,8326868244872;75,8004279235114
 CDI;15;2016;0163;4;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;26;5868;1105;Országos Klinikai Idegtudományi Intézet;68,1663258350375;18,576053313045;174,440064168789;36,1990950226244;9,87157255821352;92,4225785522093
-CDI;15;2016;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2061;1091;Budai Egészségközpont Zrt.;0;0;178,824849763617;0;0;33,7548127760884
+CDI;15;2016;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2061;1091;Budai Egészségközpont Kft.;0;0;178,824849763617;0;0;33,7548127760884
 CDI;15;2016;01A6;15;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;8379;2038;Magyar Honvédség Egészségügyi Központ;179,018976011457;100,229094882038;295,092955457408;73,6015701668302;41,2510447279821;121,104470292563
 CDI;15;2016;01E8;1;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1392;229;Szent Margit Kórház, Budapest;71,8390804597701;1,81879150463517;399,605081027766;43,6681222707424;1,10552002145509;240,888450642622
 CDI;15;2016;0207;0;Szigetvári Kórház;Aneszt. és intenzív betegellátás;5;1143;252;Szigetvári Kórház;0;0;322,216375374206;0;0;145,317898870208
@@ -4439,7 +4439,7 @@ CDI;15;2017;0154;0;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 CDI;15;2017;0156;5;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4352;936;Országos Korányi Tbc és Pulmonológiai Intézet;114,889705882353;37,3145650994398;267,908891524112;53,4188034188034;17,3670084493343;124,218124691646
 CDI;15;2017;0162;1;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4820;1893;Gottsegen György Országos Kardiológiai Intézet;20,746887966805;0,525264346297145;115,539457062438;5,28262017960909;0,133743468987529;29,3973598256411
 CDI;15;2017;0163;5;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;26;5343;1003;Országos Klinikai Idegtudományi Intézet;93,5803855511885;30,3920566273882;218,249152964824;49,8504486540379;16,205520673398;115,948022619379
-CDI;15;2017;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1968;1204;Budai Egészségközpont Zrt.;0;0;187,267496897706;0;0;30,5916455830642
+CDI;15;2017;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1968;1204;Budai Egészségközpont Kft.;0;0;187,267496897706;0;0;30,5916455830642
 CDI;15;2017;01A6;6;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7877;2048;Magyar Honvédség Egészségügyi Központ;76,1711311412975;27,9584291026635;165,718201379857;29,296875;10,7587903367189;63,657113687389
 CDI;15;2017;01E8;0;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1364;215;Szent Margit Kórház, Budapest;0;0;270,080332829841;0;0;170,112258169104
 CDI;15;2017;0204;0;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1269;270;Mohácsi Kórház;0;0;290,269740727579;0;0;135,696079211585
@@ -4506,7 +4506,7 @@ CDI;15;2018;0154;0;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 CDI;15;2018;0156;1;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4203;833;Országos Korányi Tbc és Pulmonológiai Intézet;23,7925291458482;0,602372870102546;132,491414952464;12,0048019207683;0,303930651133825;66,7032215838159
 CDI;15;2018;0162;3;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4838;1840;Gottsegen György Országos Kardiológiai Intézet;62,0090946672179;12,7895920903184;181,108904361974;16,304347826087;3,36361141288154;47,5736002758768
 CDI;15;2018;0163;1;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;21,6;5072;1138;Országos Klinikai Idegtudományi Intézet;19,7160883280757;0,499166892649441;109,80151895176;8,78734622144112;0,222473869558085;48,8617301629145
-CDI;15;2018;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2182;1199;Budai Egészségközpont Zrt.;0;0;168,916728185747;0;0;30,7190209384671
+CDI;15;2018;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2182;1199;Budai Egészségközpont Kft.;0;0;168,916728185747;0;0;30,7190209384671
 CDI;15;2018;01A6;10;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7546;2102;Magyar Honvédség Egészségügyi Központ;132,520540683806;63,5664642889741;243,574511586495;47,5737392959087;22,8363175576585;87,3152289339185
 CDI;15;2018;01E8;1;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1674;241;Szent Margit Kórház, Budapest;59,7371565113501;1,5124024211611;332,380008837082;41,49377593361;1,050476272746;229,007635117299
 CDI;15;2018;0204;2;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1220;253;Mohácsi Kórház;163,934426229508;19,8593890205785;590,920838736484;79,0513833992095;9,58786769992771;282,627381541786
@@ -4573,7 +4573,7 @@ CDI;15;2019;0140;10;Semmelweis Egyetem;Aneszt. és intenzív betegellátás;73;1
 CDI;15;2019;0154;2;Országos Onkológiai Intézet;Aneszt. és intenzív betegellátás;13;2211;457;Országos Onkológiai Intézet;90,4568068747173;10,9566168752006;326,375241157033;43,7636761487965;5,30438535090122;157,188336439863
 CDI;15;2019;0156;2;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;3516;454;Országos Korányi Tbc és Pulmonológiai Intézet;56,8828213879408;6,88951607373177;205,327696469318;44,0528634361234;5,33946567668432;158,221049282056
 CDI;15;2019;0162;6;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4632;1915;Gottsegen György Országos Kardiológiai Intézet;129,533678756477;47,5509428266575;281,725483770251;31,331592689295;11,5065534803042;68,0700534148737
-CDI;15;2019;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2084;1176;Budai Egészségközpont Zrt.;0;0;176,853001188828;0;0;31,3188763277782
+CDI;15;2019;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2084;1176;Budai Egészségközpont Kft.;0;0;176,853001188828;0;0;31,3188763277782
 CDI;15;2019;01A6;19;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7352;1997;Magyar Honvédség Egészségügyi Központ;258,433079434168;155,663087474828;403,282351404226;95,1427140711067;57,3765620181509;148,179996633212
 CDI;15;2019;01E8;4;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1529;222;Szent Margit Kórház, Budapest;261,60889470242;71,3241907708093;668,456579879424;180,18018018018;49,3058207261085;454,882059436946
 CDI;15;2019;0204;1;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1302;225;Mohácsi Kórház;76,8049155145929;1,94451319734511;427,179072229164;44,4444444444444;1,12517260499465;245,127473606004
@@ -4642,7 +4642,7 @@ CDI;15;2020;0154;1;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 CDI;15;2020;0156;4;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;28;4870;473;Országos Korányi Tbc és Pulmonológiai Intézet;82,135523613963;22,3835561006558;210,164830765099;84,5665961945032;23,0882388740303;215,099051246792
 CDI;15;2020;0162;3;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;5985;1809;Gottsegen György Országos Kardiológiai Intézet;50,125313283208;10,3382377857033;146,416872063839;16,5837479270315;3,42127410036986;48,3875473695643
 CDI;15;2020;0163;1;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;21;5368;1183;Országos Klinikai Idegtudományi Intézet;18,628912071535;0,471642106548464;103,749467811023;8,4530853761623;0,214011302353936;47,0066748891972
-CDI;15;2020;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1524;862;Budai Egészségközpont Zrt.;0;0;241,75974687664;0;0;42,70298756081
+CDI;15;2020;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1524;862;Budai Egészségközpont Kft.;0;0;241,75974687664;0;0;42,70298756081
 CDI;15;2020;01A6;11;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7340;1931;Magyar Honvédség Egészségügyi Központ;149,863760217984;74,834440556989;267,989083562949;56,9653029518384;28,4701491085256;101,697566121144
 CDI;15;2020;01E8;5;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1273;200;Szent Margit Kórház, Budapest;392,772977219167;127,651553329739;914,202466327274;250;81,6616619084252;573,743511268459
 CDI;15;2020;0204;2;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1171;191;Mohácsi Kórház;170,794192997438;20,6906658866657;615,592511573922;104,712041884817;12,7063657227604;373,117593369756
@@ -4707,7 +4707,7 @@ CDI;15;2021;0140;0;Semmelweis Egyetem;Aneszt. és intenzív betegellátás;77,6;
 CDI;15;2021;0154;1;Országos Onkológiai Intézet;Aneszt. és intenzív betegellátás;13,9;1881;369;Országos Onkológiai Intézet;53,1632110579479;1,34596691117749;295,846749271043;27,10027100271;0,686095920111649;150,061011329358
 CDI;15;2021;0156;4;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;59;5209;415;Országos Korányi Tbc és Pulmonológiai Intézet;76,7901708581302;20,9265744502104;196,49556874283;96,3855421686747;26,3224955394162;244,934740479884
 CDI;15;2021;0162;4;Gottsegen György Országos Kardiovaszkuláris Intézet;Aneszt. és intenzív betegellátás;19;5332;1592;Gottsegen György Országos Kardiológiai Intézet;75,0187546886722;20,4437481354316;191,965409913447;25,1256281407035;6,84999924549506;64,2055720562848
-CDI;15;2021;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;17,4;1679;595;Budai Egészségközpont Zrt.;0;0;219,465756893912;0;0;61,8061831391579
+CDI;15;2021;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;17,4;1679;595;Budai Egészségközpont Kft.;0;0;219,465756893912;0;0;61,8061831391579
 CDI;15;2021;01A6;22;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;10194;2169;Magyar Honvédség Egészségügyi Központ;215,813223464783;135,296883803983;326,562559407134;101,429230059935;63,6712458751491;153,164498912651
 CDI;15;2021;01E8;4;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1562;226;Szent Margit Kórház, Budapest;256,081946222791;69,8164189316076;654,362487700943;176,991150442478;48,4294246017614;446,942616064805
 CDI;15;2021;01H2;9;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;Aneszt. és intenzív betegellátás;20,3;4742;897;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;189,793336145086;86,8211733502974;359,97977946887;100,334448160535;45,9790482598338;189,608284830117
@@ -4774,7 +4774,7 @@ CDI;15;2022;01E8;1;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegel
 CDI;15;2022;01H2;1;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;Aneszt. és intenzív betegellátás;27;5488;1385;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;18,2215743440233;0,461329256286759;101,481838278113;7,2202166064982;0,182798386865429;40,1621413234539
 CDI;15;2022;01H7;5;Semmelweis Egyetem Klinikai Központ;Aneszt. és intenzív betegellátás;74;15084;3054;Semmelweis Egyetem;33,1477061787324;10,7638179489398;77,338591221832;16,3719711853307;5,3180042197484;38,1650225971003
 CDI;15;2022;01H8;1;Dr. Manninger Jenő Baleseti Központ;Aneszt. és intenzív betegellátás;18;3537;439;Dr. Manninger Jenő Baleseti Központ;28,2725473565168;0,715796363364642;157,422787507754;22,7790432801822;0,576698814118014;126,257833691465
-CDI;15;2022;01H9;0;Budai Egészségközpont Zrt.;Aneszt. és intenzív betegellátás;17;1983;1033;Budai Egészségközpont Zrt.;0;0;185,852267184129;0;0;35,6466672608257
+CDI;15;2022;01H9;0;Budai Egészségközpont Zrt.;Aneszt. és intenzív betegellátás;17;1983;1033;Budai Egészségközpont Kft.;0;0;185,852267184129;0;0;35,6466672608257
 CDI;15;2022;0204;1;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1209;190;Mohácsi Kórház;82,7129859387924;2,09408956944389;459,976894321054;52,6315789473684;1,33242743367024;289,740679545012
 CDI;15;2022;0207;1;Szigetvári Kórház;Aneszt. és intenzív betegellátás;5;1068;202;Szigetvári Kórház;93,6329588014981;2,37055317388145;520,574261968255;49,5049504950495;1,25327828901956;272,722871958365
 CDI;15;2022;0243;21;Pécsi Tudományegyetem Klinikai Központ;Aneszt. és intenzív betegellátás;44;12812;3227;Pécsi Tudományegyetem;163,90883546675;101,489889677902;250,443512625947;65,0759219088937;40,3268225282296;99,3042979767755
@@ -4930,7 +4930,7 @@ CDI;16;2019;2001;10;Zala Megyei Szent Rafael Kórház;Infektológia;20;5238;738;
 CDI;16;2020;0106;0;Észak-Közép-budai Centrum, Új Szent János Kórház és Szakrendelő;Infektológia;83,6;7276;725;Szent János Kórház és Észak-budai Egyesített Kórházak;0;0;50,6864279068872;0;0;50,751870885993
 CDI;16;2020;0109;103;Dél-pesti Centrumkórház - Országos Hematológiai és Infektológiai Intézet;Infektológia;258,9;32567;3433;Egyesített Szent István és Szent László Kórház-Rendelőintézet;316,271071943992;258,221826172204;383,441514876255;300,029129041655;245,539083089601;362,704959690687
 CDI;16;2020;0112;11;Bajcsy-Zsilinszky Kórház és Rendelőintézet;Infektológia;39;4724;689;Bajcsy-Zsilinszky Kórház és Rendelőintézet;232,853513971211;116,295159296505;416,256424169132;159,651669085631;79,9599786209824;283,862044303284
-CDI;16;2020;01A3;0;Budai Egészségközpont Kft.;Infektológia;21,3;146;15;Budai Egészségközpont Zrt.;0;0;2494,97761119478;0;0;2180,19360910534
+CDI;16;2020;01A3;0;Budai Egészségközpont Kft.;Infektológia;21,3;146;15;Budai Egészségközpont Kft.;0;0;2494,97761119478;0;0;2180,19360910534
 CDI;16;2020;0242;86;Pécsi Tudományegyetem;Infektológia;95,2;21340;3130;Pécsi Tudományegyetem;402,999062792877;322,469826779271;497,464743615602;274,760383386581;220,347048625655;338,226388641458
 CDI;16;2020;0306;8;Kiskunhalasi Semmelweis Kórház;Infektológia;136,3;12811;1679;Kiskunhalasi Semmelweis Kórház;62,4463351807041;26,9636275078738;123,006895848771;47,6474091721263;20,5925351315271;93,6674422093364
 CDI;16;2020;0468;1;Békés Megyei Központi Kórház;Infektológia;30;21188;2220;Békés Megyei Központi Kórház;4,71965263356617;0,1194911877384;26,2933846676251;4,50450450450451;0,114043529808135;25,071666379559
@@ -9135,7 +9135,7 @@ MRK;10OT;2015;0109;7;Egyesített Szent István és Szent László Kórház-Rende
 MRK;10OT;2015;0116;64;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;Ortopédia-traumatológia;281;62175;13606;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;102,935263369522;79,2814401388701;131,427292307795;47,038071439071;36,2433289630147;60,0274108964724
 MRK;10OT;2015;0118;3;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;20621;5409;Uzsoki utcai Kórház;14,5482760292905;3,00030476423197;42,5102911152618;5,54631170271769;1,14392889148763;16,2000372793447
 MRK;10OT;2015;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;25343;3591;Semmelweis Egyetem;0;0;14,5547527678614;0;0;10,2672943172787
-MRK;10OT;2015;01A3;6;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;25193;5348;Budai Egészségközpont Zrt.;23,8161394038026;8,74058883102428;51,8304463936997;11,2191473448018;4,11830692403182;24,4032465092259
+MRK;10OT;2015;01A3;6;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;25193;5348;Budai Egészségközpont Kft.;23,8161394038026;8,74058883102428;51,8304463936997;11,2191473448018;4,11830692403182;24,4032465092259
 MRK;10OT;2015;01A6;5;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;41637;5229;Magyar Honvédség Egészségügyi Központ;12,0085500876624;3,89925480765487;28,0217060281256;9,56205775482884;3,10547994516129;22,3004275481406
 MRK;10OT;2015;0204;1;Mohácsi Kórház;Ortopédia-traumatológia;15;3410;790;Mohácsi Kórház;29,3255131964809;0,742454955938813;163,281817943437;12,6582278481013;0,320473446808399;70,3234032082578
 MRK;10OT;2015;0205;0;Komlói Egészségcentrum;Ortopédia-traumatológia;0;312;312;Komlói Egészségcentrum;0;0;1175,37106527443;0;0;117,537106527443
@@ -9193,7 +9193,7 @@ MRK;10OT;2016;0118;13;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19336;5
 MRK;10OT;2016;0140;2;Semmelweis Egyetem;Ortopédia-traumatológia;88;22648;3381;Semmelweis Egyetem;8,83080183680678;1,0694689631479;31,8962132677338;5,91540964211772;0,716463850299901;21,3519894618908
 MRK;10OT;2016;0152;1;Országos Sportegészségügyi Intézet;Ortopédia-traumatológia;40;4764;2241;Országos Sportegészségügyi Intézet;20,9907640638119;0,531438721870544;116,896951886223;4,46229361892013;0,112974854842644;24,8369639982503
 MRK;10OT;2016;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;5025;724;Országos Orvosi Rehabilitációs Intézet;0;0;73,3835974584149;0;0;50,8217917243287
-MRK;10OT;2016;01A3;13;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27142;5816;Budai Egészségközpont Zrt.;47,8962493552428;25,5051217039901;81,890118240606;22,3521320495186;11,9067692117516;38,1924957170767
+MRK;10OT;2016;01A3;13;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27142;5816;Budai Egészségközpont Kft.;47,8962493552428;25,5051217039901;81,890118240606;22,3521320495186;11,9067692117516;38,1924957170767
 MRK;10OT;2016;01A6;14;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;40907;5294;Magyar Honvédség Egészségügyi Központ;34,2239714474295;18,7117864489695;57,4153483516948;26,4450321118247;14,4650526193923;44,3305022661424
 MRK;10OT;2016;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2962;777;Mohácsi Kórház;0;0;124,462638057855;0;0;47,3634060095199
 MRK;10OT;2016;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;361;361;Komlói Egészségcentrum;0;0;1016,64711237291;0;0;101,664711237291
@@ -9248,7 +9248,7 @@ MRK;10OT;2017;0116;58;Péterfy Kórház-Rendelőintézet Országos Traumatológi
 MRK;10OT;2017;0118;30;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19478;5601;Uzsoki utcai Kórház;154,019919909642;103,93997135841;219,800605466237;53,5618639528656;36,1662761132704;76,3752928410788
 MRK;10OT;2017;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;23395;3773;Semmelweis Egyetem;0;0;15,7665682480159;0;0;9,77226802138725
 MRK;10OT;2017;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;4946;715;Országos Orvosi Rehabilitációs Intézet;0;0;74,555280145025;0;0;51,4598577903134
-MRK;10OT;2017;01A3;9;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;26086;6191;Budai Egészségközpont Zrt.;34,501265046385;15,7773501606118;65,4839989987785;14,5372314650299;6,64943463092606;27,5781765404549
+MRK;10OT;2017;01A3;9;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;26086;6191;Budai Egészségközpont Kft.;34,501265046385;15,7773501606118;65,4839989987785;14,5372314650299;6,64943463092606;27,5781765404549
 MRK;10OT;2017;01A6;18;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;39868;6160;Magyar Honvédség Egészségügyi Központ;45,1489916725193;26,7602791616757;71,3455219881543;29,2207792207792;17,326996439514;46,142260991398
 MRK;10OT;2017;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2320;735;Mohácsi Kórház;0;0;158,87708127324;0;0;50,0631005854907
 MRK;10OT;2017;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;298;298;Komlói Egészségcentrum;0;0;1230,24880590161;0;0;123,024880590161
@@ -9303,7 +9303,7 @@ MRK;10OT;2018;0116;76;Péterfy Kórház-Rendelőintézet Országos Traumatológi
 MRK;10OT;2018;0118;22;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19845;6123;Uzsoki utcai Kórház;110,859158478206;69,4874749935433;167,79427412336;35,9300996243671;22,5304821130281;54,3483580094036
 MRK;10OT;2018;0140;2;Semmelweis Egyetem;Ortopédia-traumatológia;88;23709;3906;Semmelweis Egyetem;8,43561516723607;1,02160845850573;30,4689850655521;5,12032770097286;0,620155601688449;18,4840178970311
 MRK;10OT;2018;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;4266;679;Országos Orvosi Rehabilitációs Intézet;0;0;86,4342474626553;0;0;54,1808112137207
-MRK;10OT;2018;01A3;8;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27609;6222;Budai Egészségközpont Zrt.;28,9760585316382;12,5106089039761;57,0863599134733;12,8576020572163;5,55258266123961;25,3187987051448
+MRK;10OT;2018;01A3;8;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27609;6222;Budai Egészségközpont Kft.;28,9760585316382;12,5106089039761;57,0863599134733;12,8576020572163;5,55258266123961;25,3187987051448
 MRK;10OT;2018;01A6;20;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;37881;6091;Magyar Honvédség Egészségügyi Központ;52,7969166600671;32,2526164261634;81,5288365036319;32,835330815958;20,0678552847568;50,6661710041362
 MRK;10OT;2018;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2289;700;Mohácsi Kórház;0;0;161,027025336334;0;0;52,5596660848649
 MRK;10OT;2018;0207;5;Szigetvári Kórház;Ortopédia-traumatológia;15;2652;439;Szigetvári Kórház;188,536953242836;61,2448861059828;439,429427057107;113,895216400911;37,0820411569182;263,779792856373
@@ -9360,7 +9360,7 @@ MRK;10OT;2019;0116;59;Péterfy Kórház-Rendelőintézet és Manninger Jenő Ors
 MRK;10OT;2019;0118;23;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;20707;6592;Uzsoki utcai Kórház;111,073550007244;70,4237231286533;166,618532486649;34,8907766990291;22,1302233849206;52,3075742470258
 MRK;10OT;2019;0140;1;Semmelweis Egyetem;Ortopédia-traumatológia;88;23851;3795;Semmelweis Egyetem;4,19269632300532;0,106149824103321;23,3579700958177;2,63504611330698;0,0667133689917857;14,6726972641518
 MRK;10OT;2019;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;3979;650;Országos Orvosi Rehabilitációs Intézet;0;0;92,6657458204082;0;0;56,5912563860845
-MRK;10OT;2019;01A3;7;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27108;6144;Budai Egészségközpont Zrt.;25,8226353843884;10,3826487977566;53,1972142072818;11,3932291666667;4,58185711369761;23,4602286229859
+MRK;10OT;2019;01A3;7;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27108;6144;Budai Egészségközpont Kft.;25,8226353843884;10,3826487977566;53,1972142072818;11,3932291666667;4,58185711369761;23,4602286229859
 MRK;10OT;2019;01A6;26;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;38640;5585;Magyar Honvédség Egészségügyi Központ;67,287784679089;43,9591752932023;98,5767621365445;46,5532676812892;30,4320002840092;68,1374290965497
 MRK;10OT;2019;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2539;688;Mohácsi Kórház;0;0;145,183181937849;0;0;53,4739490226522
 MRK;10OT;2019;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;339;339;Komlói Egészségcentrum;0;0;1082,26593174154;0;0;108,226593174154
@@ -9416,7 +9416,7 @@ MRK;10OT;2020;0109;25;Dél-pesti Centrumkórház - Országos Hematológiai és I
 MRK;10OT;2020;0116;33;Péterfy Kórház-Rendelőintézet és Manninger Jenő Országos Traumatológiai Intézet;Ortopédia-traumatológia;251;42662;10046;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;77,3522103980123;53,2514978186043;108,614271878646;32,84889508262;22,622128690502;46,1014124301136
 MRK;10OT;2020;0118;12;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;16460;4963;Uzsoki utcai Kórház;72,9040097205346;37,6760592584765;127,313966542573;24,1789240378803;12,4996495591832;42,197583915613
 MRK;10OT;2020;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;81,3;13030;2431;Semmelweis Egyetem;0;0;28,306656410305;0;0;15,1628221129884
-MRK;10OT;2020;01A3;7;Budai Egészségközpont Kft.;Ortopédia-traumatológia;96,8;18104;3846;Budai Egészségközpont Zrt.;38,6654882898807;15,5468995965571;79,6493528672666;18,2007280291212;7,32066950224512;37,4642768154583
+MRK;10OT;2020;01A3;7;Budai Egészségközpont Kft.;Ortopédia-traumatológia;96,8;18104;3846;Budai Egészségközpont Kft.;38,6654882898807;15,5468995965571;79,6493528672666;18,2007280291212;7,32066950224512;37,4642768154583
 MRK;10OT;2020;01A6;19;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;27484;4248;Magyar Honvédség Egészségügyi Központ;69,1311308397613;41,6264257790025;107,935866053948;44,7269303201507;26,949363550077;69,7588971289809
 MRK;10OT;2020;0204;1;Mohácsi Kórház;Ortopédia-traumatológia;15;2354;550;Mohácsi Kórház;42,4808836023789;1,07551707032169;236,458629057319;18,1818181818182;0,460313186795919;100,882590781154
 MRK;10OT;2020;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;227;227;Komlói Egészségcentrum;0;0;1611,92421133921;0;0;161,192421133921
@@ -9470,7 +9470,7 @@ MRK;10OT;2021;0109;12;Dél-pesti Centrumkórház - Országos Hematológiai és I
 MRK;10OT;2021;0116;21;Péterfy Kórház-Rendelőintézet és Manninger Jenő Országos Traumatológiai Intézet;Ortopédia-traumatológia;251;37503;9519;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;55,9955203583713;34,6653455099416;85,5824327057289;22,0611408761425;13,661219702747;33,7031315447578
 MRK;10OT;2021;0118;19;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;11710;3396;Uzsoki utcai Kórház;162,254483347566;97,7151806277506;253,265017976427;55,9481743227326;33,7170620068496;87,2327018739161
 MRK;10OT;2021;0140;1;Semmelweis Egyetem;Ortopédia-traumatológia;78;11739;1909;Semmelweis Egyetem;8,51861316977596;0,215672379951619;47,4534338522247;5,23834468308015;0,132622525397261;29,1512651944923
-MRK;10OT;2021;01A3;7;Budai Egészségközpont Kft.;Ortopédia-traumatológia;128,6;13267;2565;Budai Egészségközpont Zrt.;52,7624934046883;21,2158062371863;108,680492960103;27,2904483430799;10,9789968114502;56,1474235276873
+MRK;10OT;2021;01A3;7;Budai Egészségközpont Kft.;Ortopédia-traumatológia;128,6;13267;2565;Budai Egészségközpont Kft.;52,7624934046883;21,2158062371863;108,680492960103;27,2904483430799;10,9789968114502;56,1474235276873
 MRK;10OT;2021;01A6;23;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;26379;3665;Magyar Honvédség Egészségügyi Központ;87,1905682550514;55,2791169295205;130,800115274334;62,7557980900409;39,8221561769929;94,0165665344406
 MRK;10OT;2021;01H3;0;Országos Mozgásszervi Intézet;Ortopédia-traumatológia;15,1;4144;542;Országos Mozgásszervi Intézet;0;0;88,9777526450893;0;0;67,8294194666274
 MRK;10OT;2021;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2813;523;Mohácsi Kórház;0;0;131,050898364205;0;0;70,2849060692767
@@ -9522,7 +9522,7 @@ MRK;10OT;2022;0118;24;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;16302;4
 MRK;10OT;2022;01A6;27;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;32092;5311;Magyar Honvédség Egészségügyi Központ;84,1331172877976;55,4513459181707;122,385840043731;50,837883637733;33,528418248372;73,8808776818212
 MRK;10OT;2022;01H7;5;Semmelweis Egyetem Klinikai Központ;Ortopédia-traumatológia;81;16862;2878;Semmelweis Egyetem;29,6524730162496;9,62875584430608;69,1852984260845;17,3731758165393;5,64335361942381;40,4962455086753
 MRK;10OT;2022;01H8;21;Dr. Manninger Jenő Baleseti Központ;Ortopédia-traumatológia;251;35630;9109;Dr. Manninger Jenő Baleseti Központ;58,9390962671906;36,4878145780475;90,0806342359015;23,0541222966297;14,2763536635561;35,2191988316266
-MRK;10OT;2022;01H9;8;Budai Egészségközpont Zrt.;Ortopédia-traumatológia;131;14475;3623;Budai Egészségközpont Zrt.;55,2677029360967;23,8635947620967;108,870206620963;22,0811482197074;9,53774218516689;43,4620603266212
+MRK;10OT;2022;01H9;8;Budai Egészségközpont Zrt.;Ortopédia-traumatológia;131;14475;3623;Budai Egészségközpont Kft.;55,2677029360967;23,8635947620967;108,870206620963;22,0811482197074;9,53774218516689;43,4620603266212
 MRK;10OT;2022;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2346;585;Mohácsi Kórház;0;0;157,117679188452;0;0;62,8593715728323
 MRK;10OT;2022;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;355;355;Komlói Egészségcentrum;0;0;1033,74076276429;0;0;103,374076276429
 MRK;10OT;2022;0207;0;Szigetvári Kórház;Ortopédia-traumatológia;15;3248;528;Szigetvári Kórház;0;0;113,509404103179;0;0;69,621651656463
@@ -10369,7 +10369,7 @@ MRK;15;2015;0154;3;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 MRK;15;2015;0156;0;Országos Korányi Tbc és Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4993;985;Országos Korányi Tbc és Pulmonológiai Intézet;0;0;73,8537372063281;0;0;37,3805130997722
 MRK;15;2015;0162;4;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4508;1953;Gottsegen György Országos Kardiológiai Intézet;88,7311446317658;24,1813743914058;227,029736116562;20,4813108038915;5,58319916127313;52,3565442000724
 MRK;15;2015;0163;18;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;24,7;5772;1179;Országos Klinikai Idegtudományi Intézet;311,850311850312;184,923756428597;492,411827575807;152,671755725191;90,7273512186407;240,217429585469
-MRK;15;2015;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1892;1022;Budai Egészségközpont Zrt.;0;0;194,782539119225;0;0;36,0296477982284
+MRK;15;2015;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1892;1022;Budai Egészségközpont Kft.;0;0;194,782539119225;0;0;36,0296477982284
 MRK;15;2015;01A6;27;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;28,5;7478;1752;Magyar Honvédség Egészségügyi Központ;361,059106713025;238,07096253558;524,890456775541;154,109589041096;101,798391554316;223,434293727074
 MRK;15;2015;01E8;6;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1249;230;Szent Margit Kórház, Budapest;480,384307445957;176,490439579247;1042,64184423134;260,869565217391;96,3232368508743;559,126653412149
 MRK;15;2015;0204;0;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1307;227;Mohácsi Kórház;0;0;281,842279862475;0;0;161,192421133921
@@ -10439,7 +10439,7 @@ MRK;15;2016;0154;4;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 MRK;15;2016;0156;4;Országos Korányi Tbc és Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4717;1013;Országos Korányi Tbc és Pulmonológiai Intézet;84,7996608013568;23,1097332963904;216,977199205863;39,4866732477789;10,7689495149003;100,790462886226
 MRK;15;2016;0162;5;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4457;1899;Gottsegen György Országos Kardiológiai Intézet;112,183082791115;36,435257359087;261,60209674611;26,3296471827278;8,55452006691717;61,3367944045766
 MRK;15;2016;0163;28;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;26;5868;1105;Országos Klinikai Idegtudományi Intézet;477,164280845263;317,299376699751;688,902294242355;253,393665158371;169,023712803767;364,153621729512
-MRK;15;2016;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2061;1091;Budai Egészségközpont Zrt.;0;0;178,824849763617;0;0;33,7548127760884
+MRK;15;2016;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2061;1091;Budai Egészségközpont Kft.;0;0;178,824849763617;0;0;33,7548127760884
 MRK;15;2016;01A6;35;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;8379;2038;Magyar Honvédség Egészségügyi Központ;417,710944026734;291,118265902344;580,460479975059;171,736997055937;119,90519011697;238,041677952602
 MRK;15;2016;01E8;6;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1392;229;Szent Margit Kórház, Budapest;431,034482758621;158,341325901455;935,803329287266;262,008733624454;96,7464727558443;561,530362981355
 MRK;15;2016;0204;0;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1227;280;Mohácsi Kórház;0;0;300,19069627637;0;0;130,881647032967
@@ -10508,7 +10508,7 @@ MRK;15;2017;0154;7;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 MRK;15;2017;0156;6;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4352;936;Országos Korányi Tbc és Pulmonológiai Intézet;137,867647058824;50,611270863702;299,836498479561;64,1025641025641;23,5597671805979;138,998694833836
 MRK;15;2017;0162;10;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4820;1893;Gottsegen György Országos Kardiológiai Intézet;207,46887966805;99,5328217526648;381,210607678233;52,8262017960909;25,3604099860292;96,9340243225192
 MRK;15;2017;0163;25;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;26;5343;1003;Országos Klinikai Idegtudományi Intézet;467,901927755942;303,023463202709;689,945763953481;249,252243270189;161,937616571801;365,757554556221
-MRK;15;2017;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1968;1204;Budai Egészségközpont Zrt.;0;0;187,267496897706;0;0;30,5916455830642
+MRK;15;2017;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1968;1204;Budai Egészségközpont Kft.;0;0;187,267496897706;0;0;30,5916455830642
 MRK;15;2017;01A6;32;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7877;2048;Magyar Honvédség Egészségügyi Központ;406,246032753586;278,032937400162;573,018395956732;156,25;107,11396873111;219,867784842972
 MRK;15;2017;01E8;3;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1364;215;Szent Margit Kórház, Budapest;219,941348973607;45,3801807159664;641,404343632161;139,53488372093;28,8684056487985;402,342755117948
 MRK;15;2017;0204;1;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1269;270;Mohácsi Kórház;78,802206461781;1,99507922996736;438,267743723711;37,037037037037;0,937652629639926;204,618590120579
@@ -10575,7 +10575,7 @@ MRK;15;2018;0154;6;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 MRK;15;2018;0156;2;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4203;833;Országos Korányi Tbc és Pulmonológiai Intézet;47,5850582916964;5,76329091533358;171,786785876339;24,0096038415366;2,90899813482066;86,4593760567112
 MRK;15;2018;0162;7;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4838;1840;Gottsegen György Országos Kardiológiai Intézet;144,687887556842;58,1911983800362;297,883700294055;38,0434782608696;15,308712796561;78,2260776391897
 MRK;15;2018;0163;17;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;21,6;5072;1138;Országos Klinikai Idegtudományi Intézet;335,173501577287;195,368418295712;536,104589802743;149,384885764499;87,256648879969;238,105270592253
-MRK;15;2018;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2182;1199;Budai Egészségközpont Zrt.;0;0;168,916728185747;0;0;30,7190209384671
+MRK;15;2018;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2182;1199;Budai Egészségközpont Kft.;0;0;168,916728185747;0;0;30,7190209384671
 MRK;15;2018;01A6;42;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7546;2102;Magyar Honvédség Egészségügyi Központ;556,586270871985;401,42417661026;751,606066581234;199,809705042816;144,375368149291;269,133333495568
 MRK;15;2018;01E8;6;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1674;241;Szent Margit Kórház, Budapest;358,4229390681;131,644995712683;778,491853160301;248,96265560166;91,9008285764615;533,982762064535
 MRK;15;2018;0204;1;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1220;253;Mohácsi Kórház;81,9672131147541;2,07520862989452;455,837330134451;39,5256916996047;1,00065380415492;218,243638733673
@@ -10643,7 +10643,7 @@ MRK;15;2019;0154;9;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 MRK;15;2019;0156;20;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;3516;454;Országos Korányi Tbc és Pulmonológiai Intézet;568,828213879408;347,790941327808;877,148340128664;440,528634361234;271,130517551629;672,18203037413
 MRK;15;2019;0162;6;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4632;1915;Gottsegen György Országos Kardiológiai Intézet;129,533678756477;47,5509428266575;281,725483770251;31,331592689295;11,5065534803042;68,0700534148737
 MRK;15;2019;0163;4;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;21,8;5685;1439;Országos Klinikai Idegtudományi Intézet;70,3605980650836;19,1741164764702;180,052202370566;27,7970813064628;7,5788015937853;71,0173440093676
-MRK;15;2019;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2084;1176;Budai Egészségközpont Zrt.;0;0;176,853001188828;0;0;31,3188763277782
+MRK;15;2019;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2084;1176;Budai Egészségközpont Kft.;0;0;176,853001188828;0;0;31,3188763277782
 MRK;15;2019;01A6;36;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7352;1997;Magyar Honvédség Egészségügyi Központ;489,662676822633;343,182359447258;677,261171572752;180,270405608413;126,570505840784;248,703736810452
 MRK;15;2019;01E8;7;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1529;222;Szent Margit Kórház, Budapest;457,815565729235;184,257711567907;940,98674821882;315,315315315315;127,694669169053;638,851574380809
 MRK;15;2019;0204;2;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1302;225;Mohácsi Kórház;153,609831029186;18,6082798055881;553,779302237777;88,8888888888889;10,7830430412084;317,390690150502
@@ -10709,7 +10709,7 @@ MRK;15;2020;0140;34;Semmelweis Egyetem;Aneszt. és intenzív betegellátás;65,5
 MRK;15;2020;0154;10;Országos Onkológiai Intézet;Aneszt. és intenzív betegellátás;13;1889;385;Országos Onkológiai Intézet;529,380624669137;254,141711776259;971,388276743468;259,74025974026;125,242869372772;472,473123482568
 MRK;15;2020;0156;79;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;28;4870;473;Országos Korányi Tbc és Pulmonológiai Intézet;1622,17659137577;1286,34109295293;2017,66673154042;1670,19027484144;1345,18327468973;2037,48598864378
 MRK;15;2020;0162;12;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;5985;1809;Gottsegen György Országos Kardiológiai Intézet;200,501253132832;103,643495816395;349,973137470964;66,3349917081261;34,3218464077386;115,586900419264
-MRK;15;2020;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1524;862;Budai Egészségközpont Zrt.;0;0;241,75974687664;0;0;42,70298756081
+MRK;15;2020;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1524;862;Budai Egészségközpont Kft.;0;0;241,75974687664;0;0;42,70298756081
 MRK;15;2020;01A6;42;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7340;1931;Magyar Honvédség Egészségügyi Központ;572,207084468665;412,698565776814;772,678911668057;217,503883997929;157,196499475676;292,874522216353
 MRK;15;2020;01E8;2;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1273;200;Szent Margit Kórház, Budapest;157,109190887667;19,0323181923538;566,368967833126;100;12,1334901373603;356,546683972397
 MRK;15;2020;0204;1;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1171;191;Mohácsi Kórház;85,397096498719;2,16204391906402;474,874428859328;52,3560209424084;1,32545183615014;288,241835827228
@@ -10773,7 +10773,7 @@ MRK;15;2021;0140;15;Semmelweis Egyetem;Aneszt. és intenzív betegellátás;77,6
 MRK;15;2021;0154;15;Országos Onkológiai Intézet;Aneszt. és intenzív betegellátás;13,9;1881;369;Országos Onkológiai Intézet;797,448165869218;446,992672681924;1311,86364637133;406,50406504065;229,272757358018;661,611001771754
 MRK;15;2021;0156;29;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;59;5209;415;Országos Korányi Tbc és Pulmonológiai Intézet;556,728738721444;373,15759572241;798,584073037034;698,795180722892;472,956774778826;988,189244264264
 MRK;15;2021;0162;31;Gottsegen György Országos Kardiovaszkuláris Intézet;Aneszt. és intenzív betegellátás;19;5332;1592;Gottsegen György Országos Kardiológiai Intézet;581,395348837209;395,361675798894;824,237542556661;194,723618090452;132,679213051044;275,263791187066
-MRK;15;2021;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;17,4;1679;595;Budai Egészségközpont Zrt.;0;0;219,465756893912;0;0;61,8061831391579
+MRK;15;2021;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;17,4;1679;595;Budai Egészségközpont Kft.;0;0;219,465756893912;0;0;61,8061831391579
 MRK;15;2021;01A6;135;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;10194;2169;Magyar Honvédség Egészségügyi Központ;1324,30841671572;1111,48434410675;1565,56883287191;622,406639004149;524,400419713109;732,434542418492
 MRK;15;2021;01E8;6;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1562;226;Szent Margit Kórház, Budapest;384,122919334187;141,09280315598;834,185760706863;265,486725663717;98,0387951913532;568,867092427435
 MRK;15;2021;01H2;5;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;Aneszt. és intenzív betegellátás;20,3;4742;897;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;105,440742302826;34,244904754456;245,890548536347;55,7413600891862;18,1230993066218;129,598814363134
@@ -10840,7 +10840,7 @@ MRK;15;2022;01E8;5;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegel
 MRK;15;2022;01H2;10;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;Aneszt. és intenzív betegellátás;27;5488;1385;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;182,215743440233;87,4130288617361;334,845102317431;72,202166064982;34,6764535131143;132,38029790123
 MRK;15;2022;01H7;11;Semmelweis Egyetem Klinikai Központ;Aneszt. és intenzív betegellátás;74;15084;3054;Semmelweis Egyetem;72,9249535932114;36,4093165034794;130,445335185086;36,0183366077276;17,9935156488229;64,3551581160051
 MRK;15;2022;01H8;6;Dr. Manninger Jenő Baleseti Központ;Aneszt. és intenzív betegellátás;18;3537;439;Dr. Manninger Jenő Baleseti Központ;169,635284139101;62,2778009457303;368,856234903139;136,674259681093;50,317800034462;295,095839354136
-MRK;15;2022;01H9;0;Budai Egészségközpont Zrt.;Aneszt. és intenzív betegellátás;17;1983;1033;Budai Egészségközpont Zrt.;0;0;185,852267184129;0;0;35,6466672608257
+MRK;15;2022;01H9;0;Budai Egészségközpont Zrt.;Aneszt. és intenzív betegellátás;17;1983;1033;Budai Egészségközpont Kft.;0;0;185,852267184129;0;0;35,6466672608257
 MRK;15;2022;0204;6;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1209;190;Mohácsi Kórház;496,277915632754;182,336436995663;1077,03701737528;315,789473684211;116,753839609709;674,637707249199
 MRK;15;2022;0207;3;Szigetvári Kórház;Aneszt. és intenzív betegellátás;5;1068;202;Szigetvári Kórház;280,898876404494;57,965605074242;818,691855048814;148,514851485149;30,7326789839702;427,865960229049
 MRK;15;2022;0243;27;Pécsi Tudományegyetem Klinikai Központ;Aneszt. és intenzív betegellátás;44;12812;3227;Pécsi Tudományegyetem;210,739931314393;138,923456592707;306,468524733959;83,6690424542919;55,2087526213797;121,50220806122
@@ -10993,7 +10993,7 @@ MRK;16;2019;2001;2;Zala Megyei Szent Rafael Kórház;Infektológia;20;5238;738;Z
 MRK;16;2020;0106;0;Észak-Közép-budai Centrum, Új Szent János Kórház és Szakrendelő;Infektológia;83,6;7276;725;Szent János Kórház és Észak-budai Egyesített Kórházak;0;0;50,6864279068872;0;0;50,751870885993
 MRK;16;2020;0109;58;Dél-pesti Centrumkórház - Országos Hematológiai és Infektológiai Intézet;Infektológia;258,9;32567;3433;Egyesített Szent István és Szent László Kórház-Rendelőintézet;178,094390026714;135,261457419139;230,168269038936;168,948441596271;128,533128623481;217,863646193249
 MRK;16;2020;0112;2;Bajcsy-Zsilinszky Kórház és Rendelőintézet;Infektológia;39;4724;689;Bajcsy-Zsilinszky Kórház és Rendelőintézet;42,3370025402202;5,12761871860358;152,851260843888;29,0275761973875;3,51730935094156;104,460770432739
-MRK;16;2020;01A3;0;Budai Egészségközpont Kft.;Infektológia;21,3;146;15;Budai Egészségközpont Zrt.;0;0;2494,97761119478;0;0;2180,19360910534
+MRK;16;2020;01A3;0;Budai Egészségközpont Kft.;Infektológia;21,3;146;15;Budai Egészségközpont Kft.;0;0;2494,97761119478;0;0;2180,19360910534
 MRK;16;2020;0242;10;Pécsi Tudományegyetem;Infektológia;95,2;21340;3130;Pécsi Tudományegyetem;46,8603561387067;22,4735763899065;86,160922263952;31,9488817891374;15,331034228741;58,6763933140508
 MRK;16;2020;0306;0;Kiskunhalasi Semmelweis Kórház;Infektológia;136,3;12811;1679;Kiskunhalasi Semmelweis Kórház;0;0;28,7904800997347;0;0;21,9465756893912
 MRK;16;2020;0468;5;Békés Megyei Központi Kórház;Infektológia;30;21188;2220;Békés Megyei Központi Kórház;23,5982631678308;7,66272157225818;55,0618087285061;22,5225225225225;7,31691970618906;52,4811547007279
@@ -14863,7 +14863,7 @@ VAF;10OT;2015;0106;10;Szent János Kórház és Észak-budai Egyesített Kórhá
 VAF;10OT;2015;0109;5;Egyesített Szent István és Szent László Kórház-Rendelőintézet;Ortopédia-traumatológia;107;32103;4791;Egyesített Szent István és Szent László Kórház-Rendelőintézet;15,5748683923621;5,05730456823282;36,3427725337902;10,436234606554;3,38945777317045;24,3377451078181
 VAF;10OT;2015;0116;6;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;Ortopédia-traumatológia;281;62175;13606;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;9,65018094089264;3,54152601877643;21,0031887976887;4,40981919741291;1,61849236155462;9,59583001300932
 VAF;10OT;2015;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;25343;3591;Semmelweis Egyetem;0;0;14,5547527678614;0;0;10,2672943172787
-VAF;10OT;2015;01A3;11;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;25193;5348;Budai Egészségközpont Zrt.;43,6629222403048;21,7983242738264;78,111567254937;20,5684367988033;10,2720213727397;36,7727439880823
+VAF;10OT;2015;01A3;11;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;25193;5348;Budai Egészségközpont Kft.;43,6629222403048;21,7983242738264;78,111567254937;20,5684367988033;10,2720213727397;36,7727439880823
 VAF;10OT;2015;01A6;15;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;41637;5229;Magyar Honvédség Egészségügyi Központ;36,0256502629872;20,1646402199348;59,4118814809131;28,6861732644865;16,0640473182915;47,2694121090003
 VAF;10OT;2015;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;3410;790;Mohácsi Kórház;0;0;108,119791500802;0;0;46,5858264830476
 VAF;10OT;2015;0207;0;Szigetvári Kórház;Ortopédia-traumatológia;15;2169;389;Szigetvári Kórház;0;0;169,92827759538;0;0;94,3815893418187
@@ -14911,7 +14911,7 @@ VAF;10OT;2016;0109;5;Egyesített Szent István és Szent László Kórház-Rende
 VAF;10OT;2016;0116;4;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;Ortopédia-traumatológia;281;59392;13611;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;6,73491379310345;1,83506684394287;17,2431481254961;2,93879950040409;0,800780146511855;7,52276881965178
 VAF;10OT;2016;0118;0;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19336;5596;Uzsoki utcai Kórház;0;0;19,0759598590433;0;0;6,58982106468859
 VAF;10OT;2016;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;22648;3381;Semmelweis Egyetem;0;0;16,2865553261332;0;0;10,9046666321716
-VAF;10OT;2016;01A3;16;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27142;5816;Budai Egészségközpont Zrt.;58,9492299756835;33,6982131779923;95,7122510187291;27,5103163686382;15,7324456059325;44,6366858640512
+VAF;10OT;2016;01A3;16;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27142;5816;Budai Egészségközpont Kft.;58,9492299756835;33,6982131779923;95,7122510187291;27,5103163686382;15,7324456059325;44,6366858640512
 VAF;10OT;2016;01A6;15;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;40907;5294;Magyar Honvédség Egészségügyi Központ;36,6685408365317;20,5245100703788;60,4719814490741;28,333962976955;15,8667075543556;46,6895703282554
 VAF;10OT;2016;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2962;777;Mohácsi Kórház;0;0;124,462638057855;0;0;47,3634060095199
 VAF;10OT;2016;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;361;361;Komlói Egészségcentrum;0;0;1016,64711237291;0;0;101,664711237291
@@ -14963,7 +14963,7 @@ VAF;10OT;2017;0109;8;Dél-pesti Centrumkórház - Országos Hematológiai és In
 VAF;10OT;2017;0116;2;Péterfy Kórház-Rendelőintézet Országos Traumatológiai Intézet;Ortopédia-traumatológia;281;54806;12587;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;3,64923548516586;0,441942402389746;13,1816649802934;1,58894097084293;0,192433915925026;5,73860998634123
 VAF;10OT;2017;0118;2;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19478;5601;Uzsoki utcai Kórház;10,2679946606428;1,24352597951195;37,0865529029362;3,57079093019104;0,432468604863764;12,8929098559096
 VAF;10OT;2017;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;23395;3773;Semmelweis Egyetem;0;0;15,7665682480159;0;0;9,77226802138725
-VAF;10OT;2017;01A3;19;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;26086;6191;Budai Egészségközpont Zrt.;72,8360039868129;43,8575483842943;113,719177789372;30,6897108706186;18,4870124312805;47,8844765042038
+VAF;10OT;2017;01A3;19;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;26086;6191;Budai Egészségközpont Kft.;72,8360039868129;43,8575483842943;113,719177789372;30,6897108706186;18,4870124312805;47,8844765042038
 VAF;10OT;2017;01A6;16;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;39868;6160;Magyar Honvédség Egészségügyi Központ;40,1324370422394;22,9408399136999;65,1644037241546;25,974025974026;14,8534623101692;42,1460096874385
 VAF;10OT;2017;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2320;735;Mohácsi Kórház;0;0;158,87708127324;0;0;50,0631005854907
 VAF;10OT;2017;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;298;298;Komlói Egészségcentrum;0;0;1230,24880590161;0;0;123,024880590161
@@ -15017,7 +15017,7 @@ VAF;10OT;2018;0116;9;Péterfy Kórház-Rendelőintézet Országos Traumatológia
 VAF;10OT;2018;0118;6;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;19845;6123;Uzsoki utcai Kórház;30,2343159486017;11,0962434077309;65,7956730239097;9,79911807937286;3,59692564318983;21,3162613528573
 VAF;10OT;2018;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;88;23709;3906;Semmelweis Egyetem;0;0;15,5577733895133;0;0;9,43967764571463
 VAF;10OT;2018;0160;0;Országos Orvosi Rehabilitációs Intézet;Ortopédia-traumatológia;20;4266;679;Országos Orvosi Rehabilitációs Intézet;0;0;86,4342474626553;0;0;54,1808112137207
-VAF;10OT;2018;01A3;21;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27609;6222;Budai Egészségközpont Zrt.;76,0621536455504;47,0896430021666;116,245706426655;33,7512054001929;20,90429646926;51,5462703644113
+VAF;10OT;2018;01A3;21;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27609;6222;Budai Egészségközpont Kft.;76,0621536455504;47,0896430021666;116,245706426655;33,7512054001929;20,90429646926;51,5462703644113
 VAF;10OT;2018;01A6;24;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;37881;6091;Magyar Honvédség Egészségügyi Központ;63,3562999920805;40,5976621177657;94,2545810116462;39,4023969791496;25,2616793878391;58,571270559462
 VAF;10OT;2018;0204;1;Mohácsi Kórház;Ortopédia-traumatológia;15;2289;700;Mohácsi Kórház;43,6871996505024;1,10605801525599;243,166564769359;14,2857142857143;0,361676430554414;79,3354775108901
 VAF;10OT;2018;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;260;260;Komlói Egészségcentrum;0;0;1408,78225802522;0;0;140,878225802522
@@ -15069,7 +15069,7 @@ VAF;10OT;2019;0109;26;Dél-pesti Centrumkórház - Országos Hematológiai és I
 VAF;10OT;2019;0116;8;Péterfy Kórház-Rendelőintézet és Manninger Jenő Országos Traumatológiai Intézet;Ortopédia-traumatológia;273,4;52443;12419;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;15,2546574375989;6,58610101855272;30,0555317522524;6,44174249134391;2,78148435169527;12,6888337955537
 VAF;10OT;2019;0118;6;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;20707;6592;Uzsoki utcai Kórház;28,9757086975419;10,6342929475209;63,0571690624944;9,10194174757282;3,34096139011956;19,8004888984137
 VAF;10OT;2019;0140;1;Semmelweis Egyetem;Ortopédia-traumatológia;88;23851;3795;Semmelweis Egyetem;4,19269632300532;0,106149824103321;23,3579700958177;2,63504611330698;0,0667133689917857;14,6726972641518
-VAF;10OT;2019;01A3;20;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27108;6144;Budai Egészségközpont Zrt.;73,7789582411096;45,0717446230148;113,922732197851;32,5520833333333;19,8946481574593;50,2294970695049
+VAF;10OT;2019;01A3;20;Budai Egészségközpont Kft.;Ortopédia-traumatológia;111;27108;6144;Budai Egészségközpont Kft.;73,7789582411096;45,0717446230148;113,922732197851;32,5520833333333;19,8946481574593;50,2294970695049
 VAF;10OT;2019;01A6;23;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;38640;5585;Magyar Honvédség Egészségügyi Központ;59,5238095238095;37,7366129210863;89,3016356944812;41,1817367949866;26,1230562713862;61,7291262858333
 VAF;10OT;2019;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2539;688;Mohácsi Kórház;0;0;145,183181937849;0;0;53,4739490226522
 VAF;10OT;2019;0207;0;Szigetvári Kórház;Ortopédia-traumatológia;15;2566;499;Szigetvári Kórház;0;0;143,656631304655;0;0;73,652863519883
@@ -15121,7 +15121,7 @@ VAF;10OT;2020;0109;31;Dél-pesti Centrumkórház - Országos Hematológiai és I
 VAF;10OT;2020;0116;14;Péterfy Kórház-Rendelőintézet és Manninger Jenő Országos Traumatológiai Intézet;Ortopédia-traumatológia;251;42662;10046;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;32,8160892597628;17,9419856146242;55,0536979795133;13,9358948835357;7,62091173946797;23,3710199821239
 VAF;10OT;2020;0118;4;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;16460;4963;Uzsoki utcai Kórház;24,3013365735115;6,62168054554799;62,2092771793999;8,0596413459601;2,19640373621783;20,6229098953435
 VAF;10OT;2020;0140;0;Semmelweis Egyetem;Ortopédia-traumatológia;81,3;13030;2431;Semmelweis Egyetem;0;0;28,306656410305;0;0;15,1628221129884
-VAF;10OT;2020;01A3;10;Budai Egészségközpont Kft.;Ortopédia-traumatológia;96,8;18104;3846;Budai Egészségközpont Zrt.;55,2364118426867;26,4910830662632;101,558189484334;26,0010400416017;12,4753320163798;47,764686958555
+VAF;10OT;2020;01A3;10;Budai Egészségközpont Kft.;Ortopédia-traumatológia;96,8;18104;3846;Budai Egészségközpont Kft.;55,2364118426867;26,4910830662632;101,558189484334;26,0010400416017;12,4753320163798;47,764686958555
 VAF;10OT;2020;01A6;23;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;27484;4248;Magyar Honvédség Egészségügyi Központ;83,6850531218163;53,0563082512483;125,542370799174;54,1431261770245;34,3521326319627;81,1311577535456
 VAF;10OT;2020;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2354;550;Mohácsi Kórház;0;0;156,584137628072;0;0;66,846114706997
 VAF;10OT;2020;0205;0;Komlói Egészségcentrum, Bányászati Utókezelő és Éjjeli Szanatórium Egészségügyi Központ;Ortopédia-traumatológia;0;227;227;Komlói Egészségcentrum;0;0;1611,92421133921;0;0;161,192421133921
@@ -15172,7 +15172,7 @@ VAF;10OT;2021;0109;45;Dél-pesti Centrumkórház - Országos Hematológiai és I
 VAF;10OT;2021;0116;19;Péterfy Kórház-Rendelőintézet és Manninger Jenő Országos Traumatológiai Intézet;Ortopédia-traumatológia;251;37503;9519;Péterfy Sándor utcai Kórház-Rendelőintézet és Baleseti Központ;50,6626136575741;30,5048714583163;79,104691083956;19,9600798403194;12,0214163748747;31,1526645690869
 VAF;10OT;2021;0118;5;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;11710;3396;Uzsoki utcai Kórház;42,6985482493595;13,8655094827021;99,6157992204471;14,7232037691402;4,78225793065984;34,325323628168
 VAF;10OT;2021;0140;1;Semmelweis Egyetem;Ortopédia-traumatológia;78;11739;1909;Semmelweis Egyetem;8,51861316977596;0,215672379951619;47,4534338522247;5,23834468308015;0,132622525397261;29,1512651944923
-VAF;10OT;2021;01A3;9;Budai Egészségközpont Kft.;Ortopédia-traumatológia;128,6;13267;2565;Budai Egészségközpont Zrt.;67,8374915203136;31,0241634199425;128,737454040426;35,0877192982456;16,0565061958824;66,5024742979901
+VAF;10OT;2021;01A3;9;Budai Egészségközpont Kft.;Ortopédia-traumatológia;128,6;13267;2565;Budai Egészségközpont Kft.;67,8374915203136;31,0241634199425;128,737454040426;35,0877192982456;16,0565061958824;66,5024742979901
 VAF;10OT;2021;01A6;18;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;26379;3665;Magyar Honvédség Egészségügyi Központ;68,2360968952576;40,4458906180312;107,821094624594;49,1132332878581;29,1328062766401;77,5094251866404
 VAF;10OT;2021;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2813;523;Mohácsi Kórház;0;0;131,050898364205;0;0;70,2849060692767
 VAF;10OT;2021;0242;7;Pécsi Tudományegyetem;Ortopédia-traumatológia;92;16709;4441;Pécsi Tudományegyetem;41,8935902806871;16,8450019895203;86,297636138944;15,7622157171808;6,3395026145443;32,4490536860299
@@ -15222,7 +15222,7 @@ VAF;10OT;2022;0118;6;Uzsoki utcai Kórház;Ortopédia-traumatológia;70;16302;48
 VAF;10OT;2022;01A6;16;Magyar Honvédség Egészségügyi Központ;Ortopédia-traumatológia;148;32092;5311;Magyar Honvédség Egészségügyi Központ;49,8566620964727;28,4999900897191;80,9515026318452;30,1261532668048;17,2292016894862;48,8770021083308
 VAF;10OT;2022;01H7;4;Semmelweis Egyetem Klinikai Központ;Ortopédia-traumatológia;81;16862;2878;Semmelweis Egyetem;23,7219784129996;6,46380684302891;60,7264459173774;13,8985406532314;3,78814195238153;35,5472121739736
 VAF;10OT;2022;01H8;13;Dr. Manninger Jenő Baleseti Központ;Ortopédia-traumatológia;251;35630;9109;Dr. Manninger Jenő Baleseti Központ;36,4861072130227;19,4287000437538;62,3842727825953;14,2715995169612;7,60114499931848;24,392504844109
-VAF;10OT;2022;01H9;14;Budai Egészségközpont Zrt.;Ortopédia-traumatológia;131;14475;3623;Budai Egészségközpont Zrt.;96,7184801381693;52,8866613145726;162,223981544328;38,642009384488;21,1415561895636;64,7498136246006
+VAF;10OT;2022;01H9;14;Budai Egészségközpont Zrt.;Ortopédia-traumatológia;131;14475;3623;Budai Egészségközpont Kft.;96,7184801381693;52,8866613145726;162,223981544328;38,642009384488;21,1415561895636;64,7498136246006
 VAF;10OT;2022;0204;0;Mohácsi Kórház;Ortopédia-traumatológia;15;2346;585;Mohácsi Kórház;0;0;157,117679188452;0;0;62,8593715728323
 VAF;10OT;2022;0207;0;Szigetvári Kórház;Ortopédia-traumatológia;15;3248;528;Szigetvári Kórház;0;0;113,509404103179;0;0;69,621651656463
 VAF;10OT;2022;0243;4;Pécsi Tudományegyetem Klinikai Központ;Ortopédia-traumatológia;89;26082;5700;Pécsi Tudományegyetem;15,3362472203052;4,17876422321374;39,262185769863;7,01754385964912;1,91236498171808;17,9578640240599
@@ -16044,7 +16044,7 @@ VAF;15;2015;0154;0;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 VAF;15;2015;0156;13;Országos Korányi Tbc és Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4993;985;Országos Korányi Tbc és Pulmonológiai Intézet;260,36451031444;138,703705388226;444,819704804018;131,979695431472;70,4557148679009;224,631892250899
 VAF;15;2015;0162;22;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4508;1953;Gottsegen György Országos Kardiológiai Intézet;488,021295474712;306,085460014308;737,943092288007;112,647209421403;70,726312546578;170,055112142471
 VAF;15;2015;0163;10;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;24,7;5772;1179;Országos Klinikai Idegtudományi Intézet;173,250173250173;83,1104731412843;318,381683901043;84,8176420695505;40,7461295938078;155,427869348783
-VAF;15;2015;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1892;1022;Budai Egészségközpont Zrt.;0;0;194,782539119225;0;0;36,0296477982284
+VAF;15;2015;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1892;1022;Budai Egészségközpont Kft.;0;0;194,782539119225;0;0;36,0296477982284
 VAF;15;2015;01A6;39;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;28,5;7478;1752;Magyar Honvédség Egészségügyi Központ;521,529820807703;371,113739376813;712,265661393718;222,602739726027;158,759752375888;303,058891362885
 VAF;15;2015;01E8;3;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1249;230;Szent Margit Kórház, Budapest;240,192153722978;49,5608135903953;700,324416410736;130,434782608696;26,9799866150355;376,432688207375
 VAF;15;2015;0204;3;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1307;227;Mohácsi Kórház;229,533282325937;47,3603176387827;669,315106184243;132,15859030837;27,3376434044401;381,344274681228
@@ -16108,7 +16108,7 @@ VAF;15;2016;0154;5;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 VAF;15;2016;0156;20;Országos Korányi Tbc és Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4717;1013;Országos Korányi Tbc és Pulmonológiai Intézet;423,998304006784;259,175700281981;654,075038864717;197,433366238894;121,00422704856;303,279323353213
 VAF;15;2016;0162;30;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4457;1899;Gottsegen György Országos Kardiológiai Intézet;673,098496746691;454,584052894435;959,506393993825;157,977883096367;106,834229630332;224,760448652853
 VAF;15;2016;0163;10;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;26;5868;1105;Országos Klinikai Idegtudományi Intézet;170,415814587594;81,7503049774048;313,17671149834;90,4977375565611;43,4800485304708;165,796989239532
-VAF;15;2016;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2061;1091;Budai Egészségközpont Zrt.;0;0;178,824849763617;0;0;33,7548127760884
+VAF;15;2016;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2061;1091;Budai Egészségközpont Kft.;0;0;178,824849763617;0;0;33,7548127760884
 VAF;15;2016;01A6;56;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;8379;2038;Magyar Honvédség Egészségügyi Központ;668,337510442774;505,238378503028;867,025074535477;274,7791952895;208,217911219999;355,354128968256
 VAF;15;2016;01E8;1;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1392;229;Szent Margit Kórház, Budapest;71,8390804597701;1,81879150463517;399,605081027766;43,6681222707424;1,10552002145509;240,888450642622
 VAF;15;2016;0204;0;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1227;280;Mohácsi Kórház;0;0;300,19069627637;0;0;130,881647032967
@@ -16174,7 +16174,7 @@ VAF;15;2017;0154;5;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 VAF;15;2017;0156;0;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4352;936;Országos Korányi Tbc és Pulmonológiai Intézet;0;0;84,7269415435306;0;0;39,333545442114
 VAF;15;2017;0162;29;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4820;1893;Gottsegen György Országos Kardiológiai Intézet;601,659751037345;403,300315121354;862,949356144627;153,195985208664;102,831507411184;219,278888635405
 VAF;15;2017;0163;12;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;26;5343;1003;Országos Klinikai Idegtudományi Intézet;224,592925322852;116,102610047433;391,98964535554;119,641076769691;61,9688995988648;208,055437787247
-VAF;15;2017;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1968;1204;Budai Egészségközpont Zrt.;0;0;187,267496897706;0;0;30,5916455830642
+VAF;15;2017;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1968;1204;Budai Egészségközpont Kft.;0;0;187,267496897706;0;0;30,5916455830642
 VAF;15;2017;01A6;57;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7877;2048;Magyar Honvédség Egészségügyi Központ;723,625745842326;548,514454594536;936,537283089245;278,3203125;211,463522812842;359,106887737668
 VAF;15;2017;01E8;0;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1364;215;Szent Margit Kórház, Budapest;0;0;270,080332829841;0;0;170,112258169104
 VAF;15;2017;0204;2;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1269;270;Mohácsi Kórház;157,604412923562;19,0923276662554;568,150537734878;74,0740740740741;8,98333655592169;265,004555871869
@@ -16239,7 +16239,7 @@ VAF;15;2018;0154;6;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 VAF;15;2018;0156;1;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;4203;833;Országos Korányi Tbc és Pulmonológiai Intézet;23,7925291458482;0,602372870102546;132,491414952464;12,0048019207683;0,303930651133825;66,7032215838159
 VAF;15;2018;0162;25;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4838;1840;Gottsegen György Országos Kardiológiai Intézet;516,742455560149;334,679291809715;761,874891667003;135,869565217391;88,115429134729;199,920739985515
 VAF;15;2018;0163;14;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;21,6;5072;1138;Országos Klinikai Idegtudományi Intézet;276,02523659306;150,985180702344;462,690189055346;123,022847100176;67,4164759266965;205,550739765109
-VAF;15;2018;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2182;1199;Budai Egészségközpont Zrt.;0;0;168,916728185747;0;0;30,7190209384671
+VAF;15;2018;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2182;1199;Budai Egészségközpont Kft.;0;0;168,916728185747;0;0;30,7190209384671
 VAF;15;2018;01A6;77;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7546;2102;Magyar Honvédség Egészségügyi Központ;1020,40816326531;806,105665443531;1273,70690147566;366,317792578497;290,152422892593;455,727037878067
 VAF;15;2018;01E8;7;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1674;241;Szent Margit Kórház, Budapest;418,16009557945;168,282290378018;859,660478457769;290,45643153527;117,559714727339;589,268542612471
 VAF;15;2018;0204;6;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1220;253;Mohácsi Kórház;491,803278688525;180,690529101807;1067,35416013348;237,154150197628;87,5174414563224;509,011249054985
@@ -16305,7 +16305,7 @@ VAF;15;2019;0154;2;Országos Onkológiai Intézet;Aneszt. és intenzív betegell
 VAF;15;2019;0156;3;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;24;3516;454;Országos Korányi Tbc és Pulmonológiai Intézet;85,3242320819113;17,5993655586193;249,149180660034;66,079295154185;13,6479250960411;191,888562324775
 VAF;15;2019;0162;23;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;4632;1915;Gottsegen György Országos Kardiológiai Intézet;496,545768566494;315,019997167496;744,136335085754;120,104438642298;76,2840680931937;179,673528114634
 VAF;15;2019;0163;2;Országos Klinikai Idegtudományi Intézet;Aneszt. és intenzív betegellátás;21,8;5685;1439;Országos Klinikai Idegtudományi Intézet;35,1802990325418;4,26078141465271;127,0249529671;13,8985406532314;1,68362116336182;50,1152463047117
-VAF;15;2019;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2084;1176;Budai Egészségközpont Zrt.;0;0;176,853001188828;0;0;31,3188763277782
+VAF;15;2019;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;2084;1176;Budai Egészségközpont Kft.;0;0;176,853001188828;0;0;31,3188763277782
 VAF;15;2019;01A6;63;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7352;1997;Magyar Honvédség Egészségügyi Központ;856,909684439608;659,083202456042;1095,04544637771;315,473209814722;243,251801421502;401,839786237908
 VAF;15;2019;01E8;1;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1529;222;Szent Margit Kórház, Budapest;65,402223675605;1,65582723179411;363,85356698848;45,0450450450451;1,1403767731911;248,405952990274
 VAF;15;2019;0204;8;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1302;225;Mohácsi Kórház;614,439324116744;265,633446835713;1207,08313721813;355,555555555556;154,731183443843;688,539996394654
@@ -16370,7 +16370,7 @@ VAF;15;2020;0140;34;Semmelweis Egyetem;Aneszt. és intenzív betegellátás;65,5
 VAF;15;2020;0154;5;Országos Onkológiai Intézet;Aneszt. és intenzív betegellátás;13;1889;385;Országos Onkológiai Intézet;264,690312334569;85,9983456998133;616,609260487278;129,87012987013;42,299331007716;300,456343363498
 VAF;15;2020;0156;10;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;28;4870;473;Országos Korányi Tbc és Pulmonológiai Intézet;205,338809034908;98,51048252264;377,300114851712;211,416490486258;101,836892691375;385,357581609709
 VAF;15;2020;0162;17;Gottsegen György Országos Kardiológiai Intézet;Aneszt. és intenzív betegellátás;19;5985;1809;Gottsegen György Országos Kardiológiai Intézet;284,043441938179;165,550142853071;454,392788143187;93,9745715865119;54,8362338533156;150,037292716229
-VAF;15;2020;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1524;862;Budai Egészségközpont Zrt.;0;0;241,75974687664;0;0;42,70298756081
+VAF;15;2020;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;14;1524;862;Budai Egészségközpont Kft.;0;0;241,75974687664;0;0;42,70298756081
 VAF;15;2020;01A6;78;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;7340;1931;Magyar Honvédség Egészségügyi Központ;1062,67029972752;840,877809623912;1324,50971490519;403,935784567582;320,579980837488;501,588033744601
 VAF;15;2020;01E8;2;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1273;200;Szent Margit Kórház, Budapest;157,109190887667;19,0323181923538;566,368967833126;100;12,1334901373603;356,546683972397
 VAF;15;2020;0204;8;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1171;191;Mohácsi Kórház;683,176771989752;295,395085804762;1341,67136207105;418,848167539267;182,536877888572;808,590902962936
@@ -16432,7 +16432,7 @@ VAF;15;2021;0140;11;Semmelweis Egyetem;Aneszt. és intenzív betegellátás;77,6
 VAF;15;2021;0154;3;Országos Onkológiai Intézet;Aneszt. és intenzív betegellátás;13,9;1881;369;Országos Onkológiai Intézet;159,489633173844;32,902681107265;465,382325129112;81,3008130081301;16,7976663524657;235,745047751544
 VAF;15;2021;0156;8;Országos Korányi Pulmonológiai Intézet;Aneszt. és intenzív betegellátás;59;5209;415;Országos Korányi Tbc és Pulmonológiai Intézet;153,58034171626;66,3276743758577;302,389031739731;192,771084337349;83,583271851319;376,289621376659
 VAF;15;2021;0162;43;Gottsegen György Országos Kardiovaszkuláris Intézet;Aneszt. és intenzív betegellátás;19;5332;1592;Gottsegen György Országos Kardiológiai Intézet;806,451612903226;584,230179589449;1084,76361877685;270,100502512563;196,14734843801;362,112903159667
-VAF;15;2021;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;17,4;1679;595;Budai Egészségközpont Zrt.;0;0;219,465756893912;0;0;61,8061831391579
+VAF;15;2021;01A3;0;Budai Egészségközpont Kft.;Aneszt. és intenzív betegellátás;17,4;1679;595;Budai Egészségközpont Kft.;0;0;219,465756893912;0;0;61,8061831391579
 VAF;15;2021;01A6;160;Magyar Honvédség Egészségügyi Központ;Aneszt. és intenzív betegellátás;30;10194;2169;Magyar Honvédség Egészségügyi Központ;1569,55071610751;1337,2741091263;1830,05733867412;737,667127708622;631,174901367758;855,839312752967
 VAF;15;2021;01E8;1;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegellátás;6;1562;226;Szent Margit Kórház, Budapest;64,0204865556978;1,62084524983941;356,177766718634;44,2477876106195;1,12019424401216;244,053792995973
 VAF;15;2021;01H2;3;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;Aneszt. és intenzív betegellátás;20,3;4742;897;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;63,2644453816955;13,0485502792542;184,773156001679;33,4448160535117;6,90244282790473;97,4261754350536
@@ -16498,7 +16498,7 @@ VAF;15;2022;01E8;2;Szent Margit Kórház, Budapest;Aneszt. és intenzív betegel
 VAF;15;2022;01H2;3;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;Aneszt. és intenzív betegellátás;27;5488;1385;Országos Mentális, Ideggyógyászati és Idegsebészeti Intézet;54,66472303207;11,274599120612;159,669595766106;21,6606498194946;4,46917622215437;63,1699333408525
 VAF;15;2022;01H7;4;Semmelweis Egyetem Klinikai Központ;Aneszt. és intenzív betegellátás;74;15084;3054;Semmelweis Egyetem;26,518164942986;7,22576496763712;67,8829880361624;13,0975769482646;3,5697655131278;33,5007438082102
 VAF;15;2022;01H8;17;Dr. Manninger Jenő Baleseti Központ;Aneszt. és intenzív betegellátás;18;3537;439;Dr. Manninger Jenő Baleseti Központ;480,633305060786;280,228366861897;768,428672742705;387,243735763098;227,173775132681;612,788722481853
-VAF;15;2022;01H9;0;Budai Egészségközpont Zrt.;Aneszt. és intenzív betegellátás;17;1983;1033;Budai Egészségközpont Zrt.;0;0;185,852267184129;0;0;35,6466672608257
+VAF;15;2022;01H9;0;Budai Egészségközpont Zrt.;Aneszt. és intenzív betegellátás;17;1983;1033;Budai Egészségközpont Kft.;0;0;185,852267184129;0;0;35,6466672608257
 VAF;15;2022;0204;9;Mohácsi Kórház;Aneszt. és intenzív betegellátás;6;1209;190;Mohácsi Kórház;744,416873449131;340,943308896317;1408,4126122049;473,684210526316;218,856287301952;880,13023715652
 VAF;15;2022;0207;1;Szigetvári Kórház;Aneszt. és intenzív betegellátás;5;1068;202;Szigetvári Kórház;93,6329588014981;2,37055317388145;520,574261968255;49,5049504950495;1,25327828901956;272,722871958365
 VAF;15;2022;0243;52;Pécsi Tudományegyetem Klinikai Központ;Aneszt. és intenzív betegellátás;44;12812;3227;Pécsi Tudományegyetem;405,869497346238;303,266845404994;531,907351677423;161,140378060118;120,57540210184;210,782873451989
@@ -16646,7 +16646,7 @@ VAF;16;2019;2001;4;Zala Megyei Szent Rafael Kórház;Infektológia;20;5238;738;Z
 VAF;16;2020;0106;0;Észak-Közép-budai Centrum, Új Szent János Kórház és Szakrendelő;Infektológia;83,6;7276;725;Szent János Kórház és Észak-budai Egyesített Kórházak;0;0;50,6864279068872;0;0;50,751870885993
 VAF;16;2020;0109;108;Dél-pesti Centrumkórház - Országos Hematológiai és Infektológiai Intézet;Infektológia;258,9;32567;3433;Egyesített Szent István és Szent László Kórház-Rendelőintézet;331,624036601468;272,114577113956;400,245205776504;314,593649868919;258,765996021646;378,575848628411
 VAF;16;2020;0112;7;Bajcsy-Zsilinszky Kórház és Rendelőintézet;Infektológia;39;4724;689;Bajcsy-Zsilinszky Kórház és Rendelőintézet;148,179508890771;59,5959476026865;305,0666071591;101,596516690856;40,9418947528892;208,201534757195
-VAF;16;2020;01A3;0;Budai Egészségközpont Kft.;Infektológia;21,3;146;15;Budai Egészségközpont Zrt.;0;0;2494,97761119478;0;0;2180,19360910534
+VAF;16;2020;01A3;0;Budai Egészségközpont Kft.;Infektológia;21,3;146;15;Budai Egészségközpont Kft.;0;0;2494,97761119478;0;0;2180,19360910534
 VAF;16;2020;0242;26;Pécsi Tudományegyetem;Infektológia;95,2;21340;3130;Pécsi Tudományegyetem;121,836925960637;79,6028795066048;178,468726074774;83,0670926517572;54,3318760883254;121,477195670251
 VAF;16;2020;0306;0;Kiskunhalasi Semmelweis Kórház;Infektológia;136,3;12811;1679;Kiskunhalasi Semmelweis Kórház;0;0;28,7904800997347;0;0;21,9465756893912
 VAF;16;2020;0468;0;Békés Megyei Központi Kórház;Infektológia;30;21188;2220;Békés Megyei Központi Kórház;0;0;17,4087141379895;0;0;16,6027762343698
