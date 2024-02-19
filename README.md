@@ -1786,13 +1786,13 @@ Az összes megbecsült modell ábráját csak elmentjük [PDF
 formátumban](https://github.com/tamas-ferenci/NNSRElemzes/blob/main/Modellek.pdf):
 
 ``` r
-if(!file.exists("Modellek.pdf")) {
-  cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
-  for(i in 1:length(fits))
-    print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
-                                           pargrid$formulas[i], " - ", pargrid$year[i])))
-  invisible(dev.off())
-}
+# if(!file.exists("Modellek.pdf")) {
+cairo_pdf("Modellek.pdf", onefile = TRUE, width = 16, height = 9)
+for(i in 1:length(fits))
+  print(plotter(fits[[i]], title = paste(pargrid$type[i], " - ", pargrid$families[i], " - ",
+                                         pargrid$formulas[i], " - ", pargrid$year[i])))
+invisible(dev.off())
+# }
 ```
 
 A jól értelmezhető eredményekhez (fertőzés-gyakoriság ugyanazon,
@@ -1936,8 +1936,11 @@ for(i in 1:length(p)) print(p[[i]])
 Az eredmény:
 
 ``` r
-ggplot(ress[formula=="zCMI"&family=="NB"&type=="CDI"&!suppressed],
-       aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
+ggplot(merge(ress[formula=="zCMI"&family=="NB"&type=="CDI"&!suppressed],
+             ress[formula=="zCMI"&family=="NB"&type=="CDI"&!suppressed&year==2015,
+                  .(KorhazNevFactor, fitorder = fit)], by = "KorhazNevFactor"),
+       aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder),
+           x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
   facet_wrap(~year, scales = "free_x") +
   scale_x_continuous(limits = c(0, ceiling(max(ress[formula=="zCMI"&family=="NB"&type=="CDI"&
@@ -1974,8 +1977,11 @@ for(i in 1:length(p)) print(p[[i]])
 Az eredmény:
 
 ``` r
-ggplot(ress[formula=="zCMI"&family=="NB"&type=="MRK"&!suppressed],
-       aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
+ggplot(merge(ress[formula=="zCMI"&family=="NB"&type=="MRK"&!suppressed],
+             ress[formula=="zCMI"&family=="NB"&type=="MRK"&!suppressed&year==2015,
+                  .(KorhazNevFactor, fitorder = fit)], by = "KorhazNevFactor"),
+       aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder),
+           x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
   facet_wrap(~year, scales = "free_x") +
   scale_x_continuous(limits = c(0, ceiling(max(ress[formula=="zCMI"&family=="NB"&type=="MRK"&
@@ -2012,8 +2018,11 @@ for(i in 1:length(p)) print(p[[i]])
 Az eredmény:
 
 ``` r
-ggplot(ress[formula=="zCMI"&family=="NB"&type=="VAF"&!suppressed],
-       aes(y = forcats::fct_reorder(KorhazNevFactor, fit), x = fit, xmin = lci, xmax = uci)) +
+ggplot(merge(ress[formula=="zCMI"&family=="NB"&type=="VAF"&!suppressed],
+             ress[formula=="zCMI"&family=="NB"&type=="VAF"&!suppressed&year==2015,
+                  .(KorhazNevFactor, fitorder = fit)], by = "KorhazNevFactor"),
+       aes(y = forcats::fct_reorder(KorhazNevFactor, fitorder),
+           x = fit, xmin = lci, xmax = uci)) +
   geom_point() + geom_errorbar() + labs(x = "Incidencia [/100 ezer ápolási nap]", y = "") +
   facet_wrap(~year, scales = "free_x") +
   scale_x_continuous(limits = c(0, ceiling(max(ress[formula=="zCMI"&family=="NB"&type=="VAF"&
